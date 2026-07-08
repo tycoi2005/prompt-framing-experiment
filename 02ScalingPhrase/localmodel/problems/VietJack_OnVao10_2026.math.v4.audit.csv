@@ -1,0 +1,7 @@
+old_id,new_id,source_task_id,old_expected_answer,new_expected_answer,action,note
+vietjack_math_v3_0025,,2437854,4/15,,removed,Removed exact duplicate of v3_0011.
+vietjack_math_v3_0026,,2437858,15,,removed,"Removed corrupted hiking rescue problem; expected answer 15 is inconsistent with the stated 10,400 m distance."
+vietjack_math_v3_0043,,2459867,40,,removed,Removed exact duplicate of v3_0010.
+vietjack_math_v3_0052,,2459985,23/103,,removed,Removed exact duplicate of v3_0006.
+vietjack_math_v3_0060,,2461444,11/48,,removed,Removed exact duplicate of v3_0017.
+vietjack_math_v3_0065,vietjack_math_v4_0060,2434558,1.4142135623730951,sqrt(2),corrected,Use exact radical form instead of raw float for sqrt(18) - 2sqrt(2).

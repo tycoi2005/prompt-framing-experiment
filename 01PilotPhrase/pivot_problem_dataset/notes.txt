@@ -1,0 +1,6 @@
+with json/xml, some character must be escaped, for example in xml
+    ✦ &apos; and &lt; are XML/HTML entities used to represent special characters that have specific meanings in code:
+   * &apos; represents a single quote (').
+   * &lt; represents the "less than" symbol (<).
+
+Run on kaggle, GPU P100

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="620" viewBox="0 0 920 620">
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<text x="170" y="28" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#1d2528">Pass rate by model and task type</text>
+<text x="158" y="71.5" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">code / nemotron-3-nano-4b_1_50</text>
+<rect x="170" y="46.0" width="179.8" height="37.5" rx="4" fill="#2f6f73"/>
+<text x="357.8" y="71.5" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">22.8%</text>
+<text x="158" y="117.0" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">code / qwen2.5-7b_1_50</text>
+<rect x="170" y="91.5" width="104.4" height="37.5" rx="4" fill="#c75d4c"/>
+<text x="282.4" y="117.0" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">13.2%</text>
+<text x="158" y="162.5" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">code / gemma2-9b_1_50</text>
+<rect x="170" y="137.0" width="89.5" height="37.5" rx="4" fill="#7c6fbd"/>
+<text x="267.5" y="162.5" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">11.3%</text>
+<text x="158" y="208.0" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">code / llama3.1-8b_1_50</text>
+<rect x="170" y="182.5" width="45.6" height="37.5" rx="4" fill="#d89b34"/>
+<text x="223.6" y="208.0" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">5.8%</text>
+<text x="158" y="253.5" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">code / deepseek-coder-6.7b-instruct_1_50</text>
+<rect x="170" y="228.0" width="8.8" height="37.5" rx="4" fill="#3f7fbf"/>
+<text x="186.8" y="253.5" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">1.1%</text>
+<text x="158" y="299.0" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">code / mistral-7b-instruct_1_50</text>
+<rect x="170" y="273.5" width="3.5" height="37.5" rx="4" fill="#67717a"/>
+<text x="181.5" y="299.0" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">0.4%</text>
+<text x="158" y="344.5" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">math / nemotron-3-nano-4b_1_50</text>
+<rect x="170" y="319.0" width="720.0" height="37.5" rx="4" fill="#2f6f73"/>
+<text x="898.0" y="344.5" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">91.2%</text>
+<text x="158" y="390.0" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">math / llama3.1-8b_1_50</text>
+<rect x="170" y="364.5" width="341.1" height="37.5" rx="4" fill="#c75d4c"/>
+<text x="519.1" y="390.0" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">43.2%</text>
+<text x="158" y="435.5" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">math / qwen2.5-7b_1_50</text>
+<rect x="170" y="410.0" width="185.9" height="37.5" rx="4" fill="#7c6fbd"/>
+<text x="363.9" y="435.5" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">23.6%</text>
+<text x="158" y="481.0" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">math / gemma2-9b_1_50</text>
+<rect x="170" y="455.5" width="120.1" height="37.5" rx="4" fill="#d89b34"/>
+<text x="298.1" y="481.0" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">15.2%</text>
+<text x="158" y="526.5" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">math / mistral-7b-instruct_1_50</text>
+<rect x="170" y="501.0" width="60.5" height="37.5" rx="4" fill="#3f7fbf"/>
+<text x="238.5" y="526.5" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">7.7%</text>
+<text x="158" y="572.0" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">math / deepseek-coder-6.7b-instruct_1_50</text>
+<rect x="170" y="546.5" width="44.7" height="37.5" rx="4" fill="#67717a"/>
+<text x="222.7" y="572.0" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">5.7%</text>
+</svg>

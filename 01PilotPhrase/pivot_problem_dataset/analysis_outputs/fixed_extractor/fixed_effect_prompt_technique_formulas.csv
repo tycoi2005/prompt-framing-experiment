@@ -1,0 +1,8 @@
+metric,formula,nobs,rsquared
+passed_int,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id),2700.0,0.2502591407472271
+tests_fraction,tests_fraction ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id),2700.0,0.2507389608575715
+duration_seconds,duration_seconds ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id),2700.0,0.5793259767205743
+completion_tokens,completion_tokens ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id),2700.0,0.5767012936568792
+likely_code_only,likely_code_only ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id),2700.0,0.5481071636575405
+extra_text_ratio,extra_text_ratio ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id),2700.0,0.4396040581674582
+invalid_python_after_fix,invalid_python_after_fix ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id),2700.0,0.02029200692897626

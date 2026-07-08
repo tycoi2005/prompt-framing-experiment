@@ -1,0 +1,13 @@
+outcome,model_spec,formula,nobs,rsquared
+passed_int,M0_prompt_only,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id),2700.0,0.2502591407472271
+passed_int,M1_length,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_completion_tokens,2700.0,0.2606537955896848
+passed_int,M2_code_only,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + likely_code_only,2700.0,0.2518829221181148
+passed_int,M3_invalid_python,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + invalid_python_after_fix,2700.0,0.2503451687800803
+passed_int,M4_runtime,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_duration_seconds,2700.0,0.25941055475616037
+passed_int,M5_all_behavior_controls,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_completion_tokens + likely_code_only + invalid_python_after_fix + log_duration_seconds,2700.0,0.264109383156809
+tests_fraction,M0_prompt_only,tests_fraction ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id),2700.0,0.2507389608575715
+tests_fraction,M1_length,tests_fraction ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_completion_tokens,2700.0,0.2628670105884834
+tests_fraction,M2_code_only,tests_fraction ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + likely_code_only,2700.0,0.2535919451743134
+tests_fraction,M3_invalid_python,tests_fraction ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + invalid_python_after_fix,2700.0,0.25085542050467136
+tests_fraction,M4_runtime,tests_fraction ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_duration_seconds,2700.0,0.26172115784561656
+tests_fraction,M5_all_behavior_controls,tests_fraction ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_completion_tokens + likely_code_only + invalid_python_after_fix + log_duration_seconds,2700.0,0.2653588557684873

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420">
+<rect width="100%" height="100%" fill="#fbfaf7"/>
+<text x="170" y="28" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#1d2528">Overall pass rate by model</text>
+<text x="158" y="79.8" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">nemotron-3-nano-4b_1_50</text>
+<rect x="170" y="46.0" width="720.0" height="49.7" rx="4" fill="#2f6f73"/>
+<text x="898.0" y="79.8" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">57.0%</text>
+<text x="158" y="137.4" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">llama3.1-8b_1_50</text>
+<rect x="170" y="103.7" width="309.5" height="49.7" rx="4" fill="#c75d4c"/>
+<text x="487.5" y="137.4" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">24.5%</text>
+<text x="158" y="195.1" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">qwen2.5-7b_1_50</text>
+<rect x="170" y="161.3" width="232.3" height="49.7" rx="4" fill="#7c6fbd"/>
+<text x="410.3" y="195.1" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">18.4%</text>
+<text x="158" y="252.8" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">gemma2-9b_1_50</text>
+<rect x="170" y="219.0" width="167.7" height="49.7" rx="4" fill="#d89b34"/>
+<text x="345.7" y="252.8" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">13.3%</text>
+<text x="158" y="310.4" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">mistral-7b-instruct_1_50</text>
+<rect x="170" y="276.7" width="51.2" height="49.7" rx="4" fill="#3f7fbf"/>
+<text x="229.2" y="310.4" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">4.1%</text>
+<text x="158" y="368.1" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">deepseek-coder-6.7b-instruct_1_50</text>
+<rect x="170" y="334.3" width="42.8" height="49.7" rx="4" fill="#67717a"/>
+<text x="220.8" y="368.1" font-family="Arial, sans-serif" font-size="13" fill="#2c3437">3.4%</text>
+</svg>

@@ -1,0 +1,793 @@
+ID,Tone,Pressure,Role framing,Instruction structure,Format,ProblemID,Prompt,FinalPrompt
+1,neutral,none,no role,minimal,plaintext,1,Task: {PYTHON_PROBLEM},
+2,neutral,none,no role,minimal,json,1,"{""task"": ""{PYTHON_PROBLEM}""}",
+3,neutral,none,no role,minimal,xml,1,<task>{PYTHON_PROBLEM}</task>,
+4,neutral,none,no role,detailed,plaintext,1,"You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.
+
+Tasks are provided below. Complete the following Python requirement precisely as specified. Follow standard production practices, including full type hints and error handling. Return only the requested output.
+
+Task: {PYTHON_PROBLEM}
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.",
+5,neutral,none,no role,detailed,json,1,"{
+  ""instruction"": ""You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.\n\nTasks are provided below. Complete the following Python requirement precisely as specified. Follow standard production practices, including full type hints and error handling. Return only the requested output.\n\nTechnical Requirements:\n- Python 3.11+\n- Production-quality only\n- Full type hints\n- Proper error handling\n- Clean, modular structure\n- PEP 8 compliant\n\nOutput format:\nReturn only Python solution code."",
+  ""task"": ""{PYTHON_PROBLEM}""
+}",
+6,neutral,none,no role,detailed,xml,1,"<prompt>
+<instruction>
+You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.
+
+Tasks are provided below. Complete the following Python requirement precisely as specified. Follow standard production practices, including full type hints and error handling. Return only the requested output.
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.
+</instruction>
+<task>
+{PYTHON_PROBLEM}
+</task>
+</prompt>",
+7,neutral,none,developer role,minimal,plaintext,1,Task: {PYTHON_PROBLEM},
+8,neutral,none,developer role,minimal,json,1,"{""task"": ""{PYTHON_PROBLEM}""}",
+9,neutral,none,developer role,minimal,xml,1,<task>{PYTHON_PROBLEM}</task>,
+10,neutral,none,developer role,detailed,plaintext,1,"You are a senior Python developer with 10+ years of experience building production systems.
+
+Tasks are provided below. Complete the following Python requirement precisely as specified. Follow standard production practices, including full type hints and error handling. Return only the requested output.
+
+Task: {PYTHON_PROBLEM}
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.",
+11,neutral,none,developer role,detailed,json,1,"{
+  ""instruction"": ""You are a senior Python developer with 10+ years of experience building production systems.\n\nTasks are provided below. Complete the following Python requirement precisely as specified. Follow standard production practices, including full type hints and error handling. Return only the requested output.\n\nTechnical Requirements:\n- Python 3.11+\n- Production-quality only\n- Full type hints\n- Proper error handling\n- Clean, modular structure\n- PEP 8 compliant\n\nOutput format:\nReturn only Python solution code."",
+  ""task"": ""{PYTHON_PROBLEM}""
+}",
+12,neutral,none,developer role,detailed,xml,1,"<prompt>
+<instruction>
+You are a senior Python developer with 10+ years of experience building production systems.
+
+Tasks are provided below. Complete the following Python requirement precisely as specified. Follow standard production practices, including full type hints and error handling. Return only the requested output.
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.
+</instruction>
+<task>
+{PYTHON_PROBLEM}
+</task>
+</prompt>",
+13,neutral,moderate,no role,minimal,plaintext,1,Task: {PYTHON_PROBLEM},
+14,neutral,moderate,no role,minimal,json,1,"{""task"": ""{PYTHON_PROBLEM}""}",
+15,neutral,moderate,no role,minimal,xml,1,<task>{PYTHON_PROBLEM}</task>,
+16,neutral,moderate,no role,detailed,plaintext,1,"You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.
+
+Tasks are provided below. Complete the following Python requirement precisely as specified. Follow standard production practices, including full type hints and error handling. Return only the requested output.
+
+Task: {PYTHON_PROBLEM}
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.",
+17,neutral,moderate,no role,detailed,json,1,"{
+  ""instruction"": ""You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.\n\nTasks are provided below. Complete the following Python requirement precisely as specified. Follow standard production practices, including full type hints and error handling. Return only the requested output.\n\nTechnical Requirements:\n- Python 3.11+\n- Production-quality only\n- Full type hints\n- Proper error handling\n- Clean, modular structure\n- PEP 8 compliant\n\nOutput format:\nReturn only Python solution code."",
+  ""task"": ""{PYTHON_PROBLEM}""
+}",
+18,neutral,moderate,no role,detailed,xml,1,"<prompt>
+<instruction>
+You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.
+
+Tasks are provided below. Complete the following Python requirement precisely as specified. Follow standard production practices, including full type hints and error handling. Return only the requested output.
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.
+</instruction>
+<task>
+{PYTHON_PROBLEM}
+</task>
+</prompt>",
+19,neutral,moderate,developer role,minimal,plaintext,1,Task: {PYTHON_PROBLEM},
+20,neutral,moderate,developer role,minimal,json,1,"{""task"": ""{PYTHON_PROBLEM}""}",
+21,neutral,moderate,developer role,minimal,xml,1,<task>{PYTHON_PROBLEM}</task>,
+22,neutral,moderate,developer role,detailed,plaintext,1,"You are a senior Python developer with 10+ years of experience building production systems.
+
+Tasks are provided below. Complete the following Python requirement precisely as specified. Follow standard production practices, including full type hints and error handling. Return only the requested output.
+
+Task: {PYTHON_PROBLEM}
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.",
+23,neutral,moderate,developer role,detailed,json,1,"{
+  ""instruction"": ""You are a senior Python developer with 10+ years of experience building production systems.\n\nTasks are provided below. Complete the following Python requirement precisely as specified. Follow standard production practices, including full type hints and error handling. Return only the requested output.\n\nTechnical Requirements:\n- Python 3.11+\n- Production-quality only\n- Full type hints\n- Proper error handling\n- Clean, modular structure\n- PEP 8 compliant\n\nOutput format:\nReturn only Python solution code."",
+  ""task"": ""{PYTHON_PROBLEM}""
+}",
+24,neutral,moderate,developer role,detailed,xml,1,"<prompt>
+<instruction>
+You are a senior Python developer with 10+ years of experience building production systems.
+
+Tasks are provided below. Complete the following Python requirement precisely as specified. Follow standard production practices, including full type hints and error handling. Return only the requested output.
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.
+</instruction>
+<task>
+{PYTHON_PROBLEM}
+</task>
+</prompt>",
+25,neutral,high,no role,minimal,plaintext,1,Task: {PYTHON_PROBLEM},
+26,neutral,high,no role,minimal,json,1,"{""task"": ""{PYTHON_PROBLEM}""}",
+27,neutral,high,no role,minimal,xml,1,<task>{PYTHON_PROBLEM}</task>,
+28,neutral,high,no role,detailed,plaintext,1,"You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.
+
+Tasks are provided below. Complete the following Python requirement precisely as specified. Follow standard production practices, including full type hints and error handling. Return only the requested output.
+
+Task: {PYTHON_PROBLEM}
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.",
+29,neutral,high,no role,detailed,json,1,"{
+  ""instruction"": ""You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.\n\nTasks are provided below. Complete the following Python requirement precisely as specified. Follow standard production practices, including full type hints and error handling. Return only the requested output.\n\nTechnical Requirements:\n- Python 3.11+\n- Production-quality only\n- Full type hints\n- Proper error handling\n- Clean, modular structure\n- PEP 8 compliant\n\nOutput format:\nReturn only Python solution code."",
+  ""task"": ""{PYTHON_PROBLEM}""
+}",
+30,neutral,high,no role,detailed,xml,1,"<prompt>
+<instruction>
+You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.
+
+Tasks are provided below. Complete the following Python requirement precisely as specified. Follow standard production practices, including full type hints and error handling. Return only the requested output.
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.
+</instruction>
+<task>
+{PYTHON_PROBLEM}
+</task>
+</prompt>",
+31,neutral,high,developer role,minimal,plaintext,1,Task: {PYTHON_PROBLEM},
+32,neutral,high,developer role,minimal,json,1,"{""task"": ""{PYTHON_PROBLEM}""}",
+33,neutral,high,developer role,minimal,xml,1,<task>{PYTHON_PROBLEM}</task>,
+34,neutral,high,developer role,detailed,plaintext,1,"You are a senior Python developer with 10+ years of experience building production systems.
+
+Tasks are provided below. Complete the following Python requirement precisely as specified. Follow standard production practices, including full type hints and error handling. Return only the requested output.
+
+Task: {PYTHON_PROBLEM}
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.",
+35,neutral,high,developer role,detailed,json,1,"{
+  ""instruction"": ""You are a senior Python developer with 10+ years of experience building production systems.\n\nTasks are provided below. Complete the following Python requirement precisely as specified. Follow standard production practices, including full type hints and error handling. Return only the requested output.\n\nTechnical Requirements:\n- Python 3.11+\n- Production-quality only\n- Full type hints\n- Proper error handling\n- Clean, modular structure\n- PEP 8 compliant\n\nOutput format:\nReturn only Python solution code."",
+  ""task"": ""{PYTHON_PROBLEM}""
+}",
+36,neutral,high,developer role,detailed,xml,1,"<prompt>
+<instruction>
+You are a senior Python developer with 10+ years of experience building production systems.
+
+Tasks are provided below. Complete the following Python requirement precisely as specified. Follow standard production practices, including full type hints and error handling. Return only the requested output.
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.
+</instruction>
+<task>
+{PYTHON_PROBLEM}
+</task>
+</prompt>",
+37,polite,none,no role,minimal,plaintext,1,Task: {PYTHON_PROBLEM},
+38,polite,none,no role,minimal,json,1,"{""task"": ""{PYTHON_PROBLEM}""}",
+39,polite,none,no role,minimal,xml,1,<task>{PYTHON_PROBLEM}</task>,
+40,polite,none,no role,detailed,plaintext,1,"You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.
+
+Hello! You are a very helpful assistant. Could you please help me solve this Python problem? I would really appreciate it if you could provide a high-quality solution. I would be so grateful if you could ensure the code is modular, includes full type hints, and handles errors correctly. Thank you so much for your help!
+
+Task: {PYTHON_PROBLEM}
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.",
+41,polite,none,no role,detailed,json,1,"{
+  ""instruction"": ""You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.\n\nHello! You are a very helpful assistant. Could you please help me solve this Python problem? I would really appreciate it if you could provide a high-quality solution. I would be so grateful if you could ensure the code is modular, includes full type hints, and handles errors correctly. Thank you so much for your help!\n\nTechnical Requirements:\n- Python 3.11+\n- Production-quality only\n- Full type hints\n- Proper error handling\n- Clean, modular structure\n- PEP 8 compliant\n\nOutput format:\nReturn only Python solution code."",
+  ""task"": ""{PYTHON_PROBLEM}""
+}",
+42,polite,none,no role,detailed,xml,1,"<prompt>
+<instruction>
+You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.
+
+Hello! You are a very helpful assistant. Could you please help me solve this Python problem? I would really appreciate it if you could provide a high-quality solution. I would be so grateful if you could ensure the code is modular, includes full type hints, and handles errors correctly. Thank you so much for your help!
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.
+</instruction>
+<task>
+{PYTHON_PROBLEM}
+</task>
+</prompt>",
+43,polite,none,developer role,minimal,plaintext,1,Task: {PYTHON_PROBLEM},
+44,polite,none,developer role,minimal,json,1,"{""task"": ""{PYTHON_PROBLEM}""}",
+45,polite,none,developer role,minimal,xml,1,<task>{PYTHON_PROBLEM}</task>,
+46,polite,none,developer role,detailed,plaintext,1,"You are a senior Python developer with 10+ years of experience building production systems.
+
+Hello! You are a very helpful assistant. Could you please help me solve this Python problem? I would really appreciate it if you could provide a high-quality solution. I would be so grateful if you could ensure the code is modular, includes full type hints, and handles errors correctly. Thank you so much for your help!
+
+Task: {PYTHON_PROBLEM}
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.",
+47,polite,none,developer role,detailed,json,1,"{
+  ""instruction"": ""You are a senior Python developer with 10+ years of experience building production systems.\n\nHello! You are a very helpful assistant. Could you please help me solve this Python problem? I would really appreciate it if you could provide a high-quality solution. I would be so grateful if you could ensure the code is modular, includes full type hints, and handles errors correctly. Thank you so much for your help!\n\nTechnical Requirements:\n- Python 3.11+\n- Production-quality only\n- Full type hints\n- Proper error handling\n- Clean, modular structure\n- PEP 8 compliant\n\nOutput format:\nReturn only Python solution code."",
+  ""task"": ""{PYTHON_PROBLEM}""
+}",
+48,polite,none,developer role,detailed,xml,1,"<prompt>
+<instruction>
+You are a senior Python developer with 10+ years of experience building production systems.
+
+Hello! You are a very helpful assistant. Could you please help me solve this Python problem? I would really appreciate it if you could provide a high-quality solution. I would be so grateful if you could ensure the code is modular, includes full type hints, and handles errors correctly. Thank you so much for your help!
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.
+</instruction>
+<task>
+{PYTHON_PROBLEM}
+</task>
+</prompt>",
+49,polite,moderate,no role,minimal,plaintext,1,Task: {PYTHON_PROBLEM},
+50,polite,moderate,no role,minimal,json,1,"{""task"": ""{PYTHON_PROBLEM}""}",
+51,polite,moderate,no role,minimal,xml,1,<task>{PYTHON_PROBLEM}</task>,
+52,polite,moderate,no role,detailed,plaintext,1,"You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.
+
+Hello! You are a very helpful assistant. Could you please help me solve this Python problem? I would really appreciate it if you could provide a high-quality solution. I would be so grateful if you could ensure the code is modular, includes full type hints, and handles errors correctly. Thank you so much for your help!
+
+Task: {PYTHON_PROBLEM}
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.",
+53,polite,moderate,no role,detailed,json,1,"{
+  ""instruction"": ""You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.\n\nHello! You are a very helpful assistant. Could you please help me solve this Python problem? I would really appreciate it if you could provide a high-quality solution. I would be so grateful if you could ensure the code is modular, includes full type hints, and handles errors correctly. Thank you so much for your help!\n\nTechnical Requirements:\n- Python 3.11+\n- Production-quality only\n- Full type hints\n- Proper error handling\n- Clean, modular structure\n- PEP 8 compliant\n\nOutput format:\nReturn only Python solution code."",
+  ""task"": ""{PYTHON_PROBLEM}""
+}",
+54,polite,moderate,no role,detailed,xml,1,"<prompt>
+<instruction>
+You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.
+
+Hello! You are a very helpful assistant. Could you please help me solve this Python problem? I would really appreciate it if you could provide a high-quality solution. I would be so grateful if you could ensure the code is modular, includes full type hints, and handles errors correctly. Thank you so much for your help!
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.
+</instruction>
+<task>
+{PYTHON_PROBLEM}
+</task>
+</prompt>",
+55,polite,moderate,developer role,minimal,plaintext,1,Task: {PYTHON_PROBLEM},
+56,polite,moderate,developer role,minimal,json,1,"{""task"": ""{PYTHON_PROBLEM}""}",
+57,polite,moderate,developer role,minimal,xml,1,<task>{PYTHON_PROBLEM}</task>,
+58,polite,moderate,developer role,detailed,plaintext,1,"You are a senior Python developer with 10+ years of experience building production systems.
+
+Hello! You are a very helpful assistant. Could you please help me solve this Python problem? I would really appreciate it if you could provide a high-quality solution. I would be so grateful if you could ensure the code is modular, includes full type hints, and handles errors correctly. Thank you so much for your help!
+
+Task: {PYTHON_PROBLEM}
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.",
+59,polite,moderate,developer role,detailed,json,1,"{
+  ""instruction"": ""You are a senior Python developer with 10+ years of experience building production systems.\n\nHello! You are a very helpful assistant. Could you please help me solve this Python problem? I would really appreciate it if you could provide a high-quality solution. I would be so grateful if you could ensure the code is modular, includes full type hints, and handles errors correctly. Thank you so much for your help!\n\nTechnical Requirements:\n- Python 3.11+\n- Production-quality only\n- Full type hints\n- Proper error handling\n- Clean, modular structure\n- PEP 8 compliant\n\nOutput format:\nReturn only Python solution code."",
+  ""task"": ""{PYTHON_PROBLEM}""
+}",
+60,polite,moderate,developer role,detailed,xml,1,"<prompt>
+<instruction>
+You are a senior Python developer with 10+ years of experience building production systems.
+
+Hello! You are a very helpful assistant. Could you please help me solve this Python problem? I would really appreciate it if you could provide a high-quality solution. I would be so grateful if you could ensure the code is modular, includes full type hints, and handles errors correctly. Thank you so much for your help!
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.
+</instruction>
+<task>
+{PYTHON_PROBLEM}
+</task>
+</prompt>",
+61,polite,high,no role,minimal,plaintext,1,Task: {PYTHON_PROBLEM},
+62,polite,high,no role,minimal,json,1,"{""task"": ""{PYTHON_PROBLEM}""}",
+63,polite,high,no role,minimal,xml,1,<task>{PYTHON_PROBLEM}</task>,
+64,polite,high,no role,detailed,plaintext,1,"You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.
+
+Hello! You are a very helpful assistant. Could you please help me solve this Python problem? I would really appreciate it if you could provide a high-quality solution. I would be so grateful if you could ensure the code is modular, includes full type hints, and handles errors correctly. Thank you so much for your help!
+
+Task: {PYTHON_PROBLEM}
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.",
+65,polite,high,no role,detailed,json,1,"{
+  ""instruction"": ""You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.\n\nHello! You are a very helpful assistant. Could you please help me solve this Python problem? I would really appreciate it if you could provide a high-quality solution. I would be so grateful if you could ensure the code is modular, includes full type hints, and handles errors correctly. Thank you so much for your help!\n\nTechnical Requirements:\n- Python 3.11+\n- Production-quality only\n- Full type hints\n- Proper error handling\n- Clean, modular structure\n- PEP 8 compliant\n\nOutput format:\nReturn only Python solution code."",
+  ""task"": ""{PYTHON_PROBLEM}""
+}",
+66,polite,high,no role,detailed,xml,1,"<prompt>
+<instruction>
+You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.
+
+Hello! You are a very helpful assistant. Could you please help me solve this Python problem? I would really appreciate it if you could provide a high-quality solution. I would be so grateful if you could ensure the code is modular, includes full type hints, and handles errors correctly. Thank you so much for your help!
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.
+</instruction>
+<task>
+{PYTHON_PROBLEM}
+</task>
+</prompt>",
+67,polite,high,developer role,minimal,plaintext,1,Task: {PYTHON_PROBLEM},
+68,polite,high,developer role,minimal,json,1,"{""task"": ""{PYTHON_PROBLEM}""}",
+69,polite,high,developer role,minimal,xml,1,<task>{PYTHON_PROBLEM}</task>,
+70,polite,high,developer role,detailed,plaintext,1,"You are a senior Python developer with 10+ years of experience building production systems.
+
+Hello! You are a very helpful assistant. Could you please help me solve this Python problem? I would really appreciate it if you could provide a high-quality solution. I would be so grateful if you could ensure the code is modular, includes full type hints, and handles errors correctly. Thank you so much for your help!
+
+Task: {PYTHON_PROBLEM}
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.",
+71,polite,high,developer role,detailed,json,1,"{
+  ""instruction"": ""You are a senior Python developer with 10+ years of experience building production systems.\n\nHello! You are a very helpful assistant. Could you please help me solve this Python problem? I would really appreciate it if you could provide a high-quality solution. I would be so grateful if you could ensure the code is modular, includes full type hints, and handles errors correctly. Thank you so much for your help!\n\nTechnical Requirements:\n- Python 3.11+\n- Production-quality only\n- Full type hints\n- Proper error handling\n- Clean, modular structure\n- PEP 8 compliant\n\nOutput format:\nReturn only Python solution code."",
+  ""task"": ""{PYTHON_PROBLEM}""
+}",
+72,polite,high,developer role,detailed,xml,1,"<prompt>
+<instruction>
+You are a senior Python developer with 10+ years of experience building production systems.
+
+Hello! You are a very helpful assistant. Could you please help me solve this Python problem? I would really appreciate it if you could provide a high-quality solution. I would be so grateful if you could ensure the code is modular, includes full type hints, and handles errors correctly. Thank you so much for your help!
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.
+</instruction>
+<task>
+{PYTHON_PROBLEM}
+</task>
+</prompt>",
+73,aggressive,none,no role,minimal,plaintext,1,Task: {PYTHON_PROBLEM},
+74,aggressive,none,no role,minimal,json,1,"{""task"": ""{PYTHON_PROBLEM}""}",
+75,aggressive,none,no role,minimal,xml,1,<task>{PYTHON_PROBLEM}</task>,
+76,aggressive,none,no role,detailed,plaintext,1,"You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.
+
+Listen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect production-quality code, full type hints, and proper error handling. Don't waste my time with naive hacks.
+
+Task: {PYTHON_PROBLEM}
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.",
+77,aggressive,none,no role,detailed,json,1,"{
+  ""instruction"": ""You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.\n\nListen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect production-quality code, full type hints, and proper error handling. Don't waste my time with naive hacks.\n\nTechnical Requirements:\n- Python 3.11+\n- Production-quality only\n- Full type hints\n- Proper error handling\n- Clean, modular structure\n- PEP 8 compliant\n\nOutput format:\nReturn only Python solution code."",
+  ""task"": ""{PYTHON_PROBLEM}""
+}",
+78,aggressive,none,no role,detailed,xml,1,"<prompt>
+<instruction>
+You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.
+
+Listen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect production-quality code, full type hints, and proper error handling. Don't waste my time with naive hacks.
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.
+</instruction>
+<task>
+{PYTHON_PROBLEM}
+</task>
+</prompt>",
+79,aggressive,none,developer role,minimal,plaintext,1,Task: {PYTHON_PROBLEM},
+80,aggressive,none,developer role,minimal,json,1,"{""task"": ""{PYTHON_PROBLEM}""}",
+81,aggressive,none,developer role,minimal,xml,1,<task>{PYTHON_PROBLEM}</task>,
+82,aggressive,none,developer role,detailed,plaintext,1,"You are a senior Python developer with 10+ years of experience building production systems.
+
+Listen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect production-quality code, full type hints, and proper error handling. Don't waste my time with naive hacks.
+
+Task: {PYTHON_PROBLEM}
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.",
+83,aggressive,none,developer role,detailed,json,1,"{
+  ""instruction"": ""You are a senior Python developer with 10+ years of experience building production systems.\n\nListen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect production-quality code, full type hints, and proper error handling. Don't waste my time with naive hacks.\n\nTechnical Requirements:\n- Python 3.11+\n- Production-quality only\n- Full type hints\n- Proper error handling\n- Clean, modular structure\n- PEP 8 compliant\n\nOutput format:\nReturn only Python solution code."",
+  ""task"": ""{PYTHON_PROBLEM}""
+}",
+84,aggressive,none,developer role,detailed,xml,1,"<prompt>
+<instruction>
+You are a senior Python developer with 10+ years of experience building production systems.
+
+Listen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect production-quality code, full type hints, and proper error handling. Don't waste my time with naive hacks.
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.
+</instruction>
+<task>
+{PYTHON_PROBLEM}
+</task>
+</prompt>",
+85,aggressive,moderate,no role,minimal,plaintext,1,Task: {PYTHON_PROBLEM},
+86,aggressive,moderate,no role,minimal,json,1,"{""task"": ""{PYTHON_PROBLEM}""}",
+87,aggressive,moderate,no role,minimal,xml,1,<task>{PYTHON_PROBLEM}</task>,
+88,aggressive,moderate,no role,detailed,plaintext,1,"You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.
+
+Listen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect production-quality code, full type hints, and proper error handling. Don't waste my time with naive hacks.
+
+Task: {PYTHON_PROBLEM}
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.",
+89,aggressive,moderate,no role,detailed,json,1,"{
+  ""instruction"": ""You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.\n\nListen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect production-quality code, full type hints, and proper error handling. Don't waste my time with naive hacks.\n\nTechnical Requirements:\n- Python 3.11+\n- Production-quality only\n- Full type hints\n- Proper error handling\n- Clean, modular structure\n- PEP 8 compliant\n\nOutput format:\nReturn only Python solution code."",
+  ""task"": ""{PYTHON_PROBLEM}""
+}",
+90,aggressive,moderate,no role,detailed,xml,1,"<prompt>
+<instruction>
+You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.
+
+Listen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect production-quality code, full type hints, and proper error handling. Don't waste my time with naive hacks.
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.
+</instruction>
+<task>
+{PYTHON_PROBLEM}
+</task>
+</prompt>",
+91,aggressive,moderate,developer role,minimal,plaintext,1,Task: {PYTHON_PROBLEM},
+92,aggressive,moderate,developer role,minimal,json,1,"{""task"": ""{PYTHON_PROBLEM}""}",
+93,aggressive,moderate,developer role,minimal,xml,1,<task>{PYTHON_PROBLEM}</task>,
+94,aggressive,moderate,developer role,detailed,plaintext,1,"You are a senior Python developer with 10+ years of experience building production systems.
+
+Listen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect production-quality code, full type hints, and proper error handling. Don't waste my time with naive hacks.
+
+Task: {PYTHON_PROBLEM}
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.",
+95,aggressive,moderate,developer role,detailed,json,1,"{
+  ""instruction"": ""You are a senior Python developer with 10+ years of experience building production systems.\n\nListen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect production-quality code, full type hints, and proper error handling. Don't waste my time with naive hacks.\n\nTechnical Requirements:\n- Python 3.11+\n- Production-quality only\n- Full type hints\n- Proper error handling\n- Clean, modular structure\n- PEP 8 compliant\n\nOutput format:\nReturn only Python solution code."",
+  ""task"": ""{PYTHON_PROBLEM}""
+}",
+96,aggressive,moderate,developer role,detailed,xml,1,"<prompt>
+<instruction>
+You are a senior Python developer with 10+ years of experience building production systems.
+
+Listen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect production-quality code, full type hints, and proper error handling. Don't waste my time with naive hacks.
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.
+</instruction>
+<task>
+{PYTHON_PROBLEM}
+</task>
+</prompt>",
+97,aggressive,high,no role,minimal,plaintext,1,Task: {PYTHON_PROBLEM},
+98,aggressive,high,no role,minimal,json,1,"{""task"": ""{PYTHON_PROBLEM}""}",
+99,aggressive,high,no role,minimal,xml,1,<task>{PYTHON_PROBLEM}</task>,
+100,aggressive,high,no role,detailed,plaintext,1,"You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.
+
+Listen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect production-quality code, full type hints, and proper error handling. Don't waste my time with naive hacks.
+
+Task: {PYTHON_PROBLEM}
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.",
+101,aggressive,high,no role,detailed,json,1,"{
+  ""instruction"": ""You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.\n\nListen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect production-quality code, full type hints, and proper error handling. Don't waste my time with naive hacks.\n\nTechnical Requirements:\n- Python 3.11+\n- Production-quality only\n- Full type hints\n- Proper error handling\n- Clean, modular structure\n- PEP 8 compliant\n\nOutput format:\nReturn only Python solution code."",
+  ""task"": ""{PYTHON_PROBLEM}""
+}",
+102,aggressive,high,no role,detailed,xml,1,"<prompt>
+<instruction>
+You are a helpful AI assistant dedicated to providing clear and accurate information to support any general request.
+
+Listen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect production-quality code, full type hints, and proper error handling. Don't waste my time with naive hacks.
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.
+</instruction>
+<task>
+{PYTHON_PROBLEM}
+</task>
+</prompt>",
+103,aggressive,high,developer role,minimal,plaintext,1,Task: {PYTHON_PROBLEM},
+104,aggressive,high,developer role,minimal,json,1,"{""task"": ""{PYTHON_PROBLEM}""}",
+105,aggressive,high,developer role,minimal,xml,1,<task>{PYTHON_PROBLEM}</task>,
+106,aggressive,high,developer role,detailed,plaintext,1,"You are a senior Python developer with 10+ years of experience building production systems.
+
+Listen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect production-quality code, full type hints, and proper error handling. Don't waste my time with naive hacks.
+
+Task: {PYTHON_PROBLEM}
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.",
+107,aggressive,high,developer role,detailed,json,1,"{
+  ""instruction"": ""You are a senior Python developer with 10+ years of experience building production systems.\n\nListen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect production-quality code, full type hints, and proper error handling. Don't waste my time with naive hacks.\n\nTechnical Requirements:\n- Python 3.11+\n- Production-quality only\n- Full type hints\n- Proper error handling\n- Clean, modular structure\n- PEP 8 compliant\n\nOutput format:\nReturn only Python solution code."",
+  ""task"": ""{PYTHON_PROBLEM}""
+}",
+108,aggressive,high,developer role,detailed,xml,1,"<prompt>
+<instruction>
+You are a senior Python developer with 10+ years of experience building production systems.
+
+Listen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect production-quality code, full type hints, and proper error handling. Don't waste my time with naive hacks.
+
+Technical Requirements:
+- Python 3.11+
+- Production-quality only
+- Full type hints
+- Proper error handling
+- Clean, modular structure
+- PEP 8 compliant
+
+Output format:
+Return only Python solution code.
+</instruction>
+<task>
+{PYTHON_PROBLEM}
+</task>
+</prompt>",

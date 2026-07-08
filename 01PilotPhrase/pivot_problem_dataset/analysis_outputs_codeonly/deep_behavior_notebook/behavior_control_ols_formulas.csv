@@ -1,0 +1,13 @@
+outcome,model_spec,formula,nobs,rsquared
+passed_int,M0_prompt_only,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id),2700.0,0.2768355605352413
+passed_int,M1_length,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_completion_tokens,2700.0,0.2774104021882753
+passed_int,M2_code_only,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + likely_code_only,2700.0,0.292489349082804
+passed_int,M3_extraction,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + extraction_failed,2700.0,0.2768355605352413
+passed_int,M4_runtime,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_duration_seconds,2700.0,0.277201254494037
+passed_int,M5_all_behavior_controls,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_completion_tokens + likely_code_only + extraction_failed + log_duration_seconds,2700.0,0.29416348665607617
+tests_fraction,M0_prompt_only,tests_fraction ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id),2700.0,0.3298155883747872
+tests_fraction,M1_length,tests_fraction ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_completion_tokens,2700.0,0.330400418803506
+tests_fraction,M2_code_only,tests_fraction ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + likely_code_only,2700.0,0.34217288167742754
+tests_fraction,M3_extraction,tests_fraction ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + extraction_failed,2700.0,0.3298155883747872
+tests_fraction,M4_runtime,tests_fraction ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_duration_seconds,2700.0,0.3303536387981456
+tests_fraction,M5_all_behavior_controls,tests_fraction ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_completion_tokens + likely_code_only + extraction_failed + log_duration_seconds,2700.0,0.3454494532307948

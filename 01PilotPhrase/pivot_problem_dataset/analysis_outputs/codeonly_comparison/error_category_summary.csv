@@ -1,0 +1,13 @@
+condition,error_category,runs,rate
+baseline_fixed,import_error,1,0.00037037037037037035
+baseline_fixed,invalid_python_response,6,0.0022222222222222222
+baseline_fixed,name_not_defined,1216,0.45037037037037037
+baseline_fixed,none,254,0.09407407407407407
+baseline_fixed,syntax_error,12,0.0044444444444444444
+baseline_fixed,timeout,26,0.00962962962962963
+baseline_fixed,wrong_answer,1185,0.4388888888888889
+codeonly_system,invalid_python_response,15,0.005555555555555556
+codeonly_system,name_not_defined,1021,0.3781481481481481
+codeonly_system,none,1476,0.5466666666666666
+codeonly_system,timeout,42,0.015555555555555555
+codeonly_system,wrong_answer,146,0.05407407407407407

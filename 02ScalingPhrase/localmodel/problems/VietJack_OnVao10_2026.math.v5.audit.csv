@@ -1,0 +1,42 @@
+old_id,new_id,source_task_id,old_expected_answer,new_expected_answer,action,solved_model_count,new_difficulty,note
+vietjack_math_v4_0008,,2433304,120,,removed,0,,Removed zero-solved task to target 50 tasks.
+vietjack_math_v4_0010,,2433526,40,,removed,0,,Removed zero-solved task to target 50 tasks.
+vietjack_math_v4_0012,,2433551,12,,removed,0,,Removed zero-solved task to target 50 tasks.
+vietjack_math_v4_0015,,2433613,120,,removed,0,,Removed zero-solved task to target 50 tasks.
+vietjack_math_v4_0019,,2433646,40,,removed,0,,Removed zero-solved task to target 50 tasks.
+vietjack_math_v4_0024,,2433682,12,,removed,0,,Removed zero-solved task to target 50 tasks.
+vietjack_math_v4_0027,,2437909,200000,,removed,0,,Removed zero-solved task to target 50 tasks.
+vietjack_math_v4_0036,,2459560,40,,removed,0,,Removed zero-solved task to target 50 tasks.
+vietjack_math_v4_0044,,2459915,1/3,,removed,0,,Removed zero-solved task to target 50 tasks.
+vietjack_math_v4_0045,,2459919,33,,removed,0,,Removed zero-solved task to target 50 tasks.
+vietjack_math_v4_0047,,2459947,700000,,removed,0,,Removed zero-solved task to target 50 tasks.
+vietjack_math_v4_0048,,2459978,48,,removed,0,,Removed zero-solved task to target 50 tasks.
+vietjack_math_v4_0052,,2461357,750,,removed,0,,Removed zero-solved task to target 50 tasks.
+vietjack_math_v4_0054,,2461384,450,,removed,0,,Removed zero-solved task to target 50 tasks.
+vietjack_math_v4_0060,,2434558,sqrt(2),,removed,2,,Removed exact-radical sqrt(2) task by request.
+vietjack_math_v4_0003,vietjack_math_v5_0003,2272596,11,11,difficulty_assigned,4,easy,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0004,vietjack_math_v5_0004,2272615,7200000,7200000,difficulty_assigned,0,hard,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0005,vietjack_math_v5_0005,2320186,3,3,difficulty_assigned,6,easy,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0007,vietjack_math_v5_0007,2433301,2/5,2/5,difficulty_assigned,1,hard,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0011,vietjack_math_v5_0009,2433548,4/15,4/15,difficulty_assigned,1,hard,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0014,vietjack_math_v5_0011,2433603,25,25,difficulty_assigned,1,hard,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0016,vietjack_math_v5_0012,2433623,224,224,difficulty_assigned,1,hard,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0017,vietjack_math_v5_0013,2433634,11/48,11/48,difficulty_assigned,1,hard,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0018,vietjack_math_v5_0014,2433643,1/10,1/10,difficulty_assigned,1,hard,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0020,vietjack_math_v5_0015,2433654,200000,200000,difficulty_assigned,0,hard,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0022,vietjack_math_v5_0017,2433673,15,15,difficulty_assigned,1,hard,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0023,vietjack_math_v5_0018,2433679,5/11,5/11,difficulty_assigned,5,easy,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0026,vietjack_math_v5_0020,2437906,66/100,66/100,difficulty_assigned,5,easy,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0029,vietjack_math_v5_0022,2459416,10,10,difficulty_assigned,1,hard,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0032,vietjack_math_v5_0025,2459433,1/5,1/5,difficulty_assigned,5,easy,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0035,vietjack_math_v5_0028,2459469,40,40,difficulty_assigned,1,hard,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0037,vietjack_math_v5_0029,2459751,1/2,1/2,difficulty_assigned,4,easy,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0040,vietjack_math_v5_0032,2459781,22,22,difficulty_assigned,0,hard,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0041,vietjack_math_v5_0033,2459868,44,44,difficulty_assigned,1,hard,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0043,vietjack_math_v5_0035,2459891,230000,230000,difficulty_assigned,0,hard,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0055,vietjack_math_v5_0041,2461386,40,40,difficulty_assigned,1,hard,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0057,vietjack_math_v5_0043,2461511,60,60,difficulty_assigned,4,easy,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0059,vietjack_math_v5_0045,2461531,10,10,difficulty_assigned,4,easy,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0062,vietjack_math_v5_0047,2439306,5/12,5/12,difficulty_assigned,1,hard,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0063,vietjack_math_v5_0048,2441190,961.6,961.6,difficulty_assigned,0,hard,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."
+vietjack_math_v4_0064,vietjack_math_v5_0049,2443403,3/5,3/5,difficulty_assigned,5,easy,"Difficulty assigned from number of models solved: hard=0-1, medium=2-3, easy=4-7."

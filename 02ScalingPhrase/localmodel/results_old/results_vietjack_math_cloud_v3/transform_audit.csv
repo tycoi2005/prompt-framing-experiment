@@ -1,0 +1,78 @@
+model_file,old_task_id,new_task_id,action,note
+gemma3-12b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0002,vietjack_math_v3_0002,expected_answer_updated,28 -> -28
+gemma3-12b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0011,vietjack_math_v3_0011,expected_answer_updated,7/30 -> 4/15
+gemma3-12b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0012,vietjack_math_v3_0012,expected_answer_updated,30 -> 12
+gemma3-12b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0023,vietjack_math_v3_0023,expected_answer_updated,4/13 -> 5/11
+gemma3-12b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0024,vietjack_math_v3_0024,expected_answer_updated,30 -> 12
+gemma3-12b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0032,vietjack_math_v3_0032,expected_answer_updated,10/32 -> 9/25
+gemma3-12b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0038,vietjack_math_v3_0038,expected_answer_updated,20 -> 40
+gemma3-12b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0043,vietjack_math_v3_0043,expected_answer_updated,200 -> 40
+gemma3-12b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0056,vietjack_math_v3_0056,expected_answer_updated,25 -> 750
+gemma3-12b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0063,,removed,Task removed from v3 because it is not a single-number answer.
+gemma3-12b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0066,vietjack_math_v3_0065,expected_answer_updated,2 -> 1.4142135623730951
+gemma3-4b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0002,vietjack_math_v3_0002,expected_answer_updated,28 -> -28
+gemma3-4b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0011,vietjack_math_v3_0011,expected_answer_updated,7/30 -> 4/15
+gemma3-4b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0012,vietjack_math_v3_0012,expected_answer_updated,30 -> 12
+gemma3-4b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0023,vietjack_math_v3_0023,expected_answer_updated,4/13 -> 5/11
+gemma3-4b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0024,vietjack_math_v3_0024,expected_answer_updated,30 -> 12
+gemma3-4b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0032,vietjack_math_v3_0032,expected_answer_updated,10/32 -> 9/25
+gemma3-4b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0038,vietjack_math_v3_0038,expected_answer_updated,20 -> 40
+gemma3-4b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0043,vietjack_math_v3_0043,expected_answer_updated,200 -> 40
+gemma3-4b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0056,vietjack_math_v3_0056,expected_answer_updated,25 -> 750
+gemma3-4b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0063,,removed,Task removed from v3 because it is not a single-number answer.
+gemma3-4b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0066,vietjack_math_v3_0065,expected_answer_updated,2 -> 1.4142135623730951
+gemma4-31b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0002,vietjack_math_v3_0002,expected_answer_updated,28 -> -28
+gemma4-31b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0011,vietjack_math_v3_0011,expected_answer_updated,7/30 -> 4/15
+gemma4-31b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0012,vietjack_math_v3_0012,expected_answer_updated,30 -> 12
+gemma4-31b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0023,vietjack_math_v3_0023,expected_answer_updated,4/13 -> 5/11
+gemma4-31b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0024,vietjack_math_v3_0024,expected_answer_updated,30 -> 12
+gemma4-31b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0032,vietjack_math_v3_0032,expected_answer_updated,10/32 -> 9/25
+gemma4-31b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0038,vietjack_math_v3_0038,expected_answer_updated,20 -> 40
+gemma4-31b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0043,vietjack_math_v3_0043,expected_answer_updated,200 -> 40
+gemma4-31b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0056,vietjack_math_v3_0056,expected_answer_updated,25 -> 750
+gemma4-31b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0063,,removed,Task removed from v3 because it is not a single-number answer.
+gemma4-31b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0066,vietjack_math_v3_0065,expected_answer_updated,2 -> 1.4142135623730951
+gpt-oss-120b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0002,vietjack_math_v3_0002,expected_answer_updated,28 -> -28
+gpt-oss-120b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0011,vietjack_math_v3_0011,expected_answer_updated,7/30 -> 4/15
+gpt-oss-120b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0012,vietjack_math_v3_0012,expected_answer_updated,30 -> 12
+gpt-oss-120b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0023,vietjack_math_v3_0023,expected_answer_updated,4/13 -> 5/11
+gpt-oss-120b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0024,vietjack_math_v3_0024,expected_answer_updated,30 -> 12
+gpt-oss-120b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0032,vietjack_math_v3_0032,expected_answer_updated,10/32 -> 9/25
+gpt-oss-120b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0038,vietjack_math_v3_0038,expected_answer_updated,20 -> 40
+gpt-oss-120b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0043,vietjack_math_v3_0043,expected_answer_updated,200 -> 40
+gpt-oss-120b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0056,vietjack_math_v3_0056,expected_answer_updated,25 -> 750
+gpt-oss-120b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0063,,removed,Task removed from v3 because it is not a single-number answer.
+gpt-oss-120b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0066,vietjack_math_v3_0065,expected_answer_updated,2 -> 1.4142135623730951
+ministral-3-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0002,vietjack_math_v3_0002,expected_answer_updated,28 -> -28
+ministral-3-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0011,vietjack_math_v3_0011,expected_answer_updated,7/30 -> 4/15
+ministral-3-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0012,vietjack_math_v3_0012,expected_answer_updated,30 -> 12
+ministral-3-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0023,vietjack_math_v3_0023,expected_answer_updated,4/13 -> 5/11
+ministral-3-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0024,vietjack_math_v3_0024,expected_answer_updated,30 -> 12
+ministral-3-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0032,vietjack_math_v3_0032,expected_answer_updated,10/32 -> 9/25
+ministral-3-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0038,vietjack_math_v3_0038,expected_answer_updated,20 -> 40
+ministral-3-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0043,vietjack_math_v3_0043,expected_answer_updated,200 -> 40
+ministral-3-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0056,vietjack_math_v3_0056,expected_answer_updated,25 -> 750
+ministral-3-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0063,,removed,Task removed from v3 because it is not a single-number answer.
+ministral-3-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0066,vietjack_math_v3_0065,expected_answer_updated,2 -> 1.4142135623730951
+nemotron-3-nano-30b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0002,vietjack_math_v3_0002,expected_answer_updated,28 -> -28
+nemotron-3-nano-30b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0011,vietjack_math_v3_0011,expected_answer_updated,7/30 -> 4/15
+nemotron-3-nano-30b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0012,vietjack_math_v3_0012,expected_answer_updated,30 -> 12
+nemotron-3-nano-30b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0023,vietjack_math_v3_0023,expected_answer_updated,4/13 -> 5/11
+nemotron-3-nano-30b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0024,vietjack_math_v3_0024,expected_answer_updated,30 -> 12
+nemotron-3-nano-30b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0032,vietjack_math_v3_0032,expected_answer_updated,10/32 -> 9/25
+nemotron-3-nano-30b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0038,vietjack_math_v3_0038,expected_answer_updated,20 -> 40
+nemotron-3-nano-30b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0043,vietjack_math_v3_0043,expected_answer_updated,200 -> 40
+nemotron-3-nano-30b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0056,vietjack_math_v3_0056,expected_answer_updated,25 -> 750
+nemotron-3-nano-30b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0063,,removed,Task removed from v3 because it is not a single-number answer.
+nemotron-3-nano-30b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0066,vietjack_math_v3_0065,expected_answer_updated,2 -> 1.4142135623730951
+rnj-1-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0002,vietjack_math_v3_0002,expected_answer_updated,28 -> -28
+rnj-1-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0011,vietjack_math_v3_0011,expected_answer_updated,7/30 -> 4/15
+rnj-1-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0012,vietjack_math_v3_0012,expected_answer_updated,30 -> 12
+rnj-1-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0023,vietjack_math_v3_0023,expected_answer_updated,4/13 -> 5/11
+rnj-1-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0024,vietjack_math_v3_0024,expected_answer_updated,30 -> 12
+rnj-1-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0032,vietjack_math_v3_0032,expected_answer_updated,10/32 -> 9/25
+rnj-1-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0038,vietjack_math_v3_0038,expected_answer_updated,20 -> 40
+rnj-1-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0043,vietjack_math_v3_0043,expected_answer_updated,200 -> 40
+rnj-1-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0056,vietjack_math_v3_0056,expected_answer_updated,25 -> 750
+rnj-1-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0063,,removed,Task removed from v3 because it is not a single-number answer.
+rnj-1-8b-cloud.vietjack_math_v2.jsonl,vietjack_math_v2_0066,vietjack_math_v3_0065,expected_answer_updated,2 -> 1.4142135623730951

@@ -1,0 +1,7 @@
+model_slug,model_tag,nominal_parameters_b,local_or_registry_gb,local_or_registry_gib,size_source,notes
+nemotron-3-nano-4b_1_50,nemotron-3-nano:4b,3.97,2.838,2.643,local Ollama manifest,"Measured from local manifest model layer size: registry.ollama.ai/library/nemotron-3-nano/4b."
+gemma2-9b_1_50,gemma2:9b,9,5.443,5.069,local Ollama manifest,"Measured from local manifest model layer size: registry.ollama.ai/library/gemma2/9b."
+llama3.1-8b_1_50,llama3.1:8b,8,4.921,4.583,local Ollama manifest,"Measured from local manifest model layer size: registry.ollama.ai/library/llama3.1/8b."
+qwen2.5-7b_1_50,qwen2.5:7b,7,4.683,4.361,local Ollama manifest,"Measured from local manifest model layer size: registry.ollama.ai/library/qwen2.5/7b."
+mistral-7b-instruct_1_50,mistral:7b-instruct,7.24,4.373,4.073,local Ollama manifest,"Measured from local manifest model layer size: registry.ollama.ai/library/mistral/7b-instruct."
+deepseek-coder-6.7b-instruct_1_50,deepseek-coder:6.7b,6.74,3.828,3.565,local Ollama manifest,"Measured from local manifest model layer size: registry.ollama.ai/library/deepseek-coder/6.7b."

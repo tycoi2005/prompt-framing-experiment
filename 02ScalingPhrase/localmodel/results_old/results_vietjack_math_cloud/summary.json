@@ -1,0 +1,42 @@
+{
+  "tasks": "problems/VietJack_OnVao10_2026.math.v2.json",
+  "task_count": 71,
+  "ollama_url": "http://localhost:11434",
+  "models": [
+    "gemma4:31b-cloud",
+    "gpt-oss:120b-cloud",
+    "qwen3.5:397b-cloud"
+  ],
+  "summaries": [
+    {
+      "model": "gemma4:31b-cloud",
+      "result_file": "results_vietjack_math_cloud/gemma4-31b-cloud.vietjack_math_v2.jsonl",
+      "rows": 110,
+      "passed": 36,
+      "pass_rate": 0.32727272727272727,
+      "failed_calls": 2,
+      "avg_duration_seconds": 2.3249924269589513,
+      "avg_completion_tokens": 23.681818181818183
+    },
+    {
+      "model": "gpt-oss:120b-cloud",
+      "result_file": "results_vietjack_math_cloud/gpt-oss-120b-cloud.vietjack_math_v2.jsonl",
+      "rows": 135,
+      "passed": 60,
+      "pass_rate": 0.4444444444444444,
+      "failed_calls": 2,
+      "avg_duration_seconds": 3.1783798235434073,
+      "avg_completion_tokens": 195.68148148148148
+    },
+    {
+      "model": "qwen3.5:397b-cloud",
+      "result_file": "results_vietjack_math_cloud/qwen3.5-397b-cloud.vietjack_math_v2.jsonl",
+      "rows": 88,
+      "passed": 0,
+      "pass_rate": 0.0,
+      "failed_calls": 88,
+      "avg_duration_seconds": 0.3171819909052415,
+      "avg_completion_tokens": 0.0
+    }
+  ]
+}

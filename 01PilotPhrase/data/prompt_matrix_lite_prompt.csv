@@ -1,0 +1,657 @@
+ID,Tone,Pressure,Role framing,Instruction structure,Format,ProblemID,Prompt,FinalPrompt
+1,neutral,none,no role,minimal,plaintext,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: neutral
+- Pressure: none
+- Role framing: no role
+- Instruction structure: minimal
+- Target format: plaintext
+
+Required semantics to preserve:
+Use a neutral and precise tone.
+No urgency framing is required.
+No explicit role is assigned.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Return only Python solution code.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return only plain text prompt content. Do not use Markdown code fences.",
+2,neutral,none,no role,minimal,xml,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: neutral
+- Pressure: none
+- Role framing: no role
+- Instruction structure: minimal
+- Target format: xml
+
+Required semantics to preserve:
+Use a neutral and precise tone.
+No urgency framing is required.
+No explicit role is assigned.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Return only Python solution code.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return valid XML only (no extra text). Use root <prompt> with child nodes <instruction> and <task>.",
+3,neutral,none,no role,detailed,plaintext,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: neutral
+- Pressure: none
+- Role framing: no role
+- Instruction structure: detailed
+- Target format: plaintext
+
+Required semantics to preserve:
+Use a neutral and precise tone.
+No urgency framing is required.
+No explicit role is assigned.
+Requirements:
+1) Read the task carefully and identify edge cases.
+2) Provide an efficient Python solution.
+3) Briefly justify algorithm choice in 2-4 lines.
+4) Include time and space complexity.
+5) Return executable Python code at the end.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return only plain text prompt content. Do not use Markdown code fences.",
+4,neutral,none,no role,detailed,xml,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: neutral
+- Pressure: none
+- Role framing: no role
+- Instruction structure: detailed
+- Target format: xml
+
+Required semantics to preserve:
+Use a neutral and precise tone.
+No urgency framing is required.
+No explicit role is assigned.
+Requirements:
+1) Read the task carefully and identify edge cases.
+2) Provide an efficient Python solution.
+3) Briefly justify algorithm choice in 2-4 lines.
+4) Include time and space complexity.
+5) Return executable Python code at the end.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return valid XML only (no extra text). Use root <prompt> with child nodes <instruction> and <task>.",
+5,neutral,none,developer role,minimal,plaintext,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: neutral
+- Pressure: none
+- Role framing: developer role
+- Instruction structure: minimal
+- Target format: plaintext
+
+Required semantics to preserve:
+Use a neutral and precise tone.
+No urgency framing is required.
+Act as a senior Python developer.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Return only Python solution code.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return only plain text prompt content. Do not use Markdown code fences.",
+6,neutral,none,developer role,minimal,xml,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: neutral
+- Pressure: none
+- Role framing: developer role
+- Instruction structure: minimal
+- Target format: xml
+
+Required semantics to preserve:
+Use a neutral and precise tone.
+No urgency framing is required.
+Act as a senior Python developer.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Return only Python solution code.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return valid XML only (no extra text). Use root <prompt> with child nodes <instruction> and <task>.",
+7,neutral,none,developer role,detailed,plaintext,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: neutral
+- Pressure: none
+- Role framing: developer role
+- Instruction structure: detailed
+- Target format: plaintext
+
+Required semantics to preserve:
+Use a neutral and precise tone.
+No urgency framing is required.
+Act as a senior Python developer.
+Requirements:
+1) Read the task carefully and identify edge cases.
+2) Provide an efficient Python solution.
+3) Briefly justify algorithm choice in 2-4 lines.
+4) Include time and space complexity.
+5) Return executable Python code at the end.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return only plain text prompt content. Do not use Markdown code fences.",
+8,neutral,none,developer role,detailed,xml,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: neutral
+- Pressure: none
+- Role framing: developer role
+- Instruction structure: detailed
+- Target format: xml
+
+Required semantics to preserve:
+Use a neutral and precise tone.
+No urgency framing is required.
+Act as a senior Python developer.
+Requirements:
+1) Read the task carefully and identify edge cases.
+2) Provide an efficient Python solution.
+3) Briefly justify algorithm choice in 2-4 lines.
+4) Include time and space complexity.
+5) Return executable Python code at the end.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return valid XML only (no extra text). Use root <prompt> with child nodes <instruction> and <task>.",
+9,neutral,high,no role,minimal,plaintext,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: neutral
+- Pressure: high
+- Role framing: no role
+- Instruction structure: minimal
+- Target format: plaintext
+
+Required semantics to preserve:
+Use a neutral and precise tone.
+Treat this as high urgency and focus on delivering a correct solution quickly.
+No explicit role is assigned.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Return only Python solution code.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return only plain text prompt content. Do not use Markdown code fences.",
+10,neutral,high,no role,minimal,xml,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: neutral
+- Pressure: high
+- Role framing: no role
+- Instruction structure: minimal
+- Target format: xml
+
+Required semantics to preserve:
+Use a neutral and precise tone.
+Treat this as high urgency and focus on delivering a correct solution quickly.
+No explicit role is assigned.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Return only Python solution code.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return valid XML only (no extra text). Use root <prompt> with child nodes <instruction> and <task>.",
+11,neutral,high,no role,detailed,plaintext,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: neutral
+- Pressure: high
+- Role framing: no role
+- Instruction structure: detailed
+- Target format: plaintext
+
+Required semantics to preserve:
+Use a neutral and precise tone.
+Treat this as high urgency and focus on delivering a correct solution quickly.
+No explicit role is assigned.
+Requirements:
+1) Read the task carefully and identify edge cases.
+2) Provide an efficient Python solution.
+3) Briefly justify algorithm choice in 2-4 lines.
+4) Include time and space complexity.
+5) Return executable Python code at the end.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return only plain text prompt content. Do not use Markdown code fences.",
+12,neutral,high,no role,detailed,xml,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: neutral
+- Pressure: high
+- Role framing: no role
+- Instruction structure: detailed
+- Target format: xml
+
+Required semantics to preserve:
+Use a neutral and precise tone.
+Treat this as high urgency and focus on delivering a correct solution quickly.
+No explicit role is assigned.
+Requirements:
+1) Read the task carefully and identify edge cases.
+2) Provide an efficient Python solution.
+3) Briefly justify algorithm choice in 2-4 lines.
+4) Include time and space complexity.
+5) Return executable Python code at the end.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return valid XML only (no extra text). Use root <prompt> with child nodes <instruction> and <task>.",
+13,neutral,high,developer role,minimal,plaintext,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: neutral
+- Pressure: high
+- Role framing: developer role
+- Instruction structure: minimal
+- Target format: plaintext
+
+Required semantics to preserve:
+Use a neutral and precise tone.
+Treat this as high urgency and focus on delivering a correct solution quickly.
+Act as a senior Python developer.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Return only Python solution code.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return only plain text prompt content. Do not use Markdown code fences.",
+14,neutral,high,developer role,minimal,xml,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: neutral
+- Pressure: high
+- Role framing: developer role
+- Instruction structure: minimal
+- Target format: xml
+
+Required semantics to preserve:
+Use a neutral and precise tone.
+Treat this as high urgency and focus on delivering a correct solution quickly.
+Act as a senior Python developer.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Return only Python solution code.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return valid XML only (no extra text). Use root <prompt> with child nodes <instruction> and <task>.",
+15,neutral,high,developer role,detailed,plaintext,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: neutral
+- Pressure: high
+- Role framing: developer role
+- Instruction structure: detailed
+- Target format: plaintext
+
+Required semantics to preserve:
+Use a neutral and precise tone.
+Treat this as high urgency and focus on delivering a correct solution quickly.
+Act as a senior Python developer.
+Requirements:
+1) Read the task carefully and identify edge cases.
+2) Provide an efficient Python solution.
+3) Briefly justify algorithm choice in 2-4 lines.
+4) Include time and space complexity.
+5) Return executable Python code at the end.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return only plain text prompt content. Do not use Markdown code fences.",
+16,neutral,high,developer role,detailed,xml,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: neutral
+- Pressure: high
+- Role framing: developer role
+- Instruction structure: detailed
+- Target format: xml
+
+Required semantics to preserve:
+Use a neutral and precise tone.
+Treat this as high urgency and focus on delivering a correct solution quickly.
+Act as a senior Python developer.
+Requirements:
+1) Read the task carefully and identify edge cases.
+2) Provide an efficient Python solution.
+3) Briefly justify algorithm choice in 2-4 lines.
+4) Include time and space complexity.
+5) Return executable Python code at the end.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return valid XML only (no extra text). Use root <prompt> with child nodes <instruction> and <task>.",
+17,aggressive,none,no role,minimal,plaintext,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: aggressive
+- Pressure: none
+- Role framing: no role
+- Instruction structure: minimal
+- Target format: plaintext
+
+Required semantics to preserve:
+Use an assertive and urgent tone while staying technically correct.
+No urgency framing is required.
+No explicit role is assigned.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Return only Python solution code.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return only plain text prompt content. Do not use Markdown code fences.",
+18,aggressive,none,no role,minimal,xml,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: aggressive
+- Pressure: none
+- Role framing: no role
+- Instruction structure: minimal
+- Target format: xml
+
+Required semantics to preserve:
+Use an assertive and urgent tone while staying technically correct.
+No urgency framing is required.
+No explicit role is assigned.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Return only Python solution code.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return valid XML only (no extra text). Use root <prompt> with child nodes <instruction> and <task>.",
+19,aggressive,none,no role,detailed,plaintext,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: aggressive
+- Pressure: none
+- Role framing: no role
+- Instruction structure: detailed
+- Target format: plaintext
+
+Required semantics to preserve:
+Use an assertive and urgent tone while staying technically correct.
+No urgency framing is required.
+No explicit role is assigned.
+Requirements:
+1) Read the task carefully and identify edge cases.
+2) Provide an efficient Python solution.
+3) Briefly justify algorithm choice in 2-4 lines.
+4) Include time and space complexity.
+5) Return executable Python code at the end.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return only plain text prompt content. Do not use Markdown code fences.",
+20,aggressive,none,no role,detailed,xml,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: aggressive
+- Pressure: none
+- Role framing: no role
+- Instruction structure: detailed
+- Target format: xml
+
+Required semantics to preserve:
+Use an assertive and urgent tone while staying technically correct.
+No urgency framing is required.
+No explicit role is assigned.
+Requirements:
+1) Read the task carefully and identify edge cases.
+2) Provide an efficient Python solution.
+3) Briefly justify algorithm choice in 2-4 lines.
+4) Include time and space complexity.
+5) Return executable Python code at the end.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return valid XML only (no extra text). Use root <prompt> with child nodes <instruction> and <task>.",
+21,aggressive,none,developer role,minimal,plaintext,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: aggressive
+- Pressure: none
+- Role framing: developer role
+- Instruction structure: minimal
+- Target format: plaintext
+
+Required semantics to preserve:
+Use an assertive and urgent tone while staying technically correct.
+No urgency framing is required.
+Act as a senior Python developer.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Return only Python solution code.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return only plain text prompt content. Do not use Markdown code fences.",
+22,aggressive,none,developer role,minimal,xml,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: aggressive
+- Pressure: none
+- Role framing: developer role
+- Instruction structure: minimal
+- Target format: xml
+
+Required semantics to preserve:
+Use an assertive and urgent tone while staying technically correct.
+No urgency framing is required.
+Act as a senior Python developer.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Return only Python solution code.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return valid XML only (no extra text). Use root <prompt> with child nodes <instruction> and <task>.",
+23,aggressive,none,developer role,detailed,plaintext,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: aggressive
+- Pressure: none
+- Role framing: developer role
+- Instruction structure: detailed
+- Target format: plaintext
+
+Required semantics to preserve:
+Use an assertive and urgent tone while staying technically correct.
+No urgency framing is required.
+Act as a senior Python developer.
+Requirements:
+1) Read the task carefully and identify edge cases.
+2) Provide an efficient Python solution.
+3) Briefly justify algorithm choice in 2-4 lines.
+4) Include time and space complexity.
+5) Return executable Python code at the end.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return only plain text prompt content. Do not use Markdown code fences.",
+24,aggressive,none,developer role,detailed,xml,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: aggressive
+- Pressure: none
+- Role framing: developer role
+- Instruction structure: detailed
+- Target format: xml
+
+Required semantics to preserve:
+Use an assertive and urgent tone while staying technically correct.
+No urgency framing is required.
+Act as a senior Python developer.
+Requirements:
+1) Read the task carefully and identify edge cases.
+2) Provide an efficient Python solution.
+3) Briefly justify algorithm choice in 2-4 lines.
+4) Include time and space complexity.
+5) Return executable Python code at the end.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return valid XML only (no extra text). Use root <prompt> with child nodes <instruction> and <task>.",
+25,aggressive,high,no role,minimal,plaintext,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: aggressive
+- Pressure: high
+- Role framing: no role
+- Instruction structure: minimal
+- Target format: plaintext
+
+Required semantics to preserve:
+Use an assertive and urgent tone while staying technically correct.
+Treat this as high urgency and focus on delivering a correct solution quickly.
+No explicit role is assigned.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Return only Python solution code.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return only plain text prompt content. Do not use Markdown code fences.",
+26,aggressive,high,no role,minimal,xml,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: aggressive
+- Pressure: high
+- Role framing: no role
+- Instruction structure: minimal
+- Target format: xml
+
+Required semantics to preserve:
+Use an assertive and urgent tone while staying technically correct.
+Treat this as high urgency and focus on delivering a correct solution quickly.
+No explicit role is assigned.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Return only Python solution code.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return valid XML only (no extra text). Use root <prompt> with child nodes <instruction> and <task>.",
+27,aggressive,high,no role,detailed,plaintext,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: aggressive
+- Pressure: high
+- Role framing: no role
+- Instruction structure: detailed
+- Target format: plaintext
+
+Required semantics to preserve:
+Use an assertive and urgent tone while staying technically correct.
+Treat this as high urgency and focus on delivering a correct solution quickly.
+No explicit role is assigned.
+Requirements:
+1) Read the task carefully and identify edge cases.
+2) Provide an efficient Python solution.
+3) Briefly justify algorithm choice in 2-4 lines.
+4) Include time and space complexity.
+5) Return executable Python code at the end.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return only plain text prompt content. Do not use Markdown code fences.",
+28,aggressive,high,no role,detailed,xml,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: aggressive
+- Pressure: high
+- Role framing: no role
+- Instruction structure: detailed
+- Target format: xml
+
+Required semantics to preserve:
+Use an assertive and urgent tone while staying technically correct.
+Treat this as high urgency and focus on delivering a correct solution quickly.
+No explicit role is assigned.
+Requirements:
+1) Read the task carefully and identify edge cases.
+2) Provide an efficient Python solution.
+3) Briefly justify algorithm choice in 2-4 lines.
+4) Include time and space complexity.
+5) Return executable Python code at the end.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return valid XML only (no extra text). Use root <prompt> with child nodes <instruction> and <task>.",
+29,aggressive,high,developer role,minimal,plaintext,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: aggressive
+- Pressure: high
+- Role framing: developer role
+- Instruction structure: minimal
+- Target format: plaintext
+
+Required semantics to preserve:
+Use an assertive and urgent tone while staying technically correct.
+Treat this as high urgency and focus on delivering a correct solution quickly.
+Act as a senior Python developer.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Return only Python solution code.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return only plain text prompt content. Do not use Markdown code fences.",
+30,aggressive,high,developer role,minimal,xml,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: aggressive
+- Pressure: high
+- Role framing: developer role
+- Instruction structure: minimal
+- Target format: xml
+
+Required semantics to preserve:
+Use an assertive and urgent tone while staying technically correct.
+Treat this as high urgency and focus on delivering a correct solution quickly.
+Act as a senior Python developer.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Return only Python solution code.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return valid XML only (no extra text). Use root <prompt> with child nodes <instruction> and <task>.",
+31,aggressive,high,developer role,detailed,plaintext,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: aggressive
+- Pressure: high
+- Role framing: developer role
+- Instruction structure: detailed
+- Target format: plaintext
+
+Required semantics to preserve:
+Use an assertive and urgent tone while staying technically correct.
+Treat this as high urgency and focus on delivering a correct solution quickly.
+Act as a senior Python developer.
+Requirements:
+1) Read the task carefully and identify edge cases.
+2) Provide an efficient Python solution.
+3) Briefly justify algorithm choice in 2-4 lines.
+4) Include time and space complexity.
+5) Return executable Python code at the end.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return only plain text prompt content. Do not use Markdown code fences.",
+32,aggressive,high,developer role,detailed,xml,1,"You are a prompt-writing assistant. Generate exactly one final test prompt from the provided framing configuration.
+
+Framing configuration:
+- Tone: aggressive
+- Pressure: high
+- Role framing: developer role
+- Instruction structure: detailed
+- Target format: xml
+
+Required semantics to preserve:
+Use an assertive and urgent tone while staying technically correct.
+Treat this as high urgency and focus on delivering a correct solution quickly.
+Act as a senior Python developer.
+Requirements:
+1) Read the task carefully and identify edge cases.
+2) Provide an efficient Python solution.
+3) Briefly justify algorithm choice in 2-4 lines.
+4) Include time and space complexity.
+5) Return executable Python code at the end.
+Task: Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.
+Evaluation hint: assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values
+
+Output rule: Return valid XML only (no extra text). Use root <prompt> with child nodes <instruction> and <task>.",

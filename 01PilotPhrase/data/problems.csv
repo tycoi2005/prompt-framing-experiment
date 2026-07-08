@@ -1,0 +1,2 @@
+ID,Problem,Eval
+1,"Implement a function max_gap_after_one_swap(nums) that returns the maximum difference nums[j]-nums[i] achievable after performing at most one swap of adjacent elements before choosing i<j.","assertions:max_gap_after_one_swap;edge:already_sorted,duplicates,negative_values"

@@ -1,0 +1,457 @@
+[
+  {
+    "id": "math_001",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "Calculate the maximum total reward in millions of VND for forming groups of three people whose ticket numbers sum to a target value. Use the total number of tickets 'n' (numbered 1 to n), the target sum 's' for each triplet (a, b, c with a < b < c), and the reward per unique group 'r'. Round the result to the nearest integer.\n\nGiven:\n- total number of tickets n = 100\n- target sum for each group = 100\n- reward per valid group in VND = 50000\n\nWith these values, what is the result?",
+    "expected_answer": 39,
+    "source_task_id": 1,
+    "source_old_id": 3
+  },
+  {
+    "id": "math_002",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "A person uses a square piece of cardboard with side length 'a' cm to make a lantern consisting of three parts: the body is a regular quadrangular prism with base side s = a/4, and the two ends are two regular quadrangular pyramids. Given that the total height of the lantern is 'a', calculate the maximum volume of the lantern in cm³, rounded to the nearest integer.\n\nGiven:\n- cardboard side length a in cm = 40\n\nWith these values, what is the result?",
+    "expected_answer": 3057,
+    "source_task_id": 2,
+    "source_old_id": 4
+  },
+  {
+    "id": "math_003",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "A warehouse contains two types of beer cases, each containing 24 cans. Type I cases contain 5 expired cans, and Type II cases contain 3 expired cans. The number of Type I cases is twice the number of Type II cases. A case is chosen at random, and from that case, 10 cans are chosen at random. If 2 of the 10 cans are found to be expired, calculate the probability that the chosen case is of Type I. Round the result to two decimal places.\n\nGiven:\n- expired cans in each Type I case = 5\n- expired cans in each Type II case = 3\n- cans per case = 24\n- number of cans sampled = 10\n- expired cans found in the sample = 2\n- ratio of Type I cases to Type II cases = 2\n\nWith these values, what is the result?",
+    "expected_answer": 0.71,
+    "source_task_id": 3,
+    "source_old_id": 9
+  },
+  {
+    "id": "math_004",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "An elliptical garden has major axis length 10 m and minor axis length 8 m. A semicircular grass area of radius 1 m is removed from the ellipse. Calculate the remaining paved area in square meters, rounded to two decimal places.\n\nWith these values, what is the result?",
+    "expected_answer": 61.26,
+    "source_task_id": 4,
+    "source_old_id": 10
+  },
+  {
+    "id": "math_005",
+    "category": "math",
+    "difficulty": "easy",
+    "prompt": "A transport company needs to deliver goods to cities A, B, C, D, and E. The cost of travel between cities is given as a distance matrix. The delivery vehicle starts from one city, visits all other cities exactly once, and returns to the starting city. Find the minimum total travel cost (Traveling Salesperson Problem).\n\nGiven:\n- distance matrix between the five cities = [[0, 10, 15, 20, 25], [10, 0, 35, 25, 30], [15, 35, 0, 30, 5], [20, 25, 30, 0, 15], [25, 30, 5, 15, 0]]\n\nWith these values, what is the result?",
+    "expected_answer": 70,
+    "source_task_id": 5,
+    "source_old_id": 12
+  },
+  {
+    "id": "math_006",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "A group of students (no more than 19) is tasked with stacking 140 plastic chairs. One student is chosen as the 'strongman' to do all the stacking. The other students each take one chair to sit on and watch. The strongman stacks the remaining chairs such that the first stack has 1 chair, and each subsequent stack has exactly one more chair than the previous one. Given the total number of chairs and the number of students in the group, calculate the number of stacks the strongman creates.\n\nGiven:\n- total number of chairs = 140\n- number of students = 19\n\nWith these values, what is the result?",
+    "expected_answer": 15,
+    "source_task_id": 6,
+    "source_old_id": 14
+  },
+  {
+    "id": "math_007",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "A company extracts oil from 15 wells, with an average of 231 barrels per well per day. For every additional well drilled, the daily yield per well decreases by 7 barrels. Find the number of additional wells that should be drilled to maximize the total daily oil production.\n\nGiven:\n- current number of wells = 15\n- current daily yield per well = 231\n- yield decrease per well for each additional well = 7\n\nWith these values, what is the result?",
+    "expected_answer": 9,
+    "source_task_id": 7,
+    "source_old_id": 15
+  },
+  {
+    "id": "math_008",
+    "category": "math",
+    "difficulty": "easy",
+    "prompt": "A volunteer club sells two types of combos: Combo A costs 40 thousand VND and contains 2 cups of lemonade and 1 portion of fries. Combo B costs 60 thousand VND and contains 3 cups of lemonade and 2 portions of fries. The club has a maximum of 180 cups of lemonade and 110 portions of fries available. Find the maximum total revenue (in thousand VND) the club can earn.\n\nGiven:\n- available cups of lemonade = 180\n- available portions of fries = 110\n- price of Combo A in thousand VND = 40\n- cups of lemonade in Combo A = 2\n- portions of fries in Combo A = 1\n- price of Combo B in thousand VND = 60\n- cups of lemonade in Combo B = 3\n- portions of fries in Combo B = 2\n\nWith these values, what is the result?",
+    "expected_answer": 3600,
+    "source_task_id": 8,
+    "source_old_id": 19
+  },
+  {
+    "id": "math_009",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "A square wooden board has side length 12 cm. The shaded crab-shaped region is modeled by the area formula side_length^2 - pi * (side_length / 3)^2. Calculate the shaded area, rounded to the nearest integer.\n\nWith these values, what is the result?",
+    "expected_answer": 94,
+    "source_task_id": 9,
+    "source_old_id": 23
+  },
+  {
+    "id": "math_010",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "In music, an octave consists of 12 semitones. The frequency ratio between two notes separated by n semitones is given by fnc/fnt = 2^(n/12). The standard frequency of note A4 is 440 Hz. Note E4 is located 5 semitones below A4. A guitar string (E4) is currently slack with a measured frequency of 300 Hz. Turning the tuning peg by 90 degrees increases the pitch by exactly one semitone. Calculate the total angle in degrees that the peg must be rotated to bring the string to its standard frequency. Round the final result to the nearest integer.\n\nGiven:\n- current string frequency in Hz = 300\n- target E4 frequency in Hz = 329.63\n- peg rotation angle per semitone in degrees = 90\n\nWith these values, what is the result?",
+    "expected_answer": 147,
+    "source_task_id": 10,
+    "source_old_id": 35
+  },
+  {
+    "id": "math_011",
+    "category": "math",
+    "difficulty": "easy",
+    "prompt": "A flyover bridge has a vertical cross-section in the shape of a parabolic arc connecting two points A and B. The perpendicular bisector of AB is the axis of symmetry. The distance AB is 400 m, and the maximum height from the vertex of the bridge to the line AB is 8 m. The slope at a point M on the bridge is defined as the tangent of the angle between the tangent line at M and the line AB. Find the maximum slope of the bridge.\n\nGiven:\n- width = 400\n- height = 8\n\nWith these values, what is the result?",
+    "expected_answer": 0.08,
+    "source_task_id": 11,
+    "source_old_id": 38
+  },
+  {
+    "id": "math_012",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "A regular octagon ABCDEFGH is inscribed in a circle with center O. Eight natural numbers {9, 10, 11, 12, 13, 14, 15, 16} are randomly assigned to the eight vertices of the octagon (each number to one vertex). A triangle is chosen by randomly selecting three vertices from the eight. Calculate the probability that the chosen triangle is a right triangle and the three numbers assigned to its vertices form an arithmetic progression (in some order). Let this probability be m/n in simplest form. Return m + n.\n\nGiven:\n- numbers = [9, 10, 11, 12, 13, 14, 15, 16]\n\nWith these values, what is the result?",
+    "expected_answer": 107,
+    "source_task_id": 12,
+    "source_old_id": 39
+  },
+  {
+    "id": "math_013",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "A 5-digit natural number is chosen at random. Find the probability 'a' that the number is of the form a1a2a3a4a5 such that a1 ≤ a2 + 1 ≤ a3 - 7 < a4 ≤ a5 + 2, where a1 is the first digit (1-9) and a2, a3, a4, a5 are digits (0-9). Calculate the value of 1/a rounded to the nearest integer.\n\nGiven:\n- total range start = 10000\n- total range end = 99999\n\nWith these values, what is the result?",
+    "expected_answer": 506,
+    "source_task_id": 13,
+    "source_old_id": 54
+  },
+  {
+    "id": "math_014",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "A factory produces two types of products: Type I and Type II. Each kg of Type I requires 2kg of raw materials and 30 working hours, yielding a profit of 40 thousand. Each kg of Type II requires 4kg of raw materials and 15 working hours, yielding a profit of 30 thousand. The factory has a maximum of 200kg of raw materials and 1200 working hours. To maximize profit, the factory produces m kg of Type I and n kg of Type II, where m and n are natural numbers. Calculate the value of m + 2n.\n\nGiven:\n- available raw material in kg = 200\n- available working hours = 1200\n- raw material needed per kg of Type I = 2\n- working hours needed per kg of Type I = 30\n- profit per kg of Type I in thousand VND = 40\n- raw material needed per kg of Type II = 4\n- working hours needed per kg of Type II = 15\n- profit per kg of Type II in thousand VND = 30\n\nWith these values, what is the result?",
+    "expected_answer": 100,
+    "source_task_id": 14,
+    "source_old_id": 58
+  },
+  {
+    "id": "math_015",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "A smart electronic device manufacturer has the following costs and tax policies: a fixed monthly cost of 200 million VND, and a variable cost of 1 million VND per product. Each product is sold for 3 million VND. Tax is applied to the total monthly revenue based on the quantity sold (x): if x < 100, the tax rate is 10%; if 100 <= x < 300, the tax rate is 8%; if x >= 300, the tax rate is 5%. Find the minimum number of products x (x ∈ N*) that must be produced and sold for the business to start making a profit (profit > 0).\n\nGiven:\n- fixed cost = 200\n- variable cost = 1\n- price = 3\n\nWith these values, what is the result?",
+    "expected_answer": 114,
+    "source_task_id": 15,
+    "source_old_id": 60
+  },
+  {
+    "id": "math_016",
+    "category": "math",
+    "difficulty": "easy",
+    "prompt": "An has just finished first grade. To improve her handwriting, her mother assigns her to write 1 page of a practice book on Monday, and increases the number of pages by 1 each subsequent day. How many total pages will An have written by the end of Sunday of that week? The starting number of pages and daily increment may vary.\n\nGiven:\n- start pages = 1\n- increment = 1\n\nWith these values, what is the result?",
+    "expected_answer": 28,
+    "source_task_id": 16,
+    "source_old_id": 61
+  },
+  {
+    "id": "math_017",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "On January 15, 2026, Mr. Binh deposited 1 billion VND into a bank with a monthly interest rate of 0.6%. Starting from February 15, 2026, on the 15th of every month, he withdraws 25 million VND for spending. After how many months will Mr. Binh withdraw all the money from the bank (in the final month, the amount withdrawn may be less than 25 million VND)?\n\nGiven:\n- principal = 1000000000\n- monthly rate = 0.006\n- monthly withdrawal = 25000000\n\nWith these values, what is the result?",
+    "expected_answer": 46,
+    "source_task_id": 17,
+    "source_old_id": 63
+  },
+  {
+    "id": "math_018",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "A high school charity club sells two menu sets: Menu 1 costs 40 thousand VND and includes 2 cups of milk tea and 1 cake. Menu 2 costs 65 thousand VND and includes 3 cups of milk tea and 2 cakes. The club can produce at most 180 cups of milk tea and 110 cakes. Find the maximum total revenue (in thousand VND) the club can earn by selling these sets.\n\nGiven:\n- max tea = 180\n- max cake = 110\n- price1 = 40\n- tea1 = 2\n- cake1 = 1\n- price2 = 65\n- tea2 = 3\n- cake2 = 2\n\nWith these values, what is the result?",
+    "expected_answer": 3800,
+    "source_task_id": 18,
+    "source_old_id": 75
+  },
+  {
+    "id": "math_019",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "An apartment complex has 120 rental units. The manager finds that if the rent is 7 million VND per month, all units are occupied. A market survey shows that for every increase of 250,000 VND in the monthly rent, an average of 3 units become vacant. Determine the monthly rent (in millions of VND) that maximizes the total monthly revenue.\n\nGiven:\n- total units = 120\n- base rent = 7000000\n- price increase = 250000\n- vacancy increase = 3\n\nWith these values, what is the result?",
+    "expected_answer": 8500000.0,
+    "source_task_id": 19,
+    "source_old_id": 76
+  },
+  {
+    "id": "math_020",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "A delegation starts from school M and must visit four families at locations A, B, C, and D exactly once. The journey ends at the last family visited (no return to school). There is a one-way restriction: the path between A and B can only be traveled from A to B. Given the distances between all pairs of locations (M, A, B, C, D), find the shortest total distance to visit all four families.\n\nGiven:\n- distance table between locations = {(M, A): 2, (M, B): 5, (M, C): 10, (M, D): 15, (A, B): 3, (A, C): 8, (A, D): 12, (B, C): 4, (B, D): 7, (C, D): 2}\n\nWith these values, what is the result?",
+    "expected_answer": 11,
+    "source_task_id": 20,
+    "source_old_id": 78
+  },
+  {
+    "id": "math_021",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "A box contains 100 cards numbered consecutively from 1 to 100. Three distinct cards are chosen at random. Find the number of ways to choose 3 cards such that their numbers form an arithmetic progression and their sum does not exceed 150.\n\nGiven:\n- n = 100\n- max sum = 150\n\nWith these values, what is the result?",
+    "expected_answer": 1225,
+    "source_task_id": 21,
+    "source_old_id": 79
+  },
+  {
+    "id": "math_022",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "A geologist is at point A in a desert and wants to reach point B, which is 70km away. In the desert, the car travels at 30km/h. There is a paved road parallel to the line AB, located 10km away from AB. On the paved road, the car travels at 50km/h. Find the minimum time in minutes for the geologist to travel from A to B. The relevant quantities are the distance AB, the distance to the road, the desert speed, and the road speed.\n\nGiven:\n- dist ab = 70\n- dist to road = 10\n- v desert = 30\n- v road = 50\n\nRound the computed value to 2 decimal places.\n\nWith these values, what is the result?",
+    "expected_answer": 116.0,
+    "source_task_id": 22,
+    "source_old_id": 81
+  },
+  {
+    "id": "math_023",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "An and Binh are playing a table tennis match. The first player to win 3 sets wins the match. The probability of An winning each individual set is p. Calculate the probability that An wins the match overall. Round the result to two decimal places.\n\nGiven:\n- p = 0.4\n\nWith these values, what is the result?",
+    "expected_answer": 0.32,
+    "source_task_id": 23,
+    "source_old_id": 88
+  },
+  {
+    "id": "math_024",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "Barnacle geese goslings perform a 'leap of death' from cliffs. The survival probability for a male gosling is 80% and for a female gosling is 90%. Given a group of 3 goslings consisting of one male and two females, calculate: a) The probability that all 3 survive. b) The probability that all 3 perish. c) The probability that at least 1 survives. d) The probability that exactly 2 survive.\n\nGiven:\n- survival probability of one male gosling = 0.8\n- survival probability of one female gosling = 0.9\n- number of male goslings = 1\n- number of female goslings = 2\n\nWith these values, what is the result? Write the results separated by commas.",
+    "expected_answer": [
+      0.648,
+      0.002,
+      0.998,
+      0.306
+    ],
+    "source_task_id": 24,
+    "source_old_id": 89
+  },
+  {
+    "id": "math_025",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "Two lizards A and B are on opposite walls of a rectangular room with width 8m, length 12m, and height 5m. Lizard A is 7m from the front wall and 3m from the ceiling. Lizard B is 9m from the front wall and 4m from the ceiling. They move along the walls and ceiling to meet at a point that minimizes the total distance traveled. Calculate the minimum total distance they travel, rounded to the nearest integer.\n\nGiven:\n- w = 8\n- l = 12\n- h = 5\n- a front = 7\n- a ceil = 3\n- b front = 9\n- b ceil = 4\n\nWith these values, what is the result?",
+    "expected_answer": 11,
+    "source_task_id": 25,
+    "source_old_id": 91
+  },
+  {
+    "id": "math_026",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "How many ways are there to choose six distinct numbers from the set {2, 3, ..., 11} and place them into a grid such that the sum of numbers in each row is equal? The grid consists of three rows: the first row has 3 cells, the second row has 2 cells, and the third row has 1 cell. Each chosen number is used exactly once.\n\nGiven:\n- numbers set = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]\n\nWith these values, what is the result?",
+    "expected_answer": 36,
+    "source_task_id": 26,
+    "source_old_id": 95
+  },
+  {
+    "id": "math_027",
+    "category": "math",
+    "difficulty": "easy",
+    "prompt": "Calculate the standard deviation of a grouped data set of student heights. Given the intervals [150, 156), [156, 162), [162, 168), [168, 174), [174, 180), [180, 186) and their corresponding frequencies: 5, 18, 40, 26, 8, 3. Round the result to two decimal places.\n\nGiven:\n- intervals = [(150, 156), (156, 162), (162, 168), (168, 174), (174, 180), (180, 186)]\n- frequencies = [5, 18, 40, 26, 8, 3]\n\nWith these values, what is the result?",
+    "expected_answer": 6.51,
+    "source_task_id": 27,
+    "source_old_id": 98
+  },
+  {
+    "id": "math_028",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "A factory produces x products per month. The production cost for x products is given by C(x) = 16000 + 500x - 1.6x^2 + 0.004x^3 (thousand VND). The selling price per product is given by p(x) = 1700 - 7x (thousand VND). Find the number of products x that the factory should produce each month to maximize the total profit, assuming all produced items are sold. The relevant quantities are the coefficients of the cost expression and the price expression.\n\nGiven:\n- c const = 16000\n- c lin = 500\n- c quad = -1.6\n- c cub = 0.004\n- p const = 1700\n- p lin = -7\n\nWith these values, what is the result?",
+    "expected_answer": 100,
+    "source_task_id": 28,
+    "source_old_id": 102
+  },
+  {
+    "id": "math_029",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "A hand-weaving facility produces two types of silk: brocade silk and mulberry silk. The maximum daily production capacity for both types combined is 100 meters. For brocade silk, the material cost is 20,000 VND/m and it requires 2 worker-days to weave. For mulberry silk, the material cost is 10,000 VND/m and it requires 1 worker-day. The daily budget for materials and labor is at most 6,000,000 VND, where one worker-day costs 40,000 VND. The retail prices are 150,000 VND/m for brocade silk and 80,000 VND/m for mulberry silk. Find the values of x (meters of brocade silk) and y (meters of mulberry silk) that maximize the daily profit, and return the value of x + 3y. Assume all produced silk is sold.\n\nGiven:\n- max capacity = 100\n- budget = 6000000\n- cost mat x = 20000\n- labor x = 2\n- cost mat y = 10000\n- labor y = 1\n- labor cost = 40000\n- price x = 150000\n- price y = 80000\n\nWith these values, what is the result?",
+    "expected_answer": 260.0,
+    "source_task_id": 29,
+    "source_old_id": 105
+  },
+  {
+    "id": "math_030",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "A carpentry workshop produces two types of products: wooden tables and wooden chairs. The workshop has a maximum of 240 units of wood and a total of 100 labor hours. To make one table, it requires 5 units of wood and 2 labor hours. To make one chair, it requires 2 units of wood and 1 labor hour. Each table yields a profit of 600,000 VND, and each chair yields a profit of 300,000 VND. What is the maximum profit of the workshop in millions of VND?\n\nGiven:\n- wood limit = 240\n- hour limit = 100\n- table wood = 5\n- table hour = 2\n- chair wood = 2\n- chair hour = 1\n- table profit = 600000\n- chair profit = 300000\n\nWith these values, what is the result?",
+    "expected_answer": 30.0,
+    "source_task_id": 30,
+    "source_old_id": 114
+  },
+  {
+    "id": "math_031",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "A jet engine rotor has 9 slots numbered 1 to 9 arranged in a circle, forming the vertices of a regular nonagon. Nine fan blades with distinct integer masses from 1g to 9g are to be installed. The installation must satisfy: 1) The 9 blades are divided into 3 groups of 3 blades each. 2) Each group is installed into 3 slots that form an equilateral triangle (slots are 3 positions apart). 3) The total mass of the 3 blades in each group must be equal. How many ways are there to arrange the 9 blades into the 9 slots such that these conditions are met? (Two arrangements are different if at least one blade is in a different slot; rotations and reflections are considered distinct).\n\nGiven:\n- n slots = 9\n- masses = [1, 2, 3, 4, 5, 6, 7, 8, 9]\n\nWith these values, what is the result?",
+    "expected_answer": 2592,
+    "source_task_id": 31,
+    "source_old_id": 118
+  },
+  {
+    "id": "math_032",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "Find the minimum distance, in meters, from the point M(3, 2) to the curve g(x) = (x + 1) / (x - 2) for x > 2. One coordinate unit is 10 meters. Round the result to two decimal places.\n\nWith these values, what is the result?",
+    "expected_answer": 10.35,
+    "source_task_id": 32,
+    "source_old_id": 121
+  },
+  {
+    "id": "math_033",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "A fruit importer has a fixed shipping cost of 25 million VND per shipment. The storage cost is 80 thousand VND per quintal per day. The maximum storage time is 10 days. Starting from the first day of import, the agent distributes 25 quintals of fruit per day. Determine the number of days' worth of fruit to import each time to minimize the average daily cost (including shipping and storage costs).\n\nGiven:\n- shipping cost = 25000000\n- storage cost per unit day = 80000\n- daily demand = 25\n- max days = 10\n\nWith these values, what is the result?",
+    "expected_answer": 5,
+    "source_task_id": 33,
+    "source_old_id": 122
+  },
+  {
+    "id": "math_034",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "A farm plans to plant green pomelo and king orange on a total area of at most 9 hectares. Planting 1 ha of green pomelo requires 30 labor days and 20 million VND of capital. Planting 1 ha of king orange requires 10 labor days and 60 million VND of capital. The farm has a maximum of 210 labor days and a capital investment not exceeding 420 million VND. The estimated profit is 50 million VND/ha for green pomelo and 40 million VND/ha for king orange. Determine the maximum possible profit (in million VND).\n\nGiven:\n- maximum planting area in hectares = 9\n- labor days per hectare of green pomelo = 30\n- capital per hectare of green pomelo in million VND = 20\n- labor days per hectare of king orange = 10\n- capital per hectare of king orange in million VND = 60\n- available labor days = 210\n- available capital in million VND = 420\n- profit per hectare of green pomelo in million VND = 50\n- profit per hectare of king orange in million VND = 40\n\nWith these values, what is the result?",
+    "expected_answer": 420,
+    "source_task_id": 34,
+    "source_old_id": 131
+  },
+  {
+    "id": "math_035",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "A cylindrical glass with height h = 9 cm is 3/4 full of water. A cube is placed into the glass such that one vertex touches the water surface and the space diagonal passing through this vertex coincides with the axis of symmetry of the cylinder. If the glass were initially full, how many cubic centimeters of water would overflow after placing the cube in this position? Assume the cube's side length is s and the cylinder's radius is r. Calculate the volume of the submerged part of the cube. Round the final result to one decimal place.\n\nGiven:\n- h = 9\n- r = 5\n- s = 10\n\nWith these values, what is the result?",
+    "expected_answer": 9.9,
+    "source_task_id": 35,
+    "source_old_id": 136
+  },
+  {
+    "id": "math_036",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "Consider a 3x3 grid where each cell is filled independently and randomly with a value from the set {-1, 0, 1}. Given that the sum of the numbers in each row is 0, let p be the probability that the sum of the numbers in each column is also 0. Calculate the value of 3430 * p.\n\nGiven:\n- multiplier = 3430\n\nRound the computed value to 2 decimal places.\n\nWith these values, what is the result?",
+    "expected_answer": 310.0,
+    "source_task_id": 36,
+    "source_old_id": 140
+  },
+  {
+    "id": "math_037",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "A regular polygon has n vertices. All edges of the polygon are painted blue and all diagonals are painted red. Let X be the set of all triangles whose vertices are vertices of the polygon. A triangle is chosen at random from X. Find the probability that the chosen triangle has all three sides of the same color. The result should be expressed as a simplified fraction a/b. Return the value of a + b. For this specific problem, n = 20.\n\nGiven:\n- n = 20\n\nWith these values, what is the result?",
+    "expected_answer": 97,
+    "source_task_id": 37,
+    "source_old_id": 149
+  },
+  {
+    "id": "math_038",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "A technology company offers a corporate data storage package with a listed price of 200,000 VND/month and currently has 400 customers. The sales department determined that for every 10,000 VND decrease in price, 50 new customers are added. The operating cost C(n) (in thousand VND) varies as a quadratic function of the number of customers n: C(n) = 28n + 0.01n^2 + 15,000. Find the selling price (in thousand VND) that maximizes the company's profit.\n\nGiven:\n- initial price = 200\n- initial customers = 400\n- price step = 10\n- customer gain = 50\n- cost coeffs = [0.01, 28, 15000]\n\nWith these values, what is the result?",
+    "expected_answer": 160.0,
+    "source_task_id": 38,
+    "source_old_id": 150
+  },
+  {
+    "id": "math_039",
+    "category": "math",
+    "difficulty": "easy",
+    "prompt": "Uncle An sells pomelos. Initially, if the selling price is 30 thousand VND/kg, there are 60 orders per week, and each order is for 100 kg. For every 2 thousand VND increase in price per kg, the number of weekly orders decreases by 4, and the quantity per order decreases by 2 kg. The cost price is 24 thousand VND/kg. The selling price cannot exceed 50 thousand VND/kg. Find the selling price (in thousand VND/kg) that maximizes the weekly profit. Round the result to the nearest integer.\n\nGiven:\n- initial selling price in thousand VND per kg = 30\n- initial weekly orders = 60\n- initial quantity per order in kg = 100\n- price increase step in thousand VND per kg = 2\n- weekly order decrease per price step = 4\n- quantity decrease per order per price step in kg = 2\n- cost price in thousand VND per kg = 24\n- maximum selling price in thousand VND per kg = 50\n\nWith these values, what is the result?",
+    "expected_answer": 40,
+    "source_task_id": 39,
+    "source_old_id": 156
+  },
+  {
+    "id": "math_040",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "In a 3D coordinate system Oxyz (where the Oxy plane is the ground and the Oz axis is vertical, units in kilometers), an airplane flies in a straight line from point M(-50, 30, 10) to the landing point N(2, 3, 0). Find the angle alpha (in degrees) between the flight path and the vertical direction (Oz axis). Round the result to the nearest integer.\n\nGiven:\n- M = (-50, 30, 10)\n- N = (2, 3, 0)\n\nWith these values, what is the result?",
+    "expected_answer": 80,
+    "source_task_id": 40,
+    "source_old_id": 159
+  },
+  {
+    "id": "math_041",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Hung started a part-time job at the beginning of 10th grade. In the first month, he earned 3 million VND. Each subsequent month, his salary increased by 7% compared to the previous month. Every time he received his salary, he saved the amount that exceeded the previous month's salary. Calculate the total amount saved after 3 years (36 months). Round the final result to the nearest integer.\n\nGiven:\n- initial salary = 3\n- growth rate = 0.07\n- months = 36\n\nWith these values, what is the result?",
+    "expected_answer": 29,
+    "source_task_id": 41,
+    "source_old_id": 160
+  },
+  {
+    "id": "math_042",
+    "category": "math",
+    "difficulty": "easy",
+    "prompt": "A multiple-choice test consists of 10 questions, each with 4 options, only one of which is correct. Each correct answer earns 4 points, and each incorrect answer deducts 1 point. A student answers each question by randomly choosing one option. Let p be the probability that the student scores exactly 20 points. Calculate the value of 100p, rounded to two decimal places.\n\nGiven:\n- num questions = 10\n- num options = 4\n- correct pts = 4\n- wrong pts = -1\n- target score = 20\n\nWith these values, what is the result?",
+    "expected_answer": 1.62,
+    "source_task_id": 42,
+    "source_old_id": 162
+  },
+  {
+    "id": "math_043",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "A square ceramic tile has a side length of 60 cm. A pattern is created as follows: first, an inscribed circle (C1) is drawn inside the square; the area inside the square but outside (C1) is colored dark. Then, a square is inscribed inside (C1), and a circle (C2) is inscribed inside this new square; the area inside the second square but outside (C2) is colored dark. This process continues infinitely. Calculate the total area of the dark-colored regions in square centimeters, rounded to the nearest integer.\n\nGiven:\n- side length = 60\n\nWith these values, what is the result?",
+    "expected_answer": 1545,
+    "source_task_id": 43,
+    "source_old_id": 169
+  },
+  {
+    "id": "math_044",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "In a 3D coordinate system Oxyz, four satellites are located at A(0, 4, 5), B(3, 0, 5), C(3, 4, 0), and D(3, 4, 5). Point M(a, b, c) lies on the line segment AB such that the sum of the distances from points A, B, and C to the line MD is maximized. Find the value of a + b + c.\n\nGiven:\n- A = (0, 4, 5)\n- B = (3, 0, 5)\n- C = (3, 4, 0)\n- D = (3, 4, 5)\n\nWith these values, what is the result?",
+    "expected_answer": 8.64,
+    "source_task_id": 44,
+    "source_old_id": 178
+  },
+  {
+    "id": "math_045",
+    "category": "math",
+    "difficulty": "easy",
+    "prompt": "A squadron in Thailand has 20 aircraft, consisting of 12 F-16A (single-seat) and 8 F-16B (two-seat). Among the 12 F-16A, 3 have been upgraded to the MLU standard; among the 8 F-16B, 5 have been upgraded to the MLU standard. An aircraft is chosen at random for inspection. Given that the chosen aircraft has been upgraded to the MLU standard, calculate the probability that it is an F-16B. Round the result to two decimal places.\n\nGiven:\n- total a = 12\n- mlu a = 3\n- total b = 8\n- mlu b = 5\n\nWith these values, what is the result?",
+    "expected_answer": 0.62,
+    "source_task_id": 45,
+    "source_old_id": 179
+  },
+  {
+    "id": "math_046",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "A New Year's lantern is designed as a regular octahedron (two regular square pyramids S.ABCD and T.ABCD sharing a common base). There are 12 cardboard triangles of three colors (Blue, Red, Yellow), with 4 triangles of each color numbered 1 to 4. Each triangle fits one of the 8 faces of the octahedron. Find the number of ways N to choose and place 8 triangles on the 8 faces such that: 1) Two faces sharing an edge must have different colors. 2) Two faces sharing only a vertex must have different numbers. Calculate the value of N/8 + 16.\n\nGiven:\n- N = 1152\n\nWith these values, what is the result?",
+    "expected_answer": 160.0,
+    "source_task_id": 46,
+    "source_old_id": 181
+  },
+  {
+    "id": "math_047",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "Place 8 identical books into 10 bookshelf slots. Let P be the probability that the books are distributed such that: 1) No slot contains more than 2 books. 2) Exactly 4 slots or exactly 6 slots contain exactly 1 book. 3) Any slot containing 2 books must be surrounded by empty slots (slots immediately to the left and right must be empty). Calculate 12155 * P.\n\nGiven:\n- n slots = 10\n- n books = 8\n- multiplier = 12155\n\nRound the computed value to 0 decimal places.\n\nWith these values, what is the result?",
+    "expected_answer": 131.0,
+    "source_task_id": 47,
+    "source_old_id": 182
+  },
+  {
+    "id": "math_048",
+    "category": "math",
+    "difficulty": "easy",
+    "prompt": "A box contains 30 different tickets numbered from 1 to 30. Four tickets are chosen randomly and simultaneously. Calculate the probability that among the 4 chosen tickets, there are at least 2 prime numbers and the sum of the 4 numbers is even. Round the result to one decimal place (as a percentage, e.g., 12.3%).\n\nGiven:\n- n total = 30\n- k select = 4\n\nWith these values, what is the result?",
+    "expected_answer": 20.8,
+    "source_task_id": 48,
+    "source_old_id": 183
+  },
+  {
+    "id": "math_049",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "A board game surface is made from a central rectangle of length 100 cm and width 40 cm together with the fixed surrounding decorative regions from the original design. The coating cost is 100000 VND per square meter. Calculate the total coating cost in thousands of VND, rounded to the nearest integer.\n\nWith these values, what is the result?",
+    "expected_answer": 53,
+    "source_task_id": 49,
+    "source_old_id": 1
+  },
+  {
+    "id": "math_050",
+    "category": "math",
+    "difficulty": "hard",
+    "prompt": "Find the minimum integer first-month payment 'm' to pay off a certain percentage of a debt within a given number of months, where each subsequent month's payment is a fixed ratio of the previous month. Use the total debt, the target percentage (as a decimal), the number of months, and the decay ratio.\n\nGiven:\n- total debt = 450\n- target fraction of the debt to pay = 0.6\n- number of months = 6\n- monthly payment ratio relative to the previous month = 0.9\n\nWith these values, what is the result?",
+    "expected_answer": 58,
+    "source_task_id": 50,
+    "source_old_id": 2
+  }
+]

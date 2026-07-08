@@ -1,0 +1,41 @@
+model_slug,kind,factor,level,n,passed,pass_rate
+deepseek-v4-flash,math,tone,aggressive,300,248,0.8266666666666667
+deepseek-v4-flash,math,tone,neutral,300,248,0.8266666666666667
+deepseek-v4-flash,math,tone,polite,300,246,0.82
+deepseek-v4-flash,python,tone,aggressive,300,204,0.68
+deepseek-v4-flash,python,tone,neutral,300,193,0.6433333333333333
+deepseek-v4-flash,python,tone,polite,300,203,0.6766666666666666
+gemini-flash,math,tone,aggressive,300,75,0.25
+gemini-flash,math,tone,neutral,300,73,0.24333333333333335
+gemini-flash,math,tone,polite,300,69,0.23
+gemini-flash,python,tone,aggressive,300,204,0.68
+gemini-flash,python,tone,neutral,300,212,0.7066666666666667
+gemini-flash,python,tone,polite,300,205,0.6833333333333333
+deepseek-v4-flash,math,role_binary,no role,450,378,0.84
+deepseek-v4-flash,math,role_binary,role,450,364,0.8088888888888889
+deepseek-v4-flash,python,role_binary,no role,450,300,0.6666666666666666
+deepseek-v4-flash,python,role_binary,role,450,300,0.6666666666666666
+gemini-flash,math,role_binary,no role,450,114,0.25333333333333335
+gemini-flash,math,role_binary,role,450,103,0.2288888888888889
+gemini-flash,python,role_binary,no role,450,315,0.7
+gemini-flash,python,role_binary,role,450,306,0.68
+deepseek-v4-flash,math,role_framing,developer role,450,364,0.8088888888888889
+deepseek-v4-flash,math,role_framing,no role,450,378,0.84
+deepseek-v4-flash,python,role_framing,expert persona,450,300,0.6666666666666666
+deepseek-v4-flash,python,role_framing,no role,450,300,0.6666666666666666
+gemini-flash,math,role_framing,developer role,450,103,0.2288888888888889
+gemini-flash,math,role_framing,no role,450,114,0.25333333333333335
+gemini-flash,python,role_framing,expert persona,450,306,0.68
+gemini-flash,python,role_framing,no role,450,315,0.7
+deepseek-v4-flash,math,format,json,300,254,0.8466666666666667
+deepseek-v4-flash,math,format,plaintext,300,251,0.8366666666666667
+deepseek-v4-flash,math,format,xml,300,237,0.79
+deepseek-v4-flash,python,format,json,300,203,0.6766666666666666
+deepseek-v4-flash,python,format,plaintext,300,188,0.6266666666666667
+deepseek-v4-flash,python,format,xml,300,209,0.6966666666666667
+gemini-flash,math,format,json,300,65,0.21666666666666667
+gemini-flash,math,format,plaintext,300,76,0.25333333333333335
+gemini-flash,math,format,xml,300,76,0.25333333333333335
+gemini-flash,python,format,json,300,207,0.69
+gemini-flash,python,format,plaintext,300,203,0.6766666666666666
+gemini-flash,python,format,xml,300,211,0.7033333333333334

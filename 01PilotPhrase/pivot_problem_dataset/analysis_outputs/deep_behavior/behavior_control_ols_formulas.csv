@@ -1,0 +1,13 @@
+outcome,model_spec,formula,nobs,rsquared
+passed_int,M0_prompt_only,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id),2700.0,0.23907772109905667
+passed_int,M1_length,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_completion_tokens,2700.0,0.24626698291449234
+passed_int,M2_code_only,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + likely_code_only,2700.0,0.2404341559389347
+passed_int,M3_extraction,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + extraction_failed,2700.0,0.2405714755046081
+passed_int,M4_runtime,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_duration_seconds,2700.0,0.24529909741839406
+passed_int,M5_all_behavior_controls,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_completion_tokens + likely_code_only + extraction_failed + log_duration_seconds,2700.0,0.25197427124480587
+tests_fraction,M0_prompt_only,tests_fraction ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id),2700.0,0.24472778957399022
+tests_fraction,M1_length,tests_fraction ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_completion_tokens,2700.0,0.2524721037084048
+tests_fraction,M2_code_only,tests_fraction ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + likely_code_only,2700.0,0.24677385760030357
+tests_fraction,M3_extraction,tests_fraction ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + extraction_failed,2700.0,0.2486815134521977
+tests_fraction,M4_runtime,tests_fraction ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_duration_seconds,2700.0,0.2516123497966729
+tests_fraction,M5_all_behavior_controls,tests_fraction ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_completion_tokens + likely_code_only + extraction_failed + log_duration_seconds,2700.0,0.260404444186495

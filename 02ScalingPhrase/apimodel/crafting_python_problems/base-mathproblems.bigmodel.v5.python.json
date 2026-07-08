@@ -1,0 +1,702 @@
+[
+  {
+    "task_id": 1,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nYou are given that the following value is a rational number. Express it as an irreducible fraction.\n$$\n\\sqrt{\\frac{123! - 122!}{122! - 121!}}\n$$",
+    "code": "def solve_math_problem__08zv():\n    return \"122/11\"",
+    "test_list": [
+      "assert solve_math_problem__08zv() == \"122/11\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__08zv() == \"122/11\""
+    ],
+    "difficulty": "medium",
+    "old_id": "08zv"
+  },
+  {
+    "task_id": 2,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nFor the second round of the Mathematical Olympiad, 999 students are invited. Melanie creates invitation letters in order of participant number: $1, 2, 3, \\ldots$. For some values of $n \\geq 100$, she notices the following: the number of participant numbers from $1$ up to and including $n$ ending in a $5$ is exactly equal to the integer formed by the last two digits of $n$.\nFor how many values of $n$ (with $100 \\leq n < 1000$) does this hold?",
+    "code": "def solve_math_problem__0a18():\n    return \"9\"",
+    "test_list": [
+      "assert solve_math_problem__0a18() == \"9\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__0a18() == \"9\""
+    ],
+    "difficulty": "medium",
+    "old_id": "0a18"
+  },
+  {
+    "task_id": 3,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nPeter gets bored during the lockdown, so he decides to write numbers the whole day. He makes a sequence of numbers starting with $0$, $1$ and $-1$, and then going on indefinitely. On the next line he writes the same sequence of numbers, but shifted one place to the right. On the third line he writes again the same sequence of numbers, shifted another place to the right. He adds all three numbers standing in a vertical column. (He skips the first two places so he starts with $-1 + 1 + 0$.) The answer for every column is the next multiple of three. Peter's paper hence looks like this:\n$$\n\\begin{array}{r@{\\ }c@{\\ }l@{\\quad}l@{\\quad}l@{\\quad}l}\n0 & 1 & -1 & \\dots & \\dots & \\dots & \\dots \\\\\n\\cline{2-7}\n0 & 1 & -1 & \\dots & \\dots & \\dots & \\dots \\\\\n+ & 0 & 1 & -1 & \\dots & \\dots & \\dots \\\\\n\\cline{2-7}\n0 & 3 & 6 & 9 & 12 & \\dots & \\dots\n\\end{array}\n$$\nThe first number in the uppermost sequence is $0$, the second number is $1$, the third number is $-1$, etcetera. Determine the $2021$st number in the uppermost sequence.",
+    "code": "def solve_math_problem__09xx():\n    return \"2020\"",
+    "test_list": [
+      "assert solve_math_problem__09xx() == \"2020\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__09xx() == \"2020\""
+    ],
+    "difficulty": "medium",
+    "old_id": "09xx"
+  },
+  {
+    "task_id": 4,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nEskom announces that there is a 60% chance of Stage 1 load shedding for a specific week.\nIn a specific suburb Stage 1 load shedding is from 10:00 to 12:30 on a Monday, Wednesday, Friday and Sunday. What is the probability that in that specific suburb there will be load shedding at a moment in the week, without knowing the day, or time or whether or not it is day or night?",
+    "code": "def solve_math_problem__0epp():\n    return \"1/28\"",
+    "test_list": [
+      "assert solve_math_problem__0epp() == \"1/28\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__0epp() == \"1/28\""
+    ],
+    "difficulty": "medium",
+    "old_id": "0epp"
+  },
+  {
+    "task_id": 5,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nSuppose sequence $\\{a_n\\}$ consists of nine terms, which satisfy $a_1 = a_9 = 1$ and $\\frac{a_{i+1}}{a_i} \\in \\{2, 1, -\\frac{1}{2}\\}$ for any $i \\in \\{1, 2, \\dots, 8\\}$. Then the number of sequences like this is ______.",
+    "code": "def solve_math_problem__042e():\n    return \"491\"",
+    "test_list": [
+      "assert solve_math_problem__042e() == \"491\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__042e() == \"491\""
+    ],
+    "difficulty": "medium",
+    "old_id": "042e"
+  },
+  {
+    "task_id": 6,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nDetermine the value of $\\frac{13 \\times 13 \\times 12}{1 + 13 + 13 + 12}$",
+    "code": "def solve_math_problem__0ert():\n    return \"52\"",
+    "test_list": [
+      "assert solve_math_problem__0ert() == \"52\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__0ert() == \"52\""
+    ],
+    "difficulty": "medium",
+    "old_id": "0ert"
+  },
+  {
+    "task_id": 7,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nFor how many integers $n$ with $1 \\le n \\le 800$ is the number $8n + 1$ a square?",
+    "code": "def solve_math_problem__09zp():\n    return \"39\"",
+    "test_list": [
+      "assert solve_math_problem__09zp() == \"39\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__09zp() == \"39\""
+    ],
+    "difficulty": "medium",
+    "old_id": "09zp"
+  },
+  {
+    "task_id": 8,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nFind the remainder when $19^{17^{15}}$ is divided by 100.",
+    "code": "def solve_math_problem__06j7():\n    return \"59\"",
+    "test_list": [
+      "assert solve_math_problem__06j7() == \"59\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__06j7() == \"59\""
+    ],
+    "difficulty": "medium",
+    "old_id": "06j7"
+  },
+  {
+    "task_id": 9,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nIn a group of $108$ people, $1$ in $4$ of them has a pen and $1$ in $3$ has a pencil. What is the minimum possible number of people that have something to write with?",
+    "code": "def solve_math_problem__0eq0():\n    return \"36\"",
+    "test_list": [
+      "assert solve_math_problem__0eq0() == \"36\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__0eq0() == \"36\""
+    ],
+    "difficulty": "medium",
+    "old_id": "0eq0"
+  },
+  {
+    "task_id": 10,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nFind the exact value of the expression below:\n$$\n\\frac{(6!+5!)(5!+4!)(4!+3!)(3!+2!)(2!+1!)}{(6!-5!)(5!-4!)(4!-3!)(3!-2!)(2!-1)!}\n$$\nif $n!$ denotes the product $1 \\cdot 2 \\cdot 3 \\cdots n$ for every natural number $n$.",
+    "code": "def solve_math_problem__0h4k():\n    return \"21\"",
+    "test_list": [
+      "assert solve_math_problem__0h4k() == \"21\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__0h4k() == \"21\""
+    ],
+    "difficulty": "medium",
+    "old_id": "0h4k"
+  },
+  {
+    "task_id": 11,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nLet for $k$, $0 \\le k \\le 9$, $a_k$ be the coefficient of the $x^k$-term in the polynomial $(x+1)^3(x+2)^3(x+3)^3$. Find the value of $a_2 + a_4 + a_6 + a_8$.",
+    "code": "def solve_math_problem__08x7():\n    return \"6696\"",
+    "test_list": [
+      "assert solve_math_problem__08x7() == \"6696\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__08x7() == \"6696\""
+    ],
+    "difficulty": "medium",
+    "old_id": "08x7"
+  },
+  {
+    "task_id": 12,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nAn information station employs four different codes, $A$, $B$, $C$ and $D$, for communication, but each week uses only one of them. The code used in a definite week is randomly selected with equal chance among the three ones that have not been used in the last week. Suppose the code used in the first week is $A$. Then the probability that $A$ is also used in the seventh week is _______. (expressed as an irreducible fraction)",
+    "code": "def solve_math_problem__040y():\n    return \"61/243\"",
+    "test_list": [
+      "assert solve_math_problem__040y() == \"61/243\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__040y() == \"61/243\""
+    ],
+    "difficulty": "medium",
+    "old_id": "040y"
+  },
+  {
+    "task_id": 13,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nHow many pairs of non-negative integers $x$ and $y$ are solutions of $\\frac{x}{20} + \\frac{y}{15} = 1$?",
+    "code": "def solve_math_problem__0ep1():\n    return \"6\"",
+    "test_list": [
+      "assert solve_math_problem__0ep1() == \"6\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__0ep1() == \"6\""
+    ],
+    "difficulty": "medium",
+    "old_id": "0ep1"
+  },
+  {
+    "task_id": 14,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nCalculate the following number:\n$$\n877 \\times 879 - 121 \\times 123.\n$$",
+    "code": "def solve_math_problem__08sf():\n    return \"756000\"",
+    "test_list": [
+      "assert solve_math_problem__08sf() == \"756000\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__08sf() == \"756000\""
+    ],
+    "difficulty": "medium",
+    "old_id": "08sf"
+  },
+  {
+    "task_id": 15,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nLet $f(x) = ax + b$, with $a, b$ real numbers; $f_1(x) = f(x)$, $f_{n+1}(x) = f(f_n(x))$, $n = 1, 2, \\dots$. If $f_7(x) = 128x + 381$, then $a + b = \\underline{\\hspace{2cm}}$.",
+    "code": "def solve_math_problem__03vv():\n    return \"5\"",
+    "test_list": [
+      "assert solve_math_problem__03vv() == \"5\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__03vv() == \"5\""
+    ],
+    "difficulty": "medium",
+    "old_id": "03vv"
+  },
+  {
+    "task_id": 16,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nHow many perfect squares are there between $4^9$ and $9^4$, excluding those two numbers?",
+    "code": "def solve_math_problem__04b4():\n    return \"430\"",
+    "test_list": [
+      "assert solve_math_problem__04b4() == \"430\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__04b4() == \"430\""
+    ],
+    "difficulty": "medium",
+    "old_id": "04b4"
+  },
+  {
+    "task_id": 17,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nFind the real number $A$, given that the coefficient with $x^{12}$ in the polynomial\n$$\n(1 + x^4)^{12} + A (x(1 - x^2)^2)^{12}\n$$\nequals 100.",
+    "code": "def solve_math_problem__04cp():\n    return \"-120\"",
+    "test_list": [
+      "assert solve_math_problem__04cp() == \"-120\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__04cp() == \"-120\""
+    ],
+    "difficulty": "medium",
+    "old_id": "04cp"
+  },
+  {
+    "task_id": 18,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nEvery day at a railway station, there is just one train arriving between $8{:}00$ am and $9{:}00$ am and between $9{:}00$ am and $10{:}00$ am, respectively. The arrival times and their probabilities for the two trains are shown in the following table:\n\n| Arrival time | Train A | $8{:}10$ | $8{:}30$ | $8{:}50$ |\n|--------------|---------|---------|---------|---------|\n| Train B      |         | $9{:}10$ | $9{:}30$ | $9{:}50$ |\n| Probability  |         | $\\frac{1}{6}$ | $\\frac{1}{2}$ | $\\frac{1}{3}$ |\n\nSuppose that these random events are independent of each other. Now, a traveler comes into the station at $8{:}20$. Then the mathematical expectation of his waiting time is ______ (round to minute).",
+    "code": "def solve_math_problem__03x9():\n    return \"27\"",
+    "test_list": [
+      "assert solve_math_problem__03x9() == \"27\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__03x9() == \"27\""
+    ],
+    "difficulty": "medium",
+    "old_id": "03x9"
+  },
+  {
+    "task_id": 19,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nDetermine ten's place of $11^{12^{13}}$. ($12^{13}$th power of $11$, not $13$th power of $11^{12}$.)",
+    "code": "def solve_math_problem__08rx():\n    return \"2\"",
+    "test_list": [
+      "assert solve_math_problem__08rx() == \"2\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__08rx() == \"2\""
+    ],
+    "difficulty": "medium",
+    "old_id": "08rx"
+  },
+  {
+    "task_id": 20,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nFind the last two digits of the number $(1!)^2 + (2!)^2 + \\dots + (2018!)^2$.",
+    "code": "def solve_math_problem__04nn():\n    return \"17\"",
+    "test_list": [
+      "assert solve_math_problem__04nn() == \"17\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__04nn() == \"17\""
+    ],
+    "difficulty": "medium",
+    "old_id": "04nn"
+  },
+  {
+    "task_id": 21,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nAfter breakfast, the sisters Anna and Birgit depart for school, each going to a different school. Their house is next to a bicycle path running between the two schools. Anna is cycling with a constant speed of $12$ km per hour and Birgit is walking in the opposite direction with a constant speed of $4$ km per hour. They depart at the same time. Shortly after their departure, mother notes that the girls have forgotten their lunch and decides to go after them. Exactly $10$ minutes after Anna and Birgit have left, mother departs on her electric bike. First, she catches up with Anna. She hands her a lunch box, immediately turns around, and goes after Birgit. When she catches up with Birgit, she hands her a lunch box and immediately rides back home. Mother always rides at a constant speed of $24$ km per hour.\nHow many minutes after the departure of Anna and Birgit does mother return home?",
+    "code": "def solve_math_problem__09v6():\n    return \"42\"",
+    "test_list": [
+      "assert solve_math_problem__09v6() == \"42\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__09v6() == \"42\""
+    ],
+    "difficulty": "medium",
+    "old_id": "09v6"
+  },
+  {
+    "task_id": 22,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nJohn walked home with his dog after visiting the store. The dog, being four times faster than John, arrived home first and then came back to join him. How many meters did the dog travel on the 1-kilometer journey from the store to home?",
+    "code": "def solve_math_problem__09jm():\n    return \"1600\"",
+    "test_list": [
+      "assert solve_math_problem__09jm() == \"1600\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__09jm() == \"1600\""
+    ],
+    "difficulty": "medium",
+    "old_id": "09jm"
+  },
+  {
+    "task_id": 23,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nFind the integer closest to the value of the expression:\n$$\n((7 + \\sqrt{48})^{2023} + (7 - \\sqrt{48})^{2023})^2 - ((7 + \\sqrt{48})^{2023} - (7 - \\sqrt{48})^{2023})^2.\n$$",
+    "code": "def solve_math_problem__0hgt():\n    return \"4\"",
+    "test_list": [
+      "assert solve_math_problem__0hgt() == \"4\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__0hgt() == \"4\""
+    ],
+    "difficulty": "medium",
+    "old_id": "0hgt"
+  },
+  {
+    "task_id": 24,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nFor how many positive values of $n$ are both $\\frac{1}{2}n$ and $2n$ two-digit integers?",
+    "code": "def solve_math_problem__0epn():\n    return \"15\"",
+    "test_list": [
+      "assert solve_math_problem__0epn() == \"15\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__0epn() == \"15\""
+    ],
+    "difficulty": "medium",
+    "old_id": "0epn"
+  },
+  {
+    "task_id": 25,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nWhat is the value of $(2+4+6+...+198+200) - (1+3+5+...+197+199)$?",
+    "code": "def solve_math_problem__0esj():\n    return \"100\"",
+    "test_list": [
+      "assert solve_math_problem__0esj() == \"100\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__0esj() == \"100\""
+    ],
+    "difficulty": "medium",
+    "old_id": "0esj"
+  },
+  {
+    "task_id": 26,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nA four digit number $\\overline{aabb}$, that is, the number whose digits are $a, a, b$, and $b$, is the square of an integer.\nOf which integer is $\\overline{aabb}$ the square?",
+    "code": "def solve_math_problem__09v0():\n    return \"88\"",
+    "test_list": [
+      "assert solve_math_problem__09v0() == \"88\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__09v0() == \"88\""
+    ],
+    "difficulty": "medium",
+    "old_id": "09v0"
+  },
+  {
+    "task_id": 27,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nWater freezes at $0^\\circ$ Celsius and boils at $100^\\circ$ Celsius. On the SAMO scale, water freezes at $20^\\circ$ and boils at $170^\\circ$. The two scales are linearly related. What is the temperature on the SAMO scale if it is $80^\\circ$ on the Celsius scale?",
+    "code": "def solve_math_problem__0esc():\n    return \"140\"",
+    "test_list": [
+      "assert solve_math_problem__0esc() == \"140\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__0esc() == \"140\""
+    ],
+    "difficulty": "medium",
+    "old_id": "0esc"
+  },
+  {
+    "task_id": 28,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nGiven $\\log_a x = 3$, $\\log_{ab} x = 2$, determine $\\log_b x$.",
+    "code": "def solve_math_problem__049f():\n    return \"6\"",
+    "test_list": [
+      "assert solve_math_problem__049f() == \"6\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__049f() == \"6\""
+    ],
+    "difficulty": "medium",
+    "old_id": "049f"
+  },
+  {
+    "task_id": 29,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nThe base of a right square pyramid has sides of length $12$, and the height of the pyramid is of length $8$. Find the surface area of the pyramid. (Nikola Adžaga)",
+    "code": "def solve_math_problem__04pf():\n    return \"384\"",
+    "test_list": [
+      "assert solve_math_problem__04pf() == \"384\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__04pf() == \"384\""
+    ],
+    "difficulty": "medium",
+    "old_id": "04pf"
+  },
+  {
+    "task_id": 30,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nCalculate $2015 - (2015 - (2015 - (2015 - 1)))$.",
+    "code": "def solve_math_problem__0ep6():\n    return \"1\"",
+    "test_list": [
+      "assert solve_math_problem__0ep6() == \"1\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__0ep6() == \"1\""
+    ],
+    "difficulty": "medium",
+    "old_id": "0ep6"
+  },
+  {
+    "task_id": 31,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nIf the average of four different positive integers is $8$, what is the largest possible value of any one of these integers?",
+    "code": "def solve_math_problem__0epb():\n    return \"26\"",
+    "test_list": [
+      "assert solve_math_problem__0epb() == \"26\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__0epb() == \"26\""
+    ],
+    "difficulty": "medium",
+    "old_id": "0epb"
+  },
+  {
+    "task_id": 32,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nIt takes $54$ seconds to descend the escalator while standing still. When Bayaraa walks down the escalator at a speed of $1$ m/s, it takes $36$ seconds. How many seconds will it take Bayaraa to descend if he walks at a speed of $2$ m/s?",
+    "code": "def solve_math_problem__09ni():\n    return \"27\"",
+    "test_list": [
+      "assert solve_math_problem__09ni() == \"27\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__09ni() == \"27\""
+    ],
+    "difficulty": "medium",
+    "old_id": "09ni"
+  },
+  {
+    "task_id": 33,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nThe sums of three out of four numbers (omitting each of the four numbers in turn) are $20$, $22$, $24$ and $27$, respectively. What is the sum of the four numbers?",
+    "code": "def solve_math_problem__0eoy():\n    return \"31\"",
+    "test_list": [
+      "assert solve_math_problem__0eoy() == \"31\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__0eoy() == \"31\""
+    ],
+    "difficulty": "medium",
+    "old_id": "0eoy"
+  },
+  {
+    "task_id": 34,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nI have R4. How many sweets can I buy if one sweet costs 40c?",
+    "code": "def solve_math_problem__0eo9():\n    return \"10\"",
+    "test_list": [
+      "assert solve_math_problem__0eo9() == \"10\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__0eo9() == \"10\""
+    ],
+    "difficulty": "medium",
+    "old_id": "0eo9"
+  },
+  {
+    "task_id": 35,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nIf $\\frac{n+3}{13}$ is a positive integer, then the remainder when $n$ is divided by $13$ is",
+    "code": "def solve_math_problem__0eq8():\n    return \"10\"",
+    "test_list": [
+      "assert solve_math_problem__0eq8() == \"10\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__0eq8() == \"10\""
+    ],
+    "difficulty": "medium",
+    "old_id": "0eq8"
+  },
+  {
+    "task_id": 36,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nFind all positive integers $n$ such that some three consecutive coefficients in the power series representation of $(1+x)^n$ are in the $3:4:5$ ratio. (AIME 1992)",
+    "code": "def solve_math_problem__04ps():\n    return \"62\"",
+    "test_list": [
+      "assert solve_math_problem__04ps() == \"62\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__04ps() == \"62\""
+    ],
+    "difficulty": "medium",
+    "old_id": "04ps"
+  },
+  {
+    "task_id": 37,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nLine up the numbers $1$ to $15$ such that if you add any two numbers that are next to each other, you get a square number.\nWhat do you get if you add the first and last number from the line?",
+    "code": "def solve_math_problem__09yl():\n    return \"17\"",
+    "test_list": [
+      "assert solve_math_problem__09yl() == \"17\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__09yl() == \"17\""
+    ],
+    "difficulty": "medium",
+    "old_id": "09yl"
+  },
+  {
+    "task_id": 38,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nIf the product of four consecutive integers is equal to the value of one of those integers, then what is the largest possible value for any of the integers?",
+    "code": "def solve_math_problem__0esq():\n    return \"3\"",
+    "test_list": [
+      "assert solve_math_problem__0esq() == \"3\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__0esq() == \"3\""
+    ],
+    "difficulty": "medium",
+    "old_id": "0esq"
+  },
+  {
+    "task_id": 39,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nCall a positive integer $n$ supereven, if its largest odd factor $d$ is less than $\\frac{n}{d}$. How many positive integers less than 1000 are supereven?",
+    "code": "def solve_math_problem__05b5():\n    return \"46\"",
+    "test_list": [
+      "assert solve_math_problem__05b5() == \"46\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__05b5() == \"46\""
+    ],
+    "difficulty": "medium",
+    "old_id": "05b5"
+  },
+  {
+    "task_id": 40,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nHow many three-digit primes can be turned into perfect cubes with a permutation of their digits?",
+    "code": "def solve_math_problem__0br5():\n    return \"3\"",
+    "test_list": [
+      "assert solve_math_problem__0br5() == \"3\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__0br5() == \"3\""
+    ],
+    "difficulty": "medium",
+    "old_id": "0br5"
+  },
+  {
+    "task_id": 41,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nWe have 15 cards numbered $1$, $2$, $\\dots$, $15$. How many ways are there to choose some (at least 1) cards so that all numbers on these cards are larger than or equal to the number of cards chosen?",
+    "code": "def solve_math_problem__08s9():\n    return \"1596\"",
+    "test_list": [
+      "assert solve_math_problem__08s9() == \"1596\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__08s9() == \"1596\""
+    ],
+    "difficulty": "medium",
+    "old_id": "08s9"
+  },
+  {
+    "task_id": 42,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nGiven $\\triangle ABC$ and $\\triangle AEF$ such that $B$ is the midpoint of $EF$. Also, $AB = EF = 1$, $BC = 6$, $CA = \\sqrt{33}$, and $\\overrightarrow{AB} \\cdot \\overrightarrow{AE} + \\overrightarrow{AC} \\cdot \\overrightarrow{AF} = 2$. The cosine of the angle between $\\overrightarrow{EF}$ and $\\overrightarrow{BC}$ is ______.",
+    "code": "def solve_math_problem__03uh():\n    return \"2/3\"",
+    "test_list": [
+      "assert solve_math_problem__03uh() == \"2/3\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__03uh() == \"2/3\""
+    ],
+    "difficulty": "medium",
+    "old_id": "03uh"
+  },
+  {
+    "task_id": 43,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nFind the value of\n$$\n\\frac{1 \\cdot 3}{3 \\cdot 5} + \\frac{2 \\cdot 4}{5 \\cdot 7} + \\frac{3 \\cdot 5}{7 \\cdot 9} + \\frac{4 \\cdot 6}{9 \\cdot 11} + \\dots + \\frac{1009 \\cdot 1011}{2019 \\cdot 2021}\n$$",
+    "code": "def solve_math_problem__059z():\n    return \"509545/2021\"",
+    "test_list": [
+      "assert solve_math_problem__059z() == \"509545/2021\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__059z() == \"509545/2021\""
+    ],
+    "difficulty": "medium",
+    "old_id": "059z"
+  },
+  {
+    "task_id": 44,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nGiven is the sequence of numbers $a_0, a_1, a_2, \\dots, a_{2020}$ with $a_0 = 0$. Furthermore, the following holds for every $k = 1, 2, \\dots, 2020$:\n$$\na_k = \\begin{cases} a_{k-1} \\cdot k & \\text{if } k \\text{ is divisible by } 8, \\\\ a_{k-1} + k & \\text{if } k \\text{ is not divisible by } 8. \\end{cases}\n$$\nWhat are the last two digits of $a_{2020}$?",
+    "code": "def solve_math_problem__09wl():\n    return \"02\"",
+    "test_list": [
+      "assert solve_math_problem__09wl() == \"02\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__09wl() == \"02\""
+    ],
+    "difficulty": "medium",
+    "old_id": "09wl"
+  },
+  {
+    "task_id": 45,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nA natural number $a$ is called a \"lucky number\" if the sum of its digits is $7$. Arrange all \"lucky numbers\" in ascending order, and we get a sequence $a_1, a_2, \\dots$. If $a_n = 2005$, then $a_{5n} = \\_\\_\\_\\_\\_\\_$.",
+    "code": "def solve_math_problem__03rj():\n    return \"52000\"",
+    "test_list": [
+      "assert solve_math_problem__03rj() == \"52000\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__03rj() == \"52000\""
+    ],
+    "difficulty": "medium",
+    "old_id": "03rj"
+  },
+  {
+    "task_id": 46,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nWe compute the product of two numbers, $99\\ldots99 \\times 99\\ldots99,$ where the first number consists of 20 nines, and the second of 21 nines. Which number do you get if you add up the digits of the outcome of this multiplication?",
+    "code": "def solve_math_problem__09v4():\n    return \"189\"",
+    "test_list": [
+      "assert solve_math_problem__09v4() == \"189\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__09v4() == \"189\""
+    ],
+    "difficulty": "medium",
+    "old_id": "09v4"
+  },
+  {
+    "task_id": 47,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nHow many zeroes will there be in the answer if the following number is divided by $111$?\n$1110222222003333333330004444444444440000$",
+    "code": "def solve_math_problem__0epl():\n    return \"28\"",
+    "test_list": [
+      "assert solve_math_problem__0epl() == \"28\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__0epl() == \"28\""
+    ],
+    "difficulty": "medium",
+    "old_id": "0epl"
+  },
+  {
+    "task_id": 48,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nThe number of integral points (i.e., the points whose $x$- and $y$-coordinates are both integers) within the area (not including the boundary) enclosed by the right branch of hyperbola $x^2 - y^2 = 1$ and line $x = 100$ is ______.",
+    "code": "def solve_math_problem__03xv():\n    return \"9800\"",
+    "test_list": [
+      "assert solve_math_problem__03xv() == \"9800\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__03xv() == \"9800\""
+    ],
+    "difficulty": "medium",
+    "old_id": "03xv"
+  },
+  {
+    "task_id": 49,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nCompute the sum\n$$\n\\Sigma = \\sqrt{1+\\frac{8 \\cdot 1^2-1}{1^2 \\cdot 3^2}} + \\sqrt{1+\\frac{8 \\cdot 2^2-1}{3^2 \\cdot 5^2}} + \\dots + \\sqrt{1+\\frac{8 \\cdot 1003^2-1}{2005^2 \\cdot 2007^2}}\n$$",
+    "code": "def solve_math_problem__0653():\n    return \"2014024/2007\"",
+    "test_list": [
+      "assert solve_math_problem__0653() == \"2014024/2007\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__0653() == \"2014024/2007\""
+    ],
+    "difficulty": "medium",
+    "old_id": "0653"
+  },
+  {
+    "task_id": 50,
+    "text": "Write a Python function that solves the following math problem and returns the final answer as a string.\n\nFind the number of rectangles satisfying the following properties:\n(α) Their vertices are points $(x, y)$ of the plane $Oxy$, with $x, y$ non-negative integers and $x \\le 8$, $y \\le 8$.\n(β) Their sides are parallel to axis\n(γ) Their area $E$ satisfies: $30 < E \\le 40$.",
+    "code": "def solve_math_problem__06as():\n    return \"43\"",
+    "test_list": [
+      "assert solve_math_problem__06as() == \"43\""
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem__06as() == \"43\""
+    ],
+    "difficulty": "medium",
+    "old_id": "06as"
+  }
+]

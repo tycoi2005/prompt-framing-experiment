@@ -1,0 +1,5 @@
+model,dataset,total,passed,failed,accuracy_pct,api_error,empty_response,leading_zero_eval_error,unresolved_response_issue,avg_duration_s,median_duration_s,total_tokens,prompt_tokens,completion_tokens
+deepseek-v4-flash,math,900,742,158,82.444,0,0,0,0,18.462,9.405,1159483,144970,1014513
+deepseek-v4-flash,python,900,600,300,66.667,0,0,0,0,21.787,16.117,1419504,202312,1217192
+gemini-flash,math,900,217,683,24.111,0,0,0,0,10.205,3.397,165678,152388,13290
+gemini-flash,python,900,621,279,69.0,0,0,0,0,17.968,10.296,540732,217362,323370

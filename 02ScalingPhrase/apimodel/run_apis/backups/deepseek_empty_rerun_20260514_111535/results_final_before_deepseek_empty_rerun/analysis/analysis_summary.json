@@ -1,0 +1,120 @@
+{
+  "summary_by_model_dataset": [
+    {
+      "model": "deepseek-v4-flash",
+      "dataset": "math",
+      "total": 900,
+      "passed": 741,
+      "failed": 159,
+      "accuracy_pct": 82.333,
+      "api_error": 0,
+      "empty_response": 1,
+      "leading_zero_eval_error": 0,
+      "unresolved_response_issue": 1,
+      "avg_duration_s": 18.438,
+      "median_duration_s": 9.405,
+      "total_tokens": 1160814,
+      "prompt_tokens": 144970,
+      "completion_tokens": 1015844
+    },
+    {
+      "model": "deepseek-v4-flash",
+      "dataset": "python",
+      "total": 900,
+      "passed": 599,
+      "failed": 301,
+      "accuracy_pct": 66.556,
+      "api_error": 0,
+      "empty_response": 3,
+      "leading_zero_eval_error": 0,
+      "unresolved_response_issue": 3,
+      "avg_duration_s": 22.012,
+      "median_duration_s": 16.117,
+      "total_tokens": 1417688,
+      "prompt_tokens": 202312,
+      "completion_tokens": 1215376
+    },
+    {
+      "model": "gemini-flash",
+      "dataset": "math",
+      "total": 900,
+      "passed": 217,
+      "failed": 683,
+      "accuracy_pct": 24.111,
+      "api_error": 0,
+      "empty_response": 0,
+      "leading_zero_eval_error": 0,
+      "unresolved_response_issue": 0,
+      "avg_duration_s": 10.205,
+      "median_duration_s": 3.397,
+      "total_tokens": 165678,
+      "prompt_tokens": 152388,
+      "completion_tokens": 13290
+    },
+    {
+      "model": "gemini-flash",
+      "dataset": "python",
+      "total": 900,
+      "passed": 621,
+      "failed": 279,
+      "accuracy_pct": 69.0,
+      "api_error": 0,
+      "empty_response": 0,
+      "leading_zero_eval_error": 0,
+      "unresolved_response_issue": 0,
+      "avg_duration_s": 17.968,
+      "median_duration_s": 10.296,
+      "total_tokens": 540732,
+      "prompt_tokens": 217362,
+      "completion_tokens": 323370
+    }
+  ],
+  "summary_by_model": [
+    {
+      "model": "deepseek-v4-flash",
+      "total": 1800,
+      "passed": 1340,
+      "failed": 460,
+      "accuracy_pct": 74.444,
+      "api_error": 0,
+      "empty_response": 4,
+      "leading_zero_eval_error": 0,
+      "unresolved_response_issue": 4,
+      "total_tokens": 2578502
+    },
+    {
+      "model": "gemini-flash",
+      "total": 1800,
+      "passed": 838,
+      "failed": 962,
+      "accuracy_pct": 46.556,
+      "api_error": 0,
+      "empty_response": 0,
+      "leading_zero_eval_error": 0,
+      "unresolved_response_issue": 0,
+      "total_tokens": 706410
+    }
+  ],
+  "model_comparison": [
+    {
+      "dataset": "math",
+      "model_a": "deepseek-v4-flash",
+      "model_b": "gemini-flash",
+      "both_total": 900,
+      "both_pass": 200,
+      "a_only_pass": 541,
+      "b_only_pass": 17,
+      "both_fail": 142
+    },
+    {
+      "dataset": "python",
+      "model_a": "deepseek-v4-flash",
+      "model_b": "gemini-flash",
+      "both_total": 900,
+      "both_pass": 499,
+      "a_only_pass": 100,
+      "b_only_pass": 122,
+      "both_fail": 179
+    }
+  ]
+}

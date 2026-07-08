@@ -1,0 +1,16 @@
+Tone,error_category,runs,rate
+aggressive,none,498,0.5533333333333333
+aggressive,name_not_defined,330,0.36666666666666664
+aggressive,wrong_answer,47,0.052222222222222225
+aggressive,timeout,19,0.021111111111111112
+aggressive,other_runtime,6,0.006666666666666667
+neutral,none,548,0.6088888888888889
+neutral,name_not_defined,285,0.31666666666666665
+neutral,wrong_answer,51,0.056666666666666664
+neutral,timeout,14,0.015555555555555555
+neutral,other_runtime,2,0.0022222222222222222
+polite,none,430,0.4777777777777778
+polite,name_not_defined,406,0.45111111111111113
+polite,wrong_answer,48,0.05333333333333334
+polite,timeout,9,0.01
+polite,other_runtime,7,0.0077777777777777776

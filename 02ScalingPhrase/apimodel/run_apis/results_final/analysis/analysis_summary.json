@@ -1,0 +1,136 @@
+{
+  "results_dir": "/Users/macos/LearningSpace/ue-courses/Thesis/02ScalingPhrase/apimodel/run_apis/results_final",
+  "total_rows": 3600,
+  "files": [
+    "deepseek-v4-flash.math.jsonl",
+    "deepseek-v4-flash.python.jsonl",
+    "gemini-flash.math.jsonl",
+    "gemini-flash.python.jsonl"
+  ],
+  "summary_by_model_dataset": [
+    {
+      "model": "deepseek-v4-flash",
+      "dataset": "math",
+      "total": 900,
+      "passed": 742,
+      "failed": 158,
+      "accuracy_pct": 82.444,
+      "api_error": 0,
+      "empty_response": 0,
+      "leading_zero_eval_error": 0,
+      "unresolved_response_issue": 0,
+      "avg_duration_s": 18.462,
+      "median_duration_s": 9.405,
+      "total_tokens": 1159483,
+      "prompt_tokens": 144970,
+      "completion_tokens": 1014513
+    },
+    {
+      "model": "deepseek-v4-flash",
+      "dataset": "python",
+      "total": 900,
+      "passed": 600,
+      "failed": 300,
+      "accuracy_pct": 66.667,
+      "api_error": 0,
+      "empty_response": 0,
+      "leading_zero_eval_error": 0,
+      "unresolved_response_issue": 0,
+      "avg_duration_s": 21.787,
+      "median_duration_s": 16.117,
+      "total_tokens": 1419504,
+      "prompt_tokens": 202312,
+      "completion_tokens": 1217192
+    },
+    {
+      "model": "gemini-flash",
+      "dataset": "math",
+      "total": 900,
+      "passed": 217,
+      "failed": 683,
+      "accuracy_pct": 24.111,
+      "api_error": 0,
+      "empty_response": 0,
+      "leading_zero_eval_error": 0,
+      "unresolved_response_issue": 0,
+      "avg_duration_s": 10.205,
+      "median_duration_s": 3.397,
+      "total_tokens": 165678,
+      "prompt_tokens": 152388,
+      "completion_tokens": 13290
+    },
+    {
+      "model": "gemini-flash",
+      "dataset": "python",
+      "total": 900,
+      "passed": 621,
+      "failed": 279,
+      "accuracy_pct": 69.0,
+      "api_error": 0,
+      "empty_response": 0,
+      "leading_zero_eval_error": 0,
+      "unresolved_response_issue": 0,
+      "avg_duration_s": 17.968,
+      "median_duration_s": 10.296,
+      "total_tokens": 540732,
+      "prompt_tokens": 217362,
+      "completion_tokens": 323370
+    }
+  ],
+  "summary_by_model": [
+    {
+      "model": "deepseek-v4-flash",
+      "total": 1800,
+      "passed": 1342,
+      "failed": 458,
+      "accuracy_pct": 74.556,
+      "api_error": 0,
+      "empty_response": 0,
+      "leading_zero_eval_error": 0,
+      "unresolved_response_issue": 0,
+      "avg_duration_s": 20.124,
+      "median_duration_s": 13.453,
+      "total_tokens": 2578987,
+      "prompt_tokens": 347282,
+      "completion_tokens": 2231705
+    },
+    {
+      "model": "gemini-flash",
+      "total": 1800,
+      "passed": 838,
+      "failed": 962,
+      "accuracy_pct": 46.556,
+      "api_error": 0,
+      "empty_response": 0,
+      "leading_zero_eval_error": 0,
+      "unresolved_response_issue": 0,
+      "avg_duration_s": 14.086,
+      "median_duration_s": 6.577,
+      "total_tokens": 706410,
+      "prompt_tokens": 369750,
+      "completion_tokens": 336660
+    }
+  ],
+  "model_comparison": [
+    {
+      "dataset": "math",
+      "model_a": "deepseek-v4-flash",
+      "model_b": "gemini-flash",
+      "both_total": 900,
+      "both_pass": 200,
+      "a_only_pass": 542,
+      "b_only_pass": 17,
+      "both_fail": 141
+    },
+    {
+      "dataset": "python",
+      "model_a": "deepseek-v4-flash",
+      "model_b": "gemini-flash",
+      "both_total": 900,
+      "both_pass": 500,
+      "a_only_pass": 100,
+      "b_only_pass": 121,
+      "both_fail": 179
+    }
+  ]
+}

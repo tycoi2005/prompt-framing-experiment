@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/Users/macos/LearningSpace/ue-courses/Thesis/02ScalingPhrase/results_analysis/.venv/bin/python",
+    "-m",
+    "ipykernel_launcher",
+    "-f",
+    "{connection_file}"
+  ],
+  "display_name": "Results Analysis (.venv)",
+  "language": "python",
+  "metadata": {
+    "debugger": true
+  }
+}

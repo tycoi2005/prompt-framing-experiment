@@ -1,0 +1,4 @@
+model_short,runs,original_pass_rate,fixed_pass_rate,original_passes,fixed_passes,changed_extraction,changed_pass,invalid_python_after_fix
+gemma2-9b,900,0.09444444444444444,0.09444444444444444,85,85,0,0,0
+llama3.1-8b,900,0.03888888888888889,0.05333333333333334,35,48,97,13,3
+qwen2.5-7b,900,0.13444444444444445,0.13444444444444445,121,121,3,0,3

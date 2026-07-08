@@ -1,0 +1,47 @@
+[
+  {
+    "id": "vietjack_math_0388",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Tìm điều kiện xác định của \\[\\frac{5}{{\\sqrt {x - 2026} + 1}}\\]",
+    "expected_answer": "2026",
+    "source_task_id": 2434810,
+    "source_old_id": 237668
+  },
+  {
+    "id": "vietjack_math_0391",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một chiếc cổng có hình dạng parabol \\(y = - \\frac{1}{4}{x^2}\\) (P) với khoảng cách giữa hai chân cổng AB =12m (như hình vẽ). Hãy vẽ ( P) và tính chiều cao h của cổng.",
+    "expected_answer": "5",
+    "source_task_id": 2434813,
+    "source_old_id": 237668
+  },
+  {
+    "id": "vietjack_math_0560",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Biểu đồ tranh sau đây biểu diễn số lượng học sinh lớp \\[9A\\] bình chọn môn học được yêu thích nhất:\n\n \n\n Lập bảng tần số từ số liệu của biểu đồ tranh ở trên? Môn học nào được học sinh yêu thích nhất?",
+    "expected_answer": "20",
+    "source_task_id": 2443953,
+    "source_old_id": 238344
+  },
+  {
+    "id": "vietjack_math_0562",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Vẽ đồ thị của hàm số (P) \\(y = 1,5{x^2}\\).",
+    "expected_answer": "3",
+    "source_task_id": 2443955,
+    "source_old_id": 238344
+  },
+  {
+    "id": "vietjack_math_0572",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một lớp thống kê thời gian chơi thể thao trung bình trong một tuần của 40 học sinh. Kết quả mẫu số liệu đó được cho ở bảng thống kê sau:\n\n \n\n Lập bảng tần số tương đối cho bảng thống kê trên.",
+    "expected_answer": "2",
+    "source_task_id": 2444022,
+    "source_old_id": 238346
+  }
+]

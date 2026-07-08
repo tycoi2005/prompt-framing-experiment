@@ -1,0 +1,29 @@
+[
+  {
+    "input": "/Users/macos/LearningSpace/ue-courses/Thesis/01PilotPhrase/pivot_problem_dataset/results/gemma2-9b_final.jsonl",
+    "output": "/Users/macos/LearningSpace/ue-courses/Thesis/01PilotPhrase/pivot_problem_dataset/results/gemma2-9b_fixextractor.jsonl",
+    "total": 900,
+    "old_passed": 85,
+    "new_passed": 85,
+    "changed_extraction": 0,
+    "changed_pass": 0
+  },
+  {
+    "input": "/Users/macos/LearningSpace/ue-courses/Thesis/01PilotPhrase/pivot_problem_dataset/results/llama3.1-8b_final.jsonl",
+    "output": "/Users/macos/LearningSpace/ue-courses/Thesis/01PilotPhrase/pivot_problem_dataset/results/llama3.1-8b_fixextractor.jsonl",
+    "total": 900,
+    "old_passed": 35,
+    "new_passed": 48,
+    "changed_extraction": 97,
+    "changed_pass": 13
+  },
+  {
+    "input": "/Users/macos/LearningSpace/ue-courses/Thesis/01PilotPhrase/pivot_problem_dataset/results/qwen2.5-7b_final.jsonl",
+    "output": "/Users/macos/LearningSpace/ue-courses/Thesis/01PilotPhrase/pivot_problem_dataset/results/qwen2.5-7b_fixextractor.jsonl",
+    "total": 900,
+    "old_passed": 121,
+    "new_passed": 121,
+    "changed_extraction": 3,
+    "changed_pass": 0
+  }
+]

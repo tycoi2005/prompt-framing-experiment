@@ -1,0 +1,3 @@
+model,total,passed,failed,accuracy_pct,api_error,empty_response,leading_zero_eval_error,unresolved_response_issue,total_tokens
+deepseek-v4-flash,1800,1342,458,74.556,0,0,0,0,2578987
+gemini-flash,1800,838,962,46.556,0,0,0,0,706410

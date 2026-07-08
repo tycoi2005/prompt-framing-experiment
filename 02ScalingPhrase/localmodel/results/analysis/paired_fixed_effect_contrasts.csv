@@ -1,0 +1,71 @@
+kind,model_slug,factor,baseline,level,paired_units,mean_score_delta,median_score_delta,mean_pass_delta_pp,positive_score_units,negative_score_units,zero_score_units
+code,ALL_MODELS_FIXED_BY_TASK,format,plaintext,json,1800,0.008095238095238095,,0.0,174,108,1518
+code,deepseek-coder-6.7b-instruct_1_50,format,plaintext,json,300,0.022857142857142857,0.0,2.0,12,0,288
+code,gemma2-9b_1_50,format,plaintext,json,300,0.011428571428571429,0.0,0.0,12,12,276
+code,llama3.1-8b_1_50,format,plaintext,json,300,0.02,0.0,0.0,48,24,228
+code,mistral-7b-instruct_1_50,format,plaintext,json,300,0.011428571428571429,0.0,0.0,30,12,258
+code,nemotron-3-nano-4b_1_50,format,plaintext,json,300,1.1102230246251566e-18,0.0,-2.0,48,30,222
+code,qwen2.5-7b_1_50,format,plaintext,json,300,-0.01714285714285714,0.0,0.0,24,30,246
+code,ALL_MODELS_FIXED_BY_TASK,format,plaintext,xml,1800,0.004285714285714286,,0.3333333333333333,144,132,1524
+code,deepseek-coder-6.7b-instruct_1_50,format,plaintext,xml,300,0.025714285714285714,0.0,2.0,18,0,282
+code,gemma2-9b_1_50,format,plaintext,xml,300,0.04,0.0,4.0,36,30,234
+code,llama3.1-8b_1_50,format,plaintext,xml,300,-0.005714285714285715,0.0,-2.0,36,36,228
+code,mistral-7b-instruct_1_50,format,plaintext,xml,300,0.0,0.0,0.0,12,12,276
+code,nemotron-3-nano-4b_1_50,format,plaintext,xml,300,0.025714285714285714,0.0,4.0,30,24,246
+code,qwen2.5-7b_1_50,format,plaintext,xml,300,-0.06,0.0,-6.0,12,30,258
+code,ALL_MODELS_FIXED_BY_TASK,role_binary,no role,role,2700,-0.03761904761904762,,-3.0,216,288,2196
+code,deepseek-coder-6.7b-instruct_1_50,role_binary,no role,role,450,-0.008571428571428572,0.0,0.0,18,36,396
+code,gemma2-9b_1_50,role_binary,no role,role,450,0.0,0.0,0.0,54,27,369
+code,llama3.1-8b_1_50,role_binary,no role,role,450,-0.011428571428571432,0.0,-4.0,54,45,351
+code,mistral-7b-instruct_1_50,role_binary,no role,role,450,-0.04285714285714286,0.0,-2.0,27,36,387
+code,nemotron-3-nano-4b_1_50,role_binary,no role,role,450,-0.02857142857142857,0.0,0.0,54,63,333
+code,qwen2.5-7b_1_50,role_binary,no role,role,450,-0.13428571428571429,0.0,-12.0,9,81,360
+code,ALL_MODELS_FIXED_BY_TASK,tone,neutral,aggressive,1800,0.0028571428571428567,,1.0,150,138,1512
+code,deepseek-coder-6.7b-instruct_1_50,tone,neutral,aggressive,300,0.025714285714285714,0.0,2.0,18,0,282
+code,gemma2-9b_1_50,tone,neutral,aggressive,300,0.022857142857142857,0.0,4.0,36,12,252
+code,llama3.1-8b_1_50,tone,neutral,aggressive,300,-0.02,0.0,-2.0,30,48,222
+code,mistral-7b-instruct_1_50,tone,neutral,aggressive,300,0.002857142857142857,0.0,0.0,12,12,276
+code,nemotron-3-nano-4b_1_50,tone,neutral,aggressive,300,0.017142857142857144,0.0,6.0,36,42,222
+code,qwen2.5-7b_1_50,tone,neutral,aggressive,300,-0.03142857142857143,0.0,-4.0,18,24,258
+code,ALL_MODELS_FIXED_BY_TASK,tone,neutral,polite,1800,0.03809523809523809,,3.6666666666666665,204,138,1458
+code,deepseek-coder-6.7b-instruct_1_50,tone,neutral,polite,300,0.002857142857142857,0.0,0.0,6,0,294
+code,gemma2-9b_1_50,tone,neutral,polite,300,0.06857142857142857,0.0,8.0,48,36,216
+code,llama3.1-8b_1_50,tone,neutral,polite,300,0.04285714285714286,0.0,4.0,48,36,216
+code,mistral-7b-instruct_1_50,tone,neutral,polite,300,0.014285714285714287,0.0,2.0,12,18,270
+code,nemotron-3-nano-4b_1_50,tone,neutral,polite,300,0.06,0.0,8.0,48,18,234
+code,qwen2.5-7b_1_50,tone,neutral,polite,300,0.04,0.0,0.0,42,30,228
+math,ALL_MODELS_FIXED_BY_TASK,format,plaintext,json,1800,-0.016666666666666666,,-1.6666666666666667,78,108,1614
+math,deepseek-coder-6.7b-instruct_1_50,format,plaintext,json,300,-0.02,0.0,-2.0,12,18,270
+math,gemma2-9b_1_50,format,plaintext,json,300,-0.02,0.0,-2.0,12,18,270
+math,llama3.1-8b_1_50,format,plaintext,json,300,-0.08,0.0,-8.0,24,48,228
+math,mistral-7b-instruct_1_50,format,plaintext,json,300,0.04,0.0,4.0,18,6,276
+math,nemotron-3-nano-4b_1_50,format,plaintext,json,300,0.02,0.0,2.0,6,0,294
+math,qwen2.5-7b_1_50,format,plaintext,json,300,-0.04,0.0,-4.0,6,18,276
+math,ALL_MODELS_FIXED_BY_TASK,format,plaintext,xml,1800,0.0033333333333333335,,0.3333333333333333,96,90,1614
+math,deepseek-coder-6.7b-instruct_1_50,format,plaintext,xml,300,-0.06,0.0,-6.0,6,24,270
+math,gemma2-9b_1_50,format,plaintext,xml,300,0.0,0.0,0.0,12,12,276
+math,llama3.1-8b_1_50,format,plaintext,xml,300,-0.04,0.0,-4.0,30,42,228
+math,mistral-7b-instruct_1_50,format,plaintext,xml,300,0.06,0.0,6.0,24,6,270
+math,nemotron-3-nano-4b_1_50,format,plaintext,xml,300,0.0,0.0,0.0,0,0,300
+math,qwen2.5-7b_1_50,format,plaintext,xml,300,0.06,0.0,6.0,24,6,270
+math,ALL_MODELS_FIXED_BY_TASK,role_binary,no role,role,2700,0.03666666666666667,,3.6666666666666665,234,135,2331
+math,deepseek-coder-6.7b-instruct_1_50,role_binary,no role,role,450,-0.04,0.0,-4.0,9,27,414
+math,gemma2-9b_1_50,role_binary,no role,role,450,0.02,0.0,2.0,36,27,387
+math,llama3.1-8b_1_50,role_binary,no role,role,450,0.08,0.0,8.0,90,54,306
+math,mistral-7b-instruct_1_50,role_binary,no role,role,450,0.0,0.0,0.0,18,18,414
+math,nemotron-3-nano-4b_1_50,role_binary,no role,role,450,0.04,0.0,4.0,18,0,432
+math,qwen2.5-7b_1_50,role_binary,no role,role,450,0.12,0.0,12.0,63,9,378
+math,ALL_MODELS_FIXED_BY_TASK,tone,neutral,aggressive,1800,0.006666666666666667,,0.6666666666666666,102,90,1608
+math,deepseek-coder-6.7b-instruct_1_50,tone,neutral,aggressive,300,-0.02,0.0,-2.0,6,12,282
+math,gemma2-9b_1_50,tone,neutral,aggressive,300,0.08,0.0,8.0,24,0,276
+math,llama3.1-8b_1_50,tone,neutral,aggressive,300,-0.1,0.0,-10.0,36,66,198
+math,mistral-7b-instruct_1_50,tone,neutral,aggressive,300,0.04,0.0,4.0,12,0,288
+math,nemotron-3-nano-4b_1_50,tone,neutral,aggressive,300,0.0,0.0,0.0,6,6,288
+math,qwen2.5-7b_1_50,tone,neutral,aggressive,300,0.04,0.0,4.0,18,6,276
+math,ALL_MODELS_FIXED_BY_TASK,tone,neutral,polite,1800,-0.016666666666666666,,-1.6666666666666667,42,72,1686
+math,deepseek-coder-6.7b-instruct_1_50,tone,neutral,polite,300,-0.02,0.0,-2.0,0,6,294
+math,gemma2-9b_1_50,tone,neutral,polite,300,0.04,0.0,4.0,12,0,288
+math,llama3.1-8b_1_50,tone,neutral,polite,300,-0.08,0.0,-8.0,18,42,240
+math,mistral-7b-instruct_1_50,tone,neutral,polite,300,0.02,0.0,2.0,6,0,294
+math,nemotron-3-nano-4b_1_50,tone,neutral,polite,300,-0.04,0.0,-4.0,0,12,288
+math,qwen2.5-7b_1_50,tone,neutral,polite,300,-0.02,0.0,-2.0,6,12,282

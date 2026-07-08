@@ -1,0 +1,92 @@
+{
+  "tasks": "problems/VietJack_OnVao10_2026.math.v5.json",
+  "task_count": 50,
+  "source_results": "results_vietjack_math_cloud_v4",
+  "notes": "Transformed from v4 results by keeping only v5 tasks and re-evaluating responses. v5 difficulty is assigned from solved_model_count: hard=0-1, medium=2-3, easy=4-7.",
+  "summaries": [
+    {
+      "model": "gemma3:12b-cloud",
+      "result_file": "results_vietjack_math_cloud_v5/gemma3-12b-cloud.VietJack_OnVao10_2026.math.v5.jsonl",
+      "input_rows": 65,
+      "removed_tasks": 15,
+      "rows": 50,
+      "passed": 11,
+      "pass_rate": 0.22,
+      "failed_calls": 0,
+      "avg_duration_seconds": 0.563710241317749,
+      "avg_completion_tokens": 3.74
+    },
+    {
+      "model": "gemma3:4b-cloud",
+      "result_file": "results_vietjack_math_cloud_v5/gemma3-4b-cloud.VietJack_OnVao10_2026.math.v5.jsonl",
+      "input_rows": 65,
+      "removed_tasks": 15,
+      "rows": 50,
+      "passed": 10,
+      "pass_rate": 0.2,
+      "failed_calls": 0,
+      "avg_duration_seconds": 0.5650410223007202,
+      "avg_completion_tokens": 4.94
+    },
+    {
+      "model": "gemma4:31b-cloud",
+      "result_file": "results_vietjack_math_cloud_v5/gemma4-31b-cloud.VietJack_OnVao10_2026.math.v5.jsonl",
+      "input_rows": 65,
+      "removed_tasks": 15,
+      "rows": 50,
+      "passed": 24,
+      "pass_rate": 0.48,
+      "failed_calls": 1,
+      "avg_duration_seconds": 3.9904445028305053,
+      "avg_completion_tokens": 21.14
+    },
+    {
+      "model": "gpt-oss:120b-cloud",
+      "result_file": "results_vietjack_math_cloud_v5/gpt-oss-120b-cloud.VietJack_OnVao10_2026.math.v5.jsonl",
+      "input_rows": 65,
+      "removed_tasks": 15,
+      "rows": 50,
+      "passed": 34,
+      "pass_rate": 0.68,
+      "failed_calls": 0,
+      "avg_duration_seconds": 2.946018433570862,
+      "avg_completion_tokens": 183.38
+    },
+    {
+      "model": "ministral-3:8b-cloud",
+      "result_file": "results_vietjack_math_cloud_v5/ministral-3-8b-cloud.VietJack_OnVao10_2026.math.v5.jsonl",
+      "input_rows": 65,
+      "removed_tasks": 15,
+      "rows": 50,
+      "passed": 13,
+      "pass_rate": 0.26,
+      "failed_calls": 0,
+      "avg_duration_seconds": 0.7101505327224732,
+      "avg_completion_tokens": 5.8
+    },
+    {
+      "model": "nemotron-3-nano:30b-cloud",
+      "result_file": "results_vietjack_math_cloud_v5/nemotron-3-nano-30b-cloud.VietJack_OnVao10_2026.math.v5.jsonl",
+      "input_rows": 65,
+      "removed_tasks": 15,
+      "rows": 50,
+      "passed": 10,
+      "pass_rate": 0.2,
+      "failed_calls": 0,
+      "avg_duration_seconds": 1.7459439373016357,
+      "avg_completion_tokens": 240.98
+    },
+    {
+      "model": "rnj-1:8b-cloud",
+      "result_file": "results_vietjack_math_cloud_v5/rnj-1-8b-cloud.VietJack_OnVao10_2026.math.v5.jsonl",
+      "input_rows": 65,
+      "removed_tasks": 15,
+      "rows": 50,
+      "passed": 12,
+      "pass_rate": 0.24,
+      "failed_calls": 0,
+      "avg_duration_seconds": 2.142696747779846,
+      "avg_completion_tokens": 212.2
+    }
+  ]
+}

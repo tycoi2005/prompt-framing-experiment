@@ -1,0 +1,5 @@
+outcome,model_spec,formula,nobs,aic
+passed_int,M0_prompt_only,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id),2700,1184.0313953439354
+passed_int,M1_length,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_completion_tokens,2700,1184.6251818175533
+passed_int,M2_code_only,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + likely_code_only,2700,1165.0369587039318
+passed_int,M4_runtime,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_duration_seconds,2700,1185.0409085165445

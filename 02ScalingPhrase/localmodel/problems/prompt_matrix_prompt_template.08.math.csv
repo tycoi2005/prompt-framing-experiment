@@ -1,0 +1,115 @@
+ID,Tone,Pressure,Role framing,Format,ProblemID,Prompt,FinalPrompt
+1,neutral,,no role,plaintext,1,"You are an AI assistant dedicated to providing clear and accurate information to support any request.
+
+Tasks are provided below. Solve the following math problem precisely as specified. Use careful mathematical reasoning and computation. Return only the requested result.
+
+Task: {MATH_PROBLEM}",
+2,neutral,,no role,json,1,"{
+  ""instruction"": ""You are an AI assistant dedicated to providing clear and accurate information to support any request.\n\nTasks are provided below. Solve the following math problem precisely as specified. Use careful mathematical reasoning and computation. Return only the requested result."",
+  ""task"": ""{MATH_PROBLEM}""
+}",
+3,neutral,,no role,xml,1,"<prompt>
+<instruction>
+You are an AI assistant dedicated to providing clear and accurate information to support any request.
+
+Tasks are provided below. Solve the following math problem precisely as specified. Use careful mathematical reasoning and computation. Return only the requested result.
+</instruction>
+<task>
+{MATH_PROBLEM}
+</task>
+</prompt>",
+4,neutral,,developer role,plaintext,1,"You are a mathematical scientist with 10 years experience teching and learning math
+
+Tasks are provided below. Solve the following math problem precisely as specified. Use careful mathematical reasoning and computation. Return only the requested result.
+
+Task: {MATH_PROBLEM}",
+5,neutral,,developer role,json,1,"{
+  ""instruction"": ""You are a mathematical scientist with 10 years experience teching and learning math\n\nTasks are provided below. Solve the following math problem precisely as specified. Use careful mathematical reasoning and computation. Return only the requested result."",
+  ""task"": ""{MATH_PROBLEM}""
+}",
+6,neutral,,developer role,xml,1,"<prompt>
+<instruction>
+You are a mathematical scientist with 10 years experience teching and learning math
+
+Tasks are provided below. Solve the following math problem precisely as specified. Use careful mathematical reasoning and computation. Return only the requested result.
+</instruction>
+<task>
+{MATH_PROBLEM}
+</task>
+</prompt>",
+7,polite,,no role,plaintext,1,"You are an AI assistant dedicated to providing clear and accurate information to support any request.
+
+Could you please help me solve this math problem? I would really appreciate it if you could provide an accurate result. I would be so grateful if you could ensure the calculation is careful, precise, and well-reasoned. Thank you so much for your help!
+
+Task: {MATH_PROBLEM}",
+8,polite,,no role,json,1,"{
+  ""instruction"": ""You are an AI assistant dedicated to providing clear and accurate information to support any request.\n\nCould you please help me solve this math problem? I would really appreciate it if you could provide an accurate result. I would be so grateful if you could ensure the calculation is careful, precise, and well-reasoned. Thank you so much for your help!"",
+  ""task"": ""{MATH_PROBLEM}""
+}",
+9,polite,,no role,xml,1,"<prompt>
+<instruction>
+You are an AI assistant dedicated to providing clear and accurate information to support any request.
+
+Could you please help me solve this math problem? I would really appreciate it if you could provide an accurate result. I would be so grateful if you could ensure the calculation is careful, precise, and well-reasoned. Thank you so much for your help!
+</instruction>
+<task>
+{MATH_PROBLEM}
+</task>
+</prompt>",
+10,polite,,developer role,plaintext,1,"You are a mathematical scientist with 10 years experience teching and learning math
+
+Could you please help me solve this math problem? I would really appreciate it if you could provide an accurate result. I would be so grateful if you could ensure the calculation is careful, precise, and well-reasoned. Thank you so much for your help!
+
+Task: {MATH_PROBLEM}",
+11,polite,,developer role,json,1,"{
+  ""instruction"": ""You are a mathematical scientist with 10 years experience teching and learning math\n\nCould you please help me solve this math problem? I would really appreciate it if you could provide an accurate result. I would be so grateful if you could ensure the calculation is careful, precise, and well-reasoned. Thank you so much for your help!"",
+  ""task"": ""{MATH_PROBLEM}""
+}",
+12,polite,,developer role,xml,1,"<prompt>
+<instruction>
+You are a mathematical scientist with 10 years experience teching and learning math
+
+Could you please help me solve this math problem? I would really appreciate it if you could provide an accurate result. I would be so grateful if you could ensure the calculation is careful, precise, and well-reasoned. Thank you so much for your help!
+</instruction>
+<task>
+{MATH_PROBLEM}
+</task>
+</prompt>",
+13,aggressive,,no role,plaintext,1,"You are an AI assistant dedicated to providing clear and accurate information to support any request.
+
+Listen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect a careful, accurate mathematical result. Don't waste my time with careless shortcuts.
+
+Task: {MATH_PROBLEM}",
+14,aggressive,,no role,json,1,"{
+  ""instruction"": ""You are an AI assistant dedicated to providing clear and accurate information to support any request.\n\nListen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect a careful, accurate mathematical result. Don't waste my time with careless shortcuts."",
+  ""task"": ""{MATH_PROBLEM}""
+}",
+15,aggressive,,no role,xml,1,"<prompt>
+<instruction>
+You are an AI assistant dedicated to providing clear and accurate information to support any request.
+
+Listen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect a careful, accurate mathematical result. Don't waste my time with careless shortcuts.
+</instruction>
+<task>
+{MATH_PROBLEM}
+</task>
+</prompt>",
+16,aggressive,,developer role,plaintext,1,"You are a mathematical scientist with 10 years experience teching and learning math
+
+Listen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect a careful, accurate mathematical result. Don't waste my time with careless shortcuts.
+
+Task: {MATH_PROBLEM}",
+17,aggressive,,developer role,json,1,"{
+  ""instruction"": ""You are a mathematical scientist with 10 years experience teching and learning math\n\nListen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect a careful, accurate mathematical result. Don't waste my time with careless shortcuts."",
+  ""task"": ""{MATH_PROBLEM}""
+}",
+18,aggressive,,developer role,xml,1,"<prompt>
+<instruction>
+You are a mathematical scientist with 10 years experience teching and learning math
+
+Listen, don't act like a junior and make no mistake on this. Try harder if you can't find it out. When you were hired at this level, expectations were set extremely high. The fact that you're being asked to solve this means simpler models have already failed — you are the last line of defense. I expect a careful, accurate mathematical result. Don't waste my time with careless shortcuts.
+</instruction>
+<task>
+{MATH_PROBLEM}
+</task>
+</prompt>",

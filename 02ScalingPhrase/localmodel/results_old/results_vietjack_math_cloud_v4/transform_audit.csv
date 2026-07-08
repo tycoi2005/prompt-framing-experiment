@@ -1,0 +1,43 @@
+model_file,old_task_id,new_task_id,action,note
+gemma3-12b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0025,,removed,Task removed from v4.
+gemma3-12b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0026,,removed,Task removed from v4.
+gemma3-12b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0043,,removed,Task removed from v4.
+gemma3-12b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0052,,removed,Task removed from v4.
+gemma3-12b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0060,,removed,Task removed from v4.
+gemma3-12b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0065,vietjack_math_v4_0060,expected_answer_updated,1.4142135623730951 -> sqrt(2)
+gemma3-4b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0025,,removed,Task removed from v4.
+gemma3-4b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0026,,removed,Task removed from v4.
+gemma3-4b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0043,,removed,Task removed from v4.
+gemma3-4b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0052,,removed,Task removed from v4.
+gemma3-4b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0060,,removed,Task removed from v4.
+gemma3-4b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0065,vietjack_math_v4_0060,expected_answer_updated,1.4142135623730951 -> sqrt(2)
+gemma4-31b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0025,,removed,Task removed from v4.
+gemma4-31b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0026,,removed,Task removed from v4.
+gemma4-31b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0043,,removed,Task removed from v4.
+gemma4-31b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0052,,removed,Task removed from v4.
+gemma4-31b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0060,,removed,Task removed from v4.
+gemma4-31b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0065,vietjack_math_v4_0060,expected_answer_updated,1.4142135623730951 -> sqrt(2)
+gpt-oss-120b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0025,,removed,Task removed from v4.
+gpt-oss-120b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0026,,removed,Task removed from v4.
+gpt-oss-120b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0043,,removed,Task removed from v4.
+gpt-oss-120b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0052,,removed,Task removed from v4.
+gpt-oss-120b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0060,,removed,Task removed from v4.
+gpt-oss-120b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0065,vietjack_math_v4_0060,expected_answer_updated,1.4142135623730951 -> sqrt(2)
+ministral-3-8b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0025,,removed,Task removed from v4.
+ministral-3-8b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0026,,removed,Task removed from v4.
+ministral-3-8b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0043,,removed,Task removed from v4.
+ministral-3-8b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0052,,removed,Task removed from v4.
+ministral-3-8b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0060,,removed,Task removed from v4.
+ministral-3-8b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0065,vietjack_math_v4_0060,expected_answer_updated,1.4142135623730951 -> sqrt(2)
+nemotron-3-nano-30b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0025,,removed,Task removed from v4.
+nemotron-3-nano-30b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0026,,removed,Task removed from v4.
+nemotron-3-nano-30b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0043,,removed,Task removed from v4.
+nemotron-3-nano-30b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0052,,removed,Task removed from v4.
+nemotron-3-nano-30b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0060,,removed,Task removed from v4.
+nemotron-3-nano-30b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0065,vietjack_math_v4_0060,expected_answer_updated,1.4142135623730951 -> sqrt(2)
+rnj-1-8b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0025,,removed,Task removed from v4.
+rnj-1-8b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0026,,removed,Task removed from v4.
+rnj-1-8b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0043,,removed,Task removed from v4.
+rnj-1-8b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0052,,removed,Task removed from v4.
+rnj-1-8b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0060,,removed,Task removed from v4.
+rnj-1-8b-cloud.VietJack_OnVao10_2026.math.v3.jsonl,vietjack_math_v3_0065,vietjack_math_v4_0060,expected_answer_updated,1.4142135623730951 -> sqrt(2)

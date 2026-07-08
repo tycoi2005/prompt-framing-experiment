@@ -1,0 +1,7 @@
+outcome,model_spec,formula,nobs,aic
+passed_int,M0_prompt_only,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id),2700,1132.2692602827165
+passed_int,M1_length,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_completion_tokens,2700,1119.6128424002452
+passed_int,M2_code_only,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + likely_code_only,2700,1131.8471681775418
+passed_int,M3_extraction,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + extraction_failed,2700,1122.5222320380624
+passed_int,M4_runtime,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_duration_seconds,2700,1120.7088373539013
+passed_int,M5_all_behavior_controls,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_completion_tokens + likely_code_only + extraction_failed + log_duration_seconds,2700,1109.9971335262414

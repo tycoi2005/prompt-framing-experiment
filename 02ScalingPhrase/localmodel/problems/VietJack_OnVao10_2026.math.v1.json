@@ -1,0 +1,641 @@
+[
+  {
+    "id": "vietjack_math_v1_0001",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "( 1,0 điểm ) Hai bạn An và Bình đua với nhau bằng ván trượt. Biết rằng nếu cả hai cùng dùng ván trượt thì tốc độ của An gấp 3 lần của Bình, nhưng tốc độ trượt ván của Bình sẽ gấp 3 lần tốc độ chạy bộ của An. Khi tham gia cuộc đua, hai bạn xuất phát cùng một lúc bằng ván trượt, nhưng sau đó 3 phút, ván trượt của An bị hỏng và bạn ấy phải chạy bộ về đích. Biết rằng cả hai bạn về đích cùng lúc, hỏi cuộc đua đã diễn ra trong bao nhiêu phút? ( Giả sử tốc độ trượt ván, tốc độ chạy bộ của An và tốc độ trượt ván của Bình không thay đổi trong suốt cuộc đua ).",
+    "expected_answer": "12",
+    "source_task_id": 2142834,
+    "source_old_id": 211915
+  },
+  {
+    "id": "vietjack_math_v1_0002",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Cho \\(a,b\\) là các số thực thỏa mãn điều kiện: \\(\\left\\{ \\begin{array}{l}2a + b = - 1\\\\3a - 4b = - 40\\end{array} \\right.\\) . Tính \\(P = ab\\)\n\nOptions:\nA . \\(1\\) .\nB . \\( - 28\\) .\nC . \\(28\\) .\nD . \\( - 32\\) .\n\nChoose the correct option letter.",
+    "expected_answer": "28",
+    "source_task_id": 2319657,
+    "source_old_id": 230908
+  },
+  {
+    "id": "vietjack_math_v1_0003",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Bạn Toàn có \\[100\\] nghìn đồng. Bạn muốn mua một cái bút giá \\[18\\] nghìn đồng và một số quyển vở, mỗi quyển vở giá \\[7\\] nghìn đồng. Hỏi bạn Toàn mua được nhiều nhất bao nhiêu quyển vở?",
+    "expected_answer": "11",
+    "source_task_id": 2272596,
+    "source_old_id": 225798
+  },
+  {
+    "id": "vietjack_math_v1_0004",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Câu lạc bộ Mĩ thuật của một trường THCS đang chuẩn bị gian hàng gây quỹ tại \"Ngày hội Sách và Sáng tạo năm 2025\". Câu lạc bộ quyết định làm hai loại thiệp chúc mừng handmade để bán gây quỹ ủng hộ trẻ em vùng cao. Thời gian làm \\(1\\) thiệp mẫu \\(A\\) (thiệp \\(3D\\), cắt giấy cầu kỳ) gấp hai lần thời gian làm \\(1\\) thiệp mẫu \\(B\\) (thiệp \\(2D\\) trang trí đơn giản). Nếu chỉ làm thiệp mẫu \\(B\\), trong \\(1\\) giờ các bạn hoàn thành được \\(60\\) thiệp. Trong một ngày, câu lạc bộ có \\(8\\) giờ làm việc. Ban tổ chức dự báo lượng khách và cho phép câu lạc bộ bày bán tối đa \\(200\\) thiệp mẫu \\(A\\) và \\(240\\) thiệp mẫu \\(B\\) trong mỗi ngày hội. Tiền lãi thu được khi bán một sản phẩm Thiệp mẫu \\(A\\) là \\(24\\,000\\) đồng/thiệp, Thiệp mẫu \\(B\\) là \\(18\\,000\\) đồng/thiệp. Hỏi: Trong một ngày hội, câu lạc bộ cần làm bao nhiêu thiệp mẫu \\(A\\) và mẫu \\(B\\) để thu được số tiền lãi cao nhất?",
+    "expected_answer": "7200000",
+    "source_task_id": 2272615,
+    "source_old_id": 225802
+  },
+  {
+    "id": "vietjack_math_v1_0005",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Kết quả của phép tính \\(\\frac{{\\sqrt {99} }}{{\\sqrt {11} }}\\) là\n\nOptions:\nA. 3.\nB. \\(\\sqrt 3 \\).\nC. 11.\nD. 9.\n\nChoose the correct option letter.",
+    "expected_answer": "3",
+    "source_task_id": 2320186,
+    "source_old_id": 230948
+  },
+  {
+    "id": "vietjack_math_v1_0006",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Trong hộp có \\[13\\] quả bóng đỏ, \\[10\\] quả bóng vàng và \\[80\\] quả bóng trắng. Lấy ngẫu nhiên một quả trong hộp. Biết các quả bóng có kích thước và khối lượng như nhau, tính xác suất của biến cố \\(A:\\) “quả bóng lấy được không phải là màu trắng”. (Làm tròn đến hàng phần trăm).",
+    "expected_answer": "23/103",
+    "source_task_id": 2433278,
+    "source_old_id": 237529
+  },
+  {
+    "id": "vietjack_math_v1_0007",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Viết ngẫu nhiên một số tự nhiên có 1 chữ số. Tính xác suất của biến cố “Số tự nhiên được viết ra là số chia hết cho 3”.",
+    "expected_answer": "2/5",
+    "source_task_id": 2433301,
+    "source_old_id": 237530
+  },
+  {
+    "id": "vietjack_math_v1_0008",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Bạn Bình dự định dùng hết số tiền \\(600\\) nghìn đồng để mua một số chiếc áo đồng giá tặng các bạn có hoàn cảnh khó khăn. Khi đến cửa hàng, loại áo mà bạn Bình mua được giảm giá \\(30\\) nghìn đồng/chiếc. Do vậy bạn Bình đã mua được số lượng áo gấp \\(1,25\\) lần so với số lượng dự định. Tính giá tiền của mỗi chiếc áo mà bạn Bình đã mua.",
+    "expected_answer": "120",
+    "source_task_id": 2433304,
+    "source_old_id": 237530
+  },
+  {
+    "id": "vietjack_math_v1_0009",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "(1 điểm) Một đội xe dự định dùng một số xe ô tô cùng loại để chở 120 tấn hàng ủng hộ đồng bào khó khăn ở vùng lũ lụt. Lúc sắp khởi hành, đội được bổ sung thêm 5 xe nữa cùng loại. Vì vậy, mỗi xe phải chở ít hơn 2 tấn so với dự định ban đầu. Hỏi lúc đầu đội đó có bao nhiêu xe, biết rằng khối lượng hàng chở trên mỗi xe là như nhau?",
+    "expected_answer": "15",
+    "source_task_id": 2433339,
+    "source_old_id": 237536
+  },
+  {
+    "id": "vietjack_math_v1_0010",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một tổ sản xuất phải làm 600 sản phẩm trong một thời gian với năng suất nhất định. Khi làm xong 400 sản phẩm, tổ tăng năng suất, mỗi ngày làm thêm 10 sản phẩm so với dự định. Vì vậy công việc được hoàn thành sớm hơn kế hoạch 1 ngày. Tính số sản phẩm mỗi ngày tổ phải sản xuất theo dự định.",
+    "expected_answer": "40",
+    "source_task_id": 2433526,
+    "source_old_id": 237540
+  },
+  {
+    "id": "vietjack_math_v1_0011",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Trong một khu vườn, có 30 cây được đánh thứ tự từ 1 đến 30. Biết rằng các cây đều có chiều cao, tán lá và độ tuổi giống nhau. Bạn An chọn ngẫu nhiên một cây để treo đèn lồng. Tính xác suất của biến cố: “ Bạn An chọn được một cây có số thứ tự chia 4 dư 1 ”.",
+    "expected_answer": "7/30",
+    "source_task_id": 2433548,
+    "source_old_id": 237559
+  },
+  {
+    "id": "vietjack_math_v1_0012",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Theo kế hoạch một công nhân phải hoàn thành \\(60\\) sản phẩm trong một thời gian nhất định. Nhưng do cải tiến kĩ thuật nên mỗi giờ người công nhân đó đã làm thêm được \\(2\\) sản phẩm. Vì vậy chẳng những đã hoàn thành kế hoạch sớm hơn dự định \\(30\\) phút mà còn vượt mức \\(3\\) sản phẩm. Hỏi theo kế hoạch, mỗi giờ người đó phải làm bao nhiêu sản phẩm?",
+    "expected_answer": "30",
+    "source_task_id": 2433551,
+    "source_old_id": 237559
+  },
+  {
+    "id": "vietjack_math_v1_0013",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Quảng đường AB dài \\[80{\\rm{ }}km\\]. Hai xe khởi hành cùng một lúc từ A để đi đến B. Vận tốc của xe thứ nhất lớn hơn vận tốc của xe thứ hai là \\[10{\\rm{ }}km\\,/\\,h\\] nên xe thứ nhất đến B sớm hơn xe thứ hai là 24 phút. Tính vận tốc của xe thứ hai.",
+    "expected_answer": "40",
+    "source_task_id": 2433602,
+    "source_old_id": 237590
+  },
+  {
+    "id": "vietjack_math_v1_0014",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một công nhân may phải hoàn thành 5000 khẩu trang trong một thời gian dự định. Do tăng năng suất thêm 50 chiếc mỗi ngày nên không những hoàn thành sớm 1 ngày mà công nhân đó được thêm \\(20\\% \\)số khẩu trang so với dự định. Hỏi công nhân may phải hoàn thành theo dự định là bao nhiêu ngày?",
+    "expected_answer": "25",
+    "source_task_id": 2433603,
+    "source_old_id": 237590
+  },
+  {
+    "id": "vietjack_math_v1_0015",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Nhà trường THPT Sơn Tây được công nhận là trường THPT Chuyên Sơn Tây từ ngày 15/01/2025. Nhà trường nhờ một tổ Công nhân làm Logo mới với số lượng 1800 chiếc cho hơn 1760 học sinh trong một số ngày dự định. Nhưng vì tổ công nhân làm chưa khoa học nên đã làm chậm mỗi ngày 20 sản phẩm Logo so với dự định. Vì thế tổ công nhân đã xong sau dự định 3 ngày. Hỏi theo dự định tổ công nhân sẽ cần làm mỗi ngày bao nhiêu Logo? ( Với giả định các ngày tổ công nhân làm số Logo giống nhau).",
+    "expected_answer": "120",
+    "source_task_id": 2433613,
+    "source_old_id": 237609
+  },
+  {
+    "id": "vietjack_math_v1_0016",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "(0,5 điểm): Một cửa hàng phân phối bán ra 1000 sản phẩm mỗi năm. Mỗi lần đặt hàng có chi phí là 50 USD và chi phí lưu kho là 2 USD cho một sản phẩm mỗi năm. Hãy tìm số lượng hàng hóa cần đặt mỗi lần để tối thiểu hóa tổng chi phí đặt hàng và lưu kho.",
+    "expected_answer": "224",
+    "source_task_id": 2433623,
+    "source_old_id": 237610
+  },
+  {
+    "id": "vietjack_math_v1_0017",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một hộp có \\(48\\) chiếc thẻ cùng loại được ghi số từ \\(1\\) đến \\(48;\\;\\)hai thẻ khác nhau thì ghi số khác nhau. Rút ngẫu nhiên một thẻ trong hộp. Tính xác suất của biến cố A: \"Số ghi trên thẻ được rút ra là ước của \\(90\\)\".",
+    "expected_answer": "11/48",
+    "source_task_id": 2433634,
+    "source_old_id": 237612
+  },
+  {
+    "id": "vietjack_math_v1_0018",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Viết ngẫu nhiên một số tự nhiên nhỏ hơn 100. Tính xác suất của biến cố:\n“Số tự nhiên được viết ra là số chính phương”.",
+    "expected_answer": "1/10",
+    "source_task_id": 2433643,
+    "source_old_id": 237613
+  },
+  {
+    "id": "vietjack_math_v1_0019",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Quãng đường AB dài \\(160\\) km. Hai xe khởi hành cùng một lúc từ A để đi đến B. Vận tốc của xe thứ nhất lớn hơn vận tốc của xe thứ hai là \\(10km/h\\) nên xe thứ nhất đến B sớm hơn xe thứ hai là \\(48\\) phút. Tính vận tốc của mỗi xe.",
+    "expected_answer": "40",
+    "source_task_id": 2433646,
+    "source_old_id": 237613
+  },
+  {
+    "id": "vietjack_math_v1_0020",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Trong một đợt khuyến mãi, siêu thị giảm giá cho mặt hàng \\(A\\) là \\(20\\% \\) và mặt hàng \\(B\\) là \\(15\\% \\) so với giá niêm yết. Một khách hàng mua \\(2\\) mặt hàng \\(A\\) và \\(1\\) mặt hàng \\(B\\) phải trả số tiền là \\(362000\\) đồng. Nhưng nếu mua trong khung giờ vàng thì mặt hàng \\(A\\) được giảm giá \\(30\\% \\) còn mặt hàng \\(B\\) được giảm giá \\(25\\% \\) so với giá niêm yết. Một người mua \\(3\\) mặt hàng \\(A\\) và \\(2\\) mặt hàng \\(B\\) trong khung giờ vàng nên chỉ trả số tiền là \\(552000\\) đồng. Tính giá niêm yết của mỗi mặt hàng \\(A\\) và \\(B\\).",
+    "expected_answer": "200000",
+    "source_task_id": 2433654,
+    "source_old_id": 237614
+  },
+  {
+    "id": "vietjack_math_v1_0021",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một bình đựng \\[12\\] quả cầu đánh số từ \\[1\\] đến \\[12\\] có kích thước và khối lượng như nhau. Chọn ngẫu nhiên một quả. Tính xác suất để chọn được quả cầu có số chia cho \\[3\\] dư \\[2\\] .",
+    "expected_answer": "1/3",
+    "source_task_id": 2433661,
+    "source_old_id": 237615
+  },
+  {
+    "id": "vietjack_math_v1_0022",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Theo kế hoạch, một đội sản xuất dự định làm 75 sản phẩm trong một số ngày. Trên thực tế, do cải tiến về các tổ chức nên mỗi ngày đội làm được nhiều hơn 5 sản phẩm so với kế hoạch. Vì vậy đội đã hoàn thành công việc sớm hơn 1 ngày và làm được thêm 5 sản phẩm. Hỏi theo kế hoạch, mỗi ngày đội sản xuất phải làm bao nhiêu sản phẩm?",
+    "expected_answer": "15",
+    "source_task_id": 2433673,
+    "source_old_id": 237616
+  },
+  {
+    "id": "vietjack_math_v1_0023",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một khay có 11 chiếc thẻ cùng loại, mỗi thẻ được ghi một trong các số tự nhiên từ 1 đến 11, hai thẻ khác nhau được ghi hai số khác nhau.\n\n \n\n Xét phép thử “Lấy ngẫu nhiên một thẻ trong khay” và biến cố M: “Số xuất hiện trên thẻ là bội của 2”. Tính xác suất của biến cố M.",
+    "expected_answer": "4/13",
+    "source_task_id": 2433679,
+    "source_old_id": 237617
+  },
+  {
+    "id": "vietjack_math_v1_0024",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Theo kế hoạch, một công nhân phải hoàn thành \\(60\\) sản phẩm trong một thời gian nhất định. Nhưng do cải tiến kĩ thuật nên mỗi giờ người công nhân đó đã làm thêm được \\(2\\) sản phẩm. Vì vậy, chẳng những người công nhân đã hoàn thành sớm hơn dự định \\(30\\) phút mà còn vượt mức \\(3\\) sản phẩm. Hỏi theo kế hoạch, mỗi giờ người công nhân đó đã làm bao nhiêu sản phẩm? (Giả sử số sản phẩm người đó làm được trong mỗi giờ là bằng nhau).",
+    "expected_answer": "30",
+    "source_task_id": 2433682,
+    "source_old_id": 237617
+  },
+  {
+    "id": "vietjack_math_v1_0025",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Trong một khu vườn, có \\[30\\] cây được đánh số thứ tự từ \\(1\\) đến \\(30\\) . Biết rằng các cây đều có chiều cao, tán là và độ tuổi giống nhau. Bạn An chọn ngẫu nhiên \\(1\\) cây để treo đèn lồng. Tính xác suất của biến cố: “ Bạn An chọn được cây có số thứ tự chia \\(4\\) dư \\[1\\] ’’",
+    "expected_answer": "4/15",
+    "source_task_id": 2437854,
+    "source_old_id": 238027
+  },
+  {
+    "id": "vietjack_math_v1_0026",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một nhóm thám hiểm leo núi xuất phát từ chân núi lúc \\(7\\)giờ sáng. Nhận được tin khẩn cấp lúc \\[8\\]giờ\\(15\\)phút, một đội cứu hộ xuất phát từ chân núi để đuổi theo. Sau khi đi được \\(10400m\\), đội cứu hộ gặp được nhóm thám hiểm. Biết rằng vận tốc của đội cứu hộ nhanh hơn vận tốc của nhóm thám hiểm là \\[2km/h\\]. Tính vận tốc của nhóm thám hiểm.",
+    "expected_answer": "15",
+    "source_task_id": 2437858,
+    "source_old_id": 238027
+  },
+  {
+    "id": "vietjack_math_v1_0027",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Danh sách thành viên tham dự cuộc thi “An toàn giao thông cho nụ cười ngày mai” của học sinh lớp \\(9A\\) được đánh số thứ tự từ \\(1\\) đến \\(20\\), trong đó bạn Thắng có số thứ tự là \\(12\\). Chọn ngẫu nhiên một học sinh trong đội đó. Tính xác suất của biến cố \\(M\\): “Số thứ tự học sinh được chọn ra là một số lẻ và nhỏ hơn số thứ tự của bạn Thắng”.",
+    "expected_answer": "3/10",
+    "source_task_id": 2437885,
+    "source_old_id": 238030
+  },
+  {
+    "id": "vietjack_math_v1_0028",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một chiếc túi đựng \\[100\\] viên bi có cùng kích thước và khối lượng, trong đó có \\[34\\] viên màu đỏ, \\[45\\]viên màu đen, còn lại là màu vàng. Lấy ngẫu nhiên một viên bi trong túi. Tính xác suất của biến cố “Viên bi được chọn không phải là viên bi đỏ”.",
+    "expected_answer": "66/100",
+    "source_task_id": 2437906,
+    "source_old_id": 238031
+  },
+  {
+    "id": "vietjack_math_v1_0029",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Trong đợt khuyến mãi nhân dịp kỉ niệm ngày Quốc khánh 2/9, siêu thị A giảm giá cho một thùng nước ngọt là \\(20\\% \\) và một thùng sữa tươi là \\(15\\% \\) so với giá niêm yết. Một khách hàng đã mua \\(2\\) thùng nước ngọt và \\(1\\) thùng sữa tươi thì phải trả số tiền là \\[362000\\] đồng. Nhưng nếu mua trong khung giờ vàng thì một thùng nước ngọt được giảm giá \\(30\\% \\) còn một thùng sữa tươi được giảm giá \\(25\\% \\) so với giá niêm yết. Một khách hàng khác đã mua \\(3\\) thùng nước ngọt và \\(2\\) thùng sữa tươi trong khung giờ vàng chỉ phải trả số tiền là \\[552000\\] đồng. Tính giá niêm yết của mỗi thùng nước ngọt và mỗi thùng sữa tươi.",
+    "expected_answer": "200000",
+    "source_task_id": 2437909,
+    "source_old_id": 238031
+  },
+  {
+    "id": "vietjack_math_v1_0030",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Trong một hộp kín có 15 tấm thẻ cùng loại được đánh số từ 1 đến 15 (hai thẻ khác nhau thì ghi số khác nhau). Rút ngẫu nhiên một tấm thẻ từ trong hộp. Xét biến cố: “Số xuất hiện trên tấm thẻ được rút ra là số nguyên tố”. Tính xác suất của biến cố A .",
+    "expected_answer": "6/15",
+    "source_task_id": 2459414,
+    "source_old_id": 239576
+  },
+  {
+    "id": "vietjack_math_v1_0031",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một ca nô tuần tra giao thông đường thủy nhận nhiệm vụ di chuyển trên một khúc sông từ bến \\(A\\) đến bến \\(B\\). Khúc sông này có dòng nước chảy với vận tốc đều là \\(2{\\rm{ km/h}}\\). Ca nô xuất phát từ bến \\(A\\) xuôi dòng đến bến \\(B\\) cách đó \\(48{\\rm{ km}}\\) để làm nhiệm vụ. Sau khi đến bến, \\[B\\] ca nô neo đậu lại đúng \\(1\\) giờ để tổ công tác tiến hành kiểm tra một số phương tiện giao thông thủy, rồi lập tức quay trở về bến \\(A\\) ngược dòng nước. Biết rằng tổng thời gian kể từ lúc ca nô xuất phát ở bến \\(A\\)đến khi quay trở lại bến \\(A\\) là \\(11\\) giờ. Giả sử vận tốc riêng của ca nô (vận tốc khi nước yên lặng) là không thay đổi trong suốt quá trình đi và về. Hãy tính vận tốc riêng của ca nô.",
+    "expected_answer": "10",
+    "source_task_id": 2459416,
+    "source_old_id": 239576
+  },
+  {
+    "id": "vietjack_math_v1_0032",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một hộp chứa 25 quả cầu được đánh số từ 1 đến 25, các quả cầu có màu sắc, khối lượng và kích thước như nhau. Xét phép thử lấy ngẫu nhiên 1 quả cầu từ hộp. Tính xác suất của biển số A “Quả cầu lấy ra có số ghi trên đó là 1 số nguyên tố”.",
+    "expected_answer": "10/32",
+    "source_task_id": 2459423,
+    "source_old_id": 239577
+  },
+  {
+    "id": "vietjack_math_v1_0033",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Để lập đội tuyển bóng rổ của trường, giáo viên phụ trách đội tuyển đưa ra yêu cầu tuyển chọn như sau: Mỗi bạn dự tuyển sẽ thực hiện 10 lần ném bóng vào rổ, mỗi quả bóng ném trúng vào rổ được cộng 3 điểm, mỗi quả bóng ném ra ngoài bị trừ 1 điểm. Nếu đạt từ 20 điểm trở lên thì sẽ được chọn vào đội tuyển. Hỏi một học sinh muốn được chọn vào đội tuyển thì phải ném trúng ít nhất bao nhiêu quả bóng vào rổ?",
+    "expected_answer": "8",
+    "source_task_id": 2459426,
+    "source_old_id": 239577
+  },
+  {
+    "id": "vietjack_math_v1_0034",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một hộp có 25 thẻ cùng loại, mỗi thẻ được ghi một trong các số \\(1;2;3;4;5;...;25\\), hai thẻ khác nhau thì ghi số khác nhau. Rút ngẫu nhiên một thẻ trong hộp. Tính xác suất của biến cố A “Rút được thẻ ghi số chia cho 5 dư 1”.",
+    "expected_answer": "1/5",
+    "source_task_id": 2459433,
+    "source_old_id": 239578
+  },
+  {
+    "id": "vietjack_math_v1_0035",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Rạp chiếu phim Quốc gia quy định về giá vé xem phim của người lớn và trẻ em khác nhau. Gia đình An có \\(2\\) người lớn và \\(1\\) trẻ em mua vé hết tổng \\(370\\) nghìn đồng. Gia đình Bình có \\(3\\) người lớn và \\(2\\) trẻ em mua vé hết tổng \\(590\\) nghìn đồng. Hỏi giá vé của người lớn và trẻ em theo quy định là bao nhiêu?",
+    "expected_answer": "70",
+    "source_task_id": 2459435,
+    "source_old_id": 239578
+  },
+  {
+    "id": "vietjack_math_v1_0036",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một đội xe vận tải được phân công chở \\(120\\) tấn hàng để ủng hộ vùng bão lũ. Khi bắt đầu làm việc, đội được bổ sung thêm \\(2\\) xe nữa nên mỗi xe chở ít hơn so với dự định \\(2\\) tấn hàng. Hỏi lúc đầu đội xe có bao nhiêu chiếc? (Biết khối lượng hàng mỗi xe chở là như nhau).",
+    "expected_answer": "10",
+    "source_task_id": 2459436,
+    "source_old_id": 239578
+  },
+  {
+    "id": "vietjack_math_v1_0037",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một xe du lich khởi hành từ A để đến B. Nửa giờ sau một xe tải xuất phát từ B để về A. Xe tải đi được \\[1\\] giờ thì gặp xe du lịch. Tính vận tốc của mỗi xe biết xe du lịch có vận tốc lớn hơn xe tải là \\[10\\,\\,{\\rm{km/h}}\\] và quãng đường AB dài \\[90\\,\\,{\\rm{km}}\\].",
+    "expected_answer": "40",
+    "source_task_id": 2459469,
+    "source_old_id": 239581
+  },
+  {
+    "id": "vietjack_math_v1_0038",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một xe tải chở hàng dự kiến đi từ Hải Phòng vào Quảng Trị với quãng đường dài \\(600\\)km trong một thời gian dự kiến với vận tốc không đổi. Tuy nhiên, ngay trước khi xuất phát, công ty thay đổi kế hoạch và yêu cầu tài xế phải giao hàng tại Đà Nẵng, với quãng đường cách Hải Phòng \\(840\\)km. Để kịp tiến độ giao hàng cho chặng đường dài hơn, tài xế đã quyết định tăng vận tốc trung bình thêm \\(20\\)km/h so với dự định ban đầu. Biết rằng, tổng thời gian dừng nghỉ trên đường là \\(1\\)giờ và người tài xế vẫn giao hàng đúng như thời gian dự kiến đi đến Quảng Trị ban đầu. Hỏi vận tốc dự định của xe tải là bao nhiêu?",
+    "expected_answer": "20",
+    "source_task_id": 2459560,
+    "source_old_id": 239584
+  },
+  {
+    "id": "vietjack_math_v1_0039",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Gieo ngẫu nhiên một con xúc xắc một lần. Tính xác suất của biến cố “ Mặt xuất hiện của xúc xắc có số chấm là số chia hết cho 2 ”.",
+    "expected_answer": "1/2",
+    "source_task_id": 2459751,
+    "source_old_id": 239592
+  },
+  {
+    "id": "vietjack_math_v1_0040",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một bạn học sinh muốn mua một chiếc tai nghe giá \\(300{\\rm{ }}000\\) đồng. Hiện tại bạn đã có \\(120{\\rm{ }}000\\) đồng. Mỗi ngày bạn tiết kiệm được thêm \\(5{\\rm{ }}000\\) đồng từ tiền ăn sáng. Hỏi sau ít nhất bao nhiêu ngày thì bạn học sinh đó có đủ tiền để mua chiếc tai nghe?",
+    "expected_answer": "36",
+    "source_task_id": 2459753,
+    "source_old_id": 239592
+  },
+  {
+    "id": "vietjack_math_v1_0041",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một hộp có \\[50\\] chiếc thẻ cùng loại, mỗi thẻ được ghi một trong các số: \\[1,2,3,...,49,50\\]; hai thẻ khác nhau thì ghi hai số khác nhau. Rút ngẫu nhiên một thẻ trong hộp. Tính xác suất của biến cố \\[A\\]: “Số xuất hiện trên thẻ được rút ra là bội của \\[8\\]”.",
+    "expected_answer": "3/25",
+    "source_task_id": 2459774,
+    "source_old_id": 239594
+  },
+  {
+    "id": "vietjack_math_v1_0042",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Lúc \\[6\\] giờ \\[30\\]phút sáng, một ca-nô chở hàng đi xuôi dòng từ A đến B dài \\[48\\] km. Khi đến B, ca-nô nghỉ \\[30\\] phút để bốc dỡ hàng sau đó lại đi ngược dòng từ B đến C dài \\[30\\] km. Ca-nô đến C lúc \\[10\\] giờ \\[30\\] phút buổi sáng cùng ngày. Tìm vận tốc của ca-nô khi nước yên lặng, biết vận tốc dòng nước là \\[2\\] km/h và vận tốc ca-nô khi nước yên lặng không thay đổi trong suốt quá trình chuyển động của ca-nô.",
+    "expected_answer": "22",
+    "source_task_id": 2459781,
+    "source_old_id": 239594
+  },
+  {
+    "id": "vietjack_math_v1_0043",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một tổ sản xuất phải làm \\(600\\) sản phẩm trong một thời gian với năng suất nhất định. Khi làm xong \\(400\\) sản phẩm, tổ tăng năng suất, mỗi ngày làm thêm \\(10\\) sản phẩm so với dự định. Vì vậy công việc được hoàn thành sớm hơn kế hoạch \\(1\\) ngày. Tính số sản phẩm mỗi ngày tổ phải sản xuất theo dự định.",
+    "expected_answer": "200",
+    "source_task_id": 2459867,
+    "source_old_id": 239596
+  },
+  {
+    "id": "vietjack_math_v1_0044",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Cho phương trình \\({x^2} - 4x - 7 = 0\\) có nghiệm là \\({x_1};{x_2}\\). Tính giá trị của biểu thức \\(A = {\\left( {{x_1} - {x_2}} \\right)^2}\\)",
+    "expected_answer": "44",
+    "source_task_id": 2459868,
+    "source_old_id": 239596
+  },
+  {
+    "id": "vietjack_math_v1_0045",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một hộp chứa một số quả bóng màu cam và một số quả bóng màu trắng kém bóng màu cam 10 quả. Các quả bóng có cùng kích thước và khối lượng. Lấy ra ngẫu nhiên một quả bóng từ hộp. Biết xác suất của biến cố \"Lấy được quả bóng màu trắng\" là \\(\\frac{2}{5}\\). Hỏi trong hộp có bao nhiêu quả bóng màu trắng?",
+    "expected_answer": "20",
+    "source_task_id": 2459873,
+    "source_old_id": 239599
+  },
+  {
+    "id": "vietjack_math_v1_0046",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Bác Lan mua 16 chiếc Piza tại một cửa hàng, nhân viên cửa hàng thông báo cửa hàng Pizza có chương trình bán hàng như sau: 5 chiếc Pizza đầu tiên thì cửa hàng tính tiền với giá niêm yết. Từ chiếc thứ 6 đến chiếc thứ 10 cửa hàng giảm giá \\[30\\,\\,000\\] đồng cho mỗi chiếc so với giá niêm yết. Từ chiếc thứ 11 trở đi cửa hàng tiếp tục giảm 20% cho mỗi chiếc trên giá đã giảm trước đó. Do vậy bác Lan phải trả \\[3\\,\\,110\\,\\,000\\] đồng cho cửa hàng. Tính giá niêm yết của mỗi chiếc Pizza trong cửa hàng.",
+    "expected_answer": "230000",
+    "source_task_id": 2459891,
+    "source_old_id": 239601
+  },
+  {
+    "id": "vietjack_math_v1_0047",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Cho hai chiếc hộp I và II, trong đó hộp I chứa 3 tấm thẻ ghi các số 1; 2; 3 và hộp II chứa 4 tấm thẻ ghi các số 1; 2; 3; 4. Rút ngẫu nhiên mỗi hộp một chiếc thẻ và ghép thành số có hai chữ số với chữ số trên tấm thẻ rút ra từ hộp I là chữ số hàng chục. Tính xác suất của biến cố \\[A\\]: “Số tạo thành chia hết cho 3”.",
+    "expected_answer": "1/3",
+    "source_task_id": 2459915,
+    "source_old_id": 239604
+  },
+  {
+    "id": "vietjack_math_v1_0048",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Trong tháng 3 năm 2026, do ảnh hưởng của xung đột vũ trang tại Trung Đông nên giá xăng dầu thế giới và trong nước diễn biến phức tạp. Từ 23 giờ 45 phút ngày 10/3, Liên Bộ Công Thương – Tài chính trích lập và chỉ sử dụng Quỹ Bình ổn giá xăng dầu để điều chỉnh giá xăng dầu (Báo Điện tử chính phủ). Theo đó, xăng RON95-III giảm 4000đ/lít. Biết cùng với số tiền 957 nghìn đồng khi mua xăng RON95-III sau thời điểm bình ổn giá sẽ được nhiều hơn 4 lít so với thời điểm chưa bình ổn giá. Tính giá xăng RON95-III trước thời điểm bình ổn giá.",
+    "expected_answer": "33",
+    "source_task_id": 2459919,
+    "source_old_id": 239604
+  },
+  {
+    "id": "vietjack_math_v1_0049",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Gieo một con xúc xắc cân đối đồng chất. Xét phép thử: “Gieo con xúc xắc một lần” và biến cố A: “Số chấm xuất hiện trên con xúc xắc là hợp số”. Tính xác suất của biến cố A.",
+    "expected_answer": "1/3",
+    "source_task_id": 2459945,
+    "source_old_id": 239606
+  },
+  {
+    "id": "vietjack_math_v1_0050",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Nhân dịp tết Nguyên Đán, siêu thị giảm giá một số sản phẩm. Bạn An mua một chiếc máy xay sinh tố và một chiếc nồi cơm điện với tổng giá niêm yết là \\[2\\,\\,200\\,\\,000\\] đồng. Do máy xay sinh tố giảm giá 30% và nồi cơm điện giảm giá 20% so với giá niêm yết nên bạn An chỉ phải trả \\[1\\,\\,610\\,\\,000\\] đồng. Tính giá niêm yết của máy xay sinh tố và nồi cơm điện.",
+    "expected_answer": "700000",
+    "source_task_id": 2459947,
+    "source_old_id": 239606
+  },
+  {
+    "id": "vietjack_math_v1_0051",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một ô tô dự định đi từ \\(A\\) đến \\(B\\) cách nhau \\(120\\) km trong một thời gian quy định. Sau khi đi được \\(1\\) giờ thì ô tô bị chặn bởi xe cứu hỏa \\(10\\) phút. Do đó để đến \\(B\\) đúng hạn xe phải tăng vận tốc thêm \\(6\\) km/h. Tính vận tốc lúc đầu của ô tô.",
+    "expected_answer": "48",
+    "source_task_id": 2459978,
+    "source_old_id": 239609
+  },
+  {
+    "id": "vietjack_math_v1_0052",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Trong hộp có 13 quả bóng đỏ, 10 quả bóng vàng và 80 quả bóng trắng. Lấy ngẫu nhiên một quả trong hộp. Biết các quả bóng có kích thước và khối lượng như nhau, tính xác suất của biến cố \\[A:\\] “quả bóng lấy được không phải là màu trắng”. (Làm tròn đến hàng phần trăm.)",
+    "expected_answer": "23/103",
+    "source_task_id": 2459985,
+    "source_old_id": 239610
+  },
+  {
+    "id": "vietjack_math_v1_0053",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Hùng có số tiền không vượt quá 60 000 đồng gồm \\(15\\) tờ với hai loại mệnh giá 2 000 đồng và 5 000 đồng. Hỏi Hùng có thể có nhiều nhất bao nhiêu tờ tiền mệnh giá 5 000 đồng?\n\nOptions:\nA. \\[10\\] tờ.\nB. \\[7\\] tờ.\nC. \\[8\\] tờ.\nD. \\[9\\] tờ.\n\nChoose the correct option letter.",
+    "expected_answer": "10",
+    "source_task_id": 2461145,
+    "source_old_id": 239658
+  },
+  {
+    "id": "vietjack_math_v1_0054",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Hệ phương trình \\(\\left\\{ \\begin{array}{l}2x - y = 3\\\\x + y = - 1\\end{array} \\right.\\) có nghiệm \\(\\left( {{x_0};\\,{y_0}} \\right).\\) Giá trị của biểu thức \\({x_0} - 2{y_0}\\) là\n\nOptions:\nA. \\(4\\) .\nB. \\(2\\) .\nC. \\(\\frac{{ - 8}}{3}\\) .\nD. \\(\\frac{7}{3}\\) .\n\nChoose the correct option letter.",
+    "expected_answer": "4",
+    "source_task_id": 2461241,
+    "source_old_id": 239666
+  },
+  {
+    "id": "vietjack_math_v1_0055",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Cho tam giác đều \\[ABC\\] nội tiếp đường tròn \\[\\left( O \\right).\\] Phép quay ngược chiều \\[{x^o}\\] tâm \\(O\\) biến điểm \\[A\\] thành điểm \\[C\\] thì giá trị thích hợp của \\[x\\] là\n\nOptions:\nA . \\(60\\) .\nB . \\(90\\) .\nC . \\(120\\) .\nD . \\(240\\) .\n\nChoose the correct option letter.",
+    "expected_answer": "240",
+    "source_task_id": 2461245,
+    "source_old_id": 239666
+  },
+  {
+    "id": "vietjack_math_v1_0056",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Góp phần hưởng ứng FESTIVAL du lịch “Cửa Lò – Bốn mùa biển gọi” , giáo dục học sinh hiểu biết, tự hào và quảng bá về quê hương Cửa Lò. Liên đội trường THCS Hải Hòa dự định trồng một vườn hoa cúc biển. Biết rằng nếu trồng thêm 3 luống, mỗi luống bớt đi 2 cây thì trồng thêm được 34 cây. Nếu bớt đi 5 luống, mỗi luống trồng thêm 5 cây thì trồng ít hơn dự định 50 cây. Hỏi lúc đầu liên đội trường THCS Hải Hòa dự định trồng bao nhiêu cây hoa cúc biển ?",
+    "expected_answer": "25",
+    "source_task_id": 2461357,
+    "source_old_id": 239674
+  },
+  {
+    "id": "vietjack_math_v1_0057",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Có hai túi \\(A\\) và \\(B\\) . Túi \\(A\\) có ba quả bóng ghi các số \\(4\\,;\\,\\,5\\,;\\,\\,6.\\) Túi \\(B\\) có ba quả bóng ghi các số \\(1\\,;\\,\\,2\\,;\\,\\,3.\\) Từ mỗi túi \\(A\\) và \\(B\\) lấy ngẫu nhiên hai quả bóng. Viết không gian mẫu của phép thử và tính xác suất của biến cố C: “Hai số ghi trên 2 quả bóng chênh nhau \\({\\rm{3}}\\) đơn vị”.",
+    "expected_answer": "1/3",
+    "source_task_id": 2461381,
+    "source_old_id": 239676
+  },
+  {
+    "id": "vietjack_math_v1_0058",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Chị Vân đến một cửa hàng thời trang mua áo và quần. Hôm ấy, cửa hàng này đã tăng giá bán một cái áo lên \\(10\\% \\) và giảm giá bán một cái quần xuống \\(20\\% \\) so với giá niêm yết. Do đó, chị Thơ phải trả số tiền là \\[1\\,\\,875\\,\\,000\\] đồng khi mua \\(3\\) cái áo và \\(2\\) cái quần. Biết rằng tổng số tiền phải trả để mua \\(3\\) cái áo và \\(2\\) cái quần theo giá niêm yết là \\[1\\,\\,950\\,\\,000\\] đồng. Hỏi giá tiền của một cái áo và một cái quần theo giá niêm yết là bao nhiêu?",
+    "expected_answer": "450",
+    "source_task_id": 2461384,
+    "source_old_id": 239676
+  },
+  {
+    "id": "vietjack_math_v1_0059",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một cơ sở sản xuất lập kế hoạch làm 600 sản phẩm trong một thời gian nhất định. Do cải tiến kĩ thuật, năng suất mỗi ngày tăng thêm 10 sản phẩm. Vì thế không những hoàn thành sớm hơn kế hoạch 1 ngày, mà cơ sở còn sản xuất vượt mức 100 sản phẩm. Biết rằng số sản phẩm mà cơ sở đó làm được trong mỗi ngày là bằng nhau. Hỏi theo kế hoạch mỗi ngày cơ sở sản xuất phải làm bao nhiêu sản phẩm?",
+    "expected_answer": "40",
+    "source_task_id": 2461386,
+    "source_old_id": 239676
+  },
+  {
+    "id": "vietjack_math_v1_0060",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một hộp có \\(48\\) chiếc thẻ cùng loại được ghi số từ \\(1\\) đến \\(48;\\;\\)hai thẻ khác nhau thì ghi số khác nhau. Rút ngẫu nhiên một thẻ trong hộp. Tính xác suất của biến cố A : \"Số ghi trên thẻ được rút ra là ước của \\(90\\)\".",
+    "expected_answer": "11/48",
+    "source_task_id": 2461444,
+    "source_old_id": 239681
+  },
+  {
+    "id": "vietjack_math_v1_0061",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Một hộp đựng 20 viên bi có khối lượng và kích thước như nhau được ghi các số 1; 2; 3; 4; …; 19; 20. Các viên bi khác nhau thì ghi các số khác nhau. Xét phép thử “Lấy ngẫu nhiên một viên bi từ trong hộp” và biến cố A: “Lấy được viên bi ghi số nguyên tố”. Tính xác suất của biến cố A.",
+    "expected_answer": "2/5",
+    "source_task_id": 2461509,
+    "source_old_id": 239686
+  },
+  {
+    "id": "vietjack_math_v1_0062",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Trung bình Dũng tiêu thụ hết 15 calo cho mỗi phút bơi và 10 calo cho mỗi phút chạy bộ. Hôm nay, bạn Dũng dành 1,5 giờ cho hai hoạt động trên và 1 200 calo được tiêu thụ. Hỏi hôm nay, bạn Dũng dành bao nhiêu thời gian cho mỗi hoạt động trên?",
+    "expected_answer": "60",
+    "source_task_id": 2461511,
+    "source_old_id": 239686
+  },
+  {
+    "id": "vietjack_math_v1_0063",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Cho phương trình : x 2 – mx + 2m – 4 = 0. Tìm m để phương trình có 2 nghiệm phân biệt thỏa mãn: \\(\\left| {{x_1}} \\right| + \\left| {{x_2}} \\right| = 3\\) .",
+    "expected_answer": "8",
+    "source_task_id": 2461514,
+    "source_old_id": 239686
+  },
+  {
+    "id": "vietjack_math_v1_0064",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Năm bạn Hoa, Mai, Đào, Xuân, Sang cùng đến một cửa hàng mua đồ dùng học tập đúng dịp bốc thăm trúng thưởng. Tên của năm bạn được ghi vào năm lá phiếu và bỏ vào một hộp kín. Nhân viên cửa hàng bốc ngẫu nhiên 2 lá phiếu để trao 2 phần quà. Tính xác suất của biến cố: “Trong 2 bạn trúng thưởng có bạn Xuân”.",
+    "expected_answer": "2/5",
+    "source_task_id": 2461525,
+    "source_old_id": 239695
+  },
+  {
+    "id": "vietjack_math_v1_0065",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Bác Bình An vay ở một ngân hàng \\(500\\) triệu đồng để sản xuất trong thời hạn một năm. Lẽ ra đúng một năm sau bác phải trả cả tiền vốn lẫn tiền lãi, song bác đã được ngân hàng cho kéo dài thời hạn thêm 1 năm nữa, số tiền lãi của năm đầu được gộp vào với tiền vốn để tính lãi năm sau và lãi suất vẫn như cũ. Hết hai năm bác Bình An phải trả tất cả \\(605\\) triệu đồng. Hỏi lãi suất cho vay của ngân hàng đó là bao nhiêu phần trăm trong một năm?",
+    "expected_answer": "10",
+    "source_task_id": 2461531,
+    "source_old_id": 239695
+  },
+  {
+    "id": "vietjack_math_v1_0066",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Tính giá trị biểu thức: \\({\\rm{A}} = \\sqrt {18} - 2\\sqrt 2 \\).",
+    "expected_answer": "2",
+    "source_task_id": 2434558,
+    "source_old_id": 237661
+  },
+  {
+    "id": "vietjack_math_v1_0067",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Tại buổi giao lưu của một câu lạc bộ Pickleball, ban tổ chức có một hộp kín đựng 5 quả bóng pickleball giống hệt nhau về kích thước và khối lượng, gồm ba quả bóng màu vàng được đánh số 1, 2, 3 và hai quả màu xanh được đánh số 1, 2. Một vận động viên tiến hành bốc thăm ngẫu nhiên một quả bóng, xem màu rồi không trả lại vào hộp, sau đó tiếp tục bốc ngẫu nhiên thêm một quả bóng nữa. Tính xác suất của biến cố: \"Vận động viên đó bốc được quả bóng màu vàng ở cả hai lần\".",
+    "expected_answer": "3/10",
+    "source_task_id": 2438145,
+    "source_old_id": 238045
+  },
+  {
+    "id": "vietjack_math_v1_0068",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Gieo đồng thời hai con xúc xắc 6 mặt cân đối và đồng chất. Tính xác suất của biến cố B: \"Tổng số chấm xuất hiện trên hai mặt con xúc xắc là một số nguyên tố\".",
+    "expected_answer": "5/12",
+    "source_task_id": 2439306,
+    "source_old_id": 238096
+  },
+  {
+    "id": "vietjack_math_v1_0069",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Từ một đài quan sát cao 350 m so với mực nước biển, người ta nhìn thấy một chiếc thuyền bị nạn dưới góc 20 0 so với phương ngang của mực nước biển. Muốn đến cứu con thuyền thì phải đi quãng đường dài bao nhiêu mét?",
+    "expected_answer": "961.6",
+    "source_task_id": 2441190,
+    "source_old_id": 238205
+  },
+  {
+    "id": "vietjack_math_v1_0070",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Nhóm học sinh tình nguyện khối 9 của một trường trung học cơ sở có 5 bạn, trong đó có 3 bạn nam là: Trung; Quý; Việt và 2 bạn nữ là: An; Châu. Chọn ngẫu nhiên hai bạn trong nhóm đó để tham gia hoạt động tình nguyện bên trường. Tính xác suất của biến cố A: “Trong hai bạn được chọn chỉ có một bạn là nữ”.",
+    "expected_answer": "3/5",
+    "source_task_id": 2443403,
+    "source_old_id": 238317
+  },
+  {
+    "id": "vietjack_math_v1_0071",
+    "category": "math",
+    "difficulty": "medium",
+    "prompt": "Trong một hộp đựng 6 tấm thẻ ghi các số \\(1;{\\rm{ }}2;{\\rm{ }}3;{\\rm{ }}4;{\\rm{ }}5;{\\rm{ }}6\\). Rút ngẫu nhiên đồng thời 2 tấm thẻ trong hộp. Tính xác suất của biến cố “Tổng hai số trên hai tấm thẻ là một số chẵn”.",
+    "expected_answer": "2/5",
+    "source_task_id": 2444092,
+    "source_old_id": 238347
+  }
+]

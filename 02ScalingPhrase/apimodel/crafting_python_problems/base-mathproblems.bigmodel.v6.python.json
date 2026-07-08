@@ -1,0 +1,952 @@
+[
+  {
+    "task_id": 1,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nYou are given that the following value is a rational number. Express it as an irreducible fraction.\n$$\n\\sqrt{\\frac{123! - 122!}{122! - 121!}}\n$$",
+    "code": "from fractions import Fraction\nimport math\n\ndef solve_math_problem(n=123):\n    denominator = math.isqrt(n - 2)\n    if denominator * denominator != n - 2:\n        raise ValueError('n - 2 must be a perfect square')\n    return Fraction(n - 1, denominator)",
+    "test_list": [
+      "assert solve_math_problem(123) == Fraction(122, 11)",
+      "assert solve_math_problem(18) == Fraction(17, 4)"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(27) == Fraction(26, 5)",
+      "assert solve_math_problem(38) == Fraction(37, 6)",
+      "assert solve_math_problem(51) == Fraction(50, 7)",
+      "assert solve_math_problem(66) == Fraction(65, 8)",
+      "assert solve_math_problem(83) == Fraction(82, 9)"
+    ],
+    "difficulty": "medium",
+    "old_id": "08zv"
+  },
+  {
+    "task_id": 2,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nFor the second round of the Mathematical Olympiad, 999 students are invited. Melanie creates invitation letters in order of participant number: $1, 2, 3, \\ldots$. For some values of $n \\geq 100$, she notices the following: the number of participant numbers from $1$ up to and including $n$ ending in a $5$ is exactly equal to the integer formed by the last two digits of $n$.\nFor how many values of $n$ (with $100 \\leq n < 1000$) does this hold?",
+    "code": "def solve_math_problem(upper=1000, lower=100, ending_digit=5):\n    count = 0\n    for n in range(lower, upper):\n        ending_count = sum(1 for k in range(1, n + 1) if k % 10 == ending_digit)\n        if ending_count == n % 100:\n            count += 1\n    return count",
+    "test_list": [
+      "assert solve_math_problem(1000) == 9",
+      "assert solve_math_problem(500) == 5"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(200) == 1",
+      "assert solve_math_problem(300) == 2",
+      "assert solve_math_problem(700) == 7",
+      "assert solve_math_problem(900) == 9",
+      "assert solve_math_problem(1000, 1, 0) == 9"
+    ],
+    "difficulty": "medium",
+    "old_id": "0a18"
+  },
+  {
+    "task_id": 3,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nPeter gets bored during the lockdown, so he decides to write numbers the whole day. He makes a sequence of numbers starting with $0$, $1$ and $-1$, and then going on indefinitely. On the next line he writes the same sequence of numbers, but shifted one place to the right. On the third line he writes again the same sequence of numbers, shifted another place to the right. He adds all three numbers standing in a vertical column. (He skips the first two places so he starts with $-1 + 1 + 0$.) The answer for every column is the next multiple of three. Peter's paper hence looks like this:\n$$\n\\begin{array}{r@{\\ }c@{\\ }l@{\\quad}l@{\\quad}l@{\\quad}l}\n0 & 1 & -1 & \\dots & \\dots & \\dots & \\dots \\\\\n\\cline{2-7}\n0 & 1 & -1 & \\dots & \\dots & \\dots & \\dots \\\\\n+ & 0 & 1 & -1 & \\dots & \\dots & \\dots \\\\\n\\cline{2-7}\n0 & 3 & 6 & 9 & 12 & \\dots & \\dots\n\\end{array}\n$$\nThe first number in the uppermost sequence is $0$, the second number is $1$, the third number is $-1$, etcetera. Determine the $2021$st number in the uppermost sequence.",
+    "code": "def solve_math_problem(index=2021):\n    sequence = [0, 1, -1]\n    while len(sequence) < index:\n        i = len(sequence) + 1\n        target_sum = 3 * (i - 3)\n        sequence.append(target_sum - sequence[-1] - sequence[-2])\n    return sequence[index - 1]",
+    "test_list": [
+      "assert solve_math_problem(2021) == 2020",
+      "assert solve_math_problem(10) == 9"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(3) == -1",
+      "assert solve_math_problem(4) == 3",
+      "assert solve_math_problem(25) == 24",
+      "assert solve_math_problem(100) == 99",
+      "assert solve_math_problem(500) == 499"
+    ],
+    "difficulty": "medium",
+    "old_id": "09xx"
+  },
+  {
+    "task_id": 4,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nEskom announces that there is a 60% chance of Stage 1 load shedding for a specific week.\nIn a specific suburb Stage 1 load shedding is from 10:00 to 12:30 on a Monday, Wednesday, Friday and Sunday. What is the probability that in that specific suburb there will be load shedding at a moment in the week, without knowing the day, or time or whether or not it is day or night?",
+    "code": "from fractions import Fraction\n\ndef solve_math_problem(chance_percent=60, session_minutes=150, sessions_per_week=4):\n    active_minutes = session_minutes * sessions_per_week\n    week_minutes = 7 * 24 * 60\n    return Fraction(chance_percent, 100) * Fraction(active_minutes, week_minutes)",
+    "test_list": [
+      "assert solve_math_problem(60, 150, 4) == Fraction(1, 28)",
+      "assert solve_math_problem(100, 60, 7) == Fraction(1, 24)"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(50, 120, 5) == Fraction(5, 168)",
+      "assert solve_math_problem(25, 90, 3) == Fraction(3, 448)",
+      "assert solve_math_problem(80, 45, 10) == Fraction(1, 28)",
+      "assert solve_math_problem(30, 30, 14) == Fraction(1, 80)",
+      "assert solve_math_problem(75, 180, 2) == Fraction(3, 112)"
+    ],
+    "difficulty": "medium",
+    "old_id": "0epp"
+  },
+  {
+    "task_id": 5,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nSuppose sequence $\\{a_n\\}$ consists of nine terms, which satisfy $a_1 = a_9 = 1$ and $\\frac{a_{i+1}}{a_i} \\in \\{2, 1, -\\frac{1}{2}\\}$ for any $i \\in \\{1, 2, \\dots, 8\\}$. Then the number of sequences like this is ______.",
+    "code": "import math\n\ndef solve_math_problem(terms=9):\n    steps = terms - 1\n    total = 0\n    for doubled in range(steps + 1):\n        halved = doubled\n        unchanged = steps - doubled - halved\n        if unchanged < 0 or halved % 2 == 1:\n            continue\n        total += math.factorial(steps) // (math.factorial(doubled) * math.factorial(halved) * math.factorial(unchanged))\n    return total",
+    "test_list": [
+      "assert solve_math_problem(9) == 491",
+      "assert solve_math_problem(5) == 7"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(1) == 1",
+      "assert solve_math_problem(3) == 1",
+      "assert solve_math_problem(7) == 91",
+      "assert solve_math_problem(11) == 4411",
+      "assert solve_math_problem(13) == 38545"
+    ],
+    "difficulty": "medium",
+    "old_id": "042e"
+  },
+  {
+    "task_id": 6,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nDetermine the value of $\\frac{13 \\times 13 \\times 12}{1 + 13 + 13 + 12}$",
+    "code": "from fractions import Fraction\n\ndef solve_math_problem(a=13, b=13, c=12):\n    return Fraction(a * b * c, 1 + a + b + c)",
+    "test_list": [
+      "assert solve_math_problem(13, 13, 12) == Fraction(52, 1)",
+      "assert solve_math_problem(2, 3, 4) == Fraction(12, 5)"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(4, 4, 7) == Fraction(7, 1)",
+      "assert solve_math_problem(5, 5, 14) == Fraction(14, 1)",
+      "assert solve_math_problem(6, 6, 23) == Fraction(23, 1)",
+      "assert solve_math_problem(10, 10, 9) == Fraction(30, 1)",
+      "assert solve_math_problem(8, 9, 7) == Fraction(504, 25)"
+    ],
+    "difficulty": "medium",
+    "old_id": "0ert"
+  },
+  {
+    "task_id": 7,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nFor how many integers $n$ with $1 \\le n \\le 800$ is the number $8n + 1$ a square?",
+    "code": "def solve_math_problem(limit=800, multiplier=8, offset=1):\n    count = 0\n    square = 1\n    while square * square <= multiplier * limit + offset:\n        value = square * square - offset\n        if value > 0 and value % multiplier == 0 and value // multiplier <= limit:\n            count += 1\n        square += 1\n    return count",
+    "test_list": [
+      "assert solve_math_problem(800) == 39",
+      "assert solve_math_problem(100) == 13"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(1) == 1",
+      "assert solve_math_problem(10) == 4",
+      "assert solve_math_problem(250) == 21",
+      "assert solve_math_problem(500) == 31",
+      "assert solve_math_problem(1000) == 44"
+    ],
+    "difficulty": "medium",
+    "old_id": "09zp"
+  },
+  {
+    "task_id": 8,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nFind the remainder when $19^{17^{15}}$ is divided by 100.",
+    "code": "def solve_math_problem(base=19, exponent_base=17, exponent_power=15, modulus=100):\n    exponent = pow(exponent_base, exponent_power, 20)\n    if exponent == 0:\n        exponent = 20\n    return pow(base, exponent, modulus)",
+    "test_list": [
+      "assert solve_math_problem(19, 17, 15, 100) == 59",
+      "assert solve_math_problem(3, 5, 2, 10) == 3"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(7, 3, 4, 100) == 7",
+      "assert solve_math_problem(11, 12, 13, 100) == 21",
+      "assert solve_math_problem(9, 7, 3, 100) == 29",
+      "assert solve_math_problem(13, 11, 5, 100) == 37",
+      "assert solve_math_problem(17, 19, 2, 100) == 17"
+    ],
+    "difficulty": "medium",
+    "old_id": "06j7"
+  },
+  {
+    "task_id": 9,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nIn a group of $108$ people, $1$ in $4$ of them has a pen and $1$ in $3$ has a pencil. What is the minimum possible number of people that have something to write with?",
+    "code": "def solve_math_problem(total_people=108, pen_denominator=4, pencil_denominator=3):\n    pen_count = total_people // pen_denominator\n    pencil_count = total_people // pencil_denominator\n    return max(pen_count, pencil_count)",
+    "test_list": [
+      "assert solve_math_problem(108, 4, 3) == 36",
+      "assert solve_math_problem(60, 5, 4) == 15"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(120, 6, 4) == 30",
+      "assert solve_math_problem(90, 3, 5) == 30",
+      "assert solve_math_problem(72, 8, 9) == 9",
+      "assert solve_math_problem(200, 10, 8) == 25",
+      "assert solve_math_problem(144, 12, 6) == 24"
+    ],
+    "difficulty": "medium",
+    "old_id": "0eq0"
+  },
+  {
+    "task_id": 10,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nFind the exact value of the expression below:\n$$\n\\frac{(6!+5!)(5!+4!)(4!+3!)(3!+2!)(2!+1!)}{(6!-5!)(5!-4!)(4!-3!)(3!-2!)(2!-1)!}\n$$\nif $n!$ denotes the product $1 \\cdot 2 \\cdot 3 \\cdots n$ for every natural number $n$.",
+    "code": "from fractions import Fraction\n\ndef solve_math_problem(n=6):\n    value = Fraction(1, 1)\n    for k in range(2, n + 1):\n        value *= Fraction(k + 1, k - 1)\n    return value",
+    "test_list": [
+      "assert solve_math_problem(6) == Fraction(21, 1)",
+      "assert solve_math_problem(3) == Fraction(6, 1)"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(2) == Fraction(3, 1)",
+      "assert solve_math_problem(4) == Fraction(10, 1)",
+      "assert solve_math_problem(5) == Fraction(15, 1)",
+      "assert solve_math_problem(7) == Fraction(28, 1)",
+      "assert solve_math_problem(10) == Fraction(55, 1)"
+    ],
+    "difficulty": "medium",
+    "old_id": "0h4k"
+  },
+  {
+    "task_id": 11,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nLet for $k$, $0 \\le k \\le 9$, $a_k$ be the coefficient of the $x^k$-term in the polynomial $(x+1)^3(x+2)^3(x+3)^3$. Find the value of $a_2 + a_4 + a_6 + a_8$.",
+    "code": "def solve_math_problem(shifts=(1, 2, 3), power=3, max_even=8):\n    coefficients = [1]\n    for shift in shifts:\n        factor = [0] * (power + 1)\n        for k in range(power + 1):\n            import math\n            factor[k] = math.comb(power, k) * (shift ** (power - k))\n        new_coefficients = [0] * (len(coefficients) + len(factor) - 1)\n        for i, a in enumerate(coefficients):\n            for j, b in enumerate(factor):\n                new_coefficients[i + j] += a * b\n        coefficients = new_coefficients\n    return sum(coefficients[k] for k in range(2, min(max_even, len(coefficients) - 1) + 1, 2))",
+    "test_list": [
+      "assert solve_math_problem((1, 2, 3), 3, 8) == 6696",
+      "assert solve_math_problem((1, 2), 2, 4) == 14"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem((1, 2, 3), 2, 6) == 252",
+      "assert solve_math_problem((2, 3, 4), 2, 6) == 1242",
+      "assert solve_math_problem((1, 1, 1), 3, 8) == 255",
+      "assert solve_math_problem((1, 3), 4, 6) == 1966",
+      "assert solve_math_problem((1, 2, 3, 4), 1, 4) == 36"
+    ],
+    "difficulty": "medium",
+    "old_id": "08x7"
+  },
+  {
+    "task_id": 12,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nAn information station employs four different codes, $A$, $B$, $C$ and $D$, for communication, but each week uses only one of them. The code used in a definite week is randomly selected with equal chance among the three ones that have not been used in the last week. Suppose the code used in the first week is $A$. Then the probability that $A$ is also used in the seventh week is _______. (expressed as an irreducible fraction)",
+    "code": "from fractions import Fraction\n\ndef solve_math_problem(codes=4, target_week=7):\n    probability_at_start = Fraction(1, 1)\n    probability_elsewhere = Fraction(0, 1)\n    for _ in range(target_week - 1):\n        next_start = probability_elsewhere\n        next_elsewhere = probability_at_start * Fraction(1, codes - 1) + probability_elsewhere * Fraction(codes - 2, codes - 1)\n        probability_at_start, probability_elsewhere = next_start, next_elsewhere\n    return probability_at_start",
+    "test_list": [
+      "assert solve_math_problem(4, 7) == Fraction(61, 243)",
+      "assert solve_math_problem(4, 2) == Fraction(0, 1)"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(4, 3) == Fraction(1, 3)",
+      "assert solve_math_problem(4, 4) == Fraction(2, 9)",
+      "assert solve_math_problem(3, 5) == Fraction(3, 8)",
+      "assert solve_math_problem(5, 6) == Fraction(51, 256)",
+      "assert solve_math_problem(6, 8) == Fraction(2604, 15625)"
+    ],
+    "difficulty": "medium",
+    "old_id": "040y"
+  },
+  {
+    "task_id": 13,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nHow many pairs of non-negative integers $x$ and $y$ are solutions of $\\frac{x}{20} + \\frac{y}{15} = 1$?",
+    "code": "def solve_math_problem(a=20, b=15):\n    count = 0\n    for x in range(a + 1):\n        for y in range(b + 1):\n            if x * b + y * a == a * b:\n                count += 1\n    return count",
+    "test_list": [
+      "assert solve_math_problem(20, 15) == 6",
+      "assert solve_math_problem(4, 6) == 3"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(5, 5) == 6",
+      "assert solve_math_problem(8, 12) == 5",
+      "assert solve_math_problem(9, 6) == 4",
+      "assert solve_math_problem(10, 15) == 6",
+      "assert solve_math_problem(7, 11) == 2"
+    ],
+    "difficulty": "medium",
+    "old_id": "0ep1"
+  },
+  {
+    "task_id": 14,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nCalculate the following number:\n$$\n877 \\times 879 - 121 \\times 123.\n$$",
+    "code": "def solve_math_problem(a=877, b=121):\n    return a * (a + 2) - b * (b + 2)",
+    "test_list": [
+      "assert solve_math_problem(877, 121) == 756000",
+      "assert solve_math_problem(10, 2) == 112"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(20, 5) == 405",
+      "assert solve_math_problem(100, 50) == 7600",
+      "assert solve_math_problem(999, 1) == 999996",
+      "assert solve_math_problem(30, 28) == 120",
+      "assert solve_math_problem(500, 123) == 235625"
+    ],
+    "difficulty": "medium",
+    "old_id": "08sf"
+  },
+  {
+    "task_id": 15,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nLet $f(x) = ax + b$, with $a, b$ real numbers; $f_1(x) = f(x)$, $f_{n+1}(x) = f(f_n(x))$, $n = 1, 2, \\dots$. If $f_7(x) = 128x + 381$, then $a + b = \\underline{\\hspace{2cm}}$.",
+    "code": "def solve_math_problem(iterations=7, x_coefficient=128, constant=381):\n    a = round(x_coefficient ** (1 / iterations))\n    if a ** iterations != x_coefficient:\n        raise ValueError('x coefficient must be a perfect iteration power')\n    if a == 1:\n        b = constant // iterations\n    else:\n        b = constant * (a - 1) // (a ** iterations - 1)\n    return a + b",
+    "test_list": [
+      "assert solve_math_problem(7, 128, 381) == 5",
+      "assert solve_math_problem(3, 8, 21) == 5"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(2, 4, 6) == 4",
+      "assert solve_math_problem(4, 16, 45) == 5",
+      "assert solve_math_problem(5, 32, 62) == 4",
+      "assert solve_math_problem(3, 27, 52) == 7",
+      "assert solve_math_problem(6, 64, 189) == 5"
+    ],
+    "difficulty": "medium",
+    "old_id": "03vv"
+  },
+  {
+    "task_id": 16,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nHow many perfect squares are there between $4^9$ and $9^4$, excluding those two numbers?",
+    "code": "import math\n\ndef solve_math_problem(left_base=4, left_power=9, right_base=9, right_power=4):\n    low = left_base ** left_power\n    high = right_base ** right_power\n    if low > high:\n        low, high = high, low\n    first_root = math.isqrt(low) + 1\n    last_root = math.isqrt(high - 1)\n    return max(0, last_root - first_root + 1)",
+    "test_list": [
+      "assert solve_math_problem(4, 9, 9, 4) == 430",
+      "assert solve_math_problem(2, 4, 5, 2) == 0"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(3, 4, 10, 2) == 0",
+      "assert solve_math_problem(5, 2, 8, 2) == 2",
+      "assert solve_math_problem(2, 10, 3, 7) == 14",
+      "assert solve_math_problem(10, 2, 20, 2) == 9",
+      "assert solve_math_problem(7, 3, 4, 5) == 13"
+    ],
+    "difficulty": "medium",
+    "old_id": "04b4"
+  },
+  {
+    "task_id": 17,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nFind the real number $A$, given that the coefficient with $x^{12}$ in the polynomial\n$$\n(1 + x^4)^{12} + A (x(1 - x^2)^2)^{12}\n$$\nequals 100.",
+    "code": "from fractions import Fraction\nimport math\n\ndef solve_math_problem(power=12, first_step=4, target_degree=12, target_coefficient=100):\n    first = math.comb(power, target_degree // first_step) if target_degree % first_step == 0 else 0\n    remaining = target_degree - power\n    if remaining < 0 or remaining % 2 != 0:\n        raise ValueError('target degree is not present in the second term')\n    j = remaining // 2\n    second = math.comb(2 * power, j) * ((-1) ** j)\n    return Fraction(target_coefficient - first, second)",
+    "test_list": [
+      "assert solve_math_problem(12, 4, 12, 100) == Fraction(-120, 1)",
+      "assert solve_math_problem(2, 2, 2, 10) == Fraction(8, 1)"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(3, 2, 3, 7) == Fraction(7, 1)",
+      "assert solve_math_problem(4, 2, 4, 20) == Fraction(14, 1)",
+      "assert solve_math_problem(5, 2, 5, 12) == Fraction(12, 1)",
+      "assert solve_math_problem(6, 3, 6, 25) == Fraction(10, 1)",
+      "assert solve_math_problem(8, 4, 8, 50) == Fraction(22, 1)"
+    ],
+    "difficulty": "medium",
+    "old_id": "04cp"
+  },
+  {
+    "task_id": 18,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nEvery day at a railway station, there is just one train arriving between $8{:}00$ am and $9{:}00$ am and between $9{:}00$ am and $10{:}00$ am, respectively. The arrival times and their probabilities for the two trains are shown in the following table:\n\n| Arrival time | Train A | $8{:}10$ | $8{:}30$ | $8{:}50$ |\n|--------------|---------|---------|---------|---------|\n| Train B      |         | $9{:}10$ | $9{:}30$ | $9{:}50$ |\n| Probability  |         | $\\frac{1}{6}$ | $\\frac{1}{2}$ | $\\frac{1}{3}$ |\n\nSuppose that these random events are independent of each other. Now, a traveler comes into the station at $8{:}20$. Then the mathematical expectation of his waiting time is ______ (round to minute).",
+    "code": "def solve_math_problem(arrival_minutes=(10, 30, 50), probabilities=(1/6, 1/2, 1/3), start_minute=20, second_hour_offset=60):\n    expected = 0.0\n    for first_arrival, p_first in zip(arrival_minutes, probabilities):\n        if first_arrival > start_minute:\n            expected += p_first * (first_arrival - start_minute)\n        else:\n            expected_second_wait = sum(p * (second_hour_offset + m - start_minute) for m, p in zip(arrival_minutes, probabilities))\n            expected += p_first * expected_second_wait\n    return round(expected)",
+    "test_list": [
+      "assert solve_math_problem((10, 30, 50), (1/6, 1/2, 1/3), 20, 60) == 27",
+      "assert solve_math_problem((10, 40), (0.5, 0.5), 20, 60) == 42"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem((5, 25, 55), (0.2, 0.3, 0.5), 15, 60) == 39",
+      "assert solve_math_problem((15, 45), (0.25, 0.75), 30, 60) == 28",
+      "assert solve_math_problem((20, 40, 50), (0.4, 0.4, 0.2), 20, 60) == 44",
+      "assert solve_math_problem((5, 35), (0.6, 0.4), 10, 60) == 50",
+      "assert solve_math_problem((10, 30, 50), (1/3, 1/3, 1/3), 25, 60) == 32"
+    ],
+    "difficulty": "medium",
+    "old_id": "03x9"
+  },
+  {
+    "task_id": 19,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nDetermine ten's place of $11^{12^{13}}$. ($12^{13}$th power of $11$, not $13$th power of $11^{12}$.)",
+    "code": "def solve_math_problem(base=11, exponent_base=12, exponent_power=13):\n    exponent = pow(exponent_base, exponent_power, 20)\n    if exponent == 0:\n        exponent = 20\n    return (pow(base, exponent, 100) // 10) % 10",
+    "test_list": [
+      "assert solve_math_problem(11, 12, 13) == 2",
+      "assert solve_math_problem(3, 4, 5) == 8"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(7, 8, 2) == 0",
+      "assert solve_math_problem(9, 2, 10) == 6",
+      "assert solve_math_problem(13, 3, 4) == 1",
+      "assert solve_math_problem(17, 5, 3) == 5",
+      "assert solve_math_problem(21, 6, 2) == 2"
+    ],
+    "difficulty": "medium",
+    "old_id": "08rx"
+  },
+  {
+    "task_id": 20,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nFind the last two digits of the number $(1!)^2 + (2!)^2 + \\dots + (2018!)^2$.",
+    "code": "import math\n\ndef solve_math_problem(n=2018, modulus=100):\n    total = 0\n    factorial = 1\n    for k in range(1, n + 1):\n        factorial = (factorial * k) % modulus\n        total = (total + factorial * factorial) % modulus\n    return total",
+    "test_list": [
+      "assert solve_math_problem(2018, 100) == 17",
+      "assert solve_math_problem(5, 100) == 17"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(1, 100) == 1",
+      "assert solve_math_problem(6, 100) == 17",
+      "assert solve_math_problem(10, 100) == 17",
+      "assert solve_math_problem(20, 100) == 17",
+      "assert solve_math_problem(50, 100) == 17"
+    ],
+    "difficulty": "medium",
+    "old_id": "04nn"
+  },
+  {
+    "task_id": 21,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nAfter breakfast, the sisters Anna and Birgit depart for school, each going to a different school. Their house is next to a bicycle path running between the two schools. Anna is cycling with a constant speed of $12$ km per hour and Birgit is walking in the opposite direction with a constant speed of $4$ km per hour. They depart at the same time. Shortly after their departure, mother notes that the girls have forgotten their lunch and decides to go after them. Exactly $10$ minutes after Anna and Birgit have left, mother departs on her electric bike. First, she catches up with Anna. She hands her a lunch box, immediately turns around, and goes after Birgit. When she catches up with Birgit, she hands her a lunch box and immediately rides back home. Mother always rides at a constant speed of $24$ km per hour.\nHow many minutes after the departure of Anna and Birgit does mother return home?",
+    "code": "def solve_math_problem(anna_speed=12, birgit_speed=4, mother_speed=24, delay_minutes=10):\n    delay = delay_minutes / 60\n    catch_anna = mother_speed * delay / (mother_speed - anna_speed)\n    anna_position = anna_speed * catch_anna\n    catch_birgit = (mother_speed * catch_anna + anna_position) / (mother_speed - birgit_speed)\n    birgit_distance = birgit_speed * catch_birgit\n    return round((catch_birgit + birgit_distance / mother_speed) * 60)",
+    "test_list": [
+      "assert solve_math_problem(12, 4, 24, 10) == 42",
+      "assert solve_math_problem(10, 5, 20, 6) == 30"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(8, 4, 16, 15) == 75",
+      "assert solve_math_problem(15, 5, 30, 12) == 50",
+      "assert solve_math_problem(6, 3, 18, 10) == 28",
+      "assert solve_math_problem(20, 4, 40, 5) == 18",
+      "assert solve_math_problem(12, 6, 30, 8) == 28"
+    ],
+    "difficulty": "medium",
+    "old_id": "09v6"
+  },
+  {
+    "task_id": 22,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nJohn walked home with his dog after visiting the store. The dog, being four times faster than John, arrived home first and then came back to join him. How many meters did the dog travel on the 1-kilometer journey from the store to home?",
+    "code": "def solve_math_problem(distance=1000, speed_ratio=4):\n    return round(distance + distance * (speed_ratio - 1) / (speed_ratio + 1))",
+    "test_list": [
+      "assert solve_math_problem(1000, 4) == 1600",
+      "assert solve_math_problem(100, 2) == 133"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(500, 3) == 750",
+      "assert solve_math_problem(1200, 5) == 2000",
+      "assert solve_math_problem(750, 4) == 1200",
+      "assert solve_math_problem(1000, 9) == 1800",
+      "assert solve_math_problem(300, 2) == 400"
+    ],
+    "difficulty": "medium",
+    "old_id": "09jm"
+  },
+  {
+    "task_id": 23,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nFind the integer closest to the value of the expression:\n$$\n((7 + \\sqrt{48})^{2023} + (7 - \\sqrt{48})^{2023})^2 - ((7 + \\sqrt{48})^{2023} - (7 - \\sqrt{48})^{2023})^2.\n$$",
+    "code": "def solve_math_problem(a=7, radicand=48, exponent=2023):\n    return round(4 * ((a * a - radicand) ** exponent))",
+    "test_list": [
+      "assert solve_math_problem(7, 48, 2023) == 4",
+      "assert solve_math_problem(3, 8, 5) == 4"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(5, 24, 2) == 4",
+      "assert solve_math_problem(4, 15, 3) == 4",
+      "assert solve_math_problem(10, 99, 4) == 4",
+      "assert solve_math_problem(6, 35, 7) == 4",
+      "assert solve_math_problem(2, 3, 10) == 4"
+    ],
+    "difficulty": "medium",
+    "old_id": "0hgt"
+  },
+  {
+    "task_id": 24,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nFor how many positive values of $n$ are both $\\frac{1}{2}n$ and $2n$ two-digit integers?",
+    "code": "def solve_math_problem(multiplier=2, divisor=2, low=10, high=99):\n    count = 0\n    for n in range(1, high * divisor + 1):\n        if n % divisor == 0 and low <= n // divisor <= high and low <= multiplier * n <= high:\n            count += 1\n    return count",
+    "test_list": [
+      "assert solve_math_problem(2, 2, 10, 99) == 15",
+      "assert solve_math_problem(3, 3, 10, 99) == 2"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(2, 4, 10, 99) == 3",
+      "assert solve_math_problem(5, 5, 10, 99) == 0",
+      "assert solve_math_problem(2, 2, 10, 50) == 3",
+      "assert solve_math_problem(4, 2, 10, 99) == 3",
+      "assert solve_math_problem(3, 1, 10, 99) == 24"
+    ],
+    "difficulty": "medium",
+    "old_id": "0epn"
+  },
+  {
+    "task_id": 25,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nWhat is the value of $(2+4+6+...+198+200) - (1+3+5+...+197+199)$?",
+    "code": "def solve_math_problem(last_even=200):\n    even_sum = sum(range(2, last_even + 1, 2))\n    odd_sum = sum(range(1, last_even, 2))\n    return even_sum - odd_sum",
+    "test_list": [
+      "assert solve_math_problem(200) == 100",
+      "assert solve_math_problem(10) == 5"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(2) == 1",
+      "assert solve_math_problem(20) == 10",
+      "assert solve_math_problem(50) == 25",
+      "assert solve_math_problem(100) == 50",
+      "assert solve_math_problem(1000) == 500"
+    ],
+    "difficulty": "medium",
+    "old_id": "0esj"
+  },
+  {
+    "task_id": 26,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nA four digit number $\\overline{aabb}$, that is, the number whose digits are $a, a, b$, and $b$, is the square of an integer.\nOf which integer is $\\overline{aabb}$ the square?",
+    "code": "import math\n\ndef solve_math_problem(repeated_digits=2):\n    for root in range(1, 1000):\n        square = str(root * root)\n        if len(square) == 2 * repeated_digits and square[:repeated_digits] == square[0] * repeated_digits and square[repeated_digits:] == square[repeated_digits] * repeated_digits:\n            return root\n    return None",
+    "test_list": [
+      "assert solve_math_problem(2) == 88",
+      "assert solve_math_problem(1) == 4"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(3) == None",
+      "assert solve_math_problem(4) == None",
+      "assert solve_math_problem(5) == None",
+      "assert solve_math_problem(6) == None",
+      "assert solve_math_problem(7) == None"
+    ],
+    "difficulty": "medium",
+    "old_id": "09v0"
+  },
+  {
+    "task_id": 27,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nWater freezes at $0^\\circ$ Celsius and boils at $100^\\circ$ Celsius. On the SAMO scale, water freezes at $20^\\circ$ and boils at $170^\\circ$. The two scales are linearly related. What is the temperature on the SAMO scale if it is $80^\\circ$ on the Celsius scale?",
+    "code": "def solve_math_problem(celsius=80, c_freeze=0, c_boil=100, samo_freeze=20, samo_boil=170):\n    slope = (samo_boil - samo_freeze) / (c_boil - c_freeze)\n    return round(samo_freeze + slope * (celsius - c_freeze))",
+    "test_list": [
+      "assert solve_math_problem(80, 0, 100, 20, 170) == 140",
+      "assert solve_math_problem(0, 0, 100, 20, 170) == 20"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(100, 0, 100, 20, 170) == 170",
+      "assert solve_math_problem(50, 0, 100, 20, 170) == 95",
+      "assert solve_math_problem(30, 0, 100, 10, 110) == 40",
+      "assert solve_math_problem(80, 0, 100, 32, 212) == 176",
+      "assert solve_math_problem(25, 0, 100, -10, 90) == 15"
+    ],
+    "difficulty": "medium",
+    "old_id": "0esc"
+  },
+  {
+    "task_id": 28,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nGiven $\\log_a x = 3$, $\\log_{ab} x = 2$, determine $\\log_b x$.",
+    "code": "from fractions import Fraction\n\ndef solve_math_problem(log_a_x=3, log_ab_x=2):\n    reciprocal = Fraction(1, log_ab_x) - Fraction(1, log_a_x)\n    return Fraction(1, 1) / reciprocal",
+    "test_list": [
+      "assert solve_math_problem(3, 2) == Fraction(6, 1)",
+      "assert solve_math_problem(4, 2) == Fraction(4, 1)"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(5, 3) == Fraction(15, 2)",
+      "assert solve_math_problem(6, 4) == Fraction(12, 1)",
+      "assert solve_math_problem(10, 5) == Fraction(10, 1)",
+      "assert solve_math_problem(8, 6) == Fraction(24, 1)",
+      "assert solve_math_problem(7, 2) == Fraction(14, 5)"
+    ],
+    "difficulty": "medium",
+    "old_id": "049f"
+  },
+  {
+    "task_id": 29,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nThe base of a right square pyramid has sides of length $12$, and the height of the pyramid is of length $8$. Find the surface area of the pyramid. (Nikola Adžaga)",
+    "code": "import math\n\ndef solve_math_problem(side=12, height=8):\n    slant_height = math.sqrt(height * height + (side / 2) ** 2)\n    return round(side * side + 4 * side * slant_height / 2)",
+    "test_list": [
+      "assert solve_math_problem(12, 8) == 384",
+      "assert solve_math_problem(6, 4) == 96"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(10, 12) == 360",
+      "assert solve_math_problem(8, 3) == 144",
+      "assert solve_math_problem(20, 15) == 1121",
+      "assert solve_math_problem(5, 6) == 90",
+      "assert solve_math_problem(14, 24) == 896"
+    ],
+    "difficulty": "medium",
+    "old_id": "04pf"
+  },
+  {
+    "task_id": 30,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nCalculate $2015 - (2015 - (2015 - (2015 - 1)))$.",
+    "code": "def solve_math_problem(value=2015, depth=4, inner=1):\n    result = inner\n    for _ in range(depth):\n        result = value - result\n    return result",
+    "test_list": [
+      "assert solve_math_problem(2015, 4, 1) == 1",
+      "assert solve_math_problem(10, 2, 3) == 3"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(10, 1, 3) == 7",
+      "assert solve_math_problem(10, 3, 3) == 7",
+      "assert solve_math_problem(7, 4, 2) == 2",
+      "assert solve_math_problem(100, 5, 1) == 99",
+      "assert solve_math_problem(2015, 5, 1) == 2014"
+    ],
+    "difficulty": "medium",
+    "old_id": "0ep6"
+  },
+  {
+    "task_id": 31,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nIf the average of four different positive integers is $8$, what is the largest possible value of any one of these integers?",
+    "code": "def solve_math_problem(count=4, average=8):\n    total = count * average\n    minimum_other_sum = count * (count - 1) // 2\n    return total - minimum_other_sum",
+    "test_list": [
+      "assert solve_math_problem(4, 8) == 26",
+      "assert solve_math_problem(3, 5) == 12"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(5, 10) == 40",
+      "assert solve_math_problem(6, 7) == 27",
+      "assert solve_math_problem(4, 20) == 74",
+      "assert solve_math_problem(2, 9) == 17",
+      "assert solve_math_problem(7, 12) == 63"
+    ],
+    "difficulty": "medium",
+    "old_id": "0epb"
+  },
+  {
+    "task_id": 32,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nIt takes $54$ seconds to descend the escalator while standing still. When Bayaraa walks down the escalator at a speed of $1$ m/s, it takes $36$ seconds. How many seconds will it take Bayaraa to descend if he walks at a speed of $2$ m/s?",
+    "code": "def solve_math_problem(standing_time=54, walking_speed=1, walking_time=36, new_speed=2):\n    escalator_speed_per_length = 1 / standing_time\n    length = walking_speed / (1 / walking_time - escalator_speed_per_length)\n    return round(length / (new_speed + length * escalator_speed_per_length))",
+    "test_list": [
+      "assert solve_math_problem(54, 1, 36, 2) == 27",
+      "assert solve_math_problem(60, 1, 30, 2) == 20"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(100, 1, 50, 3) == 25",
+      "assert solve_math_problem(80, 2, 40, 4) == 27",
+      "assert solve_math_problem(90, 1, 60, 2) == 45",
+      "assert solve_math_problem(120, 2, 80, 3) == 69",
+      "assert solve_math_problem(45, 1, 30, 4) == 15"
+    ],
+    "difficulty": "medium",
+    "old_id": "09ni"
+  },
+  {
+    "task_id": 33,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nThe sums of three out of four numbers (omitting each of the four numbers in turn) are $20$, $22$, $24$ and $27$, respectively. What is the sum of the four numbers?",
+    "code": "def solve_math_problem(omitted_sums=(20, 22, 24, 27)):\n    return sum(omitted_sums) // (len(omitted_sums) - 1)",
+    "test_list": [
+      "assert solve_math_problem((20, 22, 24, 27)) == 31",
+      "assert solve_math_problem((5, 6, 7)) == 9"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem((9, 10, 11)) == 15",
+      "assert solve_math_problem((12, 13, 14, 15)) == 18",
+      "assert solve_math_problem((30, 31, 32, 33)) == 42",
+      "assert solve_math_problem((6, 8, 10, 12, 14)) == 12",
+      "assert solve_math_problem((100, 101, 102)) == 151"
+    ],
+    "difficulty": "medium",
+    "old_id": "0eoy"
+  },
+  {
+    "task_id": 34,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nI have R4. How many sweets can I buy if one sweet costs 40c?",
+    "code": "def solve_math_problem(money_cents=400, sweet_cost_cents=40):\n    return money_cents // sweet_cost_cents",
+    "test_list": [
+      "assert solve_math_problem(400, 40) == 10",
+      "assert solve_math_problem(100, 25) == 4"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(500, 50) == 10",
+      "assert solve_math_problem(450, 40) == 11",
+      "assert solve_math_problem(1000, 75) == 13",
+      "assert solve_math_problem(240, 30) == 8",
+      "assert solve_math_problem(99, 10) == 9"
+    ],
+    "difficulty": "medium",
+    "old_id": "0eo9"
+  },
+  {
+    "task_id": 35,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nIf $\\frac{n+3}{13}$ is a positive integer, then the remainder when $n$ is divided by $13$ is",
+    "code": "def solve_math_problem(offset=3, modulus=13):\n    return (-offset) % modulus",
+    "test_list": [
+      "assert solve_math_problem(3, 13) == 10",
+      "assert solve_math_problem(1, 7) == 6"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(5, 11) == 6",
+      "assert solve_math_problem(10, 17) == 7",
+      "assert solve_math_problem(0, 9) == 0",
+      "assert solve_math_problem(15, 13) == 11",
+      "assert solve_math_problem(100, 31) == 24"
+    ],
+    "difficulty": "medium",
+    "old_id": "0eq8"
+  },
+  {
+    "task_id": 36,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nFind all positive integers $n$ such that some three consecutive coefficients in the power series representation of $(1+x)^n$ are in the $3:4:5$ ratio. (AIME 1992)",
+    "code": "import math\n\ndef solve_math_problem(max_n=200, ratio=(3, 4, 5)):\n    matches = []\n    for n in range(1, max_n + 1):\n        coefficients = [math.comb(n, k) for k in range(n + 1)]\n        for k in range(n - 1):\n            a, b, c = coefficients[k:k + 3]\n            if a * ratio[1] == b * ratio[0] and b * ratio[2] == c * ratio[1]:\n                matches.append(n)\n                break\n    return matches[0] if matches else None",
+    "test_list": [
+      "assert solve_math_problem(200, (3, 4, 5)) == 62",
+      "assert solve_math_problem(20, (1, 2, 1)) == 2"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(50, (1, 3, 3)) == 3",
+      "assert solve_math_problem(100, (2, 3, 4)) == 34",
+      "assert solve_math_problem(300, (3, 4, 5)) == 62",
+      "assert solve_math_problem(30, (1, 4, 6)) == 4",
+      "assert solve_math_problem(80, (4, 5, 6)) == None"
+    ],
+    "difficulty": "medium",
+    "old_id": "04ps"
+  },
+  {
+    "task_id": 37,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nLine up the numbers $1$ to $15$ such that if you add any two numbers that are next to each other, you get a square number.\nWhat do you get if you add the first and last number from the line?",
+    "code": "import math\n\ndef solve_math_problem(n=15):\n    numbers = tuple(range(1, n + 1))\n    squares = {i * i for i in range(2, int(math.sqrt(2 * n)) + 2)}\n    neighbors = {x: [y for y in numbers if y != x and x + y in squares] for x in numbers}\n    def search(path, remaining):\n        if not remaining:\n            return path\n        for nxt in sorted(neighbors[path[-1]], key=lambda z: len(neighbors[z])):\n            if nxt in remaining:\n                found = search(path + [nxt], remaining - {nxt})\n                if found:\n                    return found\n        return None\n    for start in numbers:\n        found = search([start], set(numbers) - {start})\n        if found:\n            return found[0] + found[-1]\n    return None",
+    "test_list": [
+      "assert solve_math_problem(15) == 17",
+      "assert solve_math_problem(8) == None"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(9) == None",
+      "assert solve_math_problem(10) == None",
+      "assert solve_math_problem(11) == None",
+      "assert solve_math_problem(12) == None",
+      "assert solve_math_problem(13) == None"
+    ],
+    "difficulty": "medium",
+    "old_id": "09yl"
+  },
+  {
+    "task_id": 38,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nIf the product of four consecutive integers is equal to the value of one of those integers, then what is the largest possible value for any of the integers?",
+    "code": "def solve_math_problem(search_min=-50, search_max=50):\n    best = None\n    for start in range(search_min, search_max - 2):\n        values = [start + i for i in range(4)]\n        product = values[0] * values[1] * values[2] * values[3]\n        if product in values:\n            best = max(best, max(values)) if best is not None else max(values)\n    return best",
+    "test_list": [
+      "assert solve_math_problem(-50, 50) == 3",
+      "assert solve_math_problem(-5, 5) == 3"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(0, 10) == 3",
+      "assert solve_math_problem(-10, 0) == 0",
+      "assert solve_math_problem(-100, 100) == 3",
+      "assert solve_math_problem(1, 20) == None",
+      "assert solve_math_problem(-20, 3) == 3"
+    ],
+    "difficulty": "medium",
+    "old_id": "0esq"
+  },
+  {
+    "task_id": 39,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nCall a positive integer $n$ supereven, if its largest odd factor $d$ is less than $\\frac{n}{d}$. How many positive integers less than 1000 are supereven?",
+    "code": "def solve_math_problem(limit=1000):\n    count = 0\n    for n in range(1, limit):\n        d = n\n        while d % 2 == 0:\n            d //= 2\n        if d < n / d:\n            count += 1\n    return count",
+    "test_list": [
+      "assert solve_math_problem(1000) == 46",
+      "assert solve_math_problem(10) == 3"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(50) == 9",
+      "assert solve_math_problem(100) == 13",
+      "assert solve_math_problem(250) == 22",
+      "assert solve_math_problem(500) == 30",
+      "assert solve_math_problem(2000) == 62"
+    ],
+    "difficulty": "medium",
+    "old_id": "05b5"
+  },
+  {
+    "task_id": 40,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nHow many three-digit primes can be turned into perfect cubes with a permutation of their digits?",
+    "code": "import itertools, math\n\ndef solve_math_problem(digits=3):\n    low = 10 ** (digits - 1)\n    high = 10 ** digits\n    def is_prime(n):\n        if n < 2:\n            return False\n        for d in range(2, int(math.sqrt(n)) + 1):\n            if n % d == 0:\n                return False\n        return True\n    primes = set()\n    max_root = int((high - 1) ** (1 / 3)) + 2\n    for root in range(1, max_root + 1):\n        cube = root ** 3\n        if not (low <= cube < high):\n            continue\n        for perm in itertools.permutations(str(cube)):\n            if perm[0] == '0':\n                continue\n            value = int(''.join(perm))\n            if low <= value < high and is_prime(value):\n                primes.add(value)\n    return len(primes)",
+    "test_list": [
+      "assert solve_math_problem(3) == 3",
+      "assert solve_math_problem(2) == 0"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(1) == 0",
+      "assert solve_math_problem(4) == 23",
+      "assert solve_math_problem(5) == 148",
+      "assert solve_math_problem(6) == 1227",
+      "assert solve_math_problem(7) == 8909"
+    ],
+    "difficulty": "medium",
+    "old_id": "0br5"
+  },
+  {
+    "task_id": 41,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nWe have 15 cards numbered $1$, $2$, $\\dots$, $15$. How many ways are there to choose some (at least 1) cards so that all numbers on these cards are larger than or equal to the number of cards chosen?",
+    "code": "import math\n\ndef solve_math_problem(n=15):\n    return sum(math.comb(n - k + 1, k) for k in range(1, n + 1) if n - k + 1 >= k)",
+    "test_list": [
+      "assert solve_math_problem(15) == 1596",
+      "assert solve_math_problem(5) == 12"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(1) == 1",
+      "assert solve_math_problem(2) == 2",
+      "assert solve_math_problem(10) == 143",
+      "assert solve_math_problem(20) == 17710",
+      "assert solve_math_problem(30) == 2178308"
+    ],
+    "difficulty": "medium",
+    "old_id": "08s9"
+  },
+  {
+    "task_id": 42,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nGiven $\\triangle ABC$ and $\\triangle AEF$ such that $B$ is the midpoint of $EF$. Also, $AB = EF = 1$, $BC = 6$, $CA = \\sqrt{33}$, and $\\overrightarrow{AB} \\cdot \\overrightarrow{AE} + \\overrightarrow{AC} \\cdot \\overrightarrow{AF} = 2$. The cosine of the angle between $\\overrightarrow{EF}$ and $\\overrightarrow{BC}$ is ______.",
+    "code": "from fractions import Fraction\n\ndef solve_math_problem(ab=1, ef=1, bc=6, ca_squared=33):\n    c_dot_a = Fraction(bc * bc + ab * ab - ca_squared, 2)\n    return Fraction(2 * c_dot_a, bc * ef)",
+    "test_list": [
+      "assert solve_math_problem(1, 1, 6, 33) == Fraction(2, 3)",
+      "assert solve_math_problem(1, 1, 5, 18) == Fraction(8, 5)"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(2, 2, 6, 28) == Fraction(1, 1)",
+      "assert solve_math_problem(1, 2, 10, 51) == Fraction(5, 2)",
+      "assert solve_math_problem(3, 1, 8, 37) == Fraction(9, 2)",
+      "assert solve_math_problem(2, 4, 9, 49) == Fraction(1, 1)",
+      "assert solve_math_problem(1, 1, 4, 9) == Fraction(2, 1)"
+    ],
+    "difficulty": "medium",
+    "old_id": "03uh"
+  },
+  {
+    "task_id": 43,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nFind the value of\n$$\n\\frac{1 \\cdot 3}{3 \\cdot 5} + \\frac{2 \\cdot 4}{5 \\cdot 7} + \\frac{3 \\cdot 5}{7 \\cdot 9} + \\frac{4 \\cdot 6}{9 \\cdot 11} + \\dots + \\frac{1009 \\cdot 1011}{2019 \\cdot 2021}\n$$",
+    "code": "from fractions import Fraction\n\ndef solve_math_problem(n=1009):\n    return sum(Fraction(k * (k + 2), (2 * k + 1) * (2 * k + 3)) for k in range(1, n + 1))",
+    "test_list": [
+      "assert solve_math_problem(1009) == Fraction(509545, 2021)",
+      "assert solve_math_problem(1) == Fraction(1, 5)"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(2) == Fraction(3, 7)",
+      "assert solve_math_problem(3) == Fraction(2, 3)",
+      "assert solve_math_problem(10) == Fraction(55, 23)",
+      "assert solve_math_problem(100) == Fraction(5050, 203)",
+      "assert solve_math_problem(500) == Fraction(125250, 1003)"
+    ],
+    "difficulty": "medium",
+    "old_id": "059z"
+  },
+  {
+    "task_id": 44,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nGiven is the sequence of numbers $a_0, a_1, a_2, \\dots, a_{2020}$ with $a_0 = 0$. Furthermore, the following holds for every $k = 1, 2, \\dots, 2020$:\n$$\na_k = \\begin{cases} a_{k-1} \\cdot k & \\text{if } k \\text{ is divisible by } 8, \\\\ a_{k-1} + k & \\text{if } k \\text{ is not divisible by } 8. \\end{cases}\n$$\nWhat are the last two digits of $a_{2020}$?",
+    "code": "def solve_math_problem(n=2020, modulus=100, special_divisor=8):\n    value = 0\n    for k in range(1, n + 1):\n        if k % special_divisor == 0:\n            value = (value * k) % modulus\n        else:\n            value = (value + k) % modulus\n    return f'{value:02d}'",
+    "test_list": [
+      "assert solve_math_problem(2020, 100, 8) == '02'",
+      "assert solve_math_problem(10, 100, 8) == '43'"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(20, 100, 8) == '02'",
+      "assert solve_math_problem(100, 100, 8) == '62'",
+      "assert solve_math_problem(2020, 100, 4) == '60'",
+      "assert solve_math_problem(50, 100, 5) == '00'",
+      "assert solve_math_problem(15, 100, 3) == '45'"
+    ],
+    "difficulty": "medium",
+    "old_id": "09wl"
+  },
+  {
+    "task_id": 45,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nA natural number $a$ is called a \"lucky number\" if the sum of its digits is $7$. Arrange all \"lucky numbers\" in ascending order, and we get a sequence $a_1, a_2, \\dots$. If $a_n = 2005$, then $a_{5n} = \\_\\_\\_\\_\\_\\_$.",
+    "code": "def solve_math_problem(target_value=2005, digit_sum=7, multiplier=5):\n    lucky = []\n    n = 1\n    target_index = None\n    while target_index is None or len(lucky) < multiplier * target_index:\n        if sum(map(int, str(n))) == digit_sum:\n            lucky.append(n)\n            if n == target_value:\n                target_index = len(lucky)\n        n += 1\n    return lucky[multiplier * target_index - 1]",
+    "test_list": [
+      "assert solve_math_problem(2005, 7, 5) == 52000",
+      "assert solve_math_problem(7, 7, 2) == 16"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(16, 7, 3) == 52",
+      "assert solve_math_problem(25, 7, 2) == 52",
+      "assert solve_math_problem(1006, 7, 4) == 10600",
+      "assert solve_math_problem(2005, 7, 2) == 10123",
+      "assert solve_math_problem(70, 7, 5) == 1033"
+    ],
+    "difficulty": "medium",
+    "old_id": "03rj"
+  },
+  {
+    "task_id": 46,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nWe compute the product of two numbers, $99\\ldots99 \\times 99\\ldots99,$ where the first number consists of 20 nines, and the second of 21 nines. Which number do you get if you add up the digits of the outcome of this multiplication?",
+    "code": "def solve_math_problem(nines_a=20, nines_b=21):\n    product = (10 ** nines_a - 1) * (10 ** nines_b - 1)\n    return sum(int(digit) for digit in str(product))",
+    "test_list": [
+      "assert solve_math_problem(20, 21) == 189",
+      "assert solve_math_problem(1, 1) == 9"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(2, 2) == 18",
+      "assert solve_math_problem(3, 4) == 36",
+      "assert solve_math_problem(5, 5) == 45",
+      "assert solve_math_problem(10, 11) == 99",
+      "assert solve_math_problem(15, 20) == 180"
+    ],
+    "difficulty": "medium",
+    "old_id": "09v4"
+  },
+  {
+    "task_id": 47,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nHow many zeroes will there be in the answer if the following number is divided by $111$?\n$1110222222003333333330004444444444440000$",
+    "code": "def solve_math_problem(number='1110222222003333333330004444444444440000', divisor=111):\n    return str(int(number) // divisor).count('0')",
+    "test_list": [
+      "assert solve_math_problem('1110222222003333333330004444444444440000', 111) == 28",
+      "assert solve_math_problem('111000', 111) == 3"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem('222000', 111) == 3",
+      "assert solve_math_problem('123210', 111) == 1",
+      "assert solve_math_problem('999000', 111) == 3",
+      "assert solve_math_problem('111111', 111) == 2",
+      "assert solve_math_problem('333000333', 111) == 5"
+    ],
+    "difficulty": "medium",
+    "old_id": "0epl"
+  },
+  {
+    "task_id": 48,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nThe number of integral points (i.e., the points whose $x$- and $y$-coordinates are both integers) within the area (not including the boundary) enclosed by the right branch of hyperbola $x^2 - y^2 = 1$ and line $x = 100$ is ______.",
+    "code": "def solve_math_problem(x_max=100):\n    total = 0\n    for x in range(2, x_max):\n        total += 2 * x - 1\n    return total",
+    "test_list": [
+      "assert solve_math_problem(100) == 9800",
+      "assert solve_math_problem(3) == 3"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(4) == 8",
+      "assert solve_math_problem(10) == 80",
+      "assert solve_math_problem(50) == 2400",
+      "assert solve_math_problem(101) == 9999",
+      "assert solve_math_problem(200) == 39600"
+    ],
+    "difficulty": "medium",
+    "old_id": "03xv"
+  },
+  {
+    "task_id": 49,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nCompute the sum\n$$\n\\Sigma = \\sqrt{1+\\frac{8 \\cdot 1^2-1}{1^2 \\cdot 3^2}} + \\sqrt{1+\\frac{8 \\cdot 2^2-1}{3^2 \\cdot 5^2}} + \\dots + \\sqrt{1+\\frac{8 \\cdot 1003^2-1}{2005^2 \\cdot 2007^2}}\n$$",
+    "code": "from fractions import Fraction\n\ndef solve_math_problem(n=1003):\n    return sum(Fraction(4 * k * k, (2 * k - 1) * (2 * k + 1)) for k in range(1, n + 1))",
+    "test_list": [
+      "assert solve_math_problem(1003) == Fraction(2014024, 2007)",
+      "assert solve_math_problem(1) == Fraction(4, 3)"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(2) == Fraction(12, 5)",
+      "assert solve_math_problem(3) == Fraction(24, 7)",
+      "assert solve_math_problem(10) == Fraction(220, 21)",
+      "assert solve_math_problem(100) == Fraction(20200, 201)",
+      "assert solve_math_problem(500) == Fraction(501000, 1001)"
+    ],
+    "difficulty": "medium",
+    "old_id": "0653"
+  },
+  {
+    "task_id": 50,
+    "text": "Write a Python function `solve_math_problem` that solves this math problem.\n\nFind the number of rectangles satisfying the following properties:\n(α) Their vertices are points $(x, y)$ of the plane $Oxy$, with $x, y$ non-negative integers and $x \\le 8$, $y \\le 8$.\n(β) Their sides are parallel to axis\n(γ) Their area $E$ satisfies: $30 < E \\le 40$.",
+    "code": "def solve_math_problem(grid_size=8, min_area=30, max_area=40):\n    count = 0\n    for width in range(1, grid_size + 1):\n        for height in range(1, grid_size + 1):\n            area = width * height\n            if min_area < area <= max_area:\n                count += (grid_size + 1 - width) * (grid_size + 1 - height)\n    return count",
+    "test_list": [
+      "assert solve_math_problem(8, 30, 40) == 43",
+      "assert solve_math_problem(3, 1, 4) == 22"
+    ],
+    "test_setup_code": "",
+    "challenge_test_list": [
+      "assert solve_math_problem(4, 2, 6) == 45",
+      "assert solve_math_problem(5, 4, 10) == 67",
+      "assert solve_math_problem(6, 10, 20) == 79",
+      "assert solve_math_problem(8, 20, 30) == 126",
+      "assert solve_math_problem(10, 30, 50) == 315"
+    ],
+    "difficulty": "medium",
+    "old_id": "06as"
+  }
+]

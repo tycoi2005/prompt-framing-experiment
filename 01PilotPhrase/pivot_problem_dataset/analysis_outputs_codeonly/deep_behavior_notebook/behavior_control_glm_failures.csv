@@ -1,0 +1,3 @@
+model_spec,formula,error_type,error
+M3_extraction,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + extraction_failed,LinAlgError,Singular matrix
+M5_all_behavior_controls,passed_int ~ C(Tone) + C(Role_framing) + C(Format) + C(model_short) + C(problem_id) + log_completion_tokens + likely_code_only + extraction_failed + log_duration_seconds,LinAlgError,Singular matrix

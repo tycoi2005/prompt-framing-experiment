@@ -1,0 +1,153 @@
+{
+  "deepseek-v4-flash": {
+    "tasks": 50,
+    "passed": 29,
+    "failed": 21,
+    "raw_pass_rate": 0.58,
+    "api_or_network_failures": 1,
+    "completed_model_attempts": 49,
+    "pass_rate_excluding_api_or_network_failures": 0.5918,
+    "failure_classes": {
+      "empty_response_no_code": 19,
+      "wrong_answer_assertion": 1,
+      "api_or_runner_error": 1
+    },
+    "duration_seconds": {
+      "mean": 17.439,
+      "median": 18.198,
+      "max": 28.174
+    },
+    "failed_task_ids": [
+      2,
+      3,
+      8,
+      10,
+      12,
+      15,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      26,
+      32,
+      36,
+      38,
+      40,
+      42,
+      45,
+      46,
+      48
+    ]
+  },
+  "gemini-flash": {
+    "tasks": 50,
+    "passed": 34,
+    "failed": 16,
+    "raw_pass_rate": 0.68,
+    "api_or_network_failures": 6,
+    "completed_model_attempts": 44,
+    "pass_rate_excluding_api_or_network_failures": 0.7727,
+    "failure_classes": {
+      "type_error: solve_math_problem() takes 1 positional argument but 3 were given": 1,
+      "wrong_answer_assertion": 8,
+      "api_http_503_high_demand": 6,
+      "attribute_error: 'Fraction' object has no attribute 'sqrt'": 1
+    },
+    "duration_seconds": {
+      "mean": 13.238,
+      "median": 7.743,
+      "max": 95.14
+    },
+    "failed_task_ids": [
+      2,
+      3,
+      5,
+      12,
+      16,
+      17,
+      18,
+      21,
+      24,
+      26,
+      32,
+      40,
+      41,
+      42,
+      43,
+      49
+    ]
+  },
+  "mimo-v2.5-pro": {
+    "tasks": 50,
+    "passed": 16,
+    "failed": 34,
+    "raw_pass_rate": 0.32,
+    "api_or_network_failures": 0,
+    "completed_model_attempts": 50,
+    "pass_rate_excluding_api_or_network_failures": 0.32,
+    "failure_classes": {
+      "empty_response_no_code": 33,
+      "wrong_answer_assertion": 1
+    },
+    "duration_seconds": {
+      "mean": 40.13,
+      "median": 38.974,
+      "max": 110.039
+    },
+    "failed_task_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11,
+      12,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      24,
+      26,
+      29,
+      31,
+      32,
+      36,
+      37,
+      38,
+      40,
+      42,
+      43,
+      45,
+      46,
+      47,
+      48,
+      50
+    ]
+  },
+  "_overall": {
+    "tasks": 50,
+    "solved_by_any_model": 40,
+    "solved_by_all_models": 14,
+    "unsolved_by_all_models": [
+      2,
+      3,
+      12,
+      17,
+      18,
+      21,
+      26,
+      32,
+      40,
+      42
+    ]
+  }
+}
