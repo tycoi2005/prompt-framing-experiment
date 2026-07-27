@@ -1,0 +1,52 @@
+base_task,variants_passed,variants_total,solve_category
+math_001,17,18,solved under some conditions
+math_002,18,18,solved under all 18 conditions
+math_003,18,18,solved under all 18 conditions
+math_004,15,18,solved under some conditions
+math_005,18,18,solved under all 18 conditions
+math_006,18,18,solved under all 18 conditions
+math_007,18,18,solved under all 18 conditions
+math_008,18,18,solved under all 18 conditions
+math_009,18,18,solved under all 18 conditions
+math_010,18,18,solved under all 18 conditions
+math_011,18,18,solved under all 18 conditions
+math_012,18,18,solved under all 18 conditions
+math_013,18,18,solved under all 18 conditions
+math_014,0,18,solved under no condition
+math_015,18,18,solved under all 18 conditions
+math_016,18,18,solved under all 18 conditions
+math_017,18,18,solved under all 18 conditions
+math_018,18,18,solved under all 18 conditions
+math_019,18,18,solved under all 18 conditions
+math_020,18,18,solved under all 18 conditions
+math_021,18,18,solved under all 18 conditions
+math_022,18,18,solved under all 18 conditions
+math_023,18,18,solved under all 18 conditions
+math_024,18,18,solved under all 18 conditions
+math_025,18,18,solved under all 18 conditions
+math_026,18,18,solved under all 18 conditions
+math_027,18,18,solved under all 18 conditions
+math_028,17,18,solved under some conditions
+math_029,18,18,solved under all 18 conditions
+math_030,18,18,solved under all 18 conditions
+math_031,18,18,solved under all 18 conditions
+math_032,13,18,solved under some conditions
+math_033,18,18,solved under all 18 conditions
+math_034,18,18,solved under all 18 conditions
+math_035,18,18,solved under all 18 conditions
+math_036,18,18,solved under all 18 conditions
+math_037,18,18,solved under all 18 conditions
+math_038,18,18,solved under all 18 conditions
+math_039,2,18,solved under some conditions
+math_040,18,18,solved under all 18 conditions
+math_041,18,18,solved under all 18 conditions
+math_042,18,18,solved under all 18 conditions
+math_043,18,18,solved under all 18 conditions
+math_044,18,18,solved under all 18 conditions
+math_045,1,18,solved under some conditions
+math_046,18,18,solved under all 18 conditions
+math_047,18,18,solved under all 18 conditions
+math_048,0,18,solved under no condition
+math_049,18,18,solved under all 18 conditions
+math_050,18,18,solved under all 18 conditions
+SUMMARY,,,solved under all 18 conditions: 42; solved under some conditions: 6; solved under no condition: 2

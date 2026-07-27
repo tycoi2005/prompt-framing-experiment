@@ -1,0 +1,56 @@
+# Claim Consistency Audit — 10Paperv3
+
+**Date:** 2026-07-20
+**Basis:** regenerated analysis CSVs in `10Paperv3/analysis/` from
+`02ScalingPhrase/results_analysis/prompt_framing_experiment_results.jsonl`
+(14,400 runs), via `10Paperv3/scripts/`.
+
+Every numerical and qualitative claim in the abstract, discussion, and
+conclusion was cross-checked against the final result tables.
+
+## Fixed per reviewer feedback
+
+| Claim (old) | Problem | Fix |
+|---|---|---|
+| Abstract: "structured formats (JSON/XML) help cloud models with math tasks" | Strongest positive structured-format result is in **API Python (code)**, not cloud math; API math format effects are null/negative | Now: "structured formats (JSON/XML) improve pass rates in API Python code generation" |
+| Abstract: "context length" | Reported measure is completion tokens | Now: "completion tokens" |
+| Discussion: role framing "does not influence local code" | Mixed model shows a small significant local-code role penalty (-1.0 pp AME, p=0.013; clustered LPM p=0.025) | Now: "small penalty of about one percentage point in local code" |
+| Conclusion: "strongest for XML under the clustered robustness check" | Mixed-effects model is now the main inferential basis | Now: "Under the main mixed-effects logistic analysis, structured formats improve API Python pass rates, strongest for XML" |
+
+## Verified unchanged claims
+
+| Claim | Source check |
+|---|---|
+| 18 variants = 3 tones x 2 roles x 3 formats; 50 base tasks; 900 runs per model-task; 14,400 total (10,800 local + 3,600 API) | `prompt_templates/*.csv`, JSONL row counts |
+| Model pass rates: local code 0.4–22.8%, local math 5.7–91.2%, API Python 66.7–69.0%, API math 24.1–82.4% | model-level pass-rate table |
+| Nemotron–DeepSeek Coder local math gap 85.5 pp (91.2 − 5.7) | same table |
+| Largest pooled local format effect 4.2 pp (local math JSON) | `clustered_lpm_prompt_effects.csv` |
+| Local code contrasts: aggressive +0.0, polite -0.5, role -1.0, JSON +0.2, XML +0.8 pp | same |
+| API Python: JSON +3.2 pp (raw p=0.244), XML +4.8 pp (raw p=0.074); clustered JSON p=0.068, XML p=0.006 | same |
+| Local math: polite +1.7, role +2.2, JSON -4.2 (p=0.007), XML -2.2 pp | same |
+| API math role -2.8 pp (raw p=0.238; clustered p=0.037) | same |
+| Mixed-effects headline results (OR, AME, p per stratum) | `mixed_effects_pass.csv` — matches the table in "Mixed-Effects Inferential Results" |
+| Behavior effects local code: polite +12.40% tokens, -7.00 pp compliance, +10.76% duration; role +3.17%/+2.41%; JSON -3.46%/+4.61 pp; XML -4.10%/+7.33 pp | behavior-effects table |
+| Mediation: local-code polite -0.50 -> +0.17 pp after adjustment; local-math JSON -4.17 -> -2.84 pp | mediation tables |
+| BH audit: 60 contrasts, 7 uncorrected p<0.05; 2 survive family-of-60 (Llama JSON, Qwen role); 3 survive math family of 30 (+ DeepSeek Coder XML); 0 in code family | `local_model_specific_bh.csv` — reproduced exactly |
+| Dominant-model pass-rate shifts: local code 9.1->6.4%, local math 31.1->19.1%, API math 53.3->24.1%, API Python 67.8->69.0% | `dominant_model_sensitivity.csv` |
+| Dominant-model prompt-effect re-estimation (Table in "Dominant-Model Sensitivity and Aggregation Risk") | `dominant_model_sensitivity.csv` — matches |
+| Nemotron audit: 900 runs, 50 tasks x 18 variants, 821/900 reproduced, no leakage | `nemotron_math_audit.md` |
+| Nemotron task-level summary: 42 tasks solved under all 18 conditions, 6 under some, 2 under none | `nemotron_task_solve_summary.csv` |
+
+## Notes
+
+- Treatment-to-outcome contrasts are identified by the factorial design and are
+  stated in effect language; mediation/adjustment statements use associational
+  wording only ("attenuated after adjustment", "associated with part of the
+  observed contrast").
+- API leave-one-out panels contain a single model (Gemini Flash); this is stated
+  wherever those estimates are reported.
+
+## Historical note
+
+This file replaces the 2026-06-28 audit recovered from `06Paperv2`, whose main
+open item ("the manuscript discusses mixed-effects models only as a future
+extension") is now closed: `scripts/run_mixed_effects_analysis.py` fits the
+mixed-effects models and the manuscript reports them as the main inferential
+basis.
