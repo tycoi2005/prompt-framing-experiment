@@ -1,0 +1,332 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{brown2020fewshot,ouyang2022instructgpt,chen2021codex,jimenez2023swebench}
+\@writefile{toc}{\contentsline {title}{Prompt Framing Sensitivity in Large Language Models for Code and Reasoning Tasks}{1}{chapter.1}\protected@file@percent }
+\@writefile{toc}{\authcount {1}}
+\@writefile{toc}{\contentsline {author}{Duc Toan Huynh}{1}{chapter.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1.1}\protected@file@percent }
+\newlabel{sec:introduction}{{1}{1}{Introduction}{section.1.1}{}}
+\citation{li2023emotionprompt,yin2024politeness,liu2024structuredoutput}
+\citation{zhao2021calibrate,lu2021fantastically,sclar2023spurious,zhuo2024prosa}
+\citation{hua2025promptartifact}
+\citation{liang2023helm}
+\citation{brown2020fewshot}
+\citation{schulhoff2024promptreport}
+\citation{reynolds2021promptprogramming}
+\citation{zhao2021calibrate}
+\citation{lu2021fantastically}
+\citation{sclar2023spurious}
+\citation{zhu2023promptrobust}
+\citation{zhuo2024prosa}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{3}{section.1.2}\protected@file@percent }
+\newlabel{sec:relatedwork}{{2}{3}{Related Work}{section.1.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Prompt Sensitivity and Prompt Engineering in LLMs}{3}{subsection.1.2.1}\protected@file@percent }
+\newlabel{prompt-sensitivity-and-prompt-engineering-in-llms}{{2.1}{3}{Prompt Sensitivity and Prompt Engineering in LLMs}{subsection.1.2.1}{}}
+\citation{li2023emotionprompt}
+\citation{yin2024politeness}
+\citation{chen2021codex,austin2021mbpp}
+\citation{jimenez2023swebench}
+\citation{liu2024structuredoutput}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}LLMs for Code Generation and Software-Engineering Tasks}{4}{subsection.1.2.2}\protected@file@percent }
+\newlabel{llms-for-code-generation-and-software-engineering-tasks}{{2.2}{4}{LLMs for Code Generation and Software-Engineering Tasks}{subsection.1.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Structured Prompts, Output Constraints, and Parser Compatibility}{4}{subsection.1.2.3}\protected@file@percent }
+\newlabel{structured-prompts-output-constraints-and-parser-compatibility}{{2.3}{4}{Structured Prompts, Output Constraints, and Parser Compatibility}{subsection.1.2.3}{}}
+\citation{cobbe2021gsm8k}
+\citation{wei2022cot,kojima2022zeroshot}
+\citation{turpin2023unfaithful}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Evaluation of Reasoning and Final-Answer Extraction}{5}{subsection.1.2.4}\protected@file@percent }
+\newlabel{evaluation-of-reasoning-and-final-answer-extraction}{{2.4}{5}{Evaluation of Reasoning and Final-Answer Extraction}{subsection.1.2.4}{}}
+\citation{sclar2023spurious}
+\citation{lu2021fantastically}
+\citation{li2023emotionprompt,yin2024politeness}
+\citation{zhuo2024prosa}
+\citation{liang2023helm}
+\citation{zhao2021calibrate}
+\citation{lu2021fantastically}
+\citation{sclar2023spurious}
+\citation{zhu2023promptrobust}
+\citation{li2023emotionprompt}
+\citation{yin2024politeness}
+\citation{zhuo2024prosa}
+\citation{liang2023helm}
+\gdef \LT@i {\LT@entry 
+    {4}{128.59238pt}\LT@entry 
+    {1}{25.153pt}\LT@entry 
+    {1}{22.58815pt}\LT@entry 
+    {1}{20.91698pt}\LT@entry 
+    {1}{32.23962pt}\LT@entry 
+    {1}{23.61592pt}\LT@entry 
+    {1}{24.56563pt}\LT@entry 
+    {1}{30.42456pt}\LT@entry 
+    {1}{38.40663pt}\LT@entry 
+    {1}{28.27397pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Research Gap}{6}{subsection.1.2.5}\protected@file@percent }
+\newlabel{research-gap}{{2.5}{6}{Research Gap}{subsection.1.2.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{Comparison with the closest prior studies. \text  {$\mathsurround \z@ \mathchar "458$}{} = included, $\sim $ = partial or single-family, -- = not included. Behavioral = outcomes beyond accuracy (tokens, latency, compliance).}}{6}{table.1.1}\protected@file@percent }
+\newlabel{tab:related-work-comparison}{{1}{6}{Comparison with the closest prior studies. \checkmark {} = included, $\sim $ = partial or single-family, -- = not included. Behavioral = outcomes beyond accuracy (tokens, latency, compliance)}{table.1.1}{}}
+\gdef \LT@ii {\LT@entry 
+    {1}{115.22902pt}\LT@entry 
+    {1}{116.62901pt}\LT@entry 
+    {1}{115.22902pt}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Experimental Design}{7}{section.1.3}\protected@file@percent }
+\newlabel{experimental-design}{{3}{7}{Experimental Design}{section.1.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Research Questions}{7}{subsection.1.3.1}\protected@file@percent }
+\newlabel{research-questions}{{3.1}{7}{Research Questions}{subsection.1.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Factorial Prompt Design}{7}{subsection.1.3.2}\protected@file@percent }
+\newlabel{factorial-prompt-design}{{3.2}{7}{Factorial Prompt Design}{subsection.1.3.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{Prompt framing factors and levels.}}{7}{table.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Models}{8}{subsection.1.3.3}\protected@file@percent }
+\newlabel{models}{{3.3}{8}{Models}{subsection.1.3.3}{}}
+\gdef \LT@iii {\LT@entry 
+    {4}{89.20508pt}\LT@entry 
+    {1}{52.21655pt}\LT@entry 
+    {1}{89.78911pt}}
+\citation{nemotron3nano2026,deepseekcoder2023,qwen25release2024,mistral7b2023,llama31modelcard2024,gemma2release2024}
+\gdef \LT@iv {\LT@entry 
+    {4}{86.17839pt}\LT@entry 
+    {4}{153.64957pt}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Experimental pipeline from task sources through the prompt matrix, model execution, extraction/evaluation, and analysis.}}{9}{figure.1.1}\protected@file@percent }
+\newlabel{fig:experimental_pipeline}{{1}{9}{Experimental pipeline from task sources through the prompt matrix, model execution, extraction/evaluation, and analysis}{figure.1.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{Local Ollama models evaluated in the experiment.}}{9}{table.1.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{Cloud API models evaluated in the experiment.}}{9}{table.1.4}\protected@file@percent }
+\citation{toanmath2026thpt,vnschoolmath2026code}
+\citation{vietjack2026onvao10,vietjack2026math}
+\citation{bigmodelmathv5}
+\citation{bigmodelpythonv7}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Tasks}{10}{subsection.1.3.4}\protected@file@percent }
+\newlabel{tasks}{{3.4}{10}{Tasks}{subsection.1.3.4}{}}
+\gdef \LT@v {\LT@entry 
+    {4}{58.8164pt}\LT@entry 
+    {1}{33.96703pt}\LT@entry 
+    {1}{49.85568pt}\LT@entry 
+    {1}{116.13321pt}\LT@entry 
+    {1}{46.76091pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{Run counts by model group and task kind.}}{11}{table.1.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Execution Environment and Run Protocol}{11}{subsection.1.3.5}\protected@file@percent }
+\newlabel{execution-environment-and-run-protocol}{{3.5}{11}{Execution Environment and Run Protocol}{subsection.1.3.5}{}}
+\citation{zhou2023ifeval}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Outcome Measures}{12}{subsection.1.3.6}\protected@file@percent }
+\newlabel{outcome-measures}{{3.6}{12}{Outcome Measures}{subsection.1.3.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Statistical and Analytical Strategy}{13}{section.1.4}\protected@file@percent }
+\newlabel{statistical-and-analytical-strategy}{{4}{13}{Statistical and Analytical Strategy}{section.1.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Primary Contrasts}{13}{subsection.1.4.1}\protected@file@percent }
+\newlabel{primary-contrasts}{{4.1}{13}{Primary Contrasts}{subsection.1.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Stratification by Task Kind and Model Group}{13}{subsection.1.4.2}\protected@file@percent }
+\newlabel{stratification-by-task-kind-and-model-group}{{4.2}{13}{Stratification by Task Kind and Model Group}{subsection.1.4.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Mixed-Effects Models as the Main Inferential Basis}{14}{subsection.1.4.3}\protected@file@percent }
+\newlabel{fixed-effect-and-mixed-effect-considerations}{{4.3}{14}{Mixed-Effects Models as the Main Inferential Basis}{subsection.1.4.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Multiple Comparisons}{15}{subsection.1.4.4}\protected@file@percent }
+\newlabel{multiple-comparisons}{{4.4}{15}{Multiple Comparisons}{subsection.1.4.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Mediation and Behavioral Controls}{15}{subsection.1.4.5}\protected@file@percent }
+\newlabel{mediation-and-behavioral-controls}{{4.5}{15}{Mediation and Behavioral Controls}{subsection.1.4.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Dominant-Model Sensitivity}{16}{subsection.1.4.6}\protected@file@percent }
+\newlabel{dominant-model-sensitivity}{{4.6}{16}{Dominant-Model Sensitivity}{subsection.1.4.6}{}}
+\gdef \LT@vi {\LT@entry 
+    {1}{55.597pt}\LT@entry 
+    {1}{131.51659pt}\LT@entry 
+    {1}{104.41809pt}\LT@entry 
+    {1}{55.597pt}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{17}{section.1.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{Key findings at a glance. Correctness effects are mixed-effects average marginal effects in percentage points; behavior effects are percent changes unless marked pp.}}{17}{table.1.6}\protected@file@percent }
+\newlabel{tab:key-findings}{{6}{17}{Key findings at a glance. Correctness effects are mixed-effects average marginal effects in percentage points; behavior effects are percent changes unless marked pp}{table.1.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Data Integrity and Run Coverage}{17}{subsection.1.5.1}\protected@file@percent }
+\newlabel{data-integrity-and-run-coverage}{{5.1}{17}{Data Integrity and Run Coverage}{subsection.1.5.1}{}}
+\gdef \LT@vii {\LT@entry 
+    {4}{121.8994pt}\LT@entry 
+    {4}{133.76123pt}}
+\gdef \LT@viii {\LT@entry 
+    {1}{57.39922pt}\LT@entry 
+    {1}{58.79921pt}\LT@entry 
+    {1}{77.4417pt}\LT@entry 
+    {1}{77.4417pt}\LT@entry 
+    {1}{76.0417pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{Data-integrity and run-coverage checks.}}{18}{table.1.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Model Ability Dominates Correctness}{18}{subsection.1.5.2}\protected@file@percent }
+\newlabel{model-ability-dominates-correctness}{{5.2}{18}{Model Ability Dominates Correctness}{subsection.1.5.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{Model-level pass rates and output behavior.}}{18}{table.1.8}\protected@file@percent }
+\gdef \LT@ix {\LT@entry 
+    {4}{30.59418pt}\LT@entry 
+    {4}{93.30067pt}\LT@entry 
+    {1}{39.71626pt}\LT@entry 
+    {4}{25.57776pt}\LT@entry 
+    {1}{46.68843pt}\LT@entry 
+    {1}{58.23302pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Prompt-Factor Effects on Code Tasks}{19}{subsection.1.5.3}\protected@file@percent }
+\newlabel{prompt-factor-effects-on-code-tasks}{{5.3}{19}{Prompt-Factor Effects on Code Tasks}{subsection.1.5.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{Local code prompt-factor contrasts.}}{19}{table.1.9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Model pass rates by task kind. The figure highlights that between-model variation is larger than the main prompt-factor effects reported in later sections.}}{20}{figure.1.2}\protected@file@percent }
+\newlabel{fig:model_performance_by_task}{{2}{20}{Model pass rates by task kind. The figure highlights that between-model variation is larger than the main prompt-factor effects reported in later sections}{figure.1.2}{}}
+\gdef \LT@x {\LT@entry 
+    {4}{30.59418pt}\LT@entry 
+    {4}{83.55084pt}\LT@entry 
+    {1}{39.71626pt}\LT@entry 
+    {4}{25.57776pt}\LT@entry 
+    {1}{46.68843pt}\LT@entry 
+    {1}{58.23302pt}}
+\gdef \LT@xi {\LT@entry 
+    {4}{30.59418pt}\LT@entry 
+    {4}{93.30067pt}\LT@entry 
+    {1}{39.71626pt}\LT@entry 
+    {4}{25.57776pt}\LT@entry 
+    {1}{46.68843pt}\LT@entry 
+    {1}{58.23302pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{API Python prompt-format contrasts.}}{21}{table.1.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Prompt-Factor Effects on Math Tasks}{21}{subsection.1.5.4}\protected@file@percent }
+\newlabel{prompt-factor-effects-on-math-tasks}{{5.4}{21}{Prompt-Factor Effects on Math Tasks}{subsection.1.5.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{Local math prompt-factor contrasts.}}{21}{table.1.11}\protected@file@percent }
+\gdef \LT@xii {\LT@entry 
+    {1}{29.34483pt}\LT@entry 
+    {4}{55.38356pt}\LT@entry 
+    {1}{39.71626pt}\LT@entry 
+    {4}{25.57776pt}\LT@entry 
+    {1}{46.68843pt}\LT@entry 
+    {1}{58.23302pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {12}{API math role-framing contrast.}}{22}{table.1.12}\protected@file@percent }
+\gdef \LT@xiii {\LT@entry 
+    {4}{54.7333pt}\LT@entry 
+    {4}{70.99495pt}\LT@entry 
+    {1}{94.82762pt}\LT@entry 
+    {1}{85.9942pt}\LT@entry 
+    {4}{31.95575pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Mixed-Effects Inferential Results}{23}{subsection.1.5.5}\protected@file@percent }
+\newlabel{mixed-effects-inferential-results}{{5.5}{23}{Mixed-Effects Inferential Results}{subsection.1.5.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {13}{Mixed-effects logistic results for pass/fail by stratum: odds ratios and average marginal effects (AME) in percentage points, with 95\% intervals and posterior p-values.}}{23}{table.1.13}\protected@file@percent }
+\newlabel{tab:mixed-effects-pass}{{13}{23}{Mixed-effects logistic results for pass/fail by stratum: odds ratios and average marginal effects (AME) in percentage points, with 95\% intervals and posterior p-values}{table.1.13}{}}
+\gdef \LT@xiv {\LT@entry 
+    {1}{69.14366pt}\LT@entry 
+    {1}{93.13522pt}\LT@entry 
+    {1}{93.13522pt}\LT@entry 
+    {1}{91.73523pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Output Behavior: Tokens, Duration, and Result-Only Compliance}{24}{subsection.1.5.6}\protected@file@percent }
+\newlabel{output-behavior-tokens-duration-and-result-only-compliance}{{5.6}{24}{Output Behavior: Tokens, Duration, and Result-Only Compliance}{subsection.1.5.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {14}{Local code behavior effects.}}{24}{table.1.14}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Prompt-factor effects on output behavior for local code and local math. Panel (a): effects on completion tokens and duration, in percent. Panel (b): effects on result-only compliance, in percentage points.}}{25}{figure.1.3}\protected@file@percent }
+\newlabel{fig:behavior-effects}{{3}{25}{Prompt-factor effects on output behavior for local code and local math. Panel (a): effects on completion tokens and duration, in percent. Panel (b): effects on result-only compliance, in percentage points}{figure.1.3}{}}
+\gdef \LT@xv {\LT@entry 
+    {1}{69.14366pt}\LT@entry 
+    {1}{93.13522pt}\LT@entry 
+    {1}{93.13522pt}\LT@entry 
+    {1}{91.73523pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {15}{Local math behavior effects.}}{26}{table.1.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7}Mediation and Behavioral-Control Results}{26}{subsection.1.5.7}\protected@file@percent }
+\newlabel{mediation-and-behavioral-control-results}{{5.7}{26}{Mediation and Behavioral-Control Results}{subsection.1.5.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Prompt-factor correctness effects before and after controlling for completion tokens, result-only compliance, and duration.}}{27}{figure.1.4}\protected@file@percent }
+\newlabel{fig:mediation-controls}{{4}{27}{Prompt-factor correctness effects before and after controlling for completion tokens, result-only compliance, and duration}{figure.1.4}{}}
+\gdef \LT@xvi {\LT@entry 
+    {1}{76.84468pt}\LT@entry 
+    {1}{64.55014pt}\LT@entry 
+    {1}{125.12221pt}}
+\gdef \LT@xvii {\LT@entry 
+    {1}{79.89989pt}\LT@entry 
+    {1}{64.55014pt}\LT@entry 
+    {1}{125.12221pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {16}{Local code correctness contrasts before and after adjustment for measured behavioral variables.}}{28}{table.1.16}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {17}{Local math correctness contrasts before and after adjustment for measured behavioral variables.}}{28}{table.1.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.8}Clustered Linear-Probability Robustness Check}{28}{subsection.1.5.8}\protected@file@percent }
+\newlabel{clustered-linear-probability-robustness-check}{{5.8}{28}{Clustered Linear-Probability Robustness Check}{subsection.1.5.8}{}}
+\gdef \LT@xviii {\LT@entry 
+    {4}{88.78864pt}\LT@entry 
+    {1}{45.9112pt}\LT@entry 
+    {1}{40.71693pt}\LT@entry 
+    {1}{83.06654pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.9}Dominant-Model Sensitivity and Aggregation Risk}{29}{subsection.1.5.9}\protected@file@percent }
+\newlabel{dominant-model-sensitivity-and-aggregation-risk}{{5.9}{29}{Dominant-Model Sensitivity and Aggregation Risk}{subsection.1.5.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {18}{Dominant-model sensitivity of pooled pass rates.}}{29}{table.1.18}\protected@file@percent }
+\gdef \LT@xix {\LT@entry 
+    {4}{54.7333pt}\LT@entry 
+    {4}{67.99445pt}\LT@entry 
+    {1}{42.52232pt}\LT@entry 
+    {1}{70.5774pt}\LT@entry 
+    {1}{43.77232pt}\LT@entry 
+    {1}{70.4274pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {19}{Prompt-factor effects with and without the dominant model: clustered-LPM percentage-point contrasts and mixed-effects average marginal effects (AME pp).}}{30}{table.1.19}\protected@file@percent }
+\newlabel{tab:dominant-effects}{{19}{30}{Prompt-factor effects with and without the dominant model: clustered-LPM percentage-point contrasts and mixed-effects average marginal effects (AME pp)}{table.1.19}{}}
+\gdef \LT@xx {\LT@entry 
+    {1}{186.0946pt}\LT@entry 
+    {1}{105.98346pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {20}{Nemotron 3 Nano local math: task-level solve pattern across the 18 prompt conditions (50 base tasks).}}{31}{table.1.20}\protected@file@percent }
+\newlabel{tab:nemotron-task-summary}{{20}{31}{Nemotron 3 Nano local math: task-level solve pattern across the 18 prompt conditions (50 base tasks)}{table.1.20}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.10}Error and Failure Modes}{31}{subsection.1.5.10}\protected@file@percent }
+\newlabel{error-and-failure-modes}{{5.10}{31}{Error and Failure Modes}{subsection.1.5.10}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{32}{section.1.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Main Interpretation}{32}{subsection.1.6.1}\protected@file@percent }
+\newlabel{main-interpretation}{{6.1}{32}{Main Interpretation}{subsection.1.6.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Implications for LLM-Based Coding Systems}{32}{subsection.1.6.2}\protected@file@percent }
+\newlabel{implications-for-llm-based-coding-systems}{{6.2}{32}{Implications for LLM-Based Coding Systems}{subsection.1.6.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Why Code and Math Differ}{33}{subsection.1.6.3}\protected@file@percent }
+\newlabel{why-code-and-math-differ}{{6.3}{33}{Why Code and Math Differ}{subsection.1.6.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Reconsidering Prompt-Engineering Folklore}{33}{subsection.1.6.4}\protected@file@percent }
+\newlabel{reconsidering-prompt-engineering-folklore}{{6.4}{33}{Reconsidering Prompt-Engineering Folklore}{subsection.1.6.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5}Practical Prompt-Policy Recommendation}{33}{subsection.1.6.5}\protected@file@percent }
+\newlabel{practical-prompt-policy-recommendation}{{6.5}{33}{Practical Prompt-Policy Recommendation}{subsection.1.6.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Threats to Validity}{34}{section.1.7}\protected@file@percent }
+\newlabel{threats-to-validity}{{7}{34}{Threats to Validity}{section.1.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Internal Validity}{34}{subsection.1.7.1}\protected@file@percent }
+\newlabel{internal-validity}{{7.1}{34}{Internal Validity}{subsection.1.7.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Construct Validity}{35}{subsection.1.7.2}\protected@file@percent }
+\newlabel{construct-validity}{{7.2}{35}{Construct Validity}{subsection.1.7.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Statistical Conclusion Validity}{35}{subsection.1.7.3}\protected@file@percent }
+\newlabel{statistical-conclusion-validity}{{7.3}{35}{Statistical Conclusion Validity}{subsection.1.7.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}External Validity}{36}{subsection.1.7.4}\protected@file@percent }
+\newlabel{external-validity}{{7.4}{36}{External Validity}{subsection.1.7.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}Evaluation Validity and Audit Evidence}{37}{subsection.1.7.5}\protected@file@percent }
+\newlabel{evaluation-validity-and-audit-evidence}{{7.5}{37}{Evaluation Validity and Audit Evidence}{subsection.1.7.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{37}{section.1.8}\protected@file@percent }
+\newlabel{conclusion}{{8}{37}{Conclusion}{section.1.8}{}}
+\citation{promptframingkaggle2026}
+\citation{promptframingrepo2026}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Data Availability Statement}{38}{section.1.9}\protected@file@percent }
+\newlabel{data-availability-statement}{{9}{38}{Data Availability Statement}{section.1.9}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {10}Replication Package}{38}{section.1.10}\protected@file@percent }
+\newlabel{replication-package}{{10}{38}{Replication Package}{section.1.10}{}}
+\bibstyle{plainnat}
+\bibdata{literature}
+\@writefile{toc}{\contentsline {section}{\numberline {11}Funding Statement}{39}{section.1.11}\protected@file@percent }
+\newlabel{funding-statement}{{11}{39}{Funding Statement}{section.1.11}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {12}Competing Interests}{39}{section.1.12}\protected@file@percent }
+\newlabel{competing-interests}{{12}{39}{Competing Interests}{section.1.12}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {13}AI Tools Declaration}{39}{section.1.13}\protected@file@percent }
+\newlabel{ai-tools-declaration}{{13}{39}{AI Tools Declaration}{section.1.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {14}Ethics Statement}{39}{section.1.14}\protected@file@percent }
+\newlabel{ethics-statement}{{14}{39}{Ethics Statement}{section.1.14}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {15}Supplementary Material}{39}{section.1.15}\protected@file@percent }
+\newlabel{supplementary-material}{{15}{39}{Supplementary Material}{section.1.15}{}}
+\bibcite{austin2021mbpp}{{1}{2021}{{Austin et~al.}}{{Austin, Odena, Nye, Bosma, Michalewski, Dohan, Jiang, Cai, Terry, Le, and Sutton}}}
+\bibcite{brown2020fewshot}{{2}{2020}{{Brown et~al.}}{{Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal, Neelakantan, Shyam, Sastry, Askell, et~al.}}}
+\bibcite{chen2021codex}{{3}{2021}{{Chen et~al.}}{{Chen, Tworek, Jun, Yuan, Pinto, Kaplan, Edwards, Burda, Joseph, Brockman, et~al.}}}
+\bibcite{cobbe2021gsm8k}{{4}{2021}{{Cobbe et~al.}}{{Cobbe, Kosaraju, Bavarian, Chen, Jun, Kaiser, Plappert, Tworek, Hilton, Nakano, Hesse, and Schulman}}}
+\bibcite{deepseekcoder2023}{{5}{2023}{{DeepSeek AI}}{{}}}
+\bibcite{gemma2release2024}{{6}{2024}{{Google}}{{}}}
+\bibcite{hua2025promptartifact}{{7}{2025}{{Hua et~al.}}{{Hua, Tang, Gu, Gu, Wong, and Qin}}}
+\bibcite{bigmodelmathv5}{{8}{2026{a}}{{Huynh}}{{}}}
+\bibcite{bigmodelpythonv7}{{9}{2026{b}}{{Huynh}}{{}}}
+\bibcite{promptframingkaggle2026}{{10}{2026{c}}{{Huynh}}{{}}}
+\bibcite{promptframingrepo2026}{{11}{2026{d}}{{Huynh}}{{}}}
+\bibcite{vietjack2026math}{{12}{2026{e}}{{Huynh}}{{}}}
+\bibcite{vnschoolmath2026code}{{13}{2026{f}}{{Huynh}}{{}}}
+\bibcite{jimenez2023swebench}{{14}{2024}{{Jimenez et~al.}}{{Jimenez, Yang, Wettig, Yao, Pei, Press, and Narasimhan}}}
+\bibcite{kojima2022zeroshot}{{15}{2022}{{Kojima et~al.}}{{Kojima, Gu, Reid, Matsuo, and Iwasawa}}}
+\bibcite{li2023emotionprompt}{{16}{2023}{{Li et~al.}}{{Li, Wang, Zhang, Zhu, Hou, Lian, Luo, Yang, and Xie}}}
+\bibcite{liang2023helm}{{17}{2023}{{Liang et~al.}}{{Liang, Bommasani, Lee, Tsipras, Soylu, Yasunaga, Zhang, Narayanan, Wu, Kumar, et~al.}}}
+\bibcite{liu2024structuredoutput}{{18}{2024}{{Liu et~al.}}{{Liu, Liu, Fiannaca, Koo, Dixon, Terry, and Cai}}}
+\bibcite{lu2021fantastically}{{19}{2021}{{Lu et~al.}}{{Lu, Bartolo, Moore, Riedel, and Stenetorp}}}
+\bibcite{llama31modelcard2024}{{20}{2024}{{Meta Llama}}{{}}}
+\bibcite{mistral7b2023}{{21}{2023}{{Mistral AI}}{{}}}
+\bibcite{nemotron3nano2026}{{22}{2026}{{NVIDIA}}{{}}}
+\bibcite{ouyang2022instructgpt}{{23}{2022}{{Ouyang et~al.}}{{Ouyang, Wu, Jiang, Almeida, Wainwright, Mishkin, Zhang, Agarwal, Slama, Ray, et~al.}}}
+\bibcite{qwen25release2024}{{24}{2024}{{Qwen Team}}{{}}}
+\bibcite{reynolds2021promptprogramming}{{25}{2021}{{Reynolds and McDonell}}{{}}}
+\bibcite{schulhoff2024promptreport}{{26}{2024}{{Schulhoff et~al.}}{{Schulhoff, Ilie, Balepur, Kahadze, Liu, Si, Li, Gupta, Han, Schulhoff, et~al.}}}
+\bibcite{sclar2023spurious}{{27}{2023}{{Sclar et~al.}}{{Sclar, Choi, Tsvetkov, and Suhr}}}
+\bibcite{toanmath2026thpt}{{28}{2026}{{TOANMATH.com}}{{}}}
+\bibcite{turpin2023unfaithful}{{29}{2023}{{Turpin et~al.}}{{Turpin, Michael, Perez, and Bowman}}}
+\bibcite{vietjack2026onvao10}{{30}{2026}{{VietJack}}{{}}}
+\bibcite{wei2022cot}{{31}{2022}{{Wei et~al.}}{{Wei, Wang, Schuurmans, Bosma, Ichter, Xia, Chi, Le, and Zhou}}}
+\bibcite{yin2024politeness}{{32}{2024}{{Yin et~al.}}{{Yin, Wang, Horio, Kawahara, and Sekine}}}
+\bibcite{zhao2021calibrate}{{33}{2021}{{Zhao et~al.}}{{Zhao, Wallace, Feng, Klein, and Singh}}}
+\bibcite{zhou2023ifeval}{{34}{2023}{{Zhou et~al.}}{{Zhou, Lu, Mishra, Brahma, Basu, Luan, Zhou, and Hou}}}
+\bibcite{zhu2023promptrobust}{{35}{2023}{{Zhu et~al.}}{{Zhu, Wang, Zhou, Wang, Chen, Wang, Yang, Ye, Zhang, Gong, and Xie}}}
+\bibcite{zhuo2024prosa}{{36}{2024}{{Zhuo et~al.}}{{Zhuo, Zhang, Fang, Duan, Lin, and Chen}}}
+\gdef \@abspage@last{43}

@@ -1,0 +1,8 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossentry{PassAtOne}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{i}}}%
+\glossentry{PromptFraming}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{i}}}%
+\end{theglossary}\glossarypostamble

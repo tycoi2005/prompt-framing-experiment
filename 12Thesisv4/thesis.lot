@@ -1,0 +1,31 @@
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Comparison with the closest prior studies. \text {$\mathsurround \z@ \mathchar "458$}{} = included, $\sim $ = partial or single-family, -- = not included. Behav. = behavioral outcomes beyond accuracy (tokens, latency, compliance).}}{8}{table.2.1}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Prompt framing factors and levels.}}{10}{table.3.1}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Local Ollama models evaluated in the experiment.}}{13}{table.3.2}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Cloud API models evaluated in the experiment.}}{13}{table.3.3}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Run counts by model group and task kind.}}{15}{table.3.4}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Key findings at a glance. Correctness effects are mixed-effects average marginal effects in percentage points; behavior effects are percent changes unless marked pp.}}{24}{table.5.1}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Data-integrity and run-coverage checks.}}{25}{table.5.2}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Model-level pass rates and output behavior.}}{27}{table.5.3}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Local code prompt-factor contrasts.}}{28}{table.5.4}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces API Python prompt-format contrasts.}}{29}{table.5.5}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces Local math prompt-factor contrasts.}}{29}{table.5.6}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces API math role-framing contrast.}}{30}{table.5.7}%
+\contentsline {table}{\numberline {5.8}{\ignorespaces Mixed-effects logistic results for pass/fail by stratum: odds ratios and average marginal effects (AME) in percentage points, with 95\% intervals and posterior p-values.}}{31}{table.5.8}%
+\contentsline {table}{\numberline {5.9}{\ignorespaces Local code behavior effects.}}{34}{table.5.9}%
+\contentsline {table}{\numberline {5.10}{\ignorespaces Local math behavior effects.}}{34}{table.5.10}%
+\contentsline {table}{\numberline {5.11}{\ignorespaces Local code correctness contrasts before and after adjustment for measured behavioral variables.}}{35}{table.5.11}%
+\contentsline {table}{\numberline {5.12}{\ignorespaces Local math correctness contrasts before and after adjustment for measured behavioral variables.}}{37}{table.5.12}%
+\contentsline {table}{\numberline {5.13}{\ignorespaces Dominant-model sensitivity of pooled pass rates.}}{38}{table.5.13}%
+\contentsline {table}{\numberline {5.14}{\ignorespaces Prompt-factor effects with and without the dominant model: clustered-LPM percentage-point contrasts and mixed-effects average marginal effects (AME pp).}}{38}{table.5.14}%
+\contentsline {table}{\numberline {5.15}{\ignorespaces Nemotron 3 Nano local math: task-level solve pattern across the 18 prompt conditions (50 base tasks).}}{40}{table.5.15}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

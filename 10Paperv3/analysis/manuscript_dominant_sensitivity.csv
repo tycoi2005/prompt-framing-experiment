@@ -1,0 +1,5 @@
+sensitivity_dataset,task_kind,full_avg_pct,without_dominant_pct,excluded_model
+"Local, no Nemotron",python,9.11111111111111,6.377777777777778,nemotron-3-nano-4b
+"Local, no Nemotron",math,31.092592592592595,19.066666666666666,nemotron-3-nano-4b
+"API, no DeepSeek",math,53.27777777777778,24.11111111111111,deepseek-v4-flash
+"API, no DeepSeek",python,67.83333333333333,69.0,deepseek-v4-flash

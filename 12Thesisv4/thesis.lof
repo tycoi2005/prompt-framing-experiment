@@ -1,0 +1,15 @@
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Experimental pipeline from task sources through the prompt matrix, model execution, extraction/evaluation, and analysis.}}{12}{figure.caption.7}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Model pass rates by task kind. The figure highlights that between-model variation is larger than the main prompt-factor effects reported in later sections.}}{26}{figure.caption.8}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Prompt-factor effects on output behavior for local code and local math. Panel (a): effects on completion tokens and duration, in percent. Panel (b): effects on result-only compliance, in percentage points.}}{33}{figure.caption.9}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Prompt-factor correctness effects before and after controlling for completion tokens, result-only compliance, and duration.}}{36}{figure.caption.10}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

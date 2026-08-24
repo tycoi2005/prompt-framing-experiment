@@ -1,0 +1,21 @@
+modeltype,task_type,factor,contrast,coefficient_pp,cluster_se_pp,cluster_p,observations,clusters,model_fixed_effects
+api,code,tone,aggressive vs neutral,0.500000,2.138608,0.815142623567,1800,50,True
+api,code,tone,polite vs neutral,0.500000,1.943537,0.796975850041,1800,50,True
+api,code,role,role vs none,-1.000000,1.401417,0.475497210747,1800,50,True
+api,code,format,JSON vs plaintext,3.166667,1.734455,0.0678891244992,1800,50,True
+api,code,format,XML vs plaintext,4.833333,1.770160,0.00632479425163,1800,50,True
+api,math,tone,aggressive vs neutral,0.333333,1.449914,0.818170444556,1800,50,True
+api,math,tone,polite vs neutral,-1.000000,1.230958,0.41657627949,1800,50,True
+api,math,role,role vs none,-2.777778,1.332625,0.0371201412356,1800,50,True
+api,math,format,JSON vs plaintext,-1.333333,1.314096,0.310277768769,1800,50,True
+api,math,format,XML vs plaintext,-2.333333,1.564632,0.135883208878,1800,50,True
+local,code,tone,aggressive vs neutral,0.000000,0.798349,1,5400,50,True
+local,code,tone,polite vs neutral,-0.500000,0.785158,0.524245699962,5400,50,True
+local,code,role,role vs none,-1.037037,0.462173,0.0248433142882,5400,50,True
+local,code,format,JSON vs plaintext,0.166667,0.529386,0.752890607584,5400,50,True
+local,code,format,XML vs plaintext,0.833333,0.783388,0.28743936013,5400,50,True
+local,math,tone,aggressive vs neutral,0.944444,0.704321,0.179943798301,5400,50,True
+local,math,tone,polite vs neutral,1.666667,0.790405,0.0349770578894,5400,50,True
+local,math,role,role vs none,2.185185,0.693926,0.00163820769873,5400,50,True
+local,math,format,JSON vs plaintext,-4.166667,1.112851,0.000181013829807,5400,50,True
+local,math,format,XML vs plaintext,-2.222222,1.023496,0.0299154586166,5400,50,True

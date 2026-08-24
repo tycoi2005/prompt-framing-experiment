@@ -1,0 +1,11 @@
+check,value
+Total rows,14400
+Local rows,10800
+API rows,3600
+Local result files implied,12
+API result files implied,4
+Duplicate full run keys,0
+Empty local responses,14
+Empty API responses,0
+Balanced model-task cells,16
+Unbalanced model-task cells,0

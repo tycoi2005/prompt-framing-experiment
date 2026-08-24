@@ -1,0 +1,141 @@
+\documentclass[fontsize=12pt,oneside,bibliography=totoc,listof=totoc]{scrbook}
+
+% Geometry & Margins (UE Specification: 4cm left, 2cm right, 2.5cm top, 3cm bottom)
+\usepackage[a4paper, lmargin={4cm}, rmargin={2cm}, tmargin={2.5cm}, bmargin={3.0cm}]{geometry}
+
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{textcomp}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{hyperref}
+\usepackage{listings, color}
+\usepackage{scrlayer-scrpage}
+\usepackage{soul}
+\usepackage[acronym,toc]{glossaries}
+\usepackage{caption}
+\usepackage{longtable, booktabs, array, tabularx, multirow}
+\usepackage{calc}
+\usepackage{setspace}
+\usepackage{etoolbox}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{fancyvrb}
+\emergencystretch=2em
+
+% paragraph style (UE template)
+\onehalfspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.65em}
+
+% Caption placement per colloquium rules: figure captions below, table captions above
+\captionsetup[table]{position=top,skip=4pt}
+\captionsetup[figure]{position=bottom,skip=4pt}
+
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+\newenvironment{Shaded}{}{}
+\newcommand{\Program}{\mathcal P}
+\newcommand{\ru}{r}
+\newcommand{\naf}{not}
+\newcommand{\answerSet}{\mathcal M^\Program}
+\newcommand{\answerSetReduct}{\mathcal M^{\reductP}}
+\newcommand{\groundLitP}{Lit}
+\newcommand{\subsetReduct}{\mathcal R}
+\newcommand{\reductP}{\mathcal P^{\mathcal R}}
+\newcommand{\modelX}{\mathcal X}
+\newcommand{\modelY}{\mathcal Y}
+\newcommand{\NormalTok}[1]{#1}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Correct order of tables after \paragraph or \subparagraph
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=black,
+    pdftitle={Prompt Framing Sensitivity in Large Language Models for Code Generation and Reasoning Tasks},
+    pdfauthor={Duc Toan Huynh},
+    pdfkeywords={Large Language Models; Code Generation; Prompt Engineering; Empirical Software Engineering; Mathematical Reasoning}
+}
+
+% KOMA Chapter Title Styling (Centered, 18pt) & Header/Footer Polish
+\renewcommand*{\raggedchapter}{\centering}
+\setkomafont{chapter}{\sffamily\bfseries\fontsize{18}{22}\selectfont}
+
+\pagestyle{scrheadings}
+\clearpairofpagestyles
+\setkomafont{pagehead}{\small}
+\ohead{Prompt Framing Sensitivity in LLMs}
+\ihead{Duc Toan Huynh}
+\ofoot[]{\thepage}
+\ifoot{Master Thesis, UE, 2026}
+\author{Duc Toan Huynh}
+
+% Graphic path
+\graphicspath{{./figures/}}
+
+\input{./misc/hyphenation}
+
+\makeglossaries
+
+% glossary and acronym definitions (printed in the front matter)
+\input{./misc/acronyms}
+\input{./misc/glossary}
+
+% Force all entries into the glossary output
+\glsaddall
+
+\begin{document}
+
+\frontmatter
+    \include{./misc/titlepage}
+    \thispagestyle{empty}
+    \cleardoublepage
+
+    \include{./misc/self-assertion}
+    \thispagestyle{empty}
+    \cleardoublepage
+
+    \include{./misc/abstract}
+    \thispagestyle{empty}
+    \cleardoublepage
+
+    \tableofcontents
+    \thispagestyle{empty}
+
+    \listoffigures
+    \thispagestyle{empty}
+
+    \listoftables
+    \thispagestyle{empty}
+
+    \printglossary[title={List of Abbreviations}, type=\acronymtype, toctitle=List of Abbreviations, nonumberlist]
+    \thispagestyle{empty}
+
+\mainmatter
+
+    \input{./chapters/chapter1}
+    \input{./chapters/chapter2}
+    \input{./chapters/chapter3}
+    \input{./chapters/chapter4}
+    \input{./chapters/chapter5}
+    \input{./chapters/chapter6}
+    \input{./chapters/chapter7}
+
+\backmatter
+    \printglossary[title=Special Terms, toctitle=List of terms, nonumberlist]
+
+    \bibliographystyle{IEEEtran}
+    \bibliography{./bib/literature}
+
+    \input{./misc/annex}
+
+\end{document}
