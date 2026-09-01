@@ -1,2 +1,9 @@
 .jupyter/
 .kernels/__pycache__/
+*.aux
+*.bbl
+*.blg
+*.out
+*.toc
+*.spl
+*.abs
