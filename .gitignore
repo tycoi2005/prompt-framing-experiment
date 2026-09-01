@@ -7,3 +7,5 @@
 *.toc
 *.spl
 *.abs
+*.log
+*.ist
