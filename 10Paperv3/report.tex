@@ -460,7 +460,7 @@ Stratum & Correctness (pass/fail) & Output behavior & Details \\
 \bottomrule\noalign{}
 \endlastfoot
 Local code & Small role penalty (-1.0 pp); tone and format null & Polite tone: +12.4\% tokens, +10.8\% duration; JSON/XML improve compliance & \ref{prompt-factor-effects-on-code-tasks}, \ref{mixed-effects-inferential-results}, \ref{output-behavior-tokens-duration-and-result-only-compliance} \\
-Local math & JSON penalty -4.1 pp, XML penalty -2.1 pp; role +2.1 pp and polite +1.6 pp gains & JSON: -19.8\% tokens; polite tone: +11.0\% tokens & \ref{prompt-factor-effects-on-math-tasks}, \ref{mixed-effects-inferential-results} \\
+Local math & JSON penalty -4.1 pp, XML penalty -2.2 pp; role +2.1 pp and polite +1.6 pp gains & JSON: -19.8\% tokens; polite tone: +11.0\% tokens & \ref{prompt-factor-effects-on-math-tasks}, \ref{mixed-effects-inferential-results} \\
 API Python & JSON gain +3.4 pp, XML gain +5.2 pp & Wrappers reduce tokens and duration & \ref{prompt-factor-effects-on-code-tasks}, \ref{mixed-effects-inferential-results} \\
 API math & Role penalty -2.8 pp & Role framing: +83 tokens & \ref{prompt-factor-effects-on-math-tasks}, \ref{mixed-effects-inferential-results} \\
 Sensitivity & Local effects survive Nemotron removal; API Python effects attenuate without DeepSeek & -- & \ref{dominant-model-sensitivity-and-aggregation-risk} \\
@@ -674,26 +674,26 @@ Stratum & Contrast & Odds ratio [95\% int.] & AME pp [95\% int.] & p \\
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-API Python & Aggressive tone & 1.05 [0.83, 1.34] & +0.6 [-2.3, +3.4] & 0.686 \\
+API Python & Aggressive tone & 1.05 [0.83, 1.34] & +0.6 [-2.4, +3.5] & 0.686 \\
 API Python & Polite tone & 1.05 [0.83, 1.34] & +0.6 [-2.2, +3.4] & 0.686 \\
-API Python & Role framing & 0.92 [0.76, 1.11] & -1.1 [-3.5, +1.2] & 0.381 \\
-API Python & JSON wrapper & 1.32 [1.04, 1.68] & +3.4 [+0.5, +6.2] & 0.022 \\
-API Python & XML wrapper & 1.55 [1.21, 1.97] & +5.2 [+2.4, +8.0] & \textless{}0.001 \\
-API math & Aggressive tone & 1.05 [0.81, 1.38] & +0.5 [-2.1, +2.9] & 0.697 \\
-API math & Polite tone & 0.91 [0.70, 1.18] & -0.9 [-3.5, +1.5] & 0.476 \\
+API Python & Role framing & 0.92 [0.76, 1.11] & -1.1 [-3.4, +1.2] & 0.381 \\
+API Python & JSON wrapper & 1.32 [1.04, 1.68] & +3.4 [+0.4, +6.3] & 0.022 \\
+API Python & XML wrapper & 1.55 [1.21, 1.97] & +5.2 [+2.3, +8.2] & \textless{}0.001 \\
+API math & Aggressive tone & 1.05 [0.81, 1.38] & +0.5 [-2.0, +3.1] & 0.697 \\
+API math & Polite tone & 0.91 [0.70, 1.18] & -0.9 [-3.3, +1.6] & 0.476 \\
 API math & Role framing & 0.74 [0.60, 0.92] & -2.8 [-4.8, -0.8] & 0.006 \\
-API math & JSON wrapper & 0.87 [0.67, 1.14] & -1.3 [-3.8, +1.2] & 0.325 \\
-API math & XML wrapper & 0.78 [0.60, 1.02] & -2.3 [-4.7, +0.1] & 0.069 \\
+API math & JSON wrapper & 0.87 [0.67, 1.14] & -1.2 [-3.8, +1.4] & 0.325 \\
+API math & XML wrapper & 0.78 [0.60, 1.02] & -2.3 [-4.9, +0.1] & 0.069 \\
 Local code & Aggressive tone & 0.98 [0.80, 1.20] & -0.1 [-1.0, +0.9] & 0.858 \\
 Local code & Polite tone & 0.89 [0.72, 1.09] & -0.5 [-1.4, +0.4] & 0.265 \\
 Local code & Role framing & 0.81 [0.68, 0.96] & -1.0 [-1.7, -0.2] & 0.013 \\
-Local code & JSON wrapper & 1.01 [0.83, 1.24] & +0.1 [-0.8, +1.0] & 0.900 \\
-Local code & XML wrapper & 1.15 [0.94, 1.41] & +0.7 [-0.2, +1.6] & 0.164 \\
-Local math & Aggressive tone & 1.11 [0.95, 1.29] & +0.9 [-0.5, +2.2] & 0.198 \\
-Local math & Polite tone & 1.20 [1.03, 1.40] & +1.6 [+0.3, +3.0] & 0.019 \\
+Local code & JSON wrapper & 1.01 [0.83, 1.24] & +0.1 [-0.8, +1.1] & 0.900 \\
+Local code & XML wrapper & 1.15 [0.94, 1.41] & +0.7 [-0.3, +1.6] & 0.164 \\
+Local math & Aggressive tone & 1.11 [0.95, 1.29] & +0.9 [-0.5, +2.3] & 0.198 \\
+Local math & Polite tone & 1.20 [1.03, 1.40] & +1.6 [+0.2, +3.0] & 0.019 \\
 Local math & Role framing & 1.28 [1.13, 1.45] & +2.1 [+1.0, +3.2] & \textless{}0.001 \\
-Local math & JSON wrapper & 0.62 [0.52, 0.72] & -4.1 [-5.4, -2.8] & \textless{}0.001 \\
-Local math & XML wrapper & 0.78 [0.66, 0.91] & -2.1 [-3.4, -0.9] & 0.001 \\
+Local math & JSON wrapper & 0.62 [0.52, 0.72] & -4.1 [-5.4, -2.7] & \textless{}0.001 \\
+Local math & XML wrapper & 0.78 [0.66, 0.91] & -2.2 [-3.4, -0.8] & 0.001 \\
 \end{longtable}
 
 According to the mixed-effects results, all of the headline findings are confirmed. The results of the main inferential analysis confirm the benefit of the structured format in API Python code for both JSON (OR 1.32, p = 0.022) and XML (OR 1.55, p \textless{} 0.001). The penalty for local math in JSON is clearly established (OR 0.62, p \textless{} 0.001); the penalty for local math in XML is also confirmed (OR 0.78, p = 0.001), as are the gain from local math in role-framing (OR 1.28, p \textless{} 0.001) and the small polite-tone gain in local math (OR 1.20, p = 0.019). The role-framing penalty in API math code, which was regarded as exploratory in the descriptive analysis, was confirmed in the mixed model (OR 0.74, p = 0.006). The small penalty for the local-code role is also confirmed in the mixed analysis (OR 0.81, p = 0.013); however, at roughly one percentage point, it remains practically minor. No tone effects can be regarded as significant when analyzing any code format.
@@ -919,10 +919,10 @@ Stratum & Contrast & LPM full & LPM w/o dom. & AME full & AME w/o dom. \\
 \bottomrule\noalign{}
 \endlastfoot
 API Python & JSON wrapper & +3.2 & +1.3 & +3.4 & +1.6 \\
-API Python & XML wrapper & +4.8 & +2.7 & +5.3 & +3.1 \\
+API Python & XML wrapper & +4.8 & +2.7 & +5.2 & +3.1 \\
 API math & Role framing & -2.8 & -2.4 & -2.8 & -4.1 \\
-API math & JSON wrapper & -1.3 & -3.7 & -1.3 & -6.1 \\
-API math & XML wrapper & -2.3 & -0.0 & -2.4 & -0.2 \\
+API math & JSON wrapper & -1.3 & -3.7 & -1.2 & -6.1 \\
+API math & XML wrapper & -2.3 & -0.0 & -2.3 & -0.2 \\
 Local code & Role framing & -1.0 & -0.9 & -1.0 & -0.9 \\
 Local math & Polite tone & +1.7 & +2.3 & +1.6 & +2.3 \\
 Local math & Role framing & +2.2 & +2.4 & +2.1 & +2.3 \\
@@ -932,7 +932,7 @@ Local math & XML wrapper & -2.2 & -2.5 & -2.2 & -2.4 \\
 
 The re-estimation indicate that the local prompt effects are not merely an artifact of Nemotron's dominance. In the absence of Nemotron, the local math JSON penalty has a slightly greater impact (-5.2 pp AME compared to -4.1 pp in the full panel) while still being highly statistically significant, and the two local math prompt gains (role framing and politeness) exhibit no observable change in their magnitude. Finally, even the small local-code role penalty is just as consistent between both estimates (-0.9 pp AME). Overall, while the leading local model shifts the pooled pass rate by 12 points, it leaves the prompt-effect estimates intact in both direction and magnitude.
 
-The API group displays a different pattern, as expected in a two-model panel. The benefit of the API Python structured format shrinks with the removal of DeepSeek V4 Flash, causing the XML effect to fall from +5.3 to +3.1 pp AME and the JSON effect to decrease from +3.4 to +1.6 pp AME, and neither is shown to be statistically significant in a Gemini-only panel. Therefore, the combined API Python effect must be interpreted as a two-model average with the major input from DeepSeek, and not a feature attributable to each model. The API math role-framing penalty, on the contrary, still holds and becomes even greater in the Gemini-only panel (-4.1 pp AME), which means that it is not influenced only by DeepSeek. The API math XML penalty does not remain after the removal (-0.2 pp AME), thus emphasizing its exploratory character.
+The API group displays a different pattern, as expected in a two-model panel. The benefit of the API Python structured format shrinks with the removal of DeepSeek V4 Flash, causing the XML effect to fall from +5.2 to +3.1 pp AME and the JSON effect to decrease from +3.4 to +1.6 pp AME, and neither is shown to be statistically significant in a Gemini-only panel. Therefore, the combined API Python effect must be interpreted as a two-model average with the major input from DeepSeek, and not a feature attributable to each model. The API math role-framing penalty, on the contrary, still holds and becomes even greater in the Gemini-only panel (-4.1 pp AME), which means that it is not influenced only by DeepSeek. The API math XML penalty does not remain after the removal (-0.2 pp AME), thus emphasizing its exploratory character.
 
 This sensitivity test lends support to the primary methodological point: that prompt-policy conclusions must not come from pooled averages only, but be derived from each model group and task type, with the dominant-model dependence of each effect stated explicitly.
 
