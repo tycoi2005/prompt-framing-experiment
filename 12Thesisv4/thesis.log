@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.17)  25 AUG 2026 01:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.17)  1 SEP 2026 22:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1131,12 +1131,7 @@ chapter 2.
 [4
 
 
-] [5] [6] [7]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 2.1 on input line 68.
-
-[8]) (./chapters/chapter3.tex [9]
+] [5] [6] [7] [8]) (./chapters/chapter3.tex [9]
 chapter 3.
 [10
 
@@ -1293,12 +1288,8 @@ chapter without number
 [63
 
 
-] [64])
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
-[65] (./thesis.aux (./misc/titlepage.aux) (./misc/self-assertion.aux)
-(./misc/abstract.aux))
+] [64]) [65] (./thesis.aux (./misc/titlepage.aux) (./misc/self-assertion.aux) (
+./misc/abstract.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1327,7 +1318,7 @@ texlive/2024/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/
 -dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2024/texmf-dist/font
 s/type1/public/lm/lmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/pu
 blic/amsfonts/symbols/msam10.pfb>
-Output written on thesis.pdf (76 pages, 1187302 bytes).
+Output written on thesis.pdf (76 pages, 1187294 bytes).
 PDF statistics:
  1200 PDF objects out of 1200 (max. 8388607)
  1069 compressed objects within 11 object streams
