@@ -61,7 +61,11 @@ FE_FORMULA = (
 )
 VC_FORMULA = {"base_task": "0 + C(base_task)"}
 N_DRAWS = 4000
-RNG = np.random.default_rng(20260720)
+# Fixed base seed: every AME computation seeds its own generator from this
+# value plus the term index, so the same (stratum, term) contrast always gets
+# identical draws no matter when it is computed (pass table vs dominant-model
+# sensitivity table).
+BASE_SEED = 42
 
 STRATUM_LABELS = {
     ("api", "code"): "API Python",
@@ -112,9 +116,10 @@ def ame_for_term(
 
     fe_mean = np.asarray(result.fe_mean, dtype=float)
     cov = fe_covariance(result, len(fe_mean))
-    draws = RNG.multivariate_normal(fe_mean, cov, size=N_DRAWS)
+    rng = np.random.default_rng(BASE_SEED + PROMPT_TERMS.index(term))
+    draws = rng.multivariate_normal(fe_mean, cov, size=N_DRAWS)
     re_sd = float(np.exp(np.atleast_1d(result.vcp_mean)[0]))
-    u = RNG.normal(0.0, re_sd, size=(N_DRAWS, x.shape[0]))
+    u = rng.normal(0.0, re_sd, size=(N_DRAWS, x.shape[0]))
     ames = (expit(draws @ x1.T + u) - expit(draws @ x0.T + u)).mean(axis=1)
     return (
         float(ames.mean() * 100),
@@ -123,8 +128,12 @@ def ame_for_term(
     )
 
 
-def logit_mixed_rows(df: pd.DataFrame, stratum: str) -> list[dict[str, object]]:
-    model, result = fit_logit_mixed(df)
+def logit_mixed_rows(
+    df: pd.DataFrame,
+    stratum: str,
+    fit: tuple[BinomialBayesMixedGLM, object] | None = None,
+) -> list[dict[str, object]]:
+    model, result = fit if fit is not None else fit_logit_mixed(df)
     exog_names = list(model.data.param_names)
     fe_mean = np.asarray(result.fe_mean, dtype=float)
     fe_sd = np.asarray(result.fe_sd, dtype=float)
@@ -265,7 +274,10 @@ def write_csv(path: Path, rows: list[dict[str, object]]) -> None:
         writer.writerows(rows)
 
 
-def dominant_model_sensitivity(df: pd.DataFrame) -> list[dict[str, object]]:
+def dominant_model_sensitivity(
+    df: pd.DataFrame,
+    fits: dict[str, tuple[BinomialBayesMixedGLM, object]] | None = None,
+) -> list[dict[str, object]]:
     rows = []
     for (modeltype, task_type), group in df.groupby(["modeltype", "task_type"]):
         stratum = STRATUM_LABELS[(modeltype, task_type)]
@@ -273,7 +285,11 @@ def dominant_model_sensitivity(df: pd.DataFrame) -> list[dict[str, object]]:
         panels = {"full panel": group, f"without {MODEL_LABELS[dominant]}": group[group["modelname"] != dominant]}
         for panel_name, panel_df in panels.items():
             lpm = lpm_cluster_rows(panel_df)
-            mixed = {row["factor"]: row for row in logit_mixed_rows(panel_df, stratum)}
+            # Reuse the full-panel fit from the main pass table so both tables
+            # report identical estimates for the same model; only the
+            # leave-one-out panels are fitted fresh.
+            fit = fits.get(stratum) if (fits and panel_name == "full panel") else None
+            mixed = {row["factor"]: row for row in logit_mixed_rows(panel_df, stratum, fit=fit)}
             for term in PROMPT_TERMS:
                 rows.append(
                     {
@@ -330,15 +346,17 @@ def main() -> None:
     )
 
     pass_rows, behavior_rows = [], []
+    fits: dict[str, tuple[BinomialBayesMixedGLM, object]] = {}
     for stratum, group in df.groupby("stratum"):
-        pass_rows.extend(logit_mixed_rows(group, stratum))
+        fits[stratum] = fit_logit_mixed(group)
+        pass_rows.extend(logit_mixed_rows(group, stratum, fit=fits[stratum]))
         for outcome in ("log_completion_tokens", "log_duration"):
             behavior_rows.extend(linear_mixed_rows(group, stratum, outcome))
         behavior_rows.extend(compliance_mixed_rows(group, stratum))
     write_csv(OUT_PASS, pass_rows)
     write_csv(OUT_BEHAVIOR, behavior_rows)
 
-    dominant_rows = dominant_model_sensitivity(df)
+    dominant_rows = dominant_model_sensitivity(df, fits)
     write_csv(OUT_DOMINANT, dominant_rows)
 
     nemotron_rows, nemotron_summary = nemotron_task_summary(df)

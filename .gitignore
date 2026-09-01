@@ -1,2 +1,2 @@
 .jupyter/
-.kernels/
+.kernels/__pycache__/

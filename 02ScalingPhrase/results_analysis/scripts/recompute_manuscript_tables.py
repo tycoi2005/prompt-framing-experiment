@@ -12,7 +12,10 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 PROJECT_ROOT = ROOT.parent
-RESULTS = PROJECT_ROOT / "02ScalingPhrase" / "results_analysis"
+# This copy lives inside the results-analysis package itself, so the result
+# files are directly under ROOT (the 10Paperv3 copy resolves RESULTS as
+# PROJECT_ROOT / "02ScalingPhrase" / "results_analysis" instead).
+RESULTS = ROOT
 SOURCE_JSONL = RESULTS / "prompt_framing_experiment_results.jsonl"
 CODE_TEMPLATE = RESULTS / "prompt_templates" / "prompt_matrix_prompt_template.09.csv"
 MATH_TEMPLATE = RESULTS / "prompt_templates" / "prompt_matrix_prompt_template.09.math.csv"
