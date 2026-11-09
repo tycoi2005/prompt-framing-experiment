@@ -40,6 +40,7 @@ python3 run_clustered_lpm_analysis.py
 python3 apply_multiple_comparison_correction.py
 python3 run_mixed_effects_analysis.py
 python3 run_interaction_analysis.py
+python3 characterize_task_datasets.py
 ```
 
 ## License & Data Availability

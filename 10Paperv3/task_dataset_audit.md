@@ -1,0 +1,10 @@
+# Quantitative Characterization of the Four 50-Task Evaluation Benchmarks
+
+Generated from the four active 50-task benchmark files and the 14,400-run evaluation dataset (`prompt_framing_experiment_results.jsonl`).
+
+| Stratum | Tasks | Statement Words | Statement Chars | Tokens | Input Arity / Givens | Ref LOC / Lines | Ref SLOC / Words | Cyclomatic Complexity | Overall Pass Rate (%) |
+|---|---:|---|---|---|---|---|---|---|---|
+| local_code | 50 | 76.3 (SD 21.4; med 71.0, IQR 25.0, range 42.0-153.0) | 411.2 (SD 112.4; med 391.5, IQR 150.0, range 237.0-748.0) | 92.9 (SD 28.3; med 86.5, IQR 28.0, range 45.0-207.0) | 3.4 (SD 2.5; med 3.0, IQR 2.0, range 0.0-9.0) | 24.6 (SD 12.9; med 22.5, IQR 20.0, range 6.0-60.0) | 12.6 (SD 7.6; med 11.0, IQR 9.0, range 2.0-38.0) | 4.3 (SD 4.5; med 3.0, IQR 3.0, range 1.0-23.0) | 9.1 (SD 12.9; med 0.9, IQR 18.5, range 0.0-48.1) |
+| local_math | 50 | 38.3 (SD 15.6; med 36.5, IQR 17.0, range 2.0-90.0) | 201.1 (SD 75.8; med 192.0, IQR 99.0, range 40.0-419.0) | 48.2 (SD 18.5; med 44.0, IQR 23.0, range 21.0-102.0) | 3.8 (SD 2.1; med 4.0, IQR 2.0, range 0.0-10.0) | 7.2 (SD 4.8; med 6.0, IQR 8.0, range 1.0-23.0) | 96.5 (SD 57.2; med 89.5, IQR 78.0, range 2.0-257.0) | N/A | 31.1 (SD 16.7; med 27.3, IQR 20.4, range 0.0-86.1) |
+| api_code | 50 | 48.4 (SD 35.9; med 39.5, IQR 25.0, range 18.0-211.0) | 292.4 (SD 195.1; med 241.5, IQR 135.0, range 125.0-1103.0) | 80.6 (SD 57.6; med 63.0, IQR 53.0, range 29.0-326.0) | 2.4 (SD 1.1; med 2.0, IQR 2.0, range 1.0-5.0) | 7.2 (SD 5.1; med 6.5, IQR 5.0, range 2.0-29.0) | 6.7 (SD 4.6; med 6.0, IQR 6.0, range 2.0-25.0) | 2.8 (SD 2.3; med 2.0, IQR 3.0, range 1.0-12.0) | 67.8 (SD 33.4; med 81.9, IQR 47.2, range 0.0-100.0) |
+| api_math | 50 | 38.4 (SD 35.9; med 29.5, IQR 25.0, range 8.0-201.0) | 215.4 (SD 195.1; med 164.5, IQR 135.0, range 48.0-1026.0) | 67.6 (SD 57.6; med 50.0, IQR 53.0, range 16.0-313.0) | 6.6 (SD 7.0; med 4.0, IQR 5.0, range 0.0-28.0) | 1.0 (SD 0.1; med 1.0, IQR 0.0, range 1.0-2.0) | 72.8 (SD 83.0; med 51.0, IQR 101.0, range 1.0-417.0) | N/A | 53.3 (SD 24.6; med 47.2, IQR 25.0, range 11.1-100.0) |

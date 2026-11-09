@@ -16,6 +16,8 @@ python3 run_mixed_effects_analysis.py         # main inferential models + domina
                                               # sensitivity + Nemotron task summary
 python3 run_interaction_analysis.py           # two-way prompt-factor interactions +
                                               # factor-by-model omnibus Wald tests
+python3 characterize_task_datasets.py         # quantitative characterization of the
+                                              # four 50-task evaluation benchmarks
 ```
 
 Outputs land in `analysis/`:
@@ -36,6 +38,10 @@ Outputs land in `analysis/`:
   joint Wald tests, and within-stratum / global BH q-values
 - `factor_by_model_interactions.csv` — omnibus Wald chi-square and F tests for
   `Factor x Model` interactions across all four strata
+- `task_dataset_characterization.csv` — summary statistics across all four 50-task
+  benchmarks (statement length, arity/givens, reference LOC/SLOC, AST nodes, McCabe
+  cyclomatic complexity, topic/difficulty breakdown, and pass-rate distributions)
+- `per_task_characterization.csv` — task-level metrics across all 200 base tasks
 
 ## Audits
 
@@ -46,6 +52,7 @@ Outputs land in `analysis/`:
 - `nemotron_math_audit.md` — repository audit of the 91.2% local-math pass rate
 - `interaction_audit.md` — generated summary of the two-way prompt-factor and
   factor-by-model interaction analyses
+- `task_dataset_audit.md` — generated summary of the four 50-task evaluation suites
 
 ## Build
 

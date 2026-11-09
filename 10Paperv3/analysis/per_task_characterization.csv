@@ -1,0 +1,201 @@
+stratum,task_id,difficulty,topic,statement_words,statement_chars,statement_tokens,full_spec_tokens,input_arity_or_givens,ref_loc_or_lines,ref_sloc_or_words,ast_nodes,cyclomatic_complexity,has_loop,has_branch,test_count,overall_pass_rate_pct,baseline_pass_rate_pct
+local_code,1,hard,Resource optimization & financial modeling,70,364,87,114,3,9,9,89,5,1,1,7,3.7037037037037033,0.0
+local_code,2,medium,Probability & combinatorics,67,366,79,98,1,14,9,131,3,0,1,7,0.0,0.0
+local_code,3,hard,Probability & combinatorics,86,438,97,125,6,21,12,174,3,0,1,7,0.0,0.0
+local_code,4,medium,Geometry & spatial optimization,66,325,77,108,3,9,8,72,1,0,0,7,0.0,0.0
+local_code,5,easy,Geometry & spatial optimization,55,319,67,206,1,18,14,102,3,1,0,7,13.88888888888889,33.33333333333333
+local_code,6,hard,Discrete algorithms & graph/sequence search,88,491,99,122,2,11,6,51,1,0,0,7,0.9259259259259258,0.0
+local_code,7,hard,Geometry & spatial optimization,48,273,53,80,3,23,13,107,3,0,1,7,11.11111111111111,0.0
+local_code,8,easy,Resource optimization & financial modeling,70,368,77,124,8,23,11,120,3,1,1,7,28.703703703703702,33.33333333333333
+local_code,9,medium,Geometry & spatial optimization,78,425,100,119,1,28,5,44,1,0,0,7,0.0,0.0
+local_code,10,medium,Geometry & spatial optimization,97,545,116,143,3,10,5,41,1,0,0,7,0.0,0.0
+local_code,11,easy,Geometry & spatial optimization,87,429,95,122,2,9,2,15,1,0,0,7,38.88888888888889,33.33333333333333
+local_code,12,hard,Probability & combinatorics,88,508,109,152,1,43,15,123,3,1,1,7,0.0,0.0
+local_code,13,medium,Probability & combinatorics,62,288,83,106,0,31,23,254,17,1,1,7,20.37037037037037,33.33333333333333
+local_code,14,hard,Resource optimization & financial modeling,97,489,108,155,8,29,15,146,4,1,1,7,18.51851851851852,0.0
+local_code,15,medium,Resource optimization & financial modeling,108,526,132,159,3,20,17,96,5,1,1,7,31.48148148148148,50.0
+local_code,16,easy,Algebraic & physical rate modeling,65,355,71,94,2,6,4,38,1,0,0,7,20.37037037037037,33.33333333333333
+local_code,17,medium,Resource optimization & financial modeling,66,355,82,113,3,14,10,54,3,1,1,7,28.703703703703702,16.666666666666664
+local_code,18,medium,Resource optimization & financial modeling,71,349,78,125,8,18,12,113,4,1,1,7,20.37037037037037,0.0
+local_code,19,hard,Resource optimization & financial modeling,60,338,70,105,4,15,6,69,1,0,0,7,2.7777777777777777,0.0
+local_code,20,hard,Geometry & spatial optimization,74,391,93,352,1,35,26,171,8,1,1,7,0.0,0.0
+local_code,21,medium,Probability & combinatorics,42,237,45,68,2,14,9,61,3,1,1,7,22.22222222222222,16.666666666666664
+local_code,22,hard,Geometry & spatial optimization,83,425,100,145,4,35,14,176,3,0,1,7,0.0,0.0
+local_code,23,medium,Probability & combinatorics,45,246,50,77,1,11,4,73,1,0,0,7,5.555555555555555,16.666666666666664
+local_code,24,hard,Probability & combinatorics,69,390,85,156,4,24,6,115,1,0,0,7,0.0,0.0
+local_code,25,hard,Geometry & spatial optimization,77,408,85,128,7,35,7,171,1,0,0,7,0.0,0.0
+local_code,26,medium,Resource optimization & financial modeling,66,320,79,114,1,34,17,135,12,1,1,7,0.9259259259259258,0.0
+local_code,27,easy,Algebraic & physical rate modeling,44,263,76,167,2,18,8,123,4,1,0,7,12.962962962962962,16.666666666666664
+local_code,28,hard,Resource optimization & financial modeling,80,448,104,155,6,28,16,167,4,0,1,7,0.9259259259259258,16.666666666666664
+local_code,29,hard,Resource optimization & financial modeling,122,706,169,224,9,50,28,299,8,1,1,7,10.185185185185185,33.33333333333333
+local_code,30,medium,Resource optimization & financial modeling,87,449,101,152,8,18,11,123,4,1,1,7,25.0,33.33333333333333
+local_code,31,hard,Geometry & spatial optimization,126,681,143,192,2,37,23,228,12,1,1,7,0.0,0.0
+local_code,32,hard,Geometry & spatial optimization,153,748,207,234,2,32,20,146,4,1,1,7,0.0,0.0
+local_code,33,hard,Resource optimization & financial modeling,71,399,80,111,4,22,11,91,3,1,1,7,1.8518518518518516,0.0
+local_code,34,hard,Geometry & spatial optimization,94,507,106,157,9,41,26,303,10,1,1,7,0.0,0.0
+local_code,35,hard,Geometry & spatial optimization,98,539,111,142,3,59,10,135,3,0,1,7,0.0,0.0
+local_code,36,hard,Probability & combinatorics,57,274,66,99,0,36,24,259,13,1,1,7,6.481481481481481,0.0
+local_code,37,hard,Probability & combinatorics,82,435,93,112,1,37,13,106,3,0,1,7,0.0,0.0
+local_code,38,hard,Resource optimization & financial modeling,75,451,105,160,5,30,6,115,1,0,0,7,0.0,0.0
+local_code,39,easy,Resource optimization & financial modeling,87,488,109,157,8,31,16,152,7,1,1,7,35.18518518518518,50.0
+local_code,40,medium,Geometry & spatial optimization,64,349,86,134,2,18,11,153,1,0,0,7,0.0,0.0
+local_code,41,medium,Resource optimization & financial modeling,67,392,83,114,3,11,10,67,2,1,0,7,13.88888888888889,16.666666666666664
+local_code,42,easy,Probability & combinatorics,62,371,73,114,5,27,13,137,4,0,1,7,0.0,0.0
+local_code,43,hard,Geometry & spatial optimization,87,510,111,130,1,21,5,40,1,0,0,7,0.0,0.0
+local_code,44,hard,Geometry & spatial optimization,62,276,96,179,4,40,25,500,4,1,1,7,0.0,0.0
+local_code,45,easy,Probability & combinatorics,75,428,103,138,4,9,3,27,1,0,0,7,48.148148148148145,33.33333333333333
+local_code,46,medium,Probability & combinatorics,99,540,123,146,0,24,5,19,1,0,0,7,31.48148148148148,16.666666666666664
+local_code,47,hard,Probability & combinatorics,66,359,77,118,2,60,38,358,23,1,1,7,0.0,0.0
+local_code,48,easy,Probability & combinatorics,55,313,70,97,2,16,13,132,6,1,1,7,0.0,0.0
+local_code,49,hard,Geometry & spatial optimization,56,329,63,90,3,12,9,74,1,0,0,7,0.0,0.0
+local_code,50,hard,Resource optimization & financial modeling,59,339,73,112,4,15,9,65,2,0,1,7,0.9259259259259258,0.0
+local_math,1,medium,"Algebraic equations, roots & radicals",68,370,86,86,3,13,184,0,0,0,0,1,23.14814814814815,16.666666666666664
+local_math,2,medium,"Algebraic equations, roots & radicals",24,143,57,57,5,1,2,0,0,0,0,1,30.555555555555557,33.33333333333333
+local_math,3,easy,"Applied word problems (rate, cost & linear modeling)",38,203,42,42,3,8,72,0,0,0,0,1,30.555555555555557,50.0
+local_math,4,hard,Probability & statistics,90,419,102,102,6,14,257,0,0,0,0,1,13.88888888888889,16.666666666666664
+local_math,5,easy,"Algebraic equations, roots & radicals",2,40,22,22,2,1,2,0,0,0,0,1,53.70370370370371,50.0
+local_math,6,medium,Probability & statistics,30,152,35,35,3,3,55,0,0,0,0,1,38.88888888888889,33.33333333333333
+local_math,7,hard,Probability & statistics,24,130,28,28,3,3,68,0,0,0,0,1,23.14814814814815,16.666666666666664
+local_math,8,medium,"Applied word problems (rate, cost & linear modeling)",45,258,50,50,3,16,183,0,0,0,0,1,20.37037037037037,16.666666666666664
+local_math,9,hard,Probability & statistics,40,200,44,44,5,5,91,0,0,0,0,1,26.851851851851855,33.33333333333333
+local_math,10,medium,"Applied word problems (rate, cost & linear modeling)",41,204,49,49,3,12,123,0,0,0,0,1,20.37037037037037,16.666666666666664
+local_math,11,hard,"Applied word problems (rate, cost & linear modeling)",41,218,46,46,4,15,151,0,0,0,0,1,17.59259259259259,16.666666666666664
+local_math,12,hard,"Applied word problems (rate, cost & linear modeling)",32,191,36,36,3,8,118,0,0,0,0,1,25.925925925925924,33.33333333333333
+local_math,13,hard,Probability & statistics,32,153,35,35,4,8,73,0,0,0,0,1,22.22222222222222,33.33333333333333
+local_math,14,hard,Probability & statistics,22,119,24,24,1,5,39,0,0,0,0,1,16.666666666666664,16.666666666666664
+local_math,15,hard,"Applied word problems (rate, cost & linear modeling)",68,314,86,86,10,3,70,0,0,0,0,1,16.666666666666664,16.666666666666664
+local_math,16,medium,Probability & statistics,30,154,33,33,5,7,77,0,0,0,0,1,52.77777777777778,50.0
+local_math,17,hard,"Applied word problems (rate, cost & linear modeling)",51,289,59,59,4,13,178,0,0,0,0,1,20.37037037037037,16.666666666666664
+local_math,18,easy,Probability & statistics,38,173,42,42,4,4,55,0,0,0,0,1,36.11111111111111,33.33333333333333
+local_math,19,medium,Probability & statistics,41,239,51,51,4,3,38,0,0,0,0,1,26.851851851851855,33.33333333333333
+local_math,20,easy,Probability & statistics,34,181,40,40,3,3,40,0,0,0,0,1,40.74074074074074,33.33333333333333
+local_math,21,medium,Probability & statistics,29,144,32,32,3,5,88,0,0,0,0,1,41.66666666666667,33.33333333333333
+local_math,22,hard,"Applied word problems (rate, cost & linear modeling)",59,284,73,73,4,15,185,0,0,0,0,1,27.77777777777778,16.666666666666664
+local_math,23,medium,Probability & statistics,28,138,31,31,3,2,39,0,0,0,0,1,37.96296296296296,33.33333333333333
+local_math,24,medium,Probability & statistics,43,225,48,48,4,12,159,0,0,0,0,1,46.2962962962963,50.0
+local_math,25,easy,Probability & statistics,30,159,33,33,5,3,94,0,0,0,0,1,52.77777777777778,50.0
+local_math,26,medium,"Applied word problems (rate, cost & linear modeling)",47,259,57,57,6,7,154,0,0,0,0,1,32.407407407407405,33.33333333333333
+local_math,27,medium,"Applied word problems (rate, cost & linear modeling)",37,199,42,42,3,13,154,0,0,0,0,1,23.14814814814815,16.666666666666664
+local_math,28,hard,"Applied word problems (rate, cost & linear modeling)",53,245,65,65,3,9,117,0,0,0,0,1,20.37037037037037,16.666666666666664
+local_math,29,easy,Probability & statistics,19,93,21,21,1,6,83,0,0,0,0,1,86.11111111111111,100.0
+local_math,30,medium,"Applied word problems (rate, cost & linear modeling)",33,187,42,42,3,4,70,0,0,0,0,1,25.925925925925924,33.33333333333333
+local_math,31,medium,Probability & statistics,30,147,33,33,4,5,86,0,0,0,0,1,51.85185185185185,50.0
+local_math,32,hard,"Applied word problems (rate, cost & linear modeling)",63,301,89,89,8,6,108,0,0,0,0,1,12.962962962962962,16.666666666666664
+local_math,33,hard,"Algebraic equations, roots & radicals",21,105,45,45,5,3,52,0,0,0,0,1,17.59259259259259,16.666666666666664
+local_math,34,medium,Probability & statistics,42,230,58,58,3,11,137,0,0,0,0,1,34.25925925925926,16.666666666666664
+local_math,35,hard,"Applied word problems (rate, cost & linear modeling)",61,326,78,78,9,10,133,0,0,0,0,1,20.37037037037037,16.666666666666664
+local_math,36,medium,Probability & statistics,24,113,27,27,0,5,73,0,0,0,0,1,45.370370370370374,50.0
+local_math,37,medium,"Applied word problems (rate, cost & linear modeling)",28,146,38,38,5,1,5,0,0,0,0,1,18.51851851851852,16.666666666666664
+local_math,38,medium,"Algebraic equations, roots & radicals",21,133,60,60,4,1,5,0,0,0,0,1,30.555555555555557,33.33333333333333
+local_math,39,medium,"Geometry, trigonometry & mensuration",25,169,61,61,0,1,5,0,0,0,0,1,2.7777777777777777,0.0
+local_math,40,medium,Probability & statistics,36,168,44,44,7,23,147,0,0,0,0,1,50.0,66.66666666666666
+local_math,41,hard,"Applied word problems (rate, cost & linear modeling)",47,268,53,53,4,12,200,0,0,0,0,1,19.444444444444446,16.666666666666664
+local_math,42,medium,Probability & statistics,27,143,30,30,3,8,93,0,0,0,0,1,51.85185185185185,50.0
+local_math,43,easy,"Applied word problems (rate, cost & linear modeling)",33,193,38,38,4,11,117,0,0,0,0,1,66.66666666666666,50.0
+local_math,44,medium,Probability & statistics,43,219,51,51,0,5,40,0,0,0,0,1,33.33333333333333,33.33333333333333
+local_math,45,easy,"Applied word problems (rate, cost & linear modeling)",59,321,69,69,2,8,118,0,0,0,0,1,0.9259259259259258,0.0
+local_math,46,medium,Probability & statistics,54,293,65,65,6,5,101,0,0,0,0,1,32.407407407407405,33.33333333333333
+local_math,47,hard,Probability & statistics,19,114,23,23,0,7,80,0,0,0,0,1,38.88888888888889,50.0
+local_math,48,hard,"Geometry, trigonometry & mensuration",37,197,40,40,2,5,63,0,0,0,0,1,0.0,0.0
+local_math,49,easy,Probability & statistics,41,224,53,53,4,5,113,0,0,0,0,1,52.77777777777778,66.66666666666666
+local_math,50,medium,Probability & statistics,35,162,43,43,7,8,132,0,0,0,0,1,22.22222222222222,16.666666666666664
+api_code,1,medium,Number Theory,34,221,56,85,1,8,7,52,2,0,1,7,94.44444444444444,100.0
+api_math,1,medium,Number Theory,24,144,43,43,4,1,47,0,0,0,0,1,55.55555555555556,50.0
+api_code,2,medium,Number Theory,91,522,126,145,3,9,9,67,5,1,1,7,0.0,0.0
+api_math,2,medium,Number Theory,81,445,113,113,9,1,1,0,0,0,0,1,80.55555555555556,100.0
+api_code,3,medium,Algebra & Functions,211,1103,326,345,1,7,7,83,2,1,0,7,47.22222222222222,50.0
+api_math,3,medium,Algebra & Functions,201,1026,313,313,28,1,1,0,0,0,0,1,25.0,50.0
+api_code,4,medium,Combinatorics & Probability,82,451,97,134,3,6,5,46,1,0,0,7,72.22222222222221,100.0
+api_math,4,medium,Combinatorics & Probability,72,374,84,84,7,1,62,0,0,0,0,1,47.22222222222222,50.0
+api_code,5,medium,Combinatorics & Probability,47,296,101,120,1,12,11,106,4,1,1,7,55.55555555555556,0.0
+api_math,5,medium,Combinatorics & Probability,37,219,88,88,9,1,156,0,0,0,0,1,44.44444444444444,50.0
+api_code,6,medium,Algebra & Functions,25,149,39,76,3,4,3,38,1,0,0,7,94.44444444444444,100.0
+api_math,6,medium,Algebra & Functions,15,72,26,26,7,1,26,0,0,0,0,1,47.22222222222222,50.0
+api_code,7,medium,Number Theory,29,158,41,60,3,9,9,89,5,1,1,7,94.44444444444444,50.0
+api_math,7,medium,Number Theory,19,81,28,28,4,1,212,0,0,0,0,1,50.0,50.0
+api_code,8,medium,Number Theory,19,134,33,64,4,3,3,30,1,0,0,7,91.66666666666666,50.0
+api_math,8,medium,Number Theory,9,57,20,20,4,1,161,0,0,0,0,1,47.22222222222222,50.0
+api_code,9,medium,Combinatorics & Probability,45,243,61,88,3,4,4,35,1,0,0,7,94.44444444444444,100.0
+api_math,9,medium,Combinatorics & Probability,35,166,48,48,5,1,31,0,0,0,0,1,44.44444444444444,50.0
+api_code,10,medium,Algebra & Functions,38,295,130,159,1,7,6,47,2,1,0,7,100.0,100.0
+api_math,10,medium,Algebra & Functions,28,218,117,117,23,1,67,0,0,0,0,1,47.22222222222222,0.0
+api_code,11,medium,Algebra & Functions,40,235,85,122,3,13,13,183,6,1,0,7,55.55555555555556,100.0
+api_math,11,medium,Algebra & Functions,30,158,72,72,8,1,135,0,0,0,0,1,47.22222222222222,50.0
+api_code,12,medium,Algebra & Functions,87,505,113,146,2,14,13,89,2,1,0,7,77.77777777777779,50.0
+api_math,12,medium,Algebra & Functions,77,428,100,100,0,1,80,0,0,0,0,1,47.22222222222222,50.0
+api_code,13,medium,Number Theory,27,180,53,76,2,7,7,64,4,1,1,7,94.44444444444444,100.0
+api_math,13,medium,Number Theory,17,103,40,40,3,1,61,0,0,0,0,1,50.0,50.0
+api_code,14,medium,Algebra & Functions,23,147,32,55,2,2,2,28,1,0,0,7,91.66666666666666,50.0
+api_math,14,medium,Algebra & Functions,13,70,19,19,4,1,84,0,0,0,0,1,47.22222222222222,50.0
+api_code,15,medium,Algebra & Functions,44,252,106,133,3,9,9,85,3,0,1,7,86.11111111111111,50.0
+api_math,15,medium,Algebra & Functions,34,175,93,93,6,1,60,0,0,0,0,1,63.888888888888886,100.0
+api_code,16,medium,Number Theory,24,165,37,68,4,10,9,91,2,0,1,7,75.0,100.0
+api_math,16,medium,Number Theory,14,88,24,24,4,1,1,0,0,0,0,1,41.66666666666667,50.0
+api_code,17,medium,Combinatorics & Probability,36,218,72,114,4,11,10,116,4,0,1,7,27.77777777777778,50.0
+api_math,17,medium,Combinatorics & Probability,26,141,59,59,9,1,1,0,0,0,0,1,61.111111111111114,100.0
+api_code,18,medium,Combinatorics & Probability,119,781,280,341,4,9,9,118,4,1,1,7,8.333333333333332,0.0
+api_math,18,medium,Combinatorics & Probability,109,704,267,267,28,1,72,0,0,0,0,1,33.33333333333333,50.0
+api_code,19,medium,Number Theory,24,177,62,89,3,3,3,33,1,0,0,7,91.66666666666666,100.0
+api_math,19,medium,Number Theory,14,100,49,49,9,1,75,0,0,0,0,1,41.66666666666667,50.0
+api_code,20,medium,Number Theory,25,154,47,70,2,9,8,62,2,1,0,7,91.66666666666666,100.0
+api_math,20,medium,Number Theory,15,77,34,34,6,1,159,0,0,0,0,1,36.11111111111111,50.0
+api_code,21,medium,Algebra & Functions,170,973,200,231,4,7,7,92,1,0,0,7,41.66666666666667,50.0
+api_math,21,medium,Algebra & Functions,160,896,187,187,4,1,1,0,0,0,0,1,41.66666666666667,50.0
+api_code,22,medium,Algebra & Functions,54,313,64,87,2,2,2,31,1,0,0,7,69.44444444444444,100.0
+api_math,22,medium,Algebra & Functions,44,236,51,51,1,1,282,0,0,0,0,1,11.11111111111111,0.0
+api_code,23,medium,Algebra & Functions,37,246,92,119,3,2,2,30,1,0,0,7,94.44444444444444,100.0
+api_math,23,medium,Algebra & Functions,27,169,79,79,14,1,74,0,0,0,0,1,94.44444444444444,100.0
+api_code,24,medium,Algebra & Functions,24,165,44,75,4,6,6,77,5,1,1,7,47.22222222222222,100.0
+api_math,24,medium,Algebra & Functions,14,88,31,31,3,1,44,0,0,0,0,1,58.333333333333336,100.0
+api_code,25,medium,Algebra & Functions,18,142,52,71,1,4,4,41,1,0,0,7,97.22222222222221,100.0
+api_math,25,medium,Algebra & Functions,8,65,39,39,10,1,25,0,0,0,0,1,97.22222222222221,100.0
+api_code,26,medium,Number Theory,40,251,67,86,1,8,7,84,5,1,1,7,0.0,0.0
+api_math,26,medium,Number Theory,30,174,54,54,0,1,1,0,0,0,0,1,72.22222222222221,100.0
+api_code,27,medium,Algebra & Functions,54,339,87,122,5,3,3,48,1,0,0,7,94.44444444444444,50.0
+api_math,27,medium,Algebra & Functions,44,262,74,74,5,1,34,0,0,0,0,1,100.0,100.0
+api_code,28,medium,Algebra & Functions,22,139,40,73,2,5,4,36,1,0,0,7,100.0,100.0
+api_math,28,medium,Algebra & Functions,12,62,27,27,2,1,1,0,0,0,0,1,91.66666666666666,100.0
+api_code,29,medium,Geometry,41,239,53,76,2,10,9,109,1,0,0,7,2.7777777777777777,0.0
+api_math,29,medium,Geometry,31,162,40,40,2,1,1,0,0,0,0,1,100.0,100.0
+api_code,30,medium,Algebra & Functions,20,125,32,59,3,5,5,34,2,1,0,7,100.0,100.0
+api_math,30,medium,Algebra & Functions,10,48,19,19,5,1,49,0,0,0,0,1,41.66666666666667,50.0
+api_code,31,medium,Algebra & Functions,32,200,39,62,2,4,4,38,1,0,0,7,88.88888888888889,50.0
+api_math,31,medium,Algebra & Functions,22,123,26,26,1,1,63,0,0,0,0,1,88.88888888888889,50.0
+api_code,32,medium,Algebra & Functions,55,313,74,105,4,4,4,53,1,0,0,7,0.0,0.0
+api_math,32,medium,Algebra & Functions,45,236,61,61,4,1,1,0,0,0,0,1,97.22222222222221,100.0
+api_code,33,medium,Algebra & Functions,41,240,59,92,1,2,2,26,1,0,0,7,8.333333333333332,0.0
+api_math,33,medium,Algebra & Functions,31,163,46,46,4,1,48,0,0,0,0,1,97.22222222222221,100.0
+api_code,34,medium,Algebra & Functions,24,137,29,52,2,2,2,14,1,0,0,7,100.0,100.0
+api_math,34,medium,Algebra & Functions,14,60,16,16,1,1,33,0,0,0,0,1,97.22222222222221,100.0
+api_code,35,medium,Number Theory,26,169,45,68,2,2,2,16,1,0,0,7,63.888888888888886,50.0
+api_math,35,medium,Number Theory,16,92,32,32,3,1,28,0,0,0,0,1,88.88888888888889,100.0
+api_code,36,medium,Combinatorics & Probability,35,239,57,92,2,16,15,169,8,1,1,7,33.33333333333333,50.0
+api_math,36,medium,Combinatorics & Probability,25,162,44,44,5,1,1,0,0,0,0,1,38.88888888888889,50.0
+api_code,37,medium,Algebra & Functions,51,267,61,80,1,20,19,215,12,1,1,7,91.66666666666666,100.0
+api_math,37,medium,Algebra & Functions,41,190,48,48,2,1,1,0,0,0,0,1,27.77777777777778,0.0
+api_code,38,medium,Algebra & Functions,39,233,44,69,2,8,8,106,5,1,1,7,22.22222222222222,0.0
+api_math,38,medium,Algebra & Functions,29,156,31,31,0,1,53,0,0,0,0,1,44.44444444444444,0.0
+api_code,39,medium,Number Theory,35,230,54,73,1,9,9,56,4,1,1,7,97.22222222222221,100.0
+api_math,39,medium,Number Theory,25,153,41,41,1,2,417,0,0,0,0,1,47.22222222222222,50.0
+api_code,40,medium,Number Theory,26,173,32,51,1,29,25,226,9,1,1,7,44.44444444444444,100.0
+api_math,40,medium,Number Theory,16,96,19,19,0,1,42,0,0,0,0,1,38.88888888888889,50.0
+api_code,41,medium,Combinatorics & Probability,49,276,68,87,1,4,3,53,3,1,0,7,94.44444444444444,100.0
+api_math,41,medium,Combinatorics & Probability,39,199,55,55,5,1,174,0,0,0,0,1,47.22222222222222,50.0
+api_code,42,medium,Geometry,57,402,119,160,4,5,4,53,1,0,0,7,0.0,0.0
+api_math,42,medium,Geometry,47,325,106,106,4,1,102,0,0,0,0,1,47.22222222222222,50.0
+api_code,43,medium,Algebra & Functions,47,269,98,127,1,4,3,54,2,1,0,7,91.66666666666666,100.0
+api_math,43,medium,Algebra & Functions,37,192,85,85,20,1,124,0,0,0,0,1,36.11111111111111,50.0
+api_code,44,medium,Number Theory,79,429,143,174,3,8,8,68,3,1,1,7,91.66666666666666,100.0
+api_math,44,medium,Number Theory,69,352,130,130,10,1,1,0,0,0,0,1,16.666666666666664,0.0
+api_code,45,medium,Combinatorics & Probability,50,293,89,116,3,11,11,103,5,1,1,7,83.33333333333334,100.0
+api_math,45,medium,Combinatorics & Probability,40,217,76,76,3,1,173,0,0,0,0,1,25.0,50.0
+api_code,46,medium,Algebra & Functions,51,308,66,89,2,3,3,46,2,1,0,7,72.22222222222221,100.0
+api_math,46,medium,Algebra & Functions,41,231,53,53,6,1,1,0,0,0,0,1,30.555555555555557,50.0
+api_code,47,medium,Algebra & Functions,28,208,36,63,2,2,2,24,1,0,0,7,63.888888888888886,100.0
+api_math,47,medium,Algebra & Functions,18,131,23,23,2,1,7,0,0,0,0,1,22.22222222222222,50.0
+api_code,48,medium,Geometry,51,307,78,97,1,5,5,33,2,1,0,7,77.77777777777779,50.0
+api_math,48,medium,Geometry,41,230,65,65,4,1,102,0,0,0,0,1,30.555555555555557,50.0
+api_code,49,medium,Algebra & Functions,36,263,112,141,1,4,3,54,2,1,0,7,80.55555555555556,50.0
+api_math,49,medium,Algebra & Functions,26,186,99,99,27,1,62,0,0,0,0,1,30.555555555555557,50.0
+api_code,50,medium,Geometry,59,346,97,124,3,8,8,83,4,1,1,7,94.44444444444444,100.0
+api_math,50,medium,Geometry,49,269,84,84,4,1,205,0,0,0,0,1,44.44444444444444,50.0
