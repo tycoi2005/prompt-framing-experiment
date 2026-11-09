@@ -22,6 +22,8 @@ python3 run_variance_decomposition.py         # formal model-vs-prompt compariso
                                               # (eta^2, RM F-tests, bootstrap, logit)
 python3 run_effect_size_summary.py            # consolidated Section 4.8 effect-size
                                               # ledger (reads existing CSVs only)
+python3 run_api_behavior_adjustment.py        # RQ4 behavioral adjustment for the API
+                                              # strata + API Python compliance audit
 ```
 
 Outputs land in `analysis/`:
@@ -55,6 +57,12 @@ Outputs land in `analysis/`:
 - `effect_size_summary.csv` — consolidated Section 4.8 effect-size ledger
   (Pass@1 AMEs/ORs, behavior effects, attenuation percentages, eta-squared
   shares, and model-specific contrasts) with the source CSV for every row
+- `manuscript_api_mediation.csv` — RQ4 behavioral-adjustment decomposition for the
+  two API strata (total vs. token/compliance/duration-adjusted contrasts, with
+  attenuation and the joint-control specification per stratum)
+- `manuscript_api_compliance_summary.csv` — audit of API Python code-only
+  compliance recovered from the executed candidate program (1,799/1,800 = 99.9%,
+  i.e. ceiling, which is why that stratum's joint adjustment omits the control)
 
 ## Audits
 
@@ -83,6 +91,7 @@ pdflatex -interaction=nonstopmode -halt-on-error report.tex
 ## Notes
 
 - `improvement_plan.md` tracks the reviewer-feedback revision plan (9 points).
-- The generated analysis CSVs are also mirrored in `../02ScalingPhrase/results_analysis/analysis/`.
+- The thesis version of these analyses lives in `../07Thesisv2/`; the same analysis
+  CSVs are mirrored in `../07Thesisv2/analysis/`.
 - This folder supersedes `06Paperv2/` (removed in commit `95cf8b2`; recoverable
   from git history at `c0182f9`).

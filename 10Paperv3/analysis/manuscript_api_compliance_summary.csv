@@ -1,0 +1,2 @@
+task_group,n_responses,n_with_extracted_code,n_code_only_compliant,compliance_pct,definition
+API Python,1800,1800,1799,99.94444444444444,non-empty candidate_code and <15% non-code characters in response_text
