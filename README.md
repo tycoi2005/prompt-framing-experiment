@@ -31,19 +31,31 @@ pdflatex -interaction=nonstopmode -halt-on-error report.tex
 
 ## Running the Reproducible Statistical Pipeline
 
-The `02ScalingPhrase/results_analysis/` and `10Paperv3/scripts/` directories contain the pre-aggregated 14,400-run JSONL dataset and the Python scripts used to generate all descriptive tables, mixed-effects logistic/linear models, clustered LPM robustness checks, Benjamini–Hochberg FDR adjustments, post-treatment behavioral adjustments, and dominant-model leave-one-out sensitivity checks reported in the paper:
+The `02ScalingPhrase/results_analysis/` and `10Paperv3/scripts/` directories contain the pre-aggregated 14,400-run JSONL dataset and the Python scripts used to generate every number in the paper: descriptive tables, mixed-effects logistic/linear models, clustered LPM robustness checks, Benjamini–Hochberg FDR adjustments, post-treatment behavioral adjustments, dominant-model leave-one-out sensitivity, two-way interaction tests, formal model-vs-prompt variance decomposition, effect-size reporting, task characterization, design-based power/MDE analysis, single-run noise floors, and the end-to-end parser/retry replay. Run from `10Paperv3/scripts`:
 
 ```bash
 cd 10Paperv3/scripts
-python3 recompute_manuscript_tables.py
-python3 run_clustered_lpm_analysis.py
-python3 apply_multiple_comparison_correction.py
-python3 run_mixed_effects_analysis.py
-python3 run_interaction_analysis.py
-python3 characterize_task_datasets.py
-python3 run_variance_decomposition.py
-python3 run_effect_size_summary.py
+python3 recompute_manuscript_tables.py           # descriptive tables, behavior, mediation
+python3 run_clustered_lpm_analysis.py            # clustered-LPM robustness check
+python3 apply_multiple_comparison_correction.py   # Benjamini-Hochberg audit
+python3 run_mixed_effects_analysis.py            # main inferential models + dominant-model
+                                                 # sensitivity + Nemotron task summary
+python3 run_interaction_analysis.py              # two-way prompt-factor interactions +
+                                                 # factor-by-model omnibus Wald tests
+python3 characterize_task_datasets.py            # quantitative characterization of the
+                                                 # four 50-task evaluation benchmarks
+python3 run_variance_decomposition.py            # formal model-vs-prompt comparison
+python3 run_effect_size_summary.py               # consolidated effect-size ledger
+python3 run_api_behavior_adjustment.py           # RQ4 behavioral adjustment for the API strata
+python3 run_power_analysis.py                    # design-based power analysis (MDE at 80/90%)
+python3 run_single_run_noise.py                  # single-run Bernoulli noise floor vs clustered SE
+python3 run_pipeline_replay.py                   # offline end-to-end replay: strict parser +
+                                                 # reformat-retry policy
+python3 make_figures.py                          # manuscript figures, including the labelled,
+                                                 # 95%-CI behavior panels
 ```
+
+The `02ScalingPhrase/results_analysis/scripts/` directory mirrors the same scripts for readers who start from the raw experiment tree.
 
 ## License & Data Availability
 

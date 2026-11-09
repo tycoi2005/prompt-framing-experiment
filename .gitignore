@@ -1,5 +1,8 @@
 .jupyter/
-.kernels/__pycache__/
+.kernels/
+__pycache__/
+*.pyc
+.DS_Store
 *.aux
 *.bbl
 *.blg

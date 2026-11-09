@@ -19,6 +19,8 @@ Reported per term:
 Behavioral outcomes:
     - log completion tokens, log duration: linear mixed models (same structure)
     - result-only compliance (binary): logistic mixed model
+    - both report point estimates and 95% interval bounds (ci_lo, ci_hi) in the
+      same units as effect_approx, and feed the labelled behaviour figures
 
 Also produces:
     - dominant-model sensitivity (feedback point 3): all prompt effects
@@ -187,6 +189,8 @@ def linear_mixed_rows(df: pd.DataFrame, stratum: str, outcome: str) -> list[dict
             "effect_approx": float(fit.params[term] * scale),
             "unit": unit,
             "std_err": float(fit.bse[term]),
+            "ci_lo": float((fit.params[term] - 1.959963984540054 * fit.bse[term]) * scale),
+            "ci_hi": float((fit.params[term] + 1.959963984540054 * fit.bse[term]) * scale),
             "p_value": float(fit.pvalues[term]),
             "observations": int(fit.nobs),
             "n_base_tasks": int(df["base_task"].nunique()),
@@ -208,6 +212,8 @@ def compliance_mixed_rows(df: pd.DataFrame, stratum: str) -> list[dict[str, obje
                 "effect_approx": float("nan"),
                 "unit": "pp (AME)",
                 "std_err": float("nan"),
+                "ci_lo": float("nan"),
+                "ci_hi": float("nan"),
                 "p_value": float("nan"),
                 "observations": int(len(work)),
                 "n_base_tasks": int(work["base_task"].nunique()),
@@ -235,6 +241,8 @@ def compliance_mixed_rows(df: pd.DataFrame, stratum: str) -> list[dict[str, obje
                 "effect_approx": ame,
                 "unit": "pp (AME)",
                 "std_err": sd,
+                "ci_lo": ame_lo,
+                "ci_hi": ame_hi,
                 "p_value": norm_pvalue(z),
                 "observations": int(len(df)),
                 "n_base_tasks": int(work["base_task"].nunique()),
