@@ -50,7 +50,6 @@ pdflatex -interaction=nonstopmode -halt-on-error report.tex
 ## Notes
 
 - `improvement_plan.md` tracks the reviewer-feedback revision plan (9 points).
-- The thesis version of these analyses lives in `../07Thesisv2/`; the same analysis
-  CSVs are mirrored in `../07Thesisv2/analysis/`.
+- The generated analysis CSVs are also mirrored in `../02ScalingPhrase/results_analysis/analysis/`.
 - This folder supersedes `06Paperv2/` (removed in commit `95cf8b2`; recoverable
   from git history at `c0182f9`).
