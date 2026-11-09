@@ -20,6 +20,8 @@ python3 characterize_task_datasets.py         # quantitative characterization of
                                               # four 50-task evaluation benchmarks
 python3 run_variance_decomposition.py         # formal model-vs-prompt comparison
                                               # (eta^2, RM F-tests, bootstrap, logit)
+python3 run_effect_size_summary.py            # consolidated Section 4.8 effect-size
+                                              # ledger (reads existing CSVs only)
 ```
 
 Outputs land in `analysis/`:
@@ -50,6 +52,9 @@ Outputs land in `analysis/`:
 - `model_vs_prompt_formal_tests.csv` — task-cluster bootstrap CIs for the model vs.
   prompt eta-squared difference/ratio, clustered LPM block Wald tests, and
   latent-scale (logit) variance shares
+- `effect_size_summary.csv` — consolidated Section 4.8 effect-size ledger
+  (Pass@1 AMEs/ORs, behavior effects, attenuation percentages, eta-squared
+  shares, and model-specific contrasts) with the source CSV for every row
 
 ## Audits
 
@@ -63,6 +68,8 @@ Outputs land in `analysis/`:
 - `task_dataset_audit.md` — generated summary of the four 50-task evaluation suites
 - `variance_decomposition_audit.md` — generated summary of the formal model-vs-prompt
   comparison
+- `effect_size_audit.md` — generated ledger for Section 4.8, mapping every headline
+  effect size to its source CSV and documenting the descriptive cross-check
 
 ## Build
 

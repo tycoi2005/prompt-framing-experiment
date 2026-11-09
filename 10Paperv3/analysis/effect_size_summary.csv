@@ -1,0 +1,86 @@
+section,claim_id,stratum,contrast,effect_metric,estimate,ci_low,ci_high,unit,p_value,source_file,source_locator
+4.8-RQ1,rq1_eta2_model,Local code,Model,eta_squared,7.22,4.45,11.27,percent,,model_vs_prompt_formal_tests.csv,stratum=Local code
+4.8-RQ1,rq1_eta2_prompt,Local code,Prompt variant,eta_squared,0.27,0.22,0.67,percent,,model_vs_prompt_formal_tests.csv,stratum=Local code
+4.8-RQ1,rq1_eta2_ratio,Local code,Model / prompt,ratio,19.31,9.93,33.36,ratio,,model_vs_prompt_formal_tests.csv,stratum=Local code
+4.8-RQ1,rq1_eta2_model,Local math,Model,eta_squared,40.97,33.06,50.59,percent,,model_vs_prompt_formal_tests.csv,stratum=Local math
+4.8-RQ1,rq1_eta2_prompt,Local math,Prompt variant,eta_squared,0.27,0.19,0.55,percent,,model_vs_prompt_formal_tests.csv,stratum=Local math
+4.8-RQ1,rq1_eta2_ratio,Local math,Model / prompt,ratio,122.88,73.75,226.24,ratio,,model_vs_prompt_formal_tests.csv,stratum=Local math
+4.8-RQ1,rq1_eta2_model,API Python,Model,eta_squared,0.06,0.00,1.08,percent,,model_vs_prompt_formal_tests.csv,stratum=API Python
+4.8-RQ1,rq1_eta2_prompt,API Python,Prompt variant,eta_squared,0.29,0.27,1.42,percent,,model_vs_prompt_formal_tests.csv,stratum=API Python
+4.8-RQ1,rq1_eta2_ratio,API Python,Model / prompt,ratio,0.16,0.00,1.66,ratio,,model_vs_prompt_formal_tests.csv,stratum=API Python
+4.8-RQ1,rq1_eta2_model,API math,Model,eta_squared,34.17,23.52,47.00,percent,,model_vs_prompt_formal_tests.csv,stratum=API math
+4.8-RQ1,rq1_eta2_prompt,API math,Prompt variant,eta_squared,0.41,0.33,1.13,percent,,model_vs_prompt_formal_tests.csv,stratum=API math
+4.8-RQ1,rq1_eta2_ratio,API math,Model / prompt,ratio,52.84,27.21,109.22,ratio,,model_vs_prompt_formal_tests.csv,stratum=API math
+4.8-RQ2,rq2_pass_ame,API Python,Aggressive tone,AME,0.64,-2.37,3.55,pp,0.686,mixed_effects_pass.csv,stratum=API Python; factor=tone_aggressive
+4.8-RQ2,rq2_pass_or,API Python,Aggressive tone,odds_ratio,1.05,0.83,1.34,ratio,0.686,mixed_effects_pass.csv,stratum=API Python; factor=tone_aggressive
+4.8-RQ2,rq2_pass_ame,API Python,Polite tone,AME,0.62,-2.25,3.45,pp,0.686,mixed_effects_pass.csv,stratum=API Python; factor=tone_polite
+4.8-RQ2,rq2_pass_or,API Python,Polite tone,odds_ratio,1.05,0.83,1.34,ratio,0.686,mixed_effects_pass.csv,stratum=API Python; factor=tone_polite
+4.8-RQ2,rq2_pass_ame,API Python,Role framing,AME,-1.07,-3.43,1.25,pp,0.381,mixed_effects_pass.csv,stratum=API Python; factor=role_vs_no_role
+4.8-RQ2,rq2_pass_or,API Python,Role framing,odds_ratio,0.92,0.76,1.11,ratio,0.381,mixed_effects_pass.csv,stratum=API Python; factor=role_vs_no_role
+4.8-RQ2,rq2_pass_ame,API Python,JSON wrapper,AME,3.40,0.44,6.33,pp,0.022,mixed_effects_pass.csv,stratum=API Python; factor=format_json
+4.8-RQ2,rq2_pass_or,API Python,JSON wrapper,odds_ratio,1.32,1.04,1.68,ratio,0.022,mixed_effects_pass.csv,stratum=API Python; factor=format_json
+4.8-RQ2,rq2_pass_ame,API Python,XML wrapper,AME,5.22,2.29,8.18,pp,5.02e-04,mixed_effects_pass.csv,stratum=API Python; factor=format_xml
+4.8-RQ2,rq2_pass_or,API Python,XML wrapper,odds_ratio,1.55,1.21,1.97,ratio,5.02e-04,mixed_effects_pass.csv,stratum=API Python; factor=format_xml
+4.8-RQ2,rq2_pass_ame,API math,Aggressive tone,AME,0.52,-2.04,3.05,pp,0.697,mixed_effects_pass.csv,stratum=API math; factor=tone_aggressive
+4.8-RQ2,rq2_pass_or,API math,Aggressive tone,odds_ratio,1.05,0.81,1.38,ratio,0.697,mixed_effects_pass.csv,stratum=API math; factor=tone_aggressive
+4.8-RQ2,rq2_pass_ame,API math,Polite tone,AME,-0.88,-3.31,1.58,pp,0.476,mixed_effects_pass.csv,stratum=API math; factor=tone_polite
+4.8-RQ2,rq2_pass_or,API math,Polite tone,odds_ratio,0.91,0.70,1.18,ratio,0.476,mixed_effects_pass.csv,stratum=API math; factor=tone_polite
+4.8-RQ2,rq2_pass_ame,API math,Role framing,AME,-2.84,-4.81,-0.83,pp,0.006,mixed_effects_pass.csv,stratum=API math; factor=role_vs_no_role
+4.8-RQ2,rq2_pass_or,API math,Role framing,odds_ratio,0.74,0.60,0.92,ratio,0.006,mixed_effects_pass.csv,stratum=API math; factor=role_vs_no_role
+4.8-RQ2,rq2_pass_ame,API math,JSON wrapper,AME,-1.23,-3.82,1.36,pp,0.325,mixed_effects_pass.csv,stratum=API math; factor=format_json
+4.8-RQ2,rq2_pass_or,API math,JSON wrapper,odds_ratio,0.87,0.67,1.14,ratio,0.325,mixed_effects_pass.csv,stratum=API math; factor=format_json
+4.8-RQ2,rq2_pass_ame,API math,XML wrapper,AME,-2.30,-4.86,0.11,pp,0.069,mixed_effects_pass.csv,stratum=API math; factor=format_xml
+4.8-RQ2,rq2_pass_or,API math,XML wrapper,odds_ratio,0.78,0.60,1.02,ratio,0.069,mixed_effects_pass.csv,stratum=API math; factor=format_xml
+4.8-RQ2,rq2_pass_ame,Local code,Aggressive tone,AME,-0.07,-0.96,0.88,pp,0.858,mixed_effects_pass.csv,stratum=Local code; factor=tone_aggressive
+4.8-RQ2,rq2_pass_or,Local code,Aggressive tone,odds_ratio,0.98,0.80,1.20,ratio,0.858,mixed_effects_pass.csv,stratum=Local code; factor=tone_aggressive
+4.8-RQ2,rq2_pass_ame,Local code,Polite tone,AME,-0.53,-1.42,0.39,pp,0.265,mixed_effects_pass.csv,stratum=Local code; factor=tone_polite
+4.8-RQ2,rq2_pass_or,Local code,Polite tone,odds_ratio,0.89,0.72,1.09,ratio,0.265,mixed_effects_pass.csv,stratum=Local code; factor=tone_polite
+4.8-RQ2,rq2_pass_ame,Local code,Role framing,AME,-0.98,-1.70,-0.21,pp,0.013,mixed_effects_pass.csv,stratum=Local code; factor=role_vs_no_role
+4.8-RQ2,rq2_pass_or,Local code,Role framing,odds_ratio,0.81,0.68,0.96,ratio,0.013,mixed_effects_pass.csv,stratum=Local code; factor=role_vs_no_role
+4.8-RQ2,rq2_pass_ame,Local code,JSON wrapper,AME,0.07,-0.83,1.06,pp,0.900,mixed_effects_pass.csv,stratum=Local code; factor=format_json
+4.8-RQ2,rq2_pass_or,Local code,JSON wrapper,odds_ratio,1.01,0.83,1.24,ratio,0.900,mixed_effects_pass.csv,stratum=Local code; factor=format_json
+4.8-RQ2,rq2_pass_ame,Local code,XML wrapper,AME,0.66,-0.27,1.62,pp,0.164,mixed_effects_pass.csv,stratum=Local code; factor=format_xml
+4.8-RQ2,rq2_pass_or,Local code,XML wrapper,odds_ratio,1.15,0.94,1.41,ratio,0.164,mixed_effects_pass.csv,stratum=Local code; factor=format_xml
+4.8-RQ2,rq2_pass_ame,Local math,Aggressive tone,AME,0.89,-0.45,2.27,pp,0.198,mixed_effects_pass.csv,stratum=Local math; factor=tone_aggressive
+4.8-RQ2,rq2_pass_or,Local math,Aggressive tone,odds_ratio,1.11,0.95,1.29,ratio,0.198,mixed_effects_pass.csv,stratum=Local math; factor=tone_aggressive
+4.8-RQ2,rq2_pass_ame,Local math,Polite tone,AME,1.58,0.24,2.96,pp,0.019,mixed_effects_pass.csv,stratum=Local math; factor=tone_polite
+4.8-RQ2,rq2_pass_or,Local math,Polite tone,odds_ratio,1.20,1.03,1.40,ratio,0.019,mixed_effects_pass.csv,stratum=Local math; factor=tone_polite
+4.8-RQ2,rq2_pass_ame,Local math,Role framing,AME,2.12,1.04,3.24,pp,1.18e-04,mixed_effects_pass.csv,stratum=Local math; factor=role_vs_no_role
+4.8-RQ2,rq2_pass_or,Local math,Role framing,odds_ratio,1.28,1.13,1.45,ratio,1.18e-04,mixed_effects_pass.csv,stratum=Local math; factor=role_vs_no_role
+4.8-RQ2,rq2_pass_ame,Local math,JSON wrapper,AME,-4.08,-5.36,-2.74,pp,3.55e-09,mixed_effects_pass.csv,stratum=Local math; factor=format_json
+4.8-RQ2,rq2_pass_or,Local math,JSON wrapper,odds_ratio,0.62,0.52,0.72,ratio,3.55e-09,mixed_effects_pass.csv,stratum=Local math; factor=format_json
+4.8-RQ2,rq2_pass_ame,Local math,XML wrapper,AME,-2.15,-3.44,-0.85,pp,0.001,mixed_effects_pass.csv,stratum=Local math; factor=format_xml
+4.8-RQ2,rq2_pass_or,Local math,XML wrapper,odds_ratio,0.78,0.66,0.91,ratio,0.001,mixed_effects_pass.csv,stratum=Local math; factor=format_xml
+4.8-RQ2,rq2_supported_count,All strata,Pass@1 contrasts with 95% AME intervals excluding zero (OR intervals excluding 1.0),count,8,,,contrasts,,mixed_effects_pass.csv,
+4.8-RQ2,rq2_null_interval_count,All strata,Pass@1 contrasts with 95% AME intervals including zero (OR intervals including 1.0),count,12,,,contrasts,,mixed_effects_pass.csv,
+4.8-RQ2,rq2_supported_abs_ame_min,All strata,Smallest supported |AME|,abs_AME,0.98,,,pp,,mixed_effects_pass.csv,
+4.8-RQ2,rq2_supported_abs_ame_max,All strata,Largest supported |AME|,abs_AME,5.22,,,pp,,mixed_effects_pass.csv,
+4.8-RQ2,rq2_supported_small_ame_count,All strata,Supported contrasts with |AME| <= 2.2 pp,count,4,,,contrasts,,mixed_effects_pass.csv,
+4.8-RQ2,rq2_largest_positive_ame,API Python,XML wrapper,AME,5.22,2.29,8.18,pp,5.02e-04,mixed_effects_pass.csv,stratum=API Python; factor=format_xml
+4.8-RQ2,rq2_largest_negative_ame,Local math,JSON wrapper,AME,-4.08,-5.36,-2.74,pp,3.55e-09,mixed_effects_pass.csv,stratum=Local math; factor=format_json
+4.8-RQ2,rq2_largest_null_interval_ame,API math,XML wrapper,AME,-2.30,-4.86,0.11,pp,0.069,mixed_effects_pass.csv,stratum=API math; factor=format_xml
+4.8-RQ3,rq3_local_code_polite_tokens,Local code,Polite tone,relative_change,12.40,,,percent,8.60e-21,mixed_effects_behavior.csv,stratum=Local code; outcome=log_completion_tokens; factor=tone_polite
+4.8-RQ3,rq3_local_code_polite_duration,Local code,Polite tone,relative_change,10.76,,,percent,4.66e-22,mixed_effects_behavior.csv,stratum=Local code; outcome=log_duration; factor=tone_polite
+4.8-RQ3,rq3_local_code_polite_compliance,Local code,Polite tone,AME,-7.05,,,pp,1.32e-43,mixed_effects_behavior.csv,stratum=Local code; outcome=result_only; factor=tone_polite
+4.8-RQ3,rq3_local_code_json_tokens,Local code,JSON wrapper,relative_change,-3.46,,,percent,0.009,mixed_effects_behavior.csv,stratum=Local code; outcome=log_completion_tokens; factor=format_json
+4.8-RQ3,rq3_local_code_xml_tokens,Local code,XML wrapper,relative_change,-4.10,,,percent,0.002,mixed_effects_behavior.csv,stratum=Local code; outcome=log_completion_tokens; factor=format_xml
+4.8-RQ3,rq3_local_code_json_compliance,Local code,JSON wrapper,AME,4.30,,,pp,4.10e-17,mixed_effects_behavior.csv,stratum=Local code; outcome=result_only; factor=format_json
+4.8-RQ3,rq3_local_code_xml_compliance,Local code,XML wrapper,AME,6.98,,,pp,6.35e-41,mixed_effects_behavior.csv,stratum=Local code; outcome=result_only; factor=format_xml
+4.8-RQ3,rq3_local_math_json_tokens,Local math,JSON wrapper,relative_change,-19.80,,,percent,1.32e-14,mixed_effects_behavior.csv,stratum=Local math; outcome=log_completion_tokens; factor=format_json
+4.8-RQ3,rq3_local_math_json_duration,Local math,JSON wrapper,relative_change,-11.16,,,percent,3.59e-14,mixed_effects_behavior.csv,stratum=Local math; outcome=log_duration; factor=format_json
+4.8-RQ4,rq4_local_math_json_attenuation_total,Local math,JSON wrapper,total_effect,-4.17,,,pp,7.57e-05,manuscript_mediation_decomposition.csv,task_group=Local math; factor=format_json
+4.8-RQ4,rq4_local_math_json_attenuation_adjusted,Local math,JSON wrapper,adjusted_effect,-2.84,,,pp,,manuscript_mediation_decomposition.csv,task_group=Local math; factor=format_json
+4.8-RQ4,rq4_local_math_json_attenuation,Local math,JSON wrapper,attenuation,31.96,,,percent,,manuscript_mediation_decomposition.csv,task_group=Local math; factor=format_json; 100*(total_pp - adjusted)/total_pp
+4.8-RQ4,rq4_local_code_polite_attenuation_total,Local code,Polite tone,total_effect,-0.50,,,pp,0.544,manuscript_mediation_decomposition.csv,task_group=Local code; factor=tone_polite
+4.8-RQ4,rq4_local_code_polite_attenuation_adjusted,Local code,Polite tone,adjusted_effect,0.17,,,pp,,manuscript_mediation_decomposition.csv,task_group=Local code; factor=tone_polite
+4.8-RQ4,rq4_local_code_polite_attenuation,Local code,Polite tone,attenuation,134.17,,,percent,,manuscript_mediation_decomposition.csv,task_group=Local code; factor=tone_polite; 100*(total_pp - adjusted)/total_pp
+4.8-RQ5,rq5_llama_math_json,Math / llama3.1-8b,format=json vs. plaintext,delta_pass_rate,-15.67,,,pp,1.10e-04,local_model_specific_bh.csv,model=llama3.1-8b; factor=format; level=json
+4.8-RQ5,rq5_llama_math_xml,Math / llama3.1-8b,format=xml vs. plaintext,delta_pass_rate,-9.67,,,pp,0.018,local_model_specific_bh.csv,model=llama3.1-8b; factor=format; level=xml
+4.8-RQ5,rq5_deepseek_math_xml,Math / deepseek-coder-6.7b-instruct,format=xml vs. plaintext,delta_pass_rate,-5.67,,,pp,0.004,local_model_specific_bh.csv,model=deepseek-coder-6.7b-instruct; factor=format; level=xml
+4.8-RQ5,rq5_qwen_math_role,Math / qwen2.5-7b,role_binary=role vs. no role,delta_pass_rate,10.22,,,pp,3.02e-04,local_model_specific_bh.csv,model=qwen2.5-7b; factor=role_binary; level=role
+4.8-RQ5,rq5_two_way_ci_includes_zero,All strata,Two-way prompt-factor interactions,count,29,,,of 32,,two_way_factor_interactions.csv,
+4.8-RQ5,rq5_two_way_global_bh_survivors,All strata,Two-way interactions with q_global32 < 0.05,count,0,,,of 32,,two_way_factor_interactions.csv,
+4.8-RQ5,rq5_two_way_min_global_q,All strata,Minimum global BH q-value,q_value,0.193,,,q,,two_way_factor_interactions.csv,
+4.8-RQ5,rq5_local_math_factor_model,Local math,All Factor x Model,omnibus_test,3.67,,,F(25),2.55e-09,factor_by_model_interactions.csv,modeltype=local; task_type=math; block=All Factor x Model
+4.8-RQ5,rq5_local_math_format_model,Local math,Format x Model,omnibus_test,4.07,,,F(10),1.64e-05,factor_by_model_interactions.csv,modeltype=local; task_type=math; block=Format x Model
+4.8-RQ5,rq5_api_math_format_model,API math,Format x Model,omnibus_test,3.41,,,F(2),0.032,factor_by_model_interactions.csv,modeltype=api; task_type=math; block=Format x Model

@@ -42,6 +42,7 @@ python3 run_mixed_effects_analysis.py
 python3 run_interaction_analysis.py
 python3 characterize_task_datasets.py
 python3 run_variance_decomposition.py
+python3 run_effect_size_summary.py
 ```
 
 ## License & Data Availability
