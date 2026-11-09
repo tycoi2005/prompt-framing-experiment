@@ -121,8 +121,18 @@ def save_model_performance() -> None:
     plt.close(fig)
 
 
+BEHAVIOR_OUTCOME = {
+    "log(tokens)": "log_completion_tokens",
+    "log(duration)": "log_duration",
+    "result_only": "result_only",
+}
+
+
 def _behavior_bars(fig, axes, metric_order, metric_labels, colors, xlabel, xlim):
-    rows = read_rows("manuscript_behavior_effects.csv")
+    rows = read_rows("mixed_effects_behavior.csv")
+    lookup = {
+        (row["stratum"], row["outcome"], row["contrast"]): row for row in rows
+    }
     group_order = ["Local code", "Local math"]
     y_positions = list(range(len(FACTOR_ORDER)))
     bar_height = 0.8 / max(len(metric_order), 1) / 1.25
@@ -134,21 +144,35 @@ def _behavior_bars(fig, axes, metric_order, metric_labels, colors, xlabel, xlim)
     for ax, group_name in zip(axes, group_order):
         for metric, offset in zip(metric_order, offsets):
             label = metric_labels[metric]
-            values = []
+            outcome = BEHAVIOR_OUTCOME[metric]
+            values, lo_err, hi_err = [], [], []
             for factor_label in FACTOR_ORDER:
-                match = [
-                    row
-                    for row in rows
-                    if row["task_group"] == group_name and row["factor_label"] == factor_label and row["metric"] == metric
-                ][0]
-                values.append(float(match["effect"]))
+                row = lookup[(group_name, outcome, factor_label)]
+                value = float(row["effect_approx"])
+                lo = float(row["ci_lo"])
+                hi = float(row["ci_hi"])
+                values.append(value)
+                lo_err.append(value - lo)
+                hi_err.append(hi - value)
             positions = [y + offset for y in y_positions]
             ax.barh(positions, values, height=bar_height, color=colors[label], alpha=0.88, label=label)
-            for pos, value in zip(positions, values):
-                if abs(value) >= 3:
-                    ha = "left" if value >= 0 else "right"
-                    x = value + (0.55 if value >= 0 else -0.55)
-                    ax.text(x, pos, f"{value:+.1f}", va="center", ha=ha, fontsize=7.6)
+            ax.errorbar(
+                values,
+                positions,
+                xerr=[lo_err, hi_err],
+                fmt="none",
+                ecolor="#374151",
+                elinewidth=0.9,
+                capsize=2.2,
+                capthick=0.9,
+                zorder=4,
+            )
+            for pos, value, lo_e, hi_e in zip(positions, values, lo_err, hi_err):
+                if value >= 0:
+                    x, ha = value + hi_e + 0.45, "left"
+                else:
+                    x, ha = value - lo_e - 0.45, "right"
+                ax.text(x, pos, f"{value:+.1f}", va="center", ha=ha, fontsize=6.9, color="#111827")
 
         ax.axvline(0, color="#111827", linewidth=0.8)
         ax.set_yticks(y_positions)
@@ -177,7 +201,7 @@ def save_behavior_effects_tokens_duration() -> None:
         {"log(tokens)": "Token effect (%)", "log(duration)": "Duration effect (%)"},
         {"Token effect (%)": "#2f6f9f", "Duration effect (%)": "#8f5f21"},
         "Effect on completion tokens / duration, percent",
-        (-24, 16),
+        (-28, 19),
     )
     fig.savefig(FIGURES / "behavior_effects_tokens_duration.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
@@ -193,7 +217,7 @@ def save_behavior_effects_compliance() -> None:
         {"result_only": "Result-only effect (pp)"},
         {"Result-only effect (pp)": "#7a4f9f"},
         "Effect on result-only compliance, percentage points",
-        (-9, 9),
+        (-10.5, 10.5),
     )
     fig.savefig(FIGURES / "behavior_effects_compliance.png", dpi=300, bbox_inches="tight")
     plt.close(fig)

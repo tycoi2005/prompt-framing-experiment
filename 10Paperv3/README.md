@@ -30,6 +30,8 @@ python3 run_single_run_noise.py               # single-run Bernoulli noise floor
                                               # realized clustered SEs
 python3 run_pipeline_replay.py                # offline end-to-end replay: strict
                                               # parser + reformat-retry policy
+python3 make_figures.py                       # manuscript figures, including the
+                                              # labelled, 95%-CI behaviour panels
 ```
 
 Outputs land in `analysis/`:
@@ -40,7 +42,9 @@ Outputs land in `analysis/`:
   (tone/role/format + model fixed effects, base-task random intercept, variational
   Bayes), per stratum, with odds ratios and AME in percentage points
 - `mixed_effects_behavior.csv` — linear mixed models for log tokens/duration and
-  logistic mixed model for result-only compliance
+  logistic mixed model for result-only compliance, with point estimates, `std_err`,
+  and 95% interval bounds (`ci_lo`, `ci_hi`) in the reported units; this is the
+  source for the labelled, interval-bearing behavior figures (`figures/behavior_effects_*.png`)
 - `dominant_model_sensitivity.csv` — every prompt contrast re-estimated with and
   without the dominant model (Nemotron local, DeepSeek V4 Flash API), LPM and mixed
 - `nemotron_task_solve_summary.csv` — per-task solve pattern across the 18 prompt
