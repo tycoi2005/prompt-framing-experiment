@@ -41,6 +41,7 @@ python3 apply_multiple_comparison_correction.py
 python3 run_mixed_effects_analysis.py
 python3 run_interaction_analysis.py
 python3 characterize_task_datasets.py
+python3 run_variance_decomposition.py
 ```
 
 ## License & Data Availability

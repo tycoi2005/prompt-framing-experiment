@@ -18,6 +18,8 @@ python3 run_interaction_analysis.py           # two-way prompt-factor interactio
                                               # factor-by-model omnibus Wald tests
 python3 characterize_task_datasets.py         # quantitative characterization of the
                                               # four 50-task evaluation benchmarks
+python3 run_variance_decomposition.py         # formal model-vs-prompt comparison
+                                              # (eta^2, RM F-tests, bootstrap, logit)
 ```
 
 Outputs land in `analysis/`:
@@ -42,6 +44,12 @@ Outputs land in `analysis/`:
   benchmarks (statement length, arity/givens, reference LOC/SLOC, AST nodes, McCabe
   cyclomatic complexity, topic/difficulty breakdown, and pass-rate distributions)
 - `per_task_characterization.csv` — task-level metrics across all 200 base tasks
+- `model_vs_prompt_variance_decomposition.csv` — balanced ANOVA decomposition of
+  Pass@1 (model, task, prompt, tone/role/format, interactions) with eta-squared
+  shares and repeated-measures F-tests (task as random block)
+- `model_vs_prompt_formal_tests.csv` — task-cluster bootstrap CIs for the model vs.
+  prompt eta-squared difference/ratio, clustered LPM block Wald tests, and
+  latent-scale (logit) variance shares
 
 ## Audits
 
@@ -53,6 +61,8 @@ Outputs land in `analysis/`:
 - `interaction_audit.md` — generated summary of the two-way prompt-factor and
   factor-by-model interaction analyses
 - `task_dataset_audit.md` — generated summary of the four 50-task evaluation suites
+- `variance_decomposition_audit.md` — generated summary of the formal model-vs-prompt
+  comparison
 
 ## Build
 
