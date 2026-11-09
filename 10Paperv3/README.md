@@ -24,6 +24,12 @@ python3 run_effect_size_summary.py            # consolidated Section 4.8 effect-
                                               # ledger (reads existing CSVs only)
 python3 run_api_behavior_adjustment.py        # RQ4 behavioral adjustment for the API
                                               # strata + API Python compliance audit
+python3 run_power_analysis.py                 # design-based power analysis (MDE at
+                                              # 80/90% power, task ICC, design effect)
+python3 run_single_run_noise.py               # single-run Bernoulli noise floor vs.
+                                              # realized clustered SEs
+python3 run_pipeline_replay.py                # offline end-to-end replay: strict
+                                              # parser + reformat-retry policy
 ```
 
 Outputs land in `analysis/`:
@@ -63,6 +69,21 @@ Outputs land in `analysis/`:
 - `manuscript_api_compliance_summary.csv` — audit of API Python code-only
   compliance recovered from the executed candidate program (1,799/1,800 = 99.9%,
   i.e. ceiling, which is why that stratum's joint adjustment omits the control)
+- `manuscript_power_analysis.csv` — per-contrast power ledger for all 20
+  stratum × contrast cells: task-clustered and i.i.d. SEs, design effect,
+  effective sample size, MDE at 80%/90% power, achieved power, and the base
+  tasks required to detect a 1 pp or 2 pp contrast
+- `manuscript_power_summary.csv` — stratum-level power summary (ICC, design-effect
+  range, clustered SE range, MDE range, task-count extrapolations) used for
+  Table 18 of the manuscript
+- `manuscript_single_run_noise.csv` — per-contrast single-run Bernoulli noise
+  floor versus the realized task-clustered SE, with the MDE under a doubled
+  within-cell variance (Section 7.4)
+- `manuscript_single_run_noise_models.csv` — per model–task cell: pass rate,
+  Bernoulli floor, and the resulting 80% MDE range
+- `manuscript_pipeline_replay.csv` — offline replay of all 14,400 responses
+  through a strict parser and 0/1/2 reformat-retry policies, per stratum and
+  per prompt level, with expected calls and added latency (Table 19)
 
 ## Audits
 
