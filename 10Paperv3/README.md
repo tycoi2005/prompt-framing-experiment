@@ -14,6 +14,8 @@ python3 run_clustered_lpm_analysis.py         # clustered-LPM robustness check
 python3 apply_multiple_comparison_correction.py  # Benjamini-Hochberg audit
 python3 run_mixed_effects_analysis.py         # main inferential models + dominant-model
                                               # sensitivity + Nemotron task summary
+python3 run_interaction_analysis.py           # two-way prompt-factor interactions +
+                                              # factor-by-model omnibus Wald tests
 ```
 
 Outputs land in `analysis/`:
@@ -29,6 +31,11 @@ Outputs land in `analysis/`:
   without the dominant model (Nemotron local, DeepSeek V4 Flash API), LPM and mixed
 - `nemotron_task_solve_summary.csv` — per-task solve pattern across the 18 prompt
   conditions for the Nemotron 91.2% local-math result
+- `two_way_factor_interactions.csv` — all 32 two-way prompt-factor interactions
+  (`Tone x Role`, `Tone x Format`, `Role x Format`) with task-clustered SEs, 95% CIs,
+  joint Wald tests, and within-stratum / global BH q-values
+- `factor_by_model_interactions.csv` — omnibus Wald chi-square and F tests for
+  `Factor x Model` interactions across all four strata
 
 ## Audits
 
@@ -37,6 +44,8 @@ Outputs land in `analysis/`:
 - `mixed_effects_audit.md` — generated summary of the mixed-effects, dominant-model,
   and Nemotron analyses
 - `nemotron_math_audit.md` — repository audit of the 91.2% local-math pass rate
+- `interaction_audit.md` — generated summary of the two-way prompt-factor and
+  factor-by-model interaction analyses
 
 ## Build
 
