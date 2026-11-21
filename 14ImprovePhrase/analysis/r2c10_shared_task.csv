@@ -1,0 +1,22 @@
+regime,model,policy,n,pass_pct,mean_comp_tok
+API (shared TOANMATH),gemini-flash,neutral_plaintext,20,75.0,380.75
+API (shared TOANMATH),gemini-flash,neutral_xml,20,70.0,401.95
+API (shared TOANMATH),gemini-flash,polite_plaintext,20,65.0,378.0
+Local (reused TOANMATH),deepseek-coder-6.7b-instruct,neutral_plaintext,20,5.0,446.45
+Local (reused TOANMATH),deepseek-coder-6.7b-instruct,neutral_xml,20,5.0,439.35
+Local (reused TOANMATH),deepseek-coder-6.7b-instruct,polite_plaintext,20,0.0,461.3
+Local (reused TOANMATH),gemma2-9b,neutral_plaintext,20,15.0,167.25
+Local (reused TOANMATH),gemma2-9b,neutral_xml,20,20.0,168.35
+Local (reused TOANMATH),gemma2-9b,polite_plaintext,20,5.0,164.0
+Local (reused TOANMATH),llama3.1-8b,neutral_plaintext,20,15.0,326.9
+Local (reused TOANMATH),llama3.1-8b,neutral_xml,20,10.0,321.05
+Local (reused TOANMATH),llama3.1-8b,polite_plaintext,20,15.0,351.85
+Local (reused TOANMATH),mistral-7b-instruct,neutral_plaintext,20,0.0,334.9
+Local (reused TOANMATH),mistral-7b-instruct,neutral_xml,20,0.0,324.2
+Local (reused TOANMATH),mistral-7b-instruct,polite_plaintext,20,0.0,489.05
+Local (reused TOANMATH),nemotron-3-nano-4b,neutral_plaintext,20,20.0,1107.7
+Local (reused TOANMATH),nemotron-3-nano-4b,neutral_xml,20,30.0,1069.3
+Local (reused TOANMATH),nemotron-3-nano-4b,polite_plaintext,20,20.0,1112.45
+Local (reused TOANMATH),qwen2.5-7b,neutral_plaintext,20,20.0,259.25
+Local (reused TOANMATH),qwen2.5-7b,neutral_xml,20,30.0,285.15
+Local (reused TOANMATH),qwen2.5-7b,polite_plaintext,20,20.0,317.5

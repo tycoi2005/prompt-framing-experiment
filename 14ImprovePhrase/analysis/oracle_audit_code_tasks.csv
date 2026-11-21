@@ -1,0 +1,101 @@
+dataset,task_id,difficulty,func_name,n_params,n_pub,n_hid,ref_pass,dup_tests,exact_float_eq,zero_param,const_return,sig_in_prompt,has_loop_or_branch,flags
+Local Code (TOANMATH),1,hard,calculate_max_reward,3,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),2,medium,calculate_max_lantern_volume,1,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),3,hard,calculate_probability,6,2,5,True,0,7,False,False,False,True,EXACT_FLOAT_EQ(7); FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),4,medium,calculate_paved_area,3,2,5,True,0,7,False,False,False,False,EXACT_FLOAT_EQ(7); FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),5,easy,solve_tsp,1,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),6,hard,solve_stacks,2,2,5,True,0,0,False,False,False,False,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),7,hard,maximize_oil_production,3,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),8,easy,max_revenue,8,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),9,medium,calculate_crab_area,1,2,5,True,0,0,False,False,False,False,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),10,medium,calculate_tuning_angle,3,2,5,True,0,0,False,False,False,False,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),11,easy,calculate_max_slope,2,2,5,True,0,7,False,False,False,False,EXACT_FLOAT_EQ(7); FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),12,hard,solve_octagon_prob,1,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),13,medium,solve_probability_inverse,0,2,5,True,0,0,True,False,False,True,ZERO_PARAM; FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),14,hard,solve_production,8,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),15,medium,solve_min_products,3,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),16,easy,total_pages_written,2,2,5,True,0,0,False,False,False,False,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),17,medium,calculate_months_to_deplete,3,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),18,medium,max_charity_revenue,8,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),19,hard,maximize_revenue,4,2,5,True,0,7,False,False,False,False,EXACT_FLOAT_EQ(7); FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),20,hard,solve_shortest_path,1,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),21,medium,count_ap_triplets,2,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),22,hard,min_travel_time,4,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),23,medium,calculate_win_probability,1,2,5,True,0,7,False,False,False,False,EXACT_FLOAT_EQ(7); FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),24,hard,calculate_geese_survival,4,2,5,True,0,0,False,False,False,False,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),25,hard,min_distance_lizards,7,2,5,True,0,0,False,False,False,False,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),26,medium,count_grid_ways,1,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),27,easy,calculate_grouped_std,2,2,5,True,0,7,False,False,False,True,EXACT_FLOAT_EQ(7); FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),28,hard,maximize_profit,6,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),29,hard,solve_silk_profit,9,2,5,True,0,6,False,False,False,True,EXACT_FLOAT_EQ(6); FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),30,medium,max_profit,8,2,5,True,0,7,False,False,False,True,EXACT_FLOAT_EQ(7); FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),31,hard,count_rotor_arrangements,2,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),32,hard,solve_min_distance,2,2,5,True,0,7,False,False,False,True,EXACT_FLOAT_EQ(7); FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),33,hard,solve_min_cost_days,4,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),34,hard,solve_max_profit,9,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),35,hard,solve_overflow,3,2,5,True,0,6,False,False,False,True,EXACT_FLOAT_EQ(6); FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),36,hard,solve_grid_probability,0,2,5,True,0,0,True,False,False,True,ZERO_PARAM; FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),37,hard,solve_polygon_triangle_color,1,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),38,hard,maximize_profit_price,5,2,5,True,0,7,False,False,False,False,EXACT_FLOAT_EQ(7); FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),39,easy,solve_max_profit,8,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),40,medium,calculate_flight_angle,2,2,5,True,0,0,False,False,False,False,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),41,medium,calculate_savings,3,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),42,easy,calculate_probability_score,5,2,5,True,0,7,False,False,False,True,EXACT_FLOAT_EQ(7); FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),43,hard,calculate_dark_area,1,2,5,True,0,0,False,False,False,False,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),44,hard,solve_gps_problem,4,2,5,True,0,7,False,False,False,True,EXACT_FLOAT_EQ(7); FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),45,easy,solve_mlu_probability,4,2,5,True,0,7,False,False,False,False,EXACT_FLOAT_EQ(7); FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),46,medium,solve_lantern_problem,0,2,5,True,0,7,True,True,False,False,ZERO_PARAM; CONST_RETURN; EXACT_FLOAT_EQ(7); FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),47,hard,solve_bookshelf,2,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),48,easy,calculate_probability,2,2,5,True,0,7,False,False,False,True,EXACT_FLOAT_EQ(7); FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),49,hard,calculate_glue_cost,3,2,5,True,0,0,False,False,False,False,FUNC_NAME_NOT_IN_TEXT
+Local Code (TOANMATH),50,hard,find_min_first_payment,4,2,5,True,0,0,False,False,False,True,FUNC_NAME_NOT_IN_TEXT
+API Code (MathNet),1,medium,solve_math_problem,1,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),2,medium,solve_math_problem,3,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),3,medium,solve_math_problem,1,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),4,medium,solve_math_problem,3,2,5,True,0,0,False,False,True,False,CLEAN
+API Code (MathNet),5,medium,solve_math_problem,1,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),6,medium,solve_math_problem,3,2,5,True,0,0,False,False,True,False,CLEAN
+API Code (MathNet),7,medium,solve_math_problem,3,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),8,medium,solve_math_problem,4,2,5,True,0,0,False,False,True,False,CLEAN
+API Code (MathNet),9,medium,solve_math_problem,3,2,5,True,0,0,False,False,True,False,CLEAN
+API Code (MathNet),10,medium,solve_math_problem,1,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),11,medium,solve_math_problem,3,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),12,medium,solve_math_problem,2,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),13,medium,solve_math_problem,2,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),14,medium,solve_math_problem,2,2,5,True,0,0,False,False,True,False,CLEAN
+API Code (MathNet),15,medium,solve_math_problem,3,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),16,medium,solve_math_problem,4,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),17,medium,solve_math_problem,4,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),18,medium,solve_math_problem,4,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),19,medium,solve_math_problem,3,2,5,True,0,0,False,False,True,False,CLEAN
+API Code (MathNet),20,medium,solve_math_problem,2,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),21,medium,solve_math_problem,4,2,5,True,0,0,False,False,True,False,CLEAN
+API Code (MathNet),22,medium,solve_math_problem,2,2,5,True,0,0,False,False,True,False,CLEAN
+API Code (MathNet),23,medium,solve_math_problem,3,2,5,True,0,0,False,False,True,False,CLEAN
+API Code (MathNet),24,medium,solve_math_problem,4,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),25,medium,solve_math_problem,1,2,5,True,0,0,False,False,True,False,CLEAN
+API Code (MathNet),26,medium,solve_math_problem,1,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),27,medium,solve_math_problem,5,2,5,True,0,0,False,False,True,False,CLEAN
+API Code (MathNet),28,medium,solve_math_problem,2,2,5,True,0,0,False,False,True,False,CLEAN
+API Code (MathNet),29,medium,solve_math_problem,2,2,5,True,0,0,False,False,True,False,CLEAN
+API Code (MathNet),30,medium,solve_math_problem,3,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),31,medium,solve_math_problem,2,2,5,True,0,0,False,False,True,False,CLEAN
+API Code (MathNet),32,medium,solve_math_problem,4,2,5,True,0,0,False,False,True,False,CLEAN
+API Code (MathNet),33,medium,solve_math_problem,1,2,5,True,0,0,False,False,True,False,CLEAN
+API Code (MathNet),34,medium,solve_math_problem,2,2,5,True,0,0,False,False,True,False,CLEAN
+API Code (MathNet),35,medium,solve_math_problem,2,2,5,True,0,0,False,False,True,False,CLEAN
+API Code (MathNet),36,medium,solve_math_problem,2,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),37,medium,solve_math_problem,1,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),38,medium,solve_math_problem,2,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),39,medium,solve_math_problem,1,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),40,medium,solve_math_problem,1,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),41,medium,solve_math_problem,1,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),42,medium,solve_math_problem,4,2,5,True,0,0,False,False,True,False,CLEAN
+API Code (MathNet),43,medium,solve_math_problem,1,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),44,medium,solve_math_problem,3,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),45,medium,solve_math_problem,3,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),46,medium,solve_math_problem,2,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),47,medium,solve_math_problem,2,2,5,True,0,0,False,False,True,False,CLEAN
+API Code (MathNet),48,medium,solve_math_problem,1,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),49,medium,solve_math_problem,1,2,5,True,0,0,False,False,True,True,CLEAN
+API Code (MathNet),50,medium,solve_math_problem,3,2,5,True,0,0,False,False,True,True,CLEAN

@@ -1,0 +1,197 @@
+[
+  {
+    "task_id": "se_01",
+    "domain": "parsing",
+    "prompt_body": "Write a Python function `parse_env_file(text: str) -> dict[str, str]` that parses `.env`-style configuration text. Ignore blank lines and lines starting with `#` (after stripping leading whitespace). Split each key-value line on the first `=`. Strip surrounding whitespace from keys and values, and if a value is enclosed in matching single or double quotes, remove the outer quotes. Return a dictionary mapping keys to values.\n\nExample assertions:\nassert parse_env_file('HOST=localhost\\nPORT=\"8080\"') == {'HOST': 'localhost', 'PORT': '8080'}\nassert parse_env_file('# comment\\nKEY=a=b=c') == {'KEY': 'a=b=c'}",
+    "reference": "def parse_env_file(text: str) -> dict[str, str]:\n    out: dict[str, str] = {}\n    for raw in text.splitlines():\n        line = raw.strip()\n        if not line or line.startswith('#') or '=' not in line:\n            continue\n        k, v = line.split('=', 1)\n        k, v = k.strip(), v.strip()\n        if len(v) >= 2 and v[0] == v[-1] and v[0] in ('\"', \"'\"):\n            v = v[1:-1]\n        out[k] = v\n    return out\n",
+    "tests": [
+      "assert parse_env_file('HOST=localhost\\nPORT=\"8080\"') == {'HOST': 'localhost', 'PORT': '8080'}",
+      "assert parse_env_file('# comment\\nKEY=a=b=c') == {'KEY': 'a=b=c'}",
+      "assert parse_env_file('  \\n  # indented\\nNAME = \\'app\\'  ') == {'NAME': 'app'}",
+      "assert parse_env_file('EMPTY=\\nA=1\\nA=2') == {'EMPTY': '', 'A': '2'}",
+      "assert parse_env_file('') == {}"
+    ]
+  },
+  {
+    "task_id": "se_02",
+    "domain": "versioning",
+    "prompt_body": "Write a Python function `compare_semver(v1: str, v2: str) -> int` that compares two semantic version strings of the form `MAJOR.MINOR.PATCH` (with an optional leading `v`). Return `-1` if `v1 < v2`, `0` if `v1 == v2`, and `1` if `v1 > v2`. Missing minor or patch components default to `0`.\n\nExample assertions:\nassert compare_semver('v1.2.10', '1.2.2') == 1\nassert compare_semver('2.0', '2.0.0') == 0",
+    "reference": "def compare_semver(v1: str, v2: str) -> int:\n    def norm(v: str) -> tuple[int, int, int]:\n        parts = [int(p) for p in v.strip().lstrip('vV').split('.')]\n        while len(parts) < 3:\n            parts.append(0)\n        return (parts[0], parts[1], parts[2])\n    a, b = norm(v1), norm(v2)\n    return -1 if a < b else (1 if a > b else 0)\n",
+    "tests": [
+      "assert compare_semver('v1.2.10', '1.2.2') == 1",
+      "assert compare_semver('2.0', '2.0.0') == 0",
+      "assert compare_semver('0.9.9', '1.0.0') == -1",
+      "assert compare_semver('v10.0.1', 'v2.99.99') == 1",
+      "assert compare_semver('3', 'v3.0.0') == 0"
+    ]
+  },
+  {
+    "task_id": "se_03",
+    "domain": "intervals",
+    "prompt_body": "Write a Python function `merge_intervals(intervals: list[tuple[int, int]]) -> list[tuple[int, int]]` that merges all overlapping or touching integer intervals `(start, end)` (where `start <= end`) and returns them sorted by start.\n\nExample assertions:\nassert merge_intervals([(1, 3), (2, 6), (8, 10)]) == [(1, 6), (8, 10)]\nassert merge_intervals([(5, 7), (1, 5)]) == [(1, 7)]",
+    "reference": "def merge_intervals(intervals: list[tuple[int, int]]) -> list[tuple[int, int]]:\n    if not intervals:\n        return []\n    s = sorted(intervals)\n    merged = [s[0]]\n    for a, b in s[1:]:\n        pa, pb = merged[-1]\n        if a <= pb:\n            merged[-1] = (pa, max(pb, b))\n        else:\n            merged.append((a, b))\n    return merged\n",
+    "tests": [
+      "assert merge_intervals([(1, 3), (2, 6), (8, 10)]) == [(1, 6), (8, 10)]",
+      "assert merge_intervals([(5, 7), (1, 5)]) == [(1, 7)]",
+      "assert merge_intervals([]) == []",
+      "assert merge_intervals([(1, 10), (2, 3), (4, 5)]) == [(1, 10)]",
+      "assert merge_intervals([(10, 12), (1, 2), (3, 4)]) == [(1, 2), (3, 4), (10, 12)]"
+    ]
+  },
+  {
+    "task_id": "se_04",
+    "domain": "caching",
+    "prompt_body": "Write a Python function `simulate_lru(capacity: int, ops: list[tuple]) -> list[int]` that simulates an LRU cache of positive integer `capacity`. Each operation in `ops` is either `('put', key, value)` or `('get', key)`. For each `'get'`, append the cached value (or `-1` if missing) to the returned list and mark the key as recently used. On `'put'`, insert/update the key, mark it recently used, and evict the least recently used key if capacity is exceeded.\n\nExample assertions:\nassert simulate_lru(2, [('put', 1, 10), ('put', 2, 20), ('get', 1), ('put', 3, 30), ('get', 2)]) == [10, -1]\nassert simulate_lru(1, [('put', 1, 5), ('put', 2, 6), ('get', 1), ('get', 2)]) == [-1, 6]",
+    "reference": "from collections import OrderedDict\ndef simulate_lru(capacity: int, ops: list[tuple]) -> list[int]:\n    cache: OrderedDict[int, int] = OrderedDict()\n    out: list[int] = []\n    for op in ops:\n        if op[0] == 'get':\n            k = op[1]\n            if k in cache:\n                cache.move_to_end(k)\n                out.append(cache[k])\n            else:\n                out.append(-1)\n        else:\n            _, k, v = op\n            cache[k] = v\n            cache.move_to_end(k)\n            if len(cache) > capacity:\n                cache.popitem(last=False)\n    return out\n",
+    "tests": [
+      "assert simulate_lru(2, [('put', 1, 10), ('put', 2, 20), ('get', 1), ('put', 3, 30), ('get', 2)]) == [10, -1]",
+      "assert simulate_lru(1, [('put', 1, 5), ('put', 2, 6), ('get', 1), ('get', 2)]) == [-1, 6]",
+      "assert simulate_lru(2, [('put', 1, 1), ('put', 2, 2), ('put', 1, 10), ('put', 3, 3), ('get', 1), ('get', 2)]) == [10, -1]",
+      "assert simulate_lru(2, [('get', 99)]) == [-1]",
+      "assert simulate_lru(3, [('put', 1, 1), ('put', 2, 2), ('put', 3, 3), ('get', 1), ('put', 4, 4), ('get', 2), ('get', 3)]) == [1, -1, 3]"
+    ]
+  },
+  {
+    "task_id": "se_05",
+    "domain": "validation",
+    "prompt_body": "Write a Python function `is_balanced_brackets(s: str) -> bool` that checks whether all brackets `()`, `[]`, and `{}` in string `s` are properly balanced and nested. Ignore all non-bracket characters.\n\nExample assertions:\nassert is_balanced_brackets('fn(a[0], {x: 1})') is True\nassert is_balanced_brackets('([)]') is False",
+    "reference": "def is_balanced_brackets(s: str) -> bool:\n    pairs = {')': '(', ']': '[', '}': '{'}\n    opens = set(pairs.values())\n    stack: list[str] = []\n    for ch in s:\n        if ch in opens:\n            stack.append(ch)\n        elif ch in pairs:\n            if not stack or stack.pop() != pairs[ch]:\n                return False\n    return not stack\n",
+    "tests": [
+      "assert is_balanced_brackets('fn(a[0], {x: 1})') is True",
+      "assert is_balanced_brackets('([)]') is False",
+      "assert is_balanced_brackets('') is True",
+      "assert is_balanced_brackets('(((') is False",
+      "assert is_balanced_brackets('a + b)(') is False"
+    ]
+  },
+  {
+    "task_id": "se_06",
+    "domain": "serialization",
+    "prompt_body": "Write a Python function `flatten_json(obj: dict, sep: str = '.') -> dict` that recursively flattens nested dictionaries into a single-level dictionary whose keys are joined by `sep`. Non-dict values (including lists, ints, strings, None, empty dicts `{}`) are kept as leaf values.\n\nExample assertions:\nassert flatten_json({'a': {'b': 1, 'c': {'d': 2}}}) == {'a.b': 1, 'a.c.d': 2}\nassert flatten_json({'x': [1, 2], 'y': {}}) == {'x': [1, 2], 'y': {}}",
+    "reference": "def flatten_json(obj: dict, sep: str = '.') -> dict:\n    out = {}\n    def walk(d: dict, prefix: str) -> None:\n        for k, v in d.items():\n            nk = f'{prefix}{sep}{k}' if prefix else str(k)\n            if isinstance(v, dict) and v:\n                walk(v, nk)\n            else:\n                out[nk] = v\n    walk(obj, '')\n    return out\n",
+    "tests": [
+      "assert flatten_json({'a': {'b': 1, 'c': {'d': 2}}}) == {'a.b': 1, 'a.c.d': 2}",
+      "assert flatten_json({'x': [1, 2], 'y': {}}) == {'x': [1, 2], 'y': {}}",
+      "assert flatten_json({'a': {'b': None}}, sep='/') == {'a/b': None}",
+      "assert flatten_json({}) == {}",
+      "assert flatten_json({'a': 1, 'b': {'c': 2}}) == {'a': 1, 'b.c': 2}"
+    ]
+  },
+  {
+    "task_id": "se_07",
+    "domain": "logging",
+    "prompt_body": "Write a Python function `summarize_logs(lines: list[str]) -> dict[str, int]` that parses log lines formatted as `[LEVEL] message` (where LEVEL is uppercase letters like `INFO`, `WARN`, `ERROR`, with optional leading whitespace). Count occurrences of each level and return a dictionary `{level: count}`. Ignore malformed lines that do not start with `[LEVEL]`.\n\nExample assertions:\nassert summarize_logs(['[INFO] started', '[ERROR] fail', '[INFO] done']) == {'INFO': 2, 'ERROR': 1}\nassert summarize_logs(['bad line', '  [WARN] slow']) == {'WARN': 1}",
+    "reference": "import re\ndef summarize_logs(lines: list[str]) -> dict[str, int]:\n    counts: dict[str, int] = {}\n    pat = re.compile(r'^\\s*\\[([A-Z]+)\\]\\s+')\n    for ln in lines:\n        m = pat.match(ln)\n        if m:\n            lvl = m.group(1)\n            counts[lvl] = counts.get(lvl, 0) + 1\n    return counts\n",
+    "tests": [
+      "assert summarize_logs(['[INFO] started', '[ERROR] fail', '[INFO] done']) == {'INFO': 2, 'ERROR': 1}",
+      "assert summarize_logs(['bad line', '  [WARN] slow']) == {'WARN': 1}",
+      "assert summarize_logs([]) == {}",
+      "assert summarize_logs(['[debug] lower', '[DEBUG] ok']) == {'DEBUG': 1}",
+      "assert summarize_logs(['[ERROR] a', '[ERROR] b', '[WARN] c']) == {'ERROR': 2, 'WARN': 1}"
+    ]
+  },
+  {
+    "task_id": "se_08",
+    "domain": "compression",
+    "prompt_body": "Write a Python function `rle_encode(s: str) -> str` that performs run-length encoding on string `s`, replacing each maximal run of identical characters with `<char><count>` (even when count is 1). Return `''` for an empty string.\n\nExample assertions:\nassert rle_encode('aaabbc') == 'a3b2c1'\nassert rle_encode('') == ''",
+    "reference": "def rle_encode(s: str) -> str:\n    if not s:\n        return ''\n    out = []\n    cur, cnt = s[0], 1\n    for ch in s[1:]:\n        if ch == cur:\n            cnt += 1\n        else:\n            out.append(f'{cur}{cnt}')\n            cur, cnt = ch, 1\n    out.append(f'{cur}{cnt}')\n    return ''.join(out)\n",
+    "tests": [
+      "assert rle_encode('aaabbc') == 'a3b2c1'",
+      "assert rle_encode('') == ''",
+      "assert rle_encode('x') == 'x1'",
+      "assert rle_encode('aaaa') == 'a4'",
+      "assert rle_encode('aba') == 'a1b1a1'"
+    ]
+  },
+  {
+    "task_id": "se_09",
+    "domain": "paths",
+    "prompt_body": "Write a Python function `normalize_unix_path(path: str) -> str` that simplifies an absolute Unix file path (handling repeated slashes `//`, `.`, and `..` segments). Always return a canonical path starting with `/` with no trailing slash (except root `'/'`).\n\nExample assertions:\nassert normalize_unix_path('/a/./b/../../c/') == '/c'\nassert normalize_unix_path('/../') == '/'",
+    "reference": "def normalize_unix_path(path: str) -> str:\n    stack: list[str] = []\n    for part in path.split('/'):\n        if not part or part == '.':\n            continue\n        if part == '..':\n            if stack:\n                stack.pop()\n        else:\n            stack.append(part)\n    return '/' + '/'.join(stack)\n",
+    "tests": [
+      "assert normalize_unix_path('/a/./b/../../c/') == '/c'",
+      "assert normalize_unix_path('/../') == '/'",
+      "assert normalize_unix_path('/home//foo/') == '/home/foo'",
+      "assert normalize_unix_path('/a/b/c/..') == '/a/b'",
+      "assert normalize_unix_path('/') == '/'"
+    ]
+  },
+  {
+    "task_id": "se_10",
+    "domain": "graph_deps",
+    "prompt_body": "Write a Python function `topo_sort_tasks(deps: dict[str, list[str]]) -> list[str]` that returns a valid topological execution order for tasks where `deps[task]` lists the prerequisites that must run BEFORE `task`. Whenever multiple tasks are ready simultaneously, pick the lexicographically smallest task name first. If a cycle exists, return an empty list `[]`.\n\nExample assertions:\nassert topo_sort_tasks({'b': ['a'], 'a': [], 'c': ['a']}) == ['a', 'b', 'c']\nassert topo_sort_tasks({'a': ['b'], 'b': ['a']}) == []",
+    "reference": "import heapq\ndef topo_sort_tasks(deps: dict[str, list[str]]) -> list[str]:\n    nodes = set(deps.keys())\n    for pres in deps.values():\n        nodes.update(pres)\n    indeg = {n: 0 for n in nodes}\n    adj: dict[str, list[str]] = {n: [] for n in nodes}\n    for task, pres in deps.items():\n        for p in pres:\n            adj[p].append(task)\n            indeg[task] += 1\n    heap = [n for n, d in indeg.items() if d == 0]\n    heapq.heapify(heap)\n    order: list[str] = []\n    while heap:\n        u = heapq.heappop(heap)\n        order.append(u)\n        for v in adj[u]:\n            indeg[v] -= 1\n            if indeg[v] == 0:\n                heapq.heappush(heap, v)\n    return order if len(order) == len(nodes) else []\n",
+    "tests": [
+      "assert topo_sort_tasks({'b': ['a'], 'a': [], 'c': ['a']}) == ['a', 'b', 'c']",
+      "assert topo_sort_tasks({'a': ['b'], 'b': ['a']}) == []",
+      "assert topo_sort_tasks({'deploy': ['build', 'test'], 'test': ['build'], 'build': []}) == ['build', 'test', 'deploy']",
+      "assert topo_sort_tasks({'z': [], 'a': [], 'm': []}) == ['a', 'm', 'z']",
+      "assert topo_sort_tasks({}) == []"
+    ]
+  },
+  {
+    "task_id": "se_11",
+    "domain": "rate_limit",
+    "prompt_body": "Write a Python function `allow_requests(timestamps: list[int], window: int, limit: int) -> list[bool]` for a sliding-window rate limiter. Given non-decreasing integer `timestamps`, allow a request at time `t` if strictly fewer than `limit` previously ALLOWED requests occurred in the half-open window `(t - window, t]`. Return a list of booleans indicating whether each request is allowed.\n\nExample assertions:\nassert allow_requests([1, 2, 3, 4], window=5, limit=2) == [True, True, False, False]\nassert allow_requests([1, 2, 6, 7], window=5, limit=2) == [True, True, True, True]",
+    "reference": "from collections import deque\ndef allow_requests(timestamps: list[int], window: int, limit: int) -> list[bool]:\n    q: deque[int] = deque()\n    res: list[bool] = []\n    for t in timestamps:\n        while q and q[0] <= t - window:\n            q.popleft()\n        if len(q) < limit:\n            q.append(t)\n            res.append(True)\n        else:\n            res.append(False)\n    return res\n",
+    "tests": [
+      "assert allow_requests([1, 2, 3, 4], window=5, limit=2) == [True, True, False, False]",
+      "assert allow_requests([1, 2, 6, 7], window=5, limit=2) == [True, True, True, True]",
+      "assert allow_requests([1, 1, 1], window=10, limit=2) == [True, True, False]",
+      "assert allow_requests([], window=5, limit=2) == []",
+      "assert allow_requests([0, 5, 10], window=5, limit=1) == [True, True, True]"
+    ]
+  },
+  {
+    "task_id": "se_12",
+    "domain": "urls",
+    "prompt_body": "Write a Python function `parse_query_params(url: str) -> dict[str, list[str]]` that extracts query parameters from a URL string (after `?` and before any `#` fragment), URL-decoding keys and values (treating `+` as space) and preserving the order of values for repeated keys. Return `{}` if there is no query string.\n\nExample assertions:\nassert parse_query_params('https://ex.com/s?a=1&b=hello+world&a=2#top') == {'a': ['1', '2'], 'b': ['hello world']}\nassert parse_query_params('https://ex.com/home') == {}",
+    "reference": "from urllib.parse import parse_qs, urlsplit\ndef parse_query_params(url: str) -> dict[str, list[str]]:\n    q = urlsplit(url).query\n    return parse_qs(q, keep_blank_values=True) if q else {}\n",
+    "tests": [
+      "assert parse_query_params('https://ex.com/s?a=1&b=hello+world&a=2#top') == {'a': ['1', '2'], 'b': ['hello world']}",
+      "assert parse_query_params('https://ex.com/home') == {}",
+      "assert parse_query_params('/path?x=1%202&y=') == {'x': ['1 2'], 'y': ['']}",
+      "assert parse_query_params('https://ex.com/#frag') == {}",
+      "assert parse_query_params('?k=v') == {'k': ['v']}"
+    ]
+  },
+  {
+    "task_id": "se_13",
+    "domain": "cli_parsing",
+    "prompt_body": "Write a Python function `parse_cli_flags(tokens: list[str]) -> dict[str, str | bool]` that parses CLI argument tokens. Flags start with `--`. If `--flag=value` is given, store `flag: value`. If `--flag` is followed by a non-flag token (not starting with `--`), store `flag: next_token`. Otherwise store `flag: True`. Ignore standalone positional tokens.\n\nExample assertions:\nassert parse_cli_flags(['--host', '0.0.0.0', '--verbose', '--port=8080']) == {'host': '0.0.0.0', 'verbose': True, 'port': '8080'}\nassert parse_cli_flags(['--dry-run']) == {'dry-run': True}",
+    "reference": "def parse_cli_flags(tokens: list[str]) -> dict[str, str | bool]:\n    out: dict[str, str | bool] = {}\n    i = 0\n    while i < len(tokens):\n        tok = tokens[i]\n        if tok.startswith('--') and len(tok) > 2:\n            body = tok[2:]\n            if '=' in body:\n                k, v = body.split('=', 1)\n                out[k] = v\n                i += 1\n            elif i + 1 < len(tokens) and not tokens[i + 1].startswith('--'):\n                out[body] = tokens[i + 1]\n                i += 2\n            else:\n                out[body] = True\n                i += 1\n        else:\n            i += 1\n    return out\n",
+    "tests": [
+      "assert parse_cli_flags(['--host', '0.0.0.0', '--verbose', '--port=8080']) == {'host': '0.0.0.0', 'verbose': True, 'port': '8080'}",
+      "assert parse_cli_flags(['--dry-run']) == {'dry-run': True}",
+      "assert parse_cli_flags(['pos', '--a', '--b', 'val']) == {'a': True, 'b': 'val'}",
+      "assert parse_cli_flags(['--k=1=2']) == {'k': '1=2'}",
+      "assert parse_cli_flags([]) == {}"
+    ]
+  },
+  {
+    "task_id": "se_14",
+    "domain": "text_processing",
+    "prompt_body": "Write a Python function `extract_markdown_links(md: str) -> list[tuple[str, str]]` that extracts all inline Markdown links `[label](url)` (excluding images prefixed with `![label](url)`) and returns them in order as `(label, url)` tuples.\n\nExample assertions:\nassert extract_markdown_links('See [Docs](https://a.com) and ![img](pic.png)') == [('Docs', 'https://a.com')]\nassert extract_markdown_links('[A](1) [B](2)') == [('A', '1'), ('B', '2')]",
+    "reference": "import re\ndef extract_markdown_links(md: str) -> list[tuple[str, str]]:\n    return re.findall(r'(?<!!)\\[([^\\]]+)\\]\\(([^)]+)\\)', md)\n",
+    "tests": [
+      "assert extract_markdown_links('See [Docs](https://a.com) and ![img](pic.png)') == [('Docs', 'https://a.com')]",
+      "assert extract_markdown_links('[A](1) [B](2)') == [('A', '1'), ('B', '2')]",
+      "assert extract_markdown_links('plain text') == []",
+      "assert extract_markdown_links('![only](img.jpg)') == []",
+      "assert extract_markdown_links('Start [one](u1), then ![pic](p), end [two](u2).') == [('one', 'u1'), ('two', 'u2')]"
+    ]
+  },
+  {
+    "task_id": "se_15",
+    "domain": "data_cleaning",
+    "prompt_body": "Write a Python function `dedupe_preserve_order(items: list[dict], key: str) -> list[dict]` that deduplicates a list of dictionaries by the value of `item[key]`, keeping the FIRST occurrence of each distinct key value and preserving original order. Skip any dictionary missing `key`.\n\nExample assertions:\nassert dedupe_preserve_order([{'id': 1, 'v': 'a'}, {'id': 2, 'v': 'b'}, {'id': 1, 'v': 'c'}], 'id') == [{'id': 1, 'v': 'a'}, {'id': 2, 'v': 'b'}]\nassert dedupe_preserve_order([{'v': 1}, {'id': 1}], 'id') == [{'id': 1}]",
+    "reference": "def dedupe_preserve_order(items: list[dict], key: str) -> list[dict]:\n    seen = set()\n    out = []\n    for item in items:\n        if key not in item:\n            continue\n        val = item[key]\n        if val not in seen:\n            seen.add(val)\n            out.append(item)\n    return out\n",
+    "tests": [
+      "assert dedupe_preserve_order([{'id': 1, 'v': 'a'}, {'id': 2, 'v': 'b'}, {'id': 1, 'v': 'c'}], 'id') == [{'id': 1, 'v': 'a'}, {'id': 2, 'v': 'b'}]",
+      "assert dedupe_preserve_order([{'v': 1}, {'id': 1}], 'id') == [{'id': 1}]",
+      "assert dedupe_preserve_order([], 'id') == []",
+      "assert dedupe_preserve_order([{'k': 'x'}, {'k': 'y'}, {'k': 'x'}], 'k') == [{'k': 'x'}, {'k': 'y'}]",
+      "assert dedupe_preserve_order([{'id': 0}, {'id': 0}], 'id') == [{'id': 0}]"
+    ]
+  }
+]
