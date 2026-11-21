@@ -9,7 +9,7 @@ This repository contains the full replication package for the research paper: **
   * `apimodel/`: Scripts and prompt-matrix runners for evaluating hosted cloud API models (`gemini-flash`, `deepseek-v4-flash`).
   * `localmodel/`: Jupyter notebooks and evaluation runners for local Ollama models (`qwen2.5-7b`, `llama3.1-8b`, `gemma2-9b`, `deepseek-coder-6.7b`, `mistral-7b-instruct`, `nemotron-3-nano-4b`).
   * `results_analysis/`: Consolidated 14,400-run JSONL dataset (`prompt_framing_experiment_results.jsonl`), statistical scripts, audit reports, and analysis notebooks.
-* `10Paperv3/`: The empirical manuscript source code (`report.tex`), reproducible statistical analysis pipeline (`scripts/`), generated CSV tables (`analysis/`), audit reports, and figures (`figures/`).
+* `10Paperv3/`: The empirical manuscript source code (`LLM_Prompt_Framing_R00_updated.tex` in Elsevier CAS `cas-sc` format, plus earlier draft `report.tex`), reproducible statistical analysis pipeline (`scripts/`), generated CSV tables (`analysis/`), audit reports, and figures (`figures/`).
 * `14ImprovePhrase/`: Major-revision empirical validation and audit package:
   * **Independent $k = 3$ repeated generations (14,398 / 14,400 valid runs across all 8 models):** `run_api_repeated.py`, `kaggle_repeated_runs_k3.ipynb`, `analyze_repeated_runs.py`, `results_api_repeated/`, `results_local_repeated/`.
   * **Unified validation suite (`run_revision_suite.py`, `kaggle_revision_suite.ipynb`, `analyze_revision_suite.py`, `results_revision/`):** 450 live end-to-end Python workflows with real error-feedback retries, 180 neutral paraphrase & length-matched controls, 20-task shared-regime comparison across 7 models, and the 15-task non-math SE coding benchmark (`se_benchmark_15.json`, 135 runs).
@@ -27,10 +27,10 @@ To fully replicate the experiments, you may need:
 
 ```bash
 cd 10Paperv3
-pdflatex -interaction=nonstopmode -halt-on-error report.tex
-bibtex report
-pdflatex -interaction=nonstopmode -halt-on-error report.tex
-pdflatex -interaction=nonstopmode -halt-on-error report.tex
+pdflatex -interaction=nonstopmode -halt-on-error LLM_Prompt_Framing_R00_updated.tex
+bibtex LLM_Prompt_Framing_R00_updated
+pdflatex -interaction=nonstopmode -halt-on-error LLM_Prompt_Framing_R00_updated.tex
+pdflatex -interaction=nonstopmode -halt-on-error LLM_Prompt_Framing_R00_updated.tex
 ```
 
 ## Running the Reproducible Statistical Pipeline

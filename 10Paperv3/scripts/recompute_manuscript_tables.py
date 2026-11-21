@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import json
 import math
+import re
 from collections import defaultdict
 from pathlib import Path
 
@@ -17,6 +18,18 @@ SOURCE_JSONL = RESULTS / "prompt_framing_experiment_results.jsonl"
 CODE_TEMPLATE = RESULTS / "prompt_templates" / "prompt_matrix_prompt_template.09.csv"
 MATH_TEMPLATE = RESULTS / "prompt_templates" / "prompt_matrix_prompt_template.09.math.csv"
 OUT_DIR = ROOT / "analysis"
+
+FENCE_RE = re.compile(r"```(?:python|py)?\s*(.*?)```", re.S | re.I)
+
+
+def strict_extract_code(text: str) -> str:
+    if not text:
+        return ""
+    m = FENCE_RE.search(text)
+    if m:
+        return m.group(1).strip()
+    s = text.strip()
+    return s if s.startswith(("def ", "import ", "from ")) else ""
 
 
 PROMPT_TERMS = [
@@ -122,6 +135,8 @@ def load_dataset() -> pd.DataFrame:
             modelname = str(row["modelname"])
             response_text = str(row.get("response_text") or "")
             extracted_code = str(row.get("extracted_code") or "")
+            if not extracted_code and task_type == "code":
+                extracted_code = strict_extract_code(response_text)
             rows.append(
                 {
                     "modeltype": str(row["modeltype"]),

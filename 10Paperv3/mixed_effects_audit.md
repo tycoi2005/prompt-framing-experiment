@@ -12,8 +12,8 @@ contrasts remain as interpretability layer.
 
 | Stratum | Contrast | OR [95% int] | AME pp [95% int] | p |
 |---|---|---:|---:|---:|
-| API Python | Aggressive tone | 1.05 [0.83, 1.34] | +0.6 [-2.3, +3.5] | 0.686 |
-| API Python | Polite tone | 1.05 [0.83, 1.34] | +0.6 [-2.4, +3.4] | 0.686 |
+| API Python | Aggressive tone | 1.05 [0.83, 1.34] | +0.6 [-2.4, +3.5] | 0.686 |
+| API Python | Polite tone | 1.05 [0.83, 1.34] | +0.6 [-2.2, +3.4] | 0.686 |
 | API Python | Role framing | 0.92 [0.76, 1.11] | -1.1 [-3.4, +1.2] | 0.381 |
 | API Python | JSON wrapper | 1.32 [1.04, 1.68] | +3.4 [+0.4, +6.3] | 0.022 |
 | API Python | XML wrapper | 1.55 [1.21, 1.97] | +5.2 [+2.3, +8.2] | <0.001 |
@@ -47,11 +47,11 @@ contrasts remain as interpretability layer.
 | API Python | log_duration | Role framing | -6.09 % | 0.105 |
 | API Python | log_duration | JSON wrapper | -4.45 % | 0.333 |
 | API Python | log_duration | XML wrapper | -4.45 % | 0.333 |
-| API Python | result_only | Aggressive tone | +nan pp (AME) | nan |
-| API Python | result_only | Polite tone | +nan pp (AME) | nan |
-| API Python | result_only | Role framing | +nan pp (AME) | nan |
-| API Python | result_only | JSON wrapper | +nan pp (AME) | nan |
-| API Python | result_only | XML wrapper | +nan pp (AME) | nan |
+| API Python | result_only | Aggressive tone | +2.88 pp (AME) | 0.002 |
+| API Python | result_only | Polite tone | +3.86 pp (AME) | <0.001 |
+| API Python | result_only | Role framing | -3.61 pp (AME) | <0.001 |
+| API Python | result_only | JSON wrapper | +2.88 pp (AME) | 0.002 |
+| API Python | result_only | XML wrapper | +2.22 pp (AME) | 0.014 |
 | API math | log_completion_tokens | Aggressive tone | +12.78 % | 0.097 |
 | API math | log_completion_tokens | Polite tone | +1.18 % | 0.878 |
 | API math | log_completion_tokens | Role framing | +2.80 % | 0.656 |

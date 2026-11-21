@@ -1,8 +1,8 @@
 # Replication Package Recursive Audit (`R2M5`)
 
 - **Audited directory:** `/Users/macos/LearningSpace/ue-courses/Thesis/09PublicRepo`
-- **Total non-`.git` directories:** 244
-- **Total non-`.git` files:** 1856
+- **Total non-`.git` directories:** 60
+- **Total non-`.git` files:** 1364
 - **Top-level entries:** `.gitignore`, `01PilotPhrase/`, `02ScalingPhrase/`, `10Paperv3/`, `14ImprovePhrase/`, `README.md`
 
 ## 1. Legacy Thesis Directory / File Check
@@ -22,6 +22,7 @@
 ## 4. Data Availability Statement Excerpt (`13Submission_v1/LLM_Prompt_Framing_R00_updated.tex`)
 
 ```latex
-Data Availability Statement.
-\end{itemize}
+\section{Data Availability Statement}\label{data-availability-statement}
+
+The complete, self-contained replication package—comprising the 18-variant factorial prompt templates, local and cloud API evaluation runners, the consolidated $14{,}400$-run primary JSONL dataset, the $14{,}398$-run $k = 3$ repeated-generation dataset, the $450$-workflow live end-to-end retry pipeline logs, the $180$ neutral paraphrase/length-matched controls, the $20$-task shared-regime comparison, the $15$-task non-math SE coding benchmark, statistical analysis scripts (mixed-effects, clustered LPM, two-way interactions, BH-FDR, behavioral adjustment, variance decomposition, power analysis, and dominant-model sensitivity), and the 200-task oracle, compliance, and recursive repository audit logs, with all legacy thesis draft directories removed—is publicly available at: \url{https://github.com/tycoi2005/prompt-framing-experiment}.
 ```

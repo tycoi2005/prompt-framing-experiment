@@ -19,8 +19,12 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parent
-PUB_DIR = REPO_ROOT / "09PublicRepo"
-MANUSCRIPT_TEX = REPO_ROOT / "13Submission_v1" / "LLM_Prompt_Framing_R00_updated.tex"
+PUB_DIR = REPO_ROOT / "09PublicRepo" if (REPO_ROOT / "09PublicRepo").exists() else REPO_ROOT
+MANUSCRIPT_TEX = (
+    REPO_ROOT / "13Submission_v1" / "LLM_Prompt_Framing_R00_updated.tex"
+    if (REPO_ROOT / "13Submission_v1" / "LLM_Prompt_Framing_R00_updated.tex").exists()
+    else PUB_DIR / "10Paperv3" / "LLM_Prompt_Framing_R00_updated.tex"
+)
 OUT_MD = SCRIPT_DIR / "analysis" / "replication_package_audit.md"
 
 
@@ -51,7 +55,7 @@ def main() -> None:
     das_excerpt = ""
     if MANUSCRIPT_TEX.exists():
         tex = MANUSCRIPT_TEX.read_text(encoding="utf-8", errors="replace")
-        m = re.search(r"(Data Availability.*?)(?:\\section|\\subsection|\\bibliographystyle|\Z)", tex, re.S | re.I)
+        m = re.search(r"(\\section\{Data Availability Statement\}.*?)(?:\\section|\\subsection|\\bibliographystyle|\Z)", tex, re.S | re.I)
         if m:
             das_excerpt = m.group(1).strip()[:1200]
 

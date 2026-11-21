@@ -33,6 +33,7 @@ from recompute_manuscript_tables import (  # noqa: E402
     TERM_LABELS,
     fit_lpm,
     load_dataset,
+    strict_extract_code,
     write_csv,
 )
 
@@ -41,13 +42,14 @@ FE_COLS = ["modelname", "base_task"]
 
 
 def api_python_compliance_summary() -> dict[str, object]:
-    """Recover code-only compliance for API Python from the stored candidate code.
+    """Recover code-only compliance for API Python via strict_extract_code(response_text).
 
-    The API runner does not persist an ``extracted_code`` field, but it records
-    the executed program in ``eval_result.candidate_code``. Applying the same
-    operational definition used for the local strata (non-empty code and less
-    than 15% non-code text in the raw response) makes the compliance outcome
-    computable for the API Python stratum.
+    The API runner does not persist a top-level ``extracted_code`` field (and
+    ``eval_result.candidate_code`` falls back to raw ``response_text`` on parse
+    failures). Applying ``strict_extract_code(response_text)`` with the same
+    operational definition used for the local strata (non-empty extracted code
+    and less than 15% non-code text in the raw response) yields the audited
+    93.39% compliance rate (1,681 / 1,800 responses).
     """
 
     total = 0
@@ -60,7 +62,7 @@ def api_python_compliance_summary() -> dict[str, object]:
                 continue
             total += 1
             response = str(row.get("response_text") or "")
-            code = str((row.get("eval_result") or {}).get("candidate_code") or "")
+            code = strict_extract_code(response)
             if code:
                 has_code += 1
             extra_ratio = (len(response) - len(code)) / len(response) if response else 1.0
@@ -73,7 +75,7 @@ def api_python_compliance_summary() -> dict[str, object]:
         "n_with_extracted_code": has_code,
         "n_code_only_compliant": compliant,
         "compliance_pct": 100 * compliant / total if total else float("nan"),
-        "definition": "non-empty candidate_code and <15% non-code characters in response_text",
+        "definition": "non-empty strict_extract_code(response_text) and <15% non-code characters in response_text",
     }
     write_csv(
         OUT_DIR / "manuscript_api_compliance_summary.csv",
